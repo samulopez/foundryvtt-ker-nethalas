@@ -1,0 +1,52 @@
+{
+  "id": "ker-nethalas",
+  "title": "Ker Nethalas: Into the Midnight Throne",
+  "description": "An unofficial system for playing Ker Nethalas: Into the Midnight Throne on Foundry VTT",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": 13,
+    "verified": 13,
+    "maximum": 13
+  },
+  "authors": [
+    {
+      "name": "samulopez",
+      "url": "https://github.com/samulopez",
+      "discord": "masuelol"
+    }
+  ],
+  "esmodules": ["ker-nethalas.js"],
+  "styles": ["ker-nethalas.css"],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "minion": {},
+      "npc": {},
+      "creature": {}
+    },
+    "Item": {
+      "weapon": {},
+      "armor": {}
+    }
+  },
+  "grid": {
+    "distance": 10,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "attributes.health",
+  "secondaryTokenAttribute": "attributes.aether",
+  "bugs": "https://github.com/samulopez/foundryvtt-ker-nethalas/issues",
+  "changelog": "https://github.com/samulopez/foundryvtt-ker-nethalas/releases",
+  "download": "https://github.com/samulopez/foundryvtt-ker-nethalas/releases/download/v0.0.1/module.zip",
+  "manifest": "https://github.com/samulopez/foundryvtt-ker-nethalas/releases/latest/download/module.json",
+  "readme": "https://raw.githubusercontent.com/samulopez/foundryvtt-ker-nethalas/main/README.md",
+  "url": "https://github.com/samulopez/foundryvtt-ker-nethalas"
+}

@@ -1,0 +1,113 @@
+<div class="tab perks scrollable {{tabs.perks.cssClass}}"
+     data-group="primary"
+     data-tab="perks">
+     <div class="flexcol gap">
+          <div class="flexrow gap">
+               <div>
+                    <div class="section-title">MADNESS</div>
+                    <div class="editor-host">
+                         {{#if editable }}
+                              <prose-mirror name="system.perks.madness" button="true" editable="{{editable}}" toggled="false" value="{{document.system.perks.madness}}">
+                              {{{enrichedPerksMadness}}}
+                              </prose-mirror>
+                         {{else}}
+                              {{{enrichedPerksMadness}}}
+                         {{/if}}
+                    </div>
+               </div>
+               <div>
+                    <div class="section-title">PERKS</div>
+                    <div class="editor-host">
+                         {{#if editable }}
+                              <prose-mirror name="system.perks.perks" button="true" editable="{{editable}}" toggled="false" value="{{document.system.perks.perks}}">
+                              {{{enrichedPerksPerks}}}
+                              </prose-mirror>
+                         {{else}}
+                              {{{enrichedPerksPerks}}}
+                         {{/if}}
+                    </div>
+               </div>
+          </div>
+          <div>
+               <div class="section-title">NOTES</div>
+               <div class="editor-host">
+                    {{#if editable }}
+                         <prose-mirror name="system.perks.notes" button="true" editable="{{editable}}" toggled="false" value="{{document.system.perks.notes}}">
+                         {{{enrichedPerksNotes}}}
+                         </prose-mirror>
+                    {{else}}
+                         {{{enrichedPerksNotes}}}
+                    {{/if}}
+               </div>
+          </div>
+          <div>
+               <div class="section-title">DAMAGE VULNERABILITIES & RESISTANCES</div>
+               <table>
+                    <thead>
+                         <tr>
+                              <th></th>
+                              <th>Immune</th>
+                              <th>Vulnerable</th>
+                              <th>Resistant</th>
+                              <th>Restored</th>
+                              <th>None</th>
+                              <th>Reduction</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         {{#each document.system.damages as |damage key| }}
+                              <tr>
+                                   <td>{{localize (concat "KN.Character.Damages." key)}}</td>
+                                   <td>
+                                        <input type="radio"
+                                               name="system.damages.{{key}}.status"
+                                               value="immune"
+                                               {{#if (eq damage.status "immune") }}
+                                               checked
+                                               {{/if }} />
+                                   </td>
+                                   <td>
+                                        <input type="radio"
+                                               name="system.damages.{{key}}.status"
+                                               value="vulnerable"
+                                               {{#if (eq damage.status "vulnerable") }}
+                                               checked
+                                               {{/if }} />
+                                   </td>
+                                   <td>
+                                        <input type="radio"
+                                               name="system.damages.{{key}}.status"
+                                               value="resistant"
+                                               {{#if (eq damage.status "resistant") }}
+                                               checked
+                                               {{/if }} />
+                                   </td>
+                                   <td>
+                                        <input type="radio"
+                                               name="system.damages.{{key}}.status"
+                                               value="restored"
+                                               {{#if (eq damage.status "restored") }}
+                                               checked
+                                               {{/if }} />
+                                   </td>
+                                   <td>
+                                        <input type="radio"
+                                               name="system.damages.{{key}}.status"
+                                               value="none"
+                                               {{#if (eq damage.status "none") }}
+                                               checked
+                                               {{/if }} />
+                                   </td>
+                                   <td>
+                                        <input type="text"
+                                               name="system.damages.{{key}}.reduction"
+                                               id="system.damages.{{key}}.reduction"
+                                               value="{{document.system.damages.[key].reduction}}" />
+                                   </td>
+                              </tr>
+                         {{/each}}
+                    </tbody>
+               </table>
+          </div>
+     </div>
+</div>

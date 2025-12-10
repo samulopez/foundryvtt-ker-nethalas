@@ -1,0 +1,125 @@
+.system-ker-nethalas {
+  // Styles for the Ker Nethalas system
+  .actor {
+    .header-fields {
+      input {
+        border: 1px solid;
+      }
+      h5 {
+        margin: 0.5rem 0 0.25rem;
+      }
+      .left-label {
+        display: block;
+        width: 120px;
+        padding-right: 1rem;
+        text-align: right;
+      }
+      .level-input {
+        width: 3rem;
+      }
+      .xp-section {
+        width: 210px;
+        justify-content: end;
+        .xp-input {
+          width: 5rem;
+        }
+      }
+    }
+    .skills {
+      padding: 0.5rem 0;
+      input[type='number'] {
+        width: 2rem;
+      }
+
+      .skill-table {
+        border: 1px solid;
+        .skill-column {
+          > :not(:last-of-type) {
+            border-bottom: 1px solid;
+          }
+          .skill-row {
+            padding: 0.25rem;
+
+            input {
+              border: 1px solid;
+            }
+          }
+        }
+      }
+
+      .masteries {
+        .tier-label {
+          min-width: 35px;
+        }
+      }
+    }
+
+    .perks {
+      .editor-host {
+        max-height: 100px;
+        border: 1px solid;
+        padding: 0.25rem;
+        .editor {
+          min-height: 100px;
+        }
+      }
+    }
+  }
+
+  .gap-min {
+    gap: 0.25rem;
+  }
+
+  .gap-small {
+    gap: 0.5rem;
+  }
+
+  .gap {
+    gap: 1rem;
+  }
+
+  .gap-large {
+    gap: 1.5rem;
+  }
+
+  .border-right {
+    border-right: 1px solid;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid;
+  }
+
+  .rollable {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .align-normal {
+    align-items: normal;
+  }
+
+  .vertical-divider {
+    width: 2px;
+    height: 100%;
+    background-color: var(--color-tabs-border);
+    margin: 0 0.25rem;
+  }
+
+  .section-title {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+    align-items: center;
+    text-align: center;
+    grid-gap: 20px;
+    width: 100%;
+  }
+
+  .section-title:before,
+  .section-title:after {
+    content: '';
+    border-top: 2px solid;
+  }
+}

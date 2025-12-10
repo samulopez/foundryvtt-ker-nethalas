@@ -1,0 +1,481 @@
+<div class="tab skills scrollable {{tabs.skills.cssClass}}"
+     data-group="primary"
+     data-tab="skills">
+       <div class="flexcol gap-large">
+              <div class="flexrow gap-large">
+                     <div class="flexcol gap">
+                            <div class="flexrow gap-small">
+                                   <input type="number"
+                                          name="system.attributes.health.value"
+                                          id="system.attributes.health.value"
+                                          class="flex0"
+                                          value="{{document.system.attributes.health.value}}" />
+                                   /
+                                   <input type="number"
+                                          name="system.attributes.health.max"
+                                          id="system.attributes.health.max"
+                                          class="flex0"
+                                          value="{{document.system.attributes.health.max}}" />
+                                   <div>HEALTH</div>
+                            </div>
+                            <div class="flexrow gap-small">
+                                   <input type="number"
+                                          name="system.attributes.toughness.value"
+                                          id="system.attributes.toughness.value"
+                                          class="flex0"
+                                          value="{{document.system.attributes.toughness.value}}" />
+                                   /
+                                   <input type="number"
+                                          name="system.attributes.toughness.max"
+                                          id="system.attributes.toughness.max"
+                                          class="flex0"
+                                          value="{{document.system.attributes.toughness.max}}" />
+                                   <div>TOUGHNESS</div>
+                            </div>
+                            <div class="flexrow gap-small">
+                                   <input type="number"
+                                          name="system.attributes.aether.value"
+                                          id="system.attributes.aether.value"
+                                          class="flex0"
+                                          value="{{document.system.attributes.aether.value}}" />
+                                   /
+                                   <input type="number"
+                                          name="system.attributes.aether.max"
+                                          id="system.attributes.aether.max"
+                                          class="flex0"
+                                          value="{{document.system.attributes.aether.max}}" />
+                                   <div>AETHER</div>
+                            </div>
+                            <div class="flexrow gap-small">
+                                   <input type="number"
+                                          name="system.attributes.sanity.value"
+                                          id="system.attributes.sanity.value"
+                                          class="flex0"
+                                          value="{{document.system.attributes.sanity.value}}" />
+                                   /
+                                   <input type="number"
+                                          name="system.attributes.sanity.max"
+                                          id="system.attributes.sanity.max"
+                                          class="flex0"
+                                          value="{{document.system.attributes.sanity.max}}" />
+                                   <div>SANITY</div>
+                            </div>
+                            <div class="flexrow gap-small">
+                                   <input type="number"
+                                          name="system.attributes.magicResistance"
+                                          id="system.attributes.magicResistance"
+                                          class="flex0"
+                                          value="{{document.system.attributes.magicResistance}}" />
+                                   <div>MAGIC RESISTANCE</div>
+                            </div>
+                            <div class="flexrow gap-small">
+                                   <div>DAMAGE MODIFIER</div>
+                                   <input type="number"
+                                          name="system.attributes.damageModifier"
+                                          id="system.attributes.damageModifier"
+                                          class="flex0"
+                                          value="{{document.system.attributes.damageModifier}}" />
+                            </div>
+                            <div class="flexrow gap-small">
+                                   <div>EXHAUSTION</div>
+                                   <div>
+                                          <div class="flexrow">
+                                                 <div>Current</div>
+                                                 <input type="number"
+                                                        name="system.attributes.exhaustion"
+                                                        id="system.attributes.exhaustion"
+                                                        class="flex0"
+                                                        value="{{document.system.attributes.exhaustion}}" />
+                                          </div>
+                                          <div class="flexrow">
+                                                 <div>Resistance</div>
+                                                 <input type="number"
+                                                        name="system.attributes.exhaustionResistance"
+                                                        id="system.attributes.exhaustionResistance"
+                                                        class="flex0"
+                                                        value="{{document.system.attributes.exhaustionResistance}}" />
+                                          </div>
+                                   </div>
+                            </div>
+                            <div class="flexrow gap-small">
+                                   <div>
+                                          <div>LIGHTSOURCE</div>
+                                          -1 / room
+                                   </div>
+                                   <input type="range"
+                                          min="0"
+                                          max="20"
+                                          name="system.lightSource"
+                                          id="system.lightSource"
+                                          value="{{document.system.lightSource}}">
+                            </div>
+                     </div>
+                     <div class="flex2">
+                            <div class="section-title">SKILLS</div>
+                            <div class="flexrow skill-table">
+                                   <div class="skill-column">
+                                          {{#each leftSkills as |skill key| }}
+                                                 <div class="flexrow skill-row gap-small border-right">
+                                                        <input type="checkbox"
+                                                               name="system.skills.{{key}}.markForImprovement"
+                                                               data-tooltip="KN.Character.Skills.markForImprovement"
+                                                               class="flex0"
+                                                               {{checked skill.markForImprovement}} />
+                                                        <input type="number"
+                                                               name="system.skills.{{key}}.value"
+                                                               id="system.skills.{{key}}.value"
+                                                               class="flex0"
+                                                               value="{{skill.value}}" />
+                                                        <label class="rollable"
+                                                               data-action="roll"
+                                                               data-key="{{key}}"
+                                                               data-rolltype="skill"
+                                                               for="system.skills.{{key}}.value">
+                                                               {{localize (concat "KN.Character.Skills." key)}} <i class="fas fa-dice"></i>
+                                                        </label>
+                                                 </div>
+                                          {{/each}}
+                                   </div>
+                                   <div class="skill-column">
+                                          {{#each rightSkills as |skill key| }}
+                                                 <div class="flexrow skill-row gap-small">
+                                                        <input type="checkbox"
+                                                               name="system.skills.{{key}}.markForImprovement"
+                                                               data-tooltip="KN.Character.Skills.markForImprovement"
+                                                               class="flex0"
+                                                               {{checked skill.markForImprovement}} />
+                                                        <input type="number"
+                                                               name="system.skills.{{key}}.value"
+                                                               id="system.skills.{{key}}.value"
+                                                               class="flex0"
+                                                               value="{{skill.value}}" />
+                                                        <label class="rollable"
+                                                               data-action="roll"
+                                                               data-key="{{key}}"
+                                                               data-rolltype="skill"
+                                                               for="system.skills.{{key}}.value">
+                                                               {{localize (concat "KN.Character.Skills." key)}} <i class="fas fa-dice"></i>
+                                                        </label>
+                                                 </div>
+                                          {{/each}}
+                                          <div class="flexrow skill-row gap-small border-bottom">
+                                                 <input type="checkbox"
+                                                        name="system.skills.custom1.markForImprovement"
+                                                        data-tooltip="KN.Character.Skills.markForImprovement"
+                                                        class="flex0"
+                                                        {{checked document.system.skills.custom1.markForImprovement}} />
+                                                 <input type="number"
+                                                        name="system.skills.custom1.value"
+                                                        id="system.skills.custom1.value"
+                                                        class="flex0"
+                                                        value="{{document.system.skills.custom1.value}}" />
+                                                 <input type="text"
+                                                        name="system.skills.custom1.name"
+                                                        class="flex1"
+                                                        value="{{document.system.skills.custom1.name}}" />
+                                                 <label class="flex0 rollable"
+                                                        data-action="roll"
+                                                        data-key="custom1"
+                                                        data-rolltype="skill"
+                                                        for="system.skills.custom1.value">
+                                                        <i class="fas fa-dice"></i>
+                                                 </label>
+                                          </div>
+                                          <div class="flexrow skill-row gap-small border-bottom">
+                                                 <input type="checkbox"
+                                                        name="system.skills.custom2.markForImprovement"
+                                                        data-tooltip="KN.Character.Skills.markForImprovement"
+                                                        class="flex0"
+                                                        {{checked document.system.skills.custom2.markForImprovement}} />
+                                                 <input type="number"
+                                                        name="system.skills.custom2.value"
+                                                        id="system.skills.custom2.value"
+                                                        class="flex0"
+                                                        value="{{document.system.skills.custom2.value}}" />
+                                                 <input type="text"
+                                                        name="system.skills.custom2.name"
+                                                        class="flex1"
+                                                        value="{{document.system.skills.custom2.name}}" />
+                                                 <label class="flex0 rollable"
+                                                        data-action="roll"
+                                                        data-key="custom2"
+                                                        data-rolltype="skill"
+                                                        for="system.skills.custom2.value">
+                                                        <i class="fas fa-dice"></i>
+                                                 </label>
+                                          </div>
+                                          <div class="flexrow skill-row gap-small border-bottom">
+                                                 <input type="checkbox"
+                                                        name="system.skills.custom3.markForImprovement"
+                                                        data-tooltip="KN.Character.Skills.markForImprovement"
+                                                        class="flex0"
+                                                        {{checked document.system.skills.custom3.markForImprovement}} />
+                                                 <input type="number"
+                                                        name="system.skills.custom3.value"
+                                                        id="system.skills.custom3.value"
+                                                        class="flex0"
+                                                        value="{{document.system.skills.custom3.value}}" />
+                                                 <input type="text"
+                                                        name="system.skills.custom3.name"
+                                                        class="flex1"
+                                                        value="{{document.system.skills.custom3.name}}" />
+                                                 <label class="flex0 rollable"
+                                                        data-action="roll"
+                                                        data-key="custom3"
+                                                        data-rolltype="skill"
+                                                        for="system.skills.custom3.value">
+                                                        <i class="fas fa-dice"></i>
+                                                 </label>
+                                          </div>
+                                          <div class="flexrow skill-row gap-small border-bottom">
+                                                 <input type="checkbox"
+                                                        name="system.skills.custom4.markForImprovement"
+                                                        data-tooltip="KN.Character.Skills.markForImprovement"
+                                                        class="flex0"
+                                                        {{checked document.system.skills.custom4.markForImprovement}} />
+                                                 <input type="number"
+                                                        name="system.skills.custom4.value"
+                                                        id="system.skills.custom4.value"
+                                                        class="flex0"
+                                                        value="{{document.system.skills.custom4.value}}" />
+                                                 <input type="text"
+                                                        name="system.skills.custom4.name"
+                                                        class="flex1"
+                                                        value="{{document.system.skills.custom4.name}}" />
+                                                 <label class="flex0 rollable"
+                                                        data-action="roll"
+                                                        data-key="custom4"
+                                                        data-rolltype="skill"
+                                                        for="system.skills.custom4.value">
+                                                        <i class="fas fa-dice"></i>
+                                                 </label>
+                                          </div>
+                                          <div class="flexrow skill-row gap-small">
+                                                 <input type="checkbox"
+                                                        name="system.skills.custom5.markForImprovement"
+                                                        data-tooltip="KN.Character.Skills.markForImprovement"
+                                                        class="flex0"
+                                                        {{checked document.system.skills.custom5.markForImprovement}} />
+                                                 <input type="number"
+                                                        name="system.skills.custom5.value"
+                                                        id="system.skills.custom5.value"
+                                                        class="flex0"
+                                                        value="{{document.system.skills.custom1.value}}" />
+                                                 <input type="text"
+                                                        name="system.skills.custom5.name"
+                                                        class="flex1"
+                                                        value="{{document.system.skills.custom5.name}}" />
+                                                 <label class="flex0 rollable"
+                                                        data-action="roll"
+                                                        data-key="custom5"
+                                                        data-rolltype="skill"
+                                                        for="system.skills.custom5.value">
+                                                        <i class="fas fa-dice"></i>
+                                                 </label>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+              <div class="flexcol gap-small">
+                     <div class="section-title">MASTERIES</div>
+                     <div class="flexrow align-normal masteries">
+                            <div class="flexcol gap-small">
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0" for="system.masteries.mastery1.name">Mastery</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery1.name"
+                                                 id="system.masteries.mastery1.name"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery1.name}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0" for="system.masteries.mastery1.passive">Passive</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery1.passive"
+                                                 id="system.masteries.mastery1.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery1.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery1.tier1.passive">Tier 1</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery1.tier1.passive"
+                                                 id="system.masteries.mastery1.tier1.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery1.tier1.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery1.tier2.passive">Tier 2</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery1.tier2.passive"
+                                                 id="system.masteries.mastery1.tier2.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery1.tier2.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery1.tier3.passive">Tier 3</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery1.tier3.passive"
+                                                 id="system.masteries.mastery1.tier3.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery1.tier3.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery1.tier4.passive">Tier 4</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery1.tier4.passive"
+                                                 id="system.masteries.mastery1.tier4.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery1.tier4.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery1.tier5.passive">Tier 5</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery1.tier5.passive"
+                                                 id="system.masteries.mastery1.tier5.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery1.tier5.passive}}" />
+                                   </div>
+                            </div>
+                            <div class="flex0">
+                                   <div class="vertical-divider"></div>
+                            </div>
+                            <div class="flexcol gap-small">
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0" for="system.masteries.mastery2.name">Mastery</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery2.name"
+                                                 id="system.masteries.mastery2.name"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery2.name}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0" for="system.masteries.mastery2.passive">Passive</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery2.passive"
+                                                 id="system.masteries.mastery2.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery2.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery2.tier1.passive">Tier 1</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery2.tier1.passive"
+                                                 id="system.masteries.mastery2.tier1.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery2.tier1.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery2.tier2.passive">Tier 2</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery2.tier2.passive"
+                                                 id="system.masteries.mastery2.tier2.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery2.tier2.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery2.tier3.passive">Tier 3</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery2.tier3.passive"
+                                                 id="system.masteries.mastery2.tier3.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery2.tier3.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery2.tier4.passive">Tier 4</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery2.tier4.passive"
+                                                 id="system.masteries.mastery2.tier4.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery2.tier4.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery2.tier5.passive">Tier 5</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery2.tier5.passive"
+                                                 id="system.masteries.mastery2.tier5.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery2.tier5.passive}}" />
+                                   </div>
+                            </div>
+                            <div class="flex0">
+                                   <div class="vertical-divider"></div>
+                            </div>
+                            <div class="flexcol gap-small">
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0" for="system.masteries.mastery3.name">Mastery</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery3.name"
+                                                 id="system.masteries.mastery3.name"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery3.name}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0" for="system.masteries.mastery3.passive">Passive</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery3.passive"
+                                                 id="system.masteries.mastery3.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery3.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery3.tier1.passive">Tier 1</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery3.tier1.passive"
+                                                 id="system.masteries.mastery3.tier1.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery3.tier1.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery3.tier2.passive">Tier 2</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery3.tier2.passive"
+                                                 id="system.masteries.mastery3.tier2.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery3.tier2.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery3.tier3.passive">Tier 3</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery3.tier3.passive"
+                                                 id="system.masteries.mastery3.tier3.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery3.tier3.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery3.tier4.passive">Tier 4</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery3.tier4.passive"
+                                                 id="system.masteries.mastery3.tier4.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery3.tier4.passive}}" />
+                                   </div>
+                                   <div class="flexrow gap-small">
+                                          <label class="flex0 tier-label"
+                                                 for="system.masteries.mastery3.tier5.passive">Tier 5</label>
+                                          <input type="text"
+                                                 name="system.masteries.mastery3.tier5.passive"
+                                                 id="system.masteries.mastery3.tier5.passive"
+                                                 class="flex1"
+                                                 value="{{document.system.masteries.mastery3.tier5.passive}}" />
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </div>
+</div>

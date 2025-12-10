@@ -1,0 +1,70 @@
+<header class="sheet-header">
+    <div class="header-fields">
+        {{!-- Name, Profession, Portrait --}}
+        <div class="header-top flexrow">
+            <img class="profile-img"
+                 alt="profile image"
+                 src="{{document.img}}"
+                 data-action="editImage"
+                 data-edit="img"
+                 data-tooltip="{{document.name}}"
+                 height="150"
+                 width="100" />
+            <div class="flex3">
+                <h5 class="flexrow">
+                    <div class="flex0">
+                        <label class="left-label" for="kn.character.name">{{localize 'KN.Character.Sheet.name' }}</label>
+                    </div>
+                    <input name="name"
+                           type="text"
+                           value="{{document.name}}"
+                           class="flex3"
+                           autocomplete="off"
+                           id="kn.character.name" />
+                </h5>
+                <h5 class="flexrow gap-large">
+                    <div class="flexrow">
+                        <div class="flex0">
+                            <label class="left-label" for="kn.character.system.level">{{localize 'KN.Character.Sheet.level' }}</label>
+                        </div>
+                        <input name="system.level"
+                               type="number"
+                               data-dtype="Number"
+                               value="{{document.system.level}}"
+                               class="flex0 level-input"
+                               id="kn.character.system.level" />
+                    </div>
+                    <div class="flex0">
+                        <div class="flexrow xp-section">
+                            <div class="flex0">
+                                <label class="left-label" for="kn.character.system.experience">{{localize 'KN.Character.Sheet.xp' }}</label>
+                            </div>
+                            <input name="system.experience"
+                                   type="number"
+                                   data-dtype="Number"
+                                   value="{{document.system.experience}}"
+                                   class="flex0 xp-input"
+                                   id="kn.character.system.experience" />
+                        </div>
+                    </div>
+                </h5>
+                <h5 class="flexrow">
+                    <div class="flex0">
+                        <div class="left-label">
+                            <label>{{localize 'KN.Character.Sheet.personal' }}</label>
+                            <label>{{localize 'KN.Character.Sheet.goals' }}</label>
+                        </div>
+                    </div>
+                    <div class="flexcol gap-min">
+                        <input name="system.personalGoal"
+                               type="text"
+                               value="{{document.system.personalGoal}}" />
+                        <input name="system.personalGoal2"
+                               type="text"
+                               value="{{document.system.personalGoal2}}" />
+                    </div>
+                </h5>
+            </div>
+        </div>
+    </div>
+</header>
