@@ -8,10 +8,10 @@ import {
   NPCDataModel,
   WeaponDataModel,
 } from './module/data';
-import { ID } from './module/constants';
+import { ID, TEMPLATES } from './module/constants';
 import KerNethalasCharacterActor from './module/actor/character';
 
-Hooks.once('init', () => {
+Hooks.once('init', async () => {
   // Configure custom Document implementations.
   CONFIG.Actor.documentClass = KerNethalasCharacterActor;
   // TODO
@@ -54,4 +54,7 @@ Hooks.once('init', () => {
   //   label: "DG.Sheet.class.item",
   //   themes: null,
   // });
+
+  // Preload Handlebars templates
+  await foundry.applications.handlebars.loadTemplates(Object.values(foundry.utils.flattenObject(TEMPLATES)));
 });

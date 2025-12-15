@@ -1,3 +1,141 @@
-<div class="tab mechanics {{tabs.mechanics.cssClass}}"
+<div class="tab mechanics scrollable {{tabs.mechanics.cssClass}}"
      data-group="primary"
-     data-tab="mechanics">add mechanics content here</div>
+     data-tab="mechanics">
+     <div class="flexcol gap-large">
+          <div class="flexrow gap-large">
+               <div>
+                    <div class="section-title">{{localize "KN.Character.Mechanics.tensionDie"}}</div>
+                    <div class="flexrow gap-small">
+                         <div class="die-mechanics">
+                              (D10) <i class="fas fa-arrow-right"></i>
+                              {{#if (eq document.system.mechanics.tensionDie 8) }}
+                                   <span class="rollable"
+                                         data-action="rollTensionDie"
+                                         data-key="8"
+                                         data-tooltip="KN.Character.Mechanics.tooltip.tensionDie">
+                                        D8<i class="fas fa-dice"></i>
+                                   </span>
+                                   {{else}}<span>D8</span>{{/if}} <i class="fas fa-arrow-right"></i>
+                                   {{#if (eq document.system.mechanics.tensionDie 6) }}
+                                        <span class="rollable"
+                                              data-action="rollTensionDie"
+                                              data-key="6"
+                                              data-tooltip="KN.Character.Mechanics.tooltip.tensionDie">
+                                             D6<i class="fas fa-dice"></i>
+                                        </span>
+                                        {{else}}<span>D6</span>{{/if}} <i class="fas fa-arrow-right"></i>
+                                        {{#if (eq document.system.mechanics.tensionDie 4) }}
+                                             <span class="rollable"
+                                                   data-action="rollTensionDie"
+                                                   data-key="4"
+                                                   data-tooltip="KN.Character.Mechanics.tooltip.tensionDie">
+                                                  D4<i class="fas fa-dice"></i>
+                                             </span>
+                                             {{else}}<span>D4</span>{{/if}}
+                                        </div>
+                                        <span class="flex0 rollable"
+                                              data-action="resetTensionDie"
+                                              data-tooltip="KN.Character.Mechanics.tooltip.resetTensionDie"><i class="fas fa-trash"></i></span>
+                                   </div>
+                              </div>
+                              <div>
+                                   <div class="section-title">
+                                        {{#if document.system.mechanics.overseerFound }}
+                                        {{localize "KN.Character.Mechanics.domainExitDie"}}{{else}}{{localize "KN.Character.Mechanics.lairDie"}}{{/if}}
+                                        </div>
+                                        <div class="flexrow gap-small">
+                                             <div class="die-mechanics">
+                                                  {{#if (eq lairDomainExitDie 10) }}
+                                                       <span class="rollable"
+                                                             data-action="rollLairDomainExitDie"
+                                                             data-key="10"
+                                                             data-tooltip="KN.Character.Mechanics.tooltip.lairDomainExitDie">
+                                                            D10<i class="fas fa-dice"></i>
+                                                       </span>
+                                                       {{else}}<span>D10</span>{{/if}} <i class="fas fa-arrow-right"></i>
+                                                       {{#if (eq lairDomainExitDie 8) }}
+                                                            <span class="rollable"
+                                                                  data-action="rollLairDomainExitDie"
+                                                                  data-key="8"
+                                                                  data-tooltip="KN.Character.Mechanics.tooltip.lairDomainExitDie">
+                                                                 D8<i class="fas fa-dice"></i>
+                                                            </span>
+                                                            {{else}}<span>D8</span>{{/if}} <i class="fas fa-arrow-right"></i>
+                                                            {{#if (eq lairDomainExitDie 6) }}
+                                                                 <span class="rollable"
+                                                                       data-action="rollLairDomainExitDie"
+                                                                       data-key="6"
+                                                                       data-tooltip="KN.Character.Mechanics.tooltip.lairDomainExitDie">
+                                                                      D6<i class="fas fa-dice"></i>
+                                                                 </span>
+                                                                 {{else}}<span>D6</span>{{/if}} <i class="fas fa-arrow-right"></i>
+                                                                 {{#if (eq lairDomainExitDie 4) }}
+                                                                      <span class="rollable"
+                                                                            data-action="rollLairDomainExitDie"
+                                                                            data-key="4"
+                                                                            data-tooltip="KN.Character.Mechanics.tooltip.lairDomainExitDie">
+                                                                           D4<i class="fas fa-dice"></i>
+                                                                      </span>
+                                                                      {{else}}<span>D4</span>{{/if}}
+                                                                 </div>
+                                                                 <input type="checkbox"
+                                                                        name="system.mechanics.overseerFound"
+                                                                        id="system.mechanics.overseerFound"
+                                                                        data-action="markOverseerFound"
+                                                                        class="flex0"
+                                                                        data-tooltip="KN.Character.Mechanics.tooltip.overseerFound"
+                                                                        {{#if document.system.mechanics.overseerFound }}
+                                                                        checked
+                                                                        {{/if }} />
+                                                                 <span class="flex0 rollable"
+                                                                       data-action="resetLairDomainExitDie"
+                                                                       data-tooltip="KN.Character.Mechanics.tooltip.resetLairDomainExitDie"><i class="fas fa-trash"></i></span>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="active-growing-darkness-events">
+                                                       <div class="section-title">{{localize "KN.Character.Mechanics.activeEvents"}}</div>
+                                                       <div class="editor-host">
+                                                            {{#if editable }}
+                                                                 <prose-mirror name="system.mechanics.activeEvents" button="true" editable="{{editable}}" toggled="false" value="{{document.system.mechanics.activeEvents}}">
+                                                                 {{{enrichedMechanicsActiveEvents}}}
+                                                                 </prose-mirror>
+                                                            {{else}}
+                                                                 {{{enrichedMechanicsActiveEvents}}}
+                                                            {{/if}}
+                                                       </div>
+                                                  </div>
+                                                  <div class="overseer-influence flexcol gap-min">
+                                                       <div class="section-title">{{localize "KN.Character.Mechanics.overseerInfluence"}}</div>
+                                                       <div class="flexrow gap-small">
+                                                            <label class="flex0" for="system.mechanics.overseer">{{localize "KN.Character.Mechanics.overseer"}}:</label>
+                                                            <input type="text"
+                                                                   name="system.mechanics.overseer"
+                                                                   id="system.mechanics.overseer"
+                                                                   class="flex1"
+                                                                   value="{{document.system.mechanics.overseer}}" />
+                                                       </div>
+                                                       <div class="editor-host">
+                                                            {{#if editable }}
+                                                                 <prose-mirror name="system.mechanics.overseerInfluence" button="true" editable="{{editable}}" toggled="false" value="{{document.system.mechanics.overseerInfluence}}">
+                                                                 {{{enrichedMechanicsOverseerInfluence}}}
+                                                                 </prose-mirror>
+                                                            {{else}}
+                                                                 {{{enrichedMechanicsOverseerInfluence}}}
+                                                            {{/if}}
+                                                       </div>
+                                                  </div>
+                                                  <div class="notes">
+                                                       <div class="section-title">{{localize "KN.Character.Mechanics.notes"}}</div>
+                                                       <div class="editor-host">
+                                                            {{#if editable }}
+                                                                 <prose-mirror name="system.mechanics.notes" button="true" editable="{{editable}}" toggled="false" value="{{document.system.mechanics.notes}}">
+                                                                 {{{enrichedMechanicsNotes}}}
+                                                                 </prose-mirror>
+                                                            {{else}}
+                                                                 {{{enrichedMechanicsNotes}}}
+                                                            {{/if}}
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>

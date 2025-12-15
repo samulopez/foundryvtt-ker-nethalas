@@ -57,11 +57,36 @@
     .perks {
       .editor-host {
         max-height: 100px;
-        border: 1px solid;
+        border: 1px dashed;
         padding: 0.25rem;
         .editor {
           min-height: 100px;
         }
+      }
+    }
+
+    .mechanics {
+      .overseer-influence {
+        .editor-host {
+          max-height: 100px;
+          .editor {
+            min-height: 100px;
+          }
+        }
+      }
+      .editor-host {
+        max-height: 150px;
+        border: 1px dashed;
+        padding: 0.25rem;
+        .editor {
+          min-height: 150px;
+        }
+      }
+      .die-mechanics {
+        text-align: center;
+      }
+      .rollable {
+        text-decoration: underline;
       }
     }
   }
@@ -106,6 +131,14 @@
     height: 100%;
     background-color: var(--color-tabs-border);
     margin: 0 0.25rem;
+  }
+
+  .success-text {
+    color: var(--color-level-success);
+  }
+
+  .failure-text {
+    color: var(--color-level-error);
   }
 
   .section-title {
