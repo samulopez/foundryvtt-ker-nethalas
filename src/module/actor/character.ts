@@ -1,4 +1,5 @@
-import { TEMPLATES } from '../constants';
+import { getGame, getLocalization } from '../helpers';
+import { ID, KNSettings, TEMPLATES } from '../constants';
 
 export default class KerNethalasCharacterActor extends Actor<'character'> {
   async rollTensionDie() {
@@ -10,7 +11,7 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
     const roll = new Roll(`1d${dieSize}`);
     await roll.evaluate();
 
-    let resultString = 'Pass';
+    let resultString = 'No effect';
     let customClass = '';
 
     if ((roll.total ?? 100) <= 2) {
@@ -30,20 +31,40 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
       total: roll.total,
     });
 
-    roll.toMessage({
+    const message = await roll.toMessage({
       content: html,
       flavor: 'Tension Die check',
     });
+
+    const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
+    if (diceSoNice && message) {
+      await getGame().dice3d?.waitFor3DAnimationByMessageID(message.id);
+    }
+    await this.update({
+      system: {
+        mechanics: { tensionDie: this.system.mechanics.tensionDie },
+      },
+    });
   }
 
-  resetTensionDie() {
-    this.system.mechanics.tensionDie = 8;
+  async resetTensionDie() {
+    await this.update({
+      system: {
+        mechanics: { tensionDie: 8 },
+      },
+    });
   }
 
-  resetLairDomainExitDie() {
-    this.system.mechanics.lairDie = 10;
-    this.system.mechanics.domainExitDie = 8;
-    this.system.mechanics.overseerFound = false;
+  async resetLairDomainExitDie() {
+    await this.update({
+      system: {
+        mechanics: {
+          lairDie: 10,
+          domainExitDie: 8,
+          overseerFound: false,
+        },
+      },
+    });
   }
 
   async rollLairDomainExitDie() {
@@ -82,9 +103,22 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
       total: roll.total,
     });
 
-    roll.toMessage({
+    const message = await roll.toMessage({
       content: html,
       flavor: 'Domain Exit check',
+    });
+
+    const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
+    if (diceSoNice && message) {
+      await getGame().dice3d?.waitFor3DAnimationByMessageID(message.id);
+    }
+
+    await this.update({
+      system: {
+        mechanics: {
+          domainExitDie: this.system.mechanics.domainExitDie,
+        },
+      },
     });
   }
 
@@ -119,14 +153,99 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
       total: roll.total,
     });
 
-    roll.toMessage({
+    const message = await roll.toMessage({
       content: html,
       flavor: 'Lair check',
     });
+
+    const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
+    if (diceSoNice && message) {
+      await getGame().dice3d?.waitFor3DAnimationByMessageID(message.id);
+    }
+
+    await this.update({
+      system: {
+        mechanics: {
+          lairDie: this.system.mechanics.lairDie,
+          domainExitDie: this.system.mechanics.domainExitDie,
+          overseerFound: this.system.mechanics.overseerFound,
+        },
+      },
+    });
   }
 
-  markOverseerFound(found: boolean) {
-    this.resetLairDomainExitDie();
-    this.system.mechanics.overseerFound = found;
+  async markOverseerFound(found: boolean) {
+    await this.resetLairDomainExitDie();
+    await this.update({
+      system: {
+        mechanics: {
+          overseerFound: found,
+        },
+      },
+    });
+  }
+
+  async rollSkill(skillKey: string, modifier: number) {
+    const skill = this.system.skills[skillKey];
+    if (!skill) {
+      return;
+    }
+
+    if (skill.value === 0 && !modifier) {
+      return;
+    }
+
+    let value = modifier ? skill.value + modifier : skill.value;
+    if (value <= 0) {
+      value = 0;
+    }
+
+    const roll = new Roll('1d100');
+    await roll.evaluate();
+
+    let resultString = 'Success';
+    let customClass = 'success-text';
+    const total = roll.total ?? 1000;
+    const isCritical = total % 11 === 0;
+
+    if (total > value) {
+      resultString = 'Failure';
+      customClass = 'failure-text';
+    }
+
+    const html = await foundry.applications.handlebars.renderTemplate(TEMPLATES.usageDieRoll, {
+      resultString: isCritical ? `Critical ${resultString}` : resultString,
+      customClass,
+      formula: roll.formula,
+      total: roll.total,
+    });
+
+    const message = await roll.toMessage({
+      content: html,
+      flavor: `${getLocalization().localize(`KN.Character.Skills.${skillKey}`)} Skill Check<br>Target Value: ${value} ${modifier !== 0 ? `(Base: ${skill.value} ${modifier > 0 ? ` + ${modifier}` : ` - ${Math.abs(modifier)}`})` : ''}`,
+    });
+
+    const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
+    if (diceSoNice && message) {
+      await getGame().dice3d?.waitFor3DAnimationByMessageID(message.id);
+    }
+
+    if (!isCritical) {
+      return;
+    }
+
+    const markSkillForImprovement = getGame().settings.get(ID, KNSettings.markSkillForImprovement);
+    if (!markSkillForImprovement) {
+      return;
+    }
+    await this.update({
+      system: {
+        skills: {
+          [skillKey]: {
+            markForImprovement: true,
+          },
+        },
+      },
+    });
   }
 }

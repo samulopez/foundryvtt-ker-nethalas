@@ -25,4 +25,16 @@ declare module 'fvtt-types/configuration' {
   interface DocumentClassConfig {
     Actor: typeof KerNethalasCharacterActor;
   }
+
+  interface SettingConfig {
+    'ker-nethalas.markSkillForImprovement': boolean;
+  }
+}
+
+declare global {
+  interface Game extends foundry.Game {
+    dice3d?: {
+      waitFor3DAnimationByMessageID: (messageId: string | null) => Promise<void>;
+    };
+  }
 }

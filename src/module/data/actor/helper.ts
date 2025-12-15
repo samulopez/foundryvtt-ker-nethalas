@@ -11,6 +11,7 @@ const skillField = (initial: number) =>
   new SchemaField({
     value: new NumberField({ required: true, integer: true, min: 0, initial, max: 100 }),
     markForImprovement: new BooleanField({ initial: false }),
+    defaultValue: new NumberField({ initial }),
   });
 
 const damageType = () =>
