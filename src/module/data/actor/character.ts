@@ -110,6 +110,16 @@ const defineCharacterModel = () => ({
     psychic: damageType(),
     slashing: damageType(),
   }),
+  mechanics: new SchemaField({
+    tensionDie: new NumberField({ required: true, integer: true, min: 4, initial: 8, max: 8 }),
+    lairDie: new NumberField({ required: true, integer: true, min: 4, initial: 10, max: 10 }),
+    overseerFound: new BooleanField({ initial: false }),
+    domainExitDie: new NumberField({ required: true, integer: true, min: 4, initial: 8, max: 8 }),
+    activeEvents: new StringField({ initial: '' }),
+    overseer: new StringField({ initial: '' }),
+    overseerInfluence: new StringField({ initial: '' }),
+    notes: new StringField({ initial: '' }),
+  }),
 });
 
 type CharacterModelSchema = ReturnType<typeof defineCharacterModel>;

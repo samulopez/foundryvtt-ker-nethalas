@@ -1,4 +1,4 @@
-import { TEMPLATE_PATH, SKILLS } from '../constants';
+import { TEMPLATES, SKILLS } from '../constants';
 
 import ActorSheetV2 = foundry.applications.sheets.ActorSheetV2;
 
@@ -10,6 +10,10 @@ interface Context {
   enrichedPerksMadness: string;
   enrichedPerksPerks: string;
   enrichedPerksNotes: string;
+  enrichedMechanicsActiveEvents: string;
+  enrichedMechanicsOverseerInfluence: string;
+  enrichedMechanicsNotes: string;
+  lairDomainExitDie: number;
 }
 
 // TODO: complete
@@ -26,6 +30,11 @@ export default class CharacterSheet<
     tag: 'form',
     actions: {
       roll: this.onRoll,
+      rollTensionDie: this.#rollTensionDie,
+      resetTensionDie: this.#resetTensionDie,
+      rollLairDomainExitDie: this.#rollLairDomainExitDie,
+      resetLairDomainExitDie: this.#resetLairDomainExitDie,
+      markOverseerFound: this.#markOverseerFound,
     },
   };
 
@@ -44,22 +53,22 @@ export default class CharacterSheet<
 
   static PARTS = {
     header: {
-      template: `${TEMPLATE_PATH}/character/header.hbs`,
+      template: TEMPLATES.character.header,
     },
     tabs: {
       template: `templates/generic/tab-navigation.hbs`, // From FoundryVTT
     },
     skills: {
-      template: `${TEMPLATE_PATH}/character/skills-tab.hbs`,
+      template: TEMPLATES.character.skillsTab,
     },
     perks: {
-      template: `${TEMPLATE_PATH}/character/perks-tab.hbs`,
+      template: TEMPLATES.character.perksTab,
     },
     inventory: {
-      template: `${TEMPLATE_PATH}/character/inventory-tab.hbs`,
+      template: TEMPLATES.character.inventoryTab,
     },
     mechanics: {
-      template: `${TEMPLATE_PATH}/character/mechanics-tab.hbs`,
+      template: TEMPLATES.character.mechanicsTab,
     },
   };
 
@@ -109,7 +118,36 @@ export default class CharacterSheet<
       },
     );
 
-    console.log('context', context);
+    context.enrichedMechanicsActiveEvents = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
+      this.document.system.mechanics.activeEvents,
+      {
+        secrets: this.document.isOwner,
+        relativeTo: this.document,
+      },
+    );
+
+    context.enrichedMechanicsOverseerInfluence = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
+      this.document.system.mechanics.overseerInfluence,
+      {
+        secrets: this.document.isOwner,
+        relativeTo: this.document,
+      },
+    );
+
+    context.enrichedMechanicsNotes = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
+      this.document.system.mechanics.notes,
+      {
+        secrets: this.document.isOwner,
+        relativeTo: this.document,
+      },
+    );
+
+    context.lairDomainExitDie = this.document.system.mechanics.lairDie ?? 0;
+    if (this.document.system.mechanics.overseerFound) {
+      context.lairDomainExitDie = this.document.system.mechanics.domainExitDie ?? 0;
+    }
+
+    console.log('context', context, this.actor);
 
     // // Prepare items.
     // this._prepareCharacterItems(context);
@@ -168,5 +206,36 @@ export default class CharacterSheet<
     // context.showNotesInSkills = this.actor.type !== "agent";
 
     return context;
+  }
+
+  static async #rollTensionDie(this, event, _target) {
+    event.preventDefault();
+    await this.actor.rollTensionDie();
+    this.render();
+  }
+
+  static async #resetTensionDie(this, event, _target) {
+    event.preventDefault();
+    this.actor.resetTensionDie();
+    this.render();
+  }
+
+  static async #rollLairDomainExitDie(this, event, _target) {
+    event.preventDefault();
+    await this.actor.rollLairDomainExitDie();
+    this.render();
+  }
+
+  static async #resetLairDomainExitDie(this, event, _target) {
+    event.preventDefault();
+    this.actor.resetLairDomainExitDie();
+    this.render();
+  }
+
+  static async #markOverseerFound(this, event, _target) {
+    event.preventDefault();
+    const checkbox = event.currentTarget as HTMLInputElement;
+    this.actor.markOverseerFound(checkbox.checked);
+    this.render();
   }
 }
