@@ -1,6 +1,7 @@
 export const ID = 'ker-nethalas';
 
 export const TEMPLATES = {
+  modifyRoll: `systems/${ID}/templates/roll/modify-roll.hbs`,
   usageDieRoll: `systems/${ID}/templates/roll/usage-die-roll.hbs`,
   character: {
     header: `systems/${ID}/templates/character/header.hbs`,
@@ -26,3 +27,7 @@ export const SKILLS = {
   ],
   right: ['scavenge', 'shaftedWeapons', 'stealth', 'thievery', 'unarmedCombat'],
 };
+
+export enum KNSettings {
+  markSkillForImprovement = 'markSkillForImprovement',
+}

@@ -1,3 +1,4 @@
+import { getLocalization } from '../helpers';
 import { TEMPLATES, SKILLS } from '../constants';
 
 import ActorSheetV2 = foundry.applications.sheets.ActorSheetV2;
@@ -16,7 +17,6 @@ interface Context {
   lairDomainExitDie: number;
 }
 
-// TODO: complete
 export default class CharacterSheet<
   RenderContext extends ActorSheetV2.RenderContext & Context,
   Configuration extends ActorSheetV2.Configuration = ActorSheetV2.Configuration,
@@ -29,7 +29,7 @@ export default class CharacterSheet<
     form: { submitOnChange: true },
     tag: 'form',
     actions: {
-      roll: this.onRoll,
+      rollSkill: this.#rollSkill,
       rollTensionDie: this.#rollTensionDie,
       resetTensionDie: this.#resetTensionDie,
       rollLairDomainExitDie: this.#rollLairDomainExitDie,
@@ -71,11 +71,6 @@ export default class CharacterSheet<
       template: TEMPLATES.character.mechanicsTab,
     },
   };
-
-  static onRoll(event: PointerEvent) {
-    event.preventDefault();
-    console.log('event', event);
-  }
 
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
@@ -147,95 +142,85 @@ export default class CharacterSheet<
       context.lairDomainExitDie = this.document.system.mechanics.domainExitDie ?? 0;
     }
 
-    console.log('context', context, this.actor);
-
-    // // Prepare items.
-    // this._prepareCharacterItems(context);
-
-    // context.showHyperGeometrySection = this.shouldShowHyperGeometrySection(
-    //   this.actor,
-    // );
-
-    // // Prepare subname info placeholder.
-    // context.subnameInfoPlaceholder = this._prepareSubnameInfoPlaceholder();
-
-    // // Prepare descriptions for each sheet.
-    // context.enrichedDescription = await this._prepareDescriptions();
-
-    // // Early return if this is a vehicle.
-    // if (this.actor.type === "vehicle") return context;
-
-    // // Provide the sheet context sorted skills.
-    // this._sortSkills();
-    // this._sortCustomSkills();
-
-    // // Wether to hide skill tooltips
-    // context.hideSkillTooltips = game.settings.get(
-    //   "deltagreen",
-    //   "hideSkillTooltips",
-    // );
-
-    // if (!context.hideSkillTooltips) {
-    //   // Setup tooltips
-    //   this._prepareSkillTooltips();
-    // }
-
-    // // Handle private sanity setting, override for GMs.
-    // const keepSanityPrivate = game.settings.get(
-    //   "deltagreen",
-    //   "keepSanityPrivate",
-    // );
-    // const hideSan = keepSanityPrivate && !game.user.isGM;
-
-    // context.maxSan = hideSan ? "???" : this.actor.system.sanity.max;
-    // context.currentSan = hideSan ? "???" : this.actor.system.sanity.value;
-    // context.keepSanityPrivate = keepSanityPrivate;
-
-    // // Set sanity block per actor type.
-    // context.sanityInputs = await foundry.applications.handlebars.renderTemplate(
-    //   `${DGActorSheet.TEMPLATE_PATH}/partials/sanity-${this.actor.type}.html`,
-    //   context,
-    // );
-
-    // // Set title for Physical Attributes.
-    // context.physicalAttributesTitle = game.i18n.localize(
-    //   "DG.Sheet.BlockHeaders.Statistics",
-    // );
-
-    // // Whether to append the notes section to the skills.
-    // context.showNotesInSkills = this.actor.type !== "agent";
-
     return context;
   }
 
   static async #rollTensionDie(this, event, _target) {
     event.preventDefault();
     await this.actor.rollTensionDie();
-    this.render();
   }
 
   static async #resetTensionDie(this, event, _target) {
     event.preventDefault();
-    this.actor.resetTensionDie();
-    this.render();
+    await this.actor.resetTensionDie();
   }
 
   static async #rollLairDomainExitDie(this, event, _target) {
     event.preventDefault();
     await this.actor.rollLairDomainExitDie();
-    this.render();
   }
 
   static async #resetLairDomainExitDie(this, event, _target) {
     event.preventDefault();
-    this.actor.resetLairDomainExitDie();
-    this.render();
+    await this.actor.resetLairDomainExitDie();
   }
 
   static async #markOverseerFound(this, event, _target) {
     event.preventDefault();
     const checkbox = event.currentTarget as HTMLInputElement;
-    this.actor.markOverseerFound(checkbox.checked);
-    this.render();
+    await this.actor.markOverseerFound(checkbox.checked);
+  }
+
+  static async #rollSkill(this, event: PointerEvent) {
+    event.preventDefault();
+    const button = event.target as HTMLElement;
+    const { key } = button.dataset;
+    if (!key) {
+      return;
+    }
+
+    if (!event.ctrlKey && !event.shiftKey) {
+      await this.actor.rollSkill(key, 0);
+      return;
+    }
+
+    const content = await foundry.applications.handlebars.renderTemplate(TEMPLATES.modifyRoll, {
+      originalValue: this.actor.system.skills[key].value,
+    });
+
+    new foundry.applications.api.DialogV2({
+      window: { title: getLocalization().localize('KN.ModifySkillRollDialogue.title') },
+      modal: true,
+      classes: ['modify-roll-dialogue'],
+      content,
+      actions: {
+        rollWithModifier: async (eventButton) => {
+          const buttonSubmit = eventButton.target as HTMLButtonElement;
+          const { value } = buttonSubmit.dataset;
+          if (!value) {
+            return;
+          }
+          await this.actor.rollSkill(key, Number(value));
+        },
+      },
+      buttons: [
+        {
+          default: true,
+          action: 'roll',
+          icon: 'fas fa-dice',
+          label: getLocalization().localize('KN.ModifySkillRollDialogue.action'),
+          callback: async (eventDialog, buttonDialog, dialog) => {
+            const html = dialog.element;
+            const plusOrMinus = html.querySelector('[name="plusOrMinus"]')?.value;
+            const valueModifier = html.querySelector('[name="valueModifier"]')?.value;
+            if (!valueModifier?.trim()) {
+              await this.actor.rollSkill(key, '');
+              return;
+            }
+            await this.actor.rollSkill(key, Number(`${plusOrMinus}${valueModifier}`));
+          },
+        },
+      ],
+    }).render({ force: true });
   }
 }

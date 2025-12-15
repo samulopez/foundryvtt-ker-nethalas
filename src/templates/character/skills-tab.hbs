@@ -2,7 +2,7 @@
      data-group="primary"
      data-tab="skills">
        <div class="flexcol gap-large">
-              <div class="flexrow gap-large">
+              <div class="flexrow gap-large align-normal">
                      <div class="flexcol gap">
                             <div class="flexrow gap-small">
                                    <input type="number"
@@ -16,7 +16,7 @@
                                           id="system.attributes.health.max"
                                           class="flex0"
                                           value="{{document.system.attributes.health.max}}" />
-                                   <div>HEALTH</div>
+                                   <div>{{localize "KN.Character.Attributes.health"}}</div>
                             </div>
                             <div class="flexrow gap-small">
                                    <input type="number"
@@ -30,7 +30,7 @@
                                           id="system.attributes.toughness.max"
                                           class="flex0"
                                           value="{{document.system.attributes.toughness.max}}" />
-                                   <div>TOUGHNESS</div>
+                                   <div>{{localize "KN.Character.Attributes.toughness"}}</div>
                             </div>
                             <div class="flexrow gap-small">
                                    <input type="number"
@@ -44,7 +44,7 @@
                                           id="system.attributes.aether.max"
                                           class="flex0"
                                           value="{{document.system.attributes.aether.max}}" />
-                                   <div>AETHER</div>
+                                   <div>{{localize "KN.Character.Attributes.aether"}}</div>
                             </div>
                             <div class="flexrow gap-small">
                                    <input type="number"
@@ -58,7 +58,7 @@
                                           id="system.attributes.sanity.max"
                                           class="flex0"
                                           value="{{document.system.attributes.sanity.max}}" />
-                                   <div>SANITY</div>
+                                   <div>{{localize "KN.Character.Attributes.sanity"}}</div>
                             </div>
                             <div class="flexrow gap-small">
                                    <input type="number"
@@ -66,10 +66,10 @@
                                           id="system.attributes.magicResistance"
                                           class="flex0"
                                           value="{{document.system.attributes.magicResistance}}" />
-                                   <div>MAGIC RESISTANCE</div>
+                                   <div>{{localize "KN.Character.Attributes.magicResistance"}}</div>
                             </div>
                             <div class="flexrow gap-small">
-                                   <div>DAMAGE MODIFIER</div>
+                                   <div>{{localize "KN.Character.Attributes.damageModifier"}}</div>
                                    <input type="number"
                                           name="system.attributes.damageModifier"
                                           id="system.attributes.damageModifier"
@@ -77,10 +77,10 @@
                                           value="{{document.system.attributes.damageModifier}}" />
                             </div>
                             <div class="flexrow gap-small">
-                                   <div>EXHAUSTION</div>
+                                   <div>{{localize "KN.Character.Attributes.exhaustion"}}</div>
                                    <div>
                                           <div class="flexrow">
-                                                 <div>Current</div>
+                                                 <div>{{localize "KN.Character.Attributes.exhaustionCurrent"}}</div>
                                                  <input type="number"
                                                         name="system.attributes.exhaustion"
                                                         id="system.attributes.exhaustion"
@@ -88,7 +88,7 @@
                                                         value="{{document.system.attributes.exhaustion}}" />
                                           </div>
                                           <div class="flexrow">
-                                                 <div>Resistance</div>
+                                                 <div>{{localize "KN.Character.Attributes.exhaustionResistance"}}</div>
                                                  <input type="number"
                                                         name="system.attributes.exhaustionResistance"
                                                         id="system.attributes.exhaustionResistance"
@@ -97,21 +97,9 @@
                                           </div>
                                    </div>
                             </div>
-                            <div class="flexrow gap-small">
-                                   <div>
-                                          <div>LIGHTSOURCE</div>
-                                          -1 / room
-                                   </div>
-                                   <input type="range"
-                                          min="0"
-                                          max="20"
-                                          name="system.lightSource"
-                                          id="system.lightSource"
-                                          value="{{document.system.lightSource}}">
-                            </div>
                      </div>
                      <div class="flex2">
-                            <div class="section-title">SKILLS</div>
+                            <div class="section-title">{{localize "KN.Character.Skills.title"}}</div>
                             <div class="flexrow skill-table">
                                    <div class="skill-column">
                                           {{#each leftSkills as |skill key| }}
@@ -127,11 +115,10 @@
                                                                class="flex0"
                                                                value="{{skill.value}}" />
                                                         <label class="rollable"
-                                                               data-action="roll"
+                                                               data-action="rollSkill"
                                                                data-key="{{key}}"
-                                                               data-rolltype="skill"
                                                                for="system.skills.{{key}}.value">
-                                                               {{localize (concat "KN.Character.Skills." key)}} <i class="fas fa-dice"></i>
+                                                               {{localize (concat "KN.Character.Skills." key)}} {{#unless (eq skill.defaultValue 0)}}({{skill.defaultValue}}){{/unless}} <i class="fas fa-dice" data-key="{{key}}"></i>
                                                         </label>
                                                  </div>
                                           {{/each}}
@@ -150,11 +137,10 @@
                                                                class="flex0"
                                                                value="{{skill.value}}" />
                                                         <label class="rollable"
-                                                               data-action="roll"
+                                                               data-action="rollSkill"
                                                                data-key="{{key}}"
-                                                               data-rolltype="skill"
                                                                for="system.skills.{{key}}.value">
-                                                               {{localize (concat "KN.Character.Skills." key)}} <i class="fas fa-dice"></i>
+                                                               {{localize (concat "KN.Character.Skills." key)}} {{#unless (eq skill.defaultValue 0)}}({{skill.defaultValue}}){{/unless}} <i class="fas fa-dice" data-key="{{key}}"></i>
                                                         </label>
                                                  </div>
                                           {{/each}}
@@ -174,11 +160,10 @@
                                                         class="flex1"
                                                         value="{{document.system.skills.custom1.name}}" />
                                                  <label class="flex0 rollable"
-                                                        data-action="roll"
+                                                        data-action="rollSkill"
                                                         data-key="custom1"
-                                                        data-rolltype="skill"
                                                         for="system.skills.custom1.value">
-                                                        <i class="fas fa-dice"></i>
+                                                        <i class="fas fa-dice" data-key="custom1"></i>
                                                  </label>
                                           </div>
                                           <div class="flexrow skill-row gap-small border-bottom">
@@ -197,11 +182,10 @@
                                                         class="flex1"
                                                         value="{{document.system.skills.custom2.name}}" />
                                                  <label class="flex0 rollable"
-                                                        data-action="roll"
+                                                        data-action="rollSkill"
                                                         data-key="custom2"
-                                                        data-rolltype="skill"
                                                         for="system.skills.custom2.value">
-                                                        <i class="fas fa-dice"></i>
+                                                        <i class="fas fa-dice" data-key="custom2"></i>
                                                  </label>
                                           </div>
                                           <div class="flexrow skill-row gap-small border-bottom">
@@ -220,11 +204,10 @@
                                                         class="flex1"
                                                         value="{{document.system.skills.custom3.name}}" />
                                                  <label class="flex0 rollable"
-                                                        data-action="roll"
+                                                        data-action="rollSkill"
                                                         data-key="custom3"
-                                                        data-rolltype="skill"
                                                         for="system.skills.custom3.value">
-                                                        <i class="fas fa-dice"></i>
+                                                        <i class="fas fa-dice" data-key="custom3"></i>
                                                  </label>
                                           </div>
                                           <div class="flexrow skill-row gap-small border-bottom">
@@ -243,11 +226,10 @@
                                                         class="flex1"
                                                         value="{{document.system.skills.custom4.name}}" />
                                                  <label class="flex0 rollable"
-                                                        data-action="roll"
+                                                        data-action="rollSkill"
                                                         data-key="custom4"
-                                                        data-rolltype="skill"
                                                         for="system.skills.custom4.value">
-                                                        <i class="fas fa-dice"></i>
+                                                        <i class="fas fa-dice" data-key="custom4"></i>
                                                  </label>
                                           </div>
                                           <div class="flexrow skill-row gap-small">
@@ -266,23 +248,36 @@
                                                         class="flex1"
                                                         value="{{document.system.skills.custom5.name}}" />
                                                  <label class="flex0 rollable"
-                                                        data-action="roll"
+                                                        data-action="rollSkill"
                                                         data-key="custom5"
-                                                        data-rolltype="skill"
                                                         for="system.skills.custom5.value">
-                                                        <i class="fas fa-dice"></i>
+                                                        <i class="fas fa-dice" data-key="custom5"></i>
                                                  </label>
                                           </div>
                                    </div>
                             </div>
+                            <div class="flexrow">
+                                   <div>
+                                          <div>{{localize "KN.Character.lightsource"}}: {{document.system.lightSource}}</div>
+                                          -1 / {{localize "KN.Character.lightsourceRoom"}}
+                                   </div>
+                                   <input class="flex0"
+                                          type="range"
+                                          min="0"
+                                          max="20"
+                                          name="system.lightSource"
+                                          id="system.lightSource"
+                                          data-tooltip="{{document.system.lightSource}}"
+                                          value="{{document.system.lightSource}}">
+                            </div>
                      </div>
               </div>
               <div class="flexcol gap-small">
-                     <div class="section-title">MASTERIES</div>
+                     <div class="section-title">{{localize "KN.Character.Masteries.title"}}</div>
                      <div class="flexrow align-normal masteries">
                             <div class="flexcol gap-small">
                                    <div class="flexrow gap-small">
-                                          <label class="flex0" for="system.masteries.mastery1.name">Mastery</label>
+                                          <label class="flex0" for="system.masteries.mastery1.name">{{localize "KN.Character.Masteries.Mastery"}}</label>
                                           <input type="text"
                                                  name="system.masteries.mastery1.name"
                                                  id="system.masteries.mastery1.name"
@@ -290,7 +285,7 @@
                                                  value="{{document.system.masteries.mastery1.name}}" />
                                    </div>
                                    <div class="flexrow gap-small">
-                                          <label class="flex0" for="system.masteries.mastery1.passive">Passive</label>
+                                          <label class="flex0" for="system.masteries.mastery1.passive">{{localize "KN.Character.Masteries.Passive"}}</label>
                                           <input type="text"
                                                  name="system.masteries.mastery1.passive"
                                                  id="system.masteries.mastery1.passive"
@@ -299,7 +294,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery1.tier1.passive">Tier 1</label>
+                                                 for="system.masteries.mastery1.tier1.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 1
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery1.tier1.passive"
                                                  id="system.masteries.mastery1.tier1.passive"
@@ -308,7 +305,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery1.tier2.passive">Tier 2</label>
+                                                 for="system.masteries.mastery1.tier2.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 2
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery1.tier2.passive"
                                                  id="system.masteries.mastery1.tier2.passive"
@@ -317,7 +316,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery1.tier3.passive">Tier 3</label>
+                                                 for="system.masteries.mastery1.tier3.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 3
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery1.tier3.passive"
                                                  id="system.masteries.mastery1.tier3.passive"
@@ -326,7 +327,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery1.tier4.passive">Tier 4</label>
+                                                 for="system.masteries.mastery1.tier4.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 4
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery1.tier4.passive"
                                                  id="system.masteries.mastery1.tier4.passive"
@@ -335,7 +338,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery1.tier5.passive">Tier 5</label>
+                                                 for="system.masteries.mastery1.tier5.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 5
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery1.tier5.passive"
                                                  id="system.masteries.mastery1.tier5.passive"
@@ -348,7 +353,7 @@
                             </div>
                             <div class="flexcol gap-small">
                                    <div class="flexrow gap-small">
-                                          <label class="flex0" for="system.masteries.mastery2.name">Mastery</label>
+                                          <label class="flex0" for="system.masteries.mastery2.name">{{localize "KN.Character.Masteries.Mastery"}}</label>
                                           <input type="text"
                                                  name="system.masteries.mastery2.name"
                                                  id="system.masteries.mastery2.name"
@@ -356,7 +361,7 @@
                                                  value="{{document.system.masteries.mastery2.name}}" />
                                    </div>
                                    <div class="flexrow gap-small">
-                                          <label class="flex0" for="system.masteries.mastery2.passive">Passive</label>
+                                          <label class="flex0" for="system.masteries.mastery2.passive">{{localize "KN.Character.Masteries.Passive"}}</label>
                                           <input type="text"
                                                  name="system.masteries.mastery2.passive"
                                                  id="system.masteries.mastery2.passive"
@@ -365,7 +370,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery2.tier1.passive">Tier 1</label>
+                                                 for="system.masteries.mastery2.tier1.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 1
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery2.tier1.passive"
                                                  id="system.masteries.mastery2.tier1.passive"
@@ -374,7 +381,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery2.tier2.passive">Tier 2</label>
+                                                 for="system.masteries.mastery2.tier2.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 2
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery2.tier2.passive"
                                                  id="system.masteries.mastery2.tier2.passive"
@@ -383,7 +392,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery2.tier3.passive">Tier 3</label>
+                                                 for="system.masteries.mastery2.tier3.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 3
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery2.tier3.passive"
                                                  id="system.masteries.mastery2.tier3.passive"
@@ -392,7 +403,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery2.tier4.passive">Tier 4</label>
+                                                 for="system.masteries.mastery2.tier4.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 4
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery2.tier4.passive"
                                                  id="system.masteries.mastery2.tier4.passive"
@@ -401,7 +414,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery2.tier5.passive">Tier 5</label>
+                                                 for="system.masteries.mastery2.tier5.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 5
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery2.tier5.passive"
                                                  id="system.masteries.mastery2.tier5.passive"
@@ -414,7 +429,7 @@
                             </div>
                             <div class="flexcol gap-small">
                                    <div class="flexrow gap-small">
-                                          <label class="flex0" for="system.masteries.mastery3.name">Mastery</label>
+                                          <label class="flex0" for="system.masteries.mastery3.name">{{localize "KN.Character.Masteries.Mastery"}}</label>
                                           <input type="text"
                                                  name="system.masteries.mastery3.name"
                                                  id="system.masteries.mastery3.name"
@@ -422,7 +437,7 @@
                                                  value="{{document.system.masteries.mastery3.name}}" />
                                    </div>
                                    <div class="flexrow gap-small">
-                                          <label class="flex0" for="system.masteries.mastery3.passive">Passive</label>
+                                          <label class="flex0" for="system.masteries.mastery3.passive">{{localize "KN.Character.Masteries.Passive"}}</label>
                                           <input type="text"
                                                  name="system.masteries.mastery3.passive"
                                                  id="system.masteries.mastery3.passive"
@@ -431,7 +446,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery3.tier1.passive">Tier 1</label>
+                                                 for="system.masteries.mastery3.tier1.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 1
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery3.tier1.passive"
                                                  id="system.masteries.mastery3.tier1.passive"
@@ -440,7 +457,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery3.tier2.passive">Tier 2</label>
+                                                 for="system.masteries.mastery3.tier2.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 2
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery3.tier2.passive"
                                                  id="system.masteries.mastery3.tier2.passive"
@@ -449,7 +468,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery3.tier3.passive">Tier 3</label>
+                                                 for="system.masteries.mastery3.tier3.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 3
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery3.tier3.passive"
                                                  id="system.masteries.mastery3.tier3.passive"
@@ -458,7 +479,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery3.tier4.passive">Tier 4</label>
+                                                 for="system.masteries.mastery3.tier4.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 4
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery3.tier4.passive"
                                                  id="system.masteries.mastery3.tier4.passive"
@@ -467,7 +490,9 @@
                                    </div>
                                    <div class="flexrow gap-small">
                                           <label class="flex0 tier-label"
-                                                 for="system.masteries.mastery3.tier5.passive">Tier 5</label>
+                                                 for="system.masteries.mastery3.tier5.passive">
+                                                 {{localize "KN.Character.Masteries.Tier"}} 5
+                                          </label>
                                           <input type="text"
                                                  name="system.masteries.mastery3.tier5.passive"
                                                  id="system.masteries.mastery3.tier5.passive"

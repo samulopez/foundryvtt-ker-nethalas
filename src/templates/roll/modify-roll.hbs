@@ -1,0 +1,35 @@
+<div class="form-group">
+    <label for="originalValue">{{localize 'KN.ModifySkillRollDialogue.originalValue'}}</label>
+    <input class="numeric-label-field"
+           disabled
+           id="originalValue"
+           value="{{originalValue}}" />
+</div>
+<div class="form-group">
+    <label for="valueModifier">{{localize 'KN.ModifySkillRollDialogue.valueModifier'}}</label>
+    <select name="plusOrMinus" id="plusOrMinus">
+        <option value="+" selected>+</option>
+        <option value="-">-</option>
+    </select>
+    <input class="numeric-label-field"
+           type="number"
+           name="valueModifier"
+           id="valueModifier"
+           value="0"
+           data-tooltip="KN.ModifySkillRollDialogue.modifierTooltip"
+           min="0"
+           max="99"
+           step="1"
+           oninput="validity.valid||(value='');" />
+</div>
+<div class="section-title">QUICK MODIFIERS</div>
+<div class="form-group">
+    <button data-action="rollWithModifier" type="submit" data-value="+30">Child's play (+30)</button>
+    <button data-action="rollWithModifier" type="submit" data-value="+20">Effortless (+20)</button>
+    <button data-action="rollWithModifier" type="submit" data-value="+10">Easy (+10)</button>
+</div>
+<div class="form-group">
+    <button data-action="rollWithModifier" type="submit" data-value="-10">Demanding (-10)</button>
+    <button data-action="rollWithModifier" type="submit" data-value="-20">Hard (-20)</button>
+    <button data-action="rollWithModifier" type="submit" data-value="-30">Impossible (-30)</button>
+</div>

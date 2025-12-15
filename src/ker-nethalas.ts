@@ -1,5 +1,6 @@
 import './styles/style.scss';
 import CharacterSheet from './module/sheets/characterSheet';
+import { registerSettings } from './module/settings';
 import {
   ArmorDataModel,
   CharacterDataModel,
@@ -54,6 +55,8 @@ Hooks.once('init', async () => {
   //   label: "DG.Sheet.class.item",
   //   themes: null,
   // });
+
+  registerSettings();
 
   // Preload Handlebars templates
   await foundry.applications.handlebars.loadTemplates(Object.values(foundry.utils.flattenObject(TEMPLATES)));
