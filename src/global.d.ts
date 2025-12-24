@@ -1,7 +1,9 @@
+import type KerNethalasItem from './module/item/item';
 import type {
   ArmorDataModel,
   CharacterDataModel,
-  CreatureDataModel,
+  MonsterDataModel,
+  ItemDataModel,
   MinionDataModel,
   NPCDataModel,
   WeaponDataModel,
@@ -14,9 +16,10 @@ declare module 'fvtt-types/configuration' {
       character: typeof CharacterDataModel;
       minion: typeof MinionDataModel;
       npc: typeof NPCDataModel;
-      creature: typeof CreatureDataModel;
+      monster: typeof MonsterDataModel;
     };
     Item: {
+      item: typeof ItemDataModel;
       weapon: typeof WeaponDataModel;
       armor: typeof ArmorDataModel;
     };
@@ -24,6 +27,7 @@ declare module 'fvtt-types/configuration' {
 
   interface DocumentClassConfig {
     Actor: typeof KerNethalasCharacterActor;
+    Item: typeof KerNethalasItem;
   }
 
   interface SettingConfig {

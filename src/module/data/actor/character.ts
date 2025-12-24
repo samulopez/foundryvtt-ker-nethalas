@@ -1,6 +1,6 @@
 import { attributeField, damageType, skillField } from './helper';
 
-const { BooleanField, NumberField, SchemaField, StringField } = foundry.data.fields;
+const { ArrayField, BooleanField, DocumentUUIDField, NumberField, SchemaField, StringField } = foundry.data.fields;
 
 const defineCharacterModel = () => ({
   attributes: new SchemaField({
@@ -114,12 +114,14 @@ const defineCharacterModel = () => ({
     tensionDie: new NumberField({ required: true, integer: true, min: 4, initial: 8, max: 8 }),
     lairDie: new NumberField({ required: true, integer: true, min: 4, initial: 10, max: 10 }),
     overseerFound: new BooleanField({ initial: false }),
-    domainExitDie: new NumberField({ required: true, integer: true, min: 4, initial: 8, max: 8 }),
+    domainExitDie: new NumberField({ required: true, integer: true, min: 2, initial: 8, max: 8 }),
     activeEvents: new StringField({ initial: '' }),
     overseer: new StringField({ initial: '' }),
     overseerInfluence: new StringField({ initial: '' }),
     notes: new StringField({ initial: '' }),
   }),
+  gearList: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
+  backpackList: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
 });
 
 type CharacterModelSchema = ReturnType<typeof defineCharacterModel>;
@@ -130,5 +132,73 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
 > {
   static defineSchema(): CharacterModelSchema {
     return defineCharacterModel();
+  }
+
+  gearItems(): Item.Implementation[] {
+    return this.parent.items.filter((item) => {
+      const id = item.getRelativeUUID(this.parent);
+      if (id.startsWith('.')) {
+        return this.parent.system.gearList?.includes(id.substring(1));
+      }
+      return this.parent.system.gearList?.includes(id);
+    });
+  }
+
+  backpackItems(): Item.Implementation[] {
+    return this.parent.items.filter((item) => {
+      const id = item.getRelativeUUID(this.parent);
+      if (id.startsWith('.')) {
+        return this.parent.system.backpackList?.includes(id.substring(1));
+      }
+      return this.parent.system.backpackList?.includes(id);
+    });
+  }
+
+  nonEncumberingItems(): Item.Implementation[] {
+    return this.parent.items.filter((item) => item.system.weight === 'nonEncumbering');
+  }
+
+  currentGearCapacity(): number {
+    return this.gearItems().reduce((sum, item) => sum + item.system.slots(), 0);
+  }
+
+  currentBackpackCapacity(): number {
+    return this.backpackItems().reduce((sum, item) => sum + item.system.slots(), 0);
+  }
+
+  canAddToGearList(newSlots: number): boolean {
+    return this.gearItems().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 10;
+  }
+
+  canAddToBackpackList(newSlots: number): boolean {
+    return this.backpackItems().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 20;
+  }
+
+  async addToGearList(item: Item.Implementation) {
+    const result = await this.parent.update({
+      system: {
+        gearList: [...this.gearList, item.id],
+      },
+    });
+
+    return result ? item : null;
+  }
+
+  async addToBackpackList(item: Item.Implementation) {
+    const result = await this.parent.update({
+      system: {
+        backpackList: [...this.backpackList, item.id],
+      },
+    });
+    return result ? item : null;
+  }
+
+  async removeItemFromLists(itemId: string) {
+    return this.parent.update({
+      system: {
+        backpackList: this.backpackList.filter((id) => id !== itemId),
+        gearList: this.gearList.filter((id) => id !== itemId),
+      },
+    });
   }
 }

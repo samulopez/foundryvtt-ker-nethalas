@@ -1,0 +1,65 @@
+<header class="sheet-header">
+    <div class="header-fields">
+        <div class="header-top flexrow gap">
+            <img class="profile-img"
+                 alt="item image"
+                 src="{{document.img}}"
+                 data-action="editImage"
+                 data-edit="img"
+                 data-tooltip="{{document.name}}"
+                 height="150"
+                 width="100" />
+            <div class="flex3">
+                <h5 class="flexrow">
+                    <div class="flex0">
+                        <label class="left-label" for="kn.item.name">{{localize 'KN.Item.Sheet.name' }}</label>
+                    </div>
+                    <input name="name"
+                           type="text"
+                           value="{{document.name}}"
+                           class="flex3"
+                           autocomplete="off"
+                           id="kn.item.name" />
+                </h5>
+                <h5 class="flexrow">
+                    <div class="flex0">
+                        <label class="left-label" for="kn.item.cost">{{localize 'KN.Item.Sheet.cost' }} (₵)</label>
+                    </div>
+                    <input name="system.cost"
+                           type="text"
+                           value="{{document.system.cost}}"
+                           class="flex3"
+                           autocomplete="off"
+                           id="kn.item.cost" />
+                </h5>
+                <h5 class="flexrow">
+                    <div class="flex0">
+                        <label class="left-label" for="kn.item.weight">{{localize 'KN.Item.Sheet.weight' }}</label>
+                    </div>
+                    <select name="system.weight" id="kn.item.weight">
+                        <option value="heavy"
+                                {{#if (eq document.system.weight "heavy") }}
+                                selected
+                                {{/if }}>{{localize 'KN.Item.Sheet.weights.heavy' }}
+                        </option>
+                        <option value="normal"
+                                {{#if (eq document.system.weight "normal") }}
+                                selected
+                                {{/if }}>{{localize 'KN.Item.Sheet.weights.normal' }}
+                        </option>
+                        <option value="light"
+                                {{#if (eq document.system.weight "light") }}
+                                selected
+                                {{/if }}>{{localize 'KN.Item.Sheet.weights.light' }}
+                        </option>
+                        <option value="nonEncumbering"
+                                {{#if (eq document.system.weight "nonEncumbering") }}
+                                selected
+                                {{/if }}>{{localize 'KN.Item.Sheet.weights.nonEncumbering' }}
+                        </option>
+                    </select>
+                </h5>
+            </div>
+        </div>
+    </div>
+</header>

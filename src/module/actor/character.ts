@@ -92,7 +92,7 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
       this.system.mechanics.domainExitDie = dieSize - 2;
       if (dieSize === 4) {
         resultString = 'Domain exit found!';
-        this.system.mechanics.domainExitDie = 8;
+        // We don't reset in this case. The user will decide when to reset it.
       }
     }
 

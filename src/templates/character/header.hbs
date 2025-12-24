@@ -31,6 +31,8 @@
                                type="number"
                                data-dtype="Number"
                                value="{{document.system.level}}"
+                               min="0"
+                               step="1"
                                class="flex0 level-input"
                                id="kn.character.system.level" />
                     </div>
@@ -42,6 +44,9 @@
                             <input name="system.experience"
                                    type="number"
                                    data-dtype="Number"
+                                   min="0"
+                                   step="1"
+                                   max="1000"
                                    value="{{document.system.experience}}"
                                    class="flex0 xp-input"
                                    id="kn.character.system.experience" />
