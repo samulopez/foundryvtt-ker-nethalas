@@ -1,7 +1,7 @@
 <div class="tab skills scrollable {{tabs.skills.cssClass}}"
      data-group="primary"
      data-tab="skills">
-       <div class="flexcol gap-large">
+       <div class="flexcol gap">
               <div class="flexrow gap-large align-normal">
                      <div class="flexcol gap">
                             <div class="flexrow gap-small">
@@ -9,12 +9,16 @@
                                           name="system.attributes.health.value"
                                           id="system.attributes.health.value"
                                           class="flex0"
+                                          min="0"
+                                          step="1"
                                           value="{{document.system.attributes.health.value}}" />
                                    /
                                    <input type="number"
                                           name="system.attributes.health.max"
                                           id="system.attributes.health.max"
                                           class="flex0"
+                                          min="0"
+                                          step="1"
                                           value="{{document.system.attributes.health.max}}" />
                                    <div>{{localize "KN.Character.Attributes.health"}}</div>
                             </div>
@@ -23,12 +27,16 @@
                                           name="system.attributes.toughness.value"
                                           id="system.attributes.toughness.value"
                                           class="flex0"
+                                          min="0"
+                                          step="1"
                                           value="{{document.system.attributes.toughness.value}}" />
                                    /
                                    <input type="number"
                                           name="system.attributes.toughness.max"
                                           id="system.attributes.toughness.max"
                                           class="flex0"
+                                          min="0"
+                                          step="1"
                                           value="{{document.system.attributes.toughness.max}}" />
                                    <div>{{localize "KN.Character.Attributes.toughness"}}</div>
                             </div>
@@ -37,12 +45,16 @@
                                           name="system.attributes.aether.value"
                                           id="system.attributes.aether.value"
                                           class="flex0"
+                                          min="0"
+                                          step="1"
                                           value="{{document.system.attributes.aether.value}}" />
                                    /
                                    <input type="number"
                                           name="system.attributes.aether.max"
                                           id="system.attributes.aether.max"
                                           class="flex0"
+                                          min="0"
+                                          step="1"
                                           value="{{document.system.attributes.aether.max}}" />
                                    <div>{{localize "KN.Character.Attributes.aether"}}</div>
                             </div>
@@ -51,12 +63,16 @@
                                           name="system.attributes.sanity.value"
                                           id="system.attributes.sanity.value"
                                           class="flex0"
+                                          min="0"
+                                          step="1"
                                           value="{{document.system.attributes.sanity.value}}" />
                                    /
                                    <input type="number"
                                           name="system.attributes.sanity.max"
                                           id="system.attributes.sanity.max"
                                           class="flex0"
+                                          min="0"
+                                          step="1"
                                           value="{{document.system.attributes.sanity.max}}" />
                                    <div>{{localize "KN.Character.Attributes.sanity"}}</div>
                             </div>
@@ -65,6 +81,8 @@
                                           name="system.attributes.magicResistance"
                                           id="system.attributes.magicResistance"
                                           class="flex0"
+                                          min="0"
+                                          step="1"
                                           value="{{document.system.attributes.magicResistance}}" />
                                    <div>{{localize "KN.Character.Attributes.magicResistance"}}</div>
                             </div>
@@ -74,6 +92,7 @@
                                           name="system.attributes.damageModifier"
                                           id="system.attributes.damageModifier"
                                           class="flex0"
+                                          step="1"
                                           value="{{document.system.attributes.damageModifier}}" />
                             </div>
                             <div class="flexrow gap-small">
@@ -85,6 +104,8 @@
                                                         name="system.attributes.exhaustion"
                                                         id="system.attributes.exhaustion"
                                                         class="flex0"
+                                                        min="0"
+                                                        step="1"
                                                         value="{{document.system.attributes.exhaustion}}" />
                                           </div>
                                           <div class="flexrow">
@@ -93,6 +114,8 @@
                                                         name="system.attributes.exhaustionResistance"
                                                         id="system.attributes.exhaustionResistance"
                                                         class="flex0"
+                                                        min="0"
+                                                        step="1"
                                                         value="{{document.system.attributes.exhaustionResistance}}" />
                                           </div>
                                    </div>
@@ -113,6 +136,8 @@
                                                                name="system.skills.{{key}}.value"
                                                                id="system.skills.{{key}}.value"
                                                                class="flex0"
+                                                               min="0"
+                                                               step="1"
                                                                value="{{skill.value}}" />
                                                         <label class="rollable"
                                                                data-action="rollSkill"
@@ -135,6 +160,8 @@
                                                                name="system.skills.{{key}}.value"
                                                                id="system.skills.{{key}}.value"
                                                                class="flex0"
+                                                               min="0"
+                                                               step="1"
                                                                value="{{skill.value}}" />
                                                         <label class="rollable"
                                                                data-action="rollSkill"
@@ -154,6 +181,8 @@
                                                         name="system.skills.custom1.value"
                                                         id="system.skills.custom1.value"
                                                         class="flex0"
+                                                        min="0"
+                                                        step="1"
                                                         value="{{document.system.skills.custom1.value}}" />
                                                  <input type="text"
                                                         name="system.skills.custom1.name"
@@ -176,6 +205,8 @@
                                                         name="system.skills.custom2.value"
                                                         id="system.skills.custom2.value"
                                                         class="flex0"
+                                                        min="0"
+                                                        step="1"
                                                         value="{{document.system.skills.custom2.value}}" />
                                                  <input type="text"
                                                         name="system.skills.custom2.name"
@@ -198,6 +229,8 @@
                                                         name="system.skills.custom3.value"
                                                         id="system.skills.custom3.value"
                                                         class="flex0"
+                                                        min="0"
+                                                        step="1"
                                                         value="{{document.system.skills.custom3.value}}" />
                                                  <input type="text"
                                                         name="system.skills.custom3.name"
@@ -220,6 +253,8 @@
                                                         name="system.skills.custom4.value"
                                                         id="system.skills.custom4.value"
                                                         class="flex0"
+                                                        min="0"
+                                                        step="1"
                                                         value="{{document.system.skills.custom4.value}}" />
                                                  <input type="text"
                                                         name="system.skills.custom4.name"
@@ -242,6 +277,8 @@
                                                         name="system.skills.custom5.value"
                                                         id="system.skills.custom5.value"
                                                         class="flex0"
+                                                        min="0"
+                                                        step="1"
                                                         value="{{document.system.skills.custom1.value}}" />
                                                  <input type="text"
                                                         name="system.skills.custom5.name"

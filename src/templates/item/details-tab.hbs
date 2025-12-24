@@ -1,0 +1,16 @@
+<div class="tab details scrollable {{tabs.details.cssClass}}"
+     data-group="primary"
+     data-tab="details">
+    <div>
+        <div class="section-title">{{localize 'KN.Item.Sheet.details.description' }}</div>
+        <div class="editor-host">
+            {{#if editable }}
+                <prose-mirror name="system.description" button="true" editable="{{editable}}" toggled="false" value="{{document.system.description}}">
+                {{{enrichedDescription}}}
+                </prose-mirror>
+            {{else}}
+                {{{enrichedDescription}}}
+            {{/if}}
+        </div>
+    </div>
+</div>

@@ -1,3 +1,94 @@
 <div class="tab inventory {{tabs.inventory.cssClass}}"
      data-group="primary"
-     data-tab="inventory">add inventory content here</div>
+     data-tab="inventory">
+     <div class="flexrow gap-large align-normal">
+          <div class="flexcol gap align-normal">
+               <div>
+                    <div class="section-title">EQUIPPED GEAR</div>
+               </div>
+               <div>
+                    <div class="flexrow gap-small">
+                         <div class="section-title">WEALTH</div>
+                         <div class="section-title">SUPPLIES</div>
+                    </div>
+               </div>
+               <div>
+                    <div class="section-title">GEAR {{currentGearCapacity}} / 10</div>
+                    <div class="gear-list">
+                         {{#each gearList as |item key| }}
+                              <div class="flexrow gear-item gap-small">
+                                   <div>{{item.id}}</div>
+                                   <div>{{item.name}}</div>
+                                   <div>
+                                        {{#if (eq item.system.weight "light") }}
+                                             <i data-action="decreaseQuantityItem"
+                                                data-key="{{item.id}}"
+                                                class="fas fa-minus rollable"></i>
+                                             <i data-action="increaseQuantityItem"
+                                                data-key="{{item.id}}"
+                                                class="fas fa-plus rollable"></i>
+                                        {{/if}}
+                                   </div>
+                                   <div>{{item.system.quantity}}</div>
+                                   <div class="flex0 rollable"
+                                        data-action="removeItem"
+                                        data-key="{{item.id}}">
+                                        <i class="fas fa-trash"></i>
+                                   </div>
+                              </div>
+                         {{/each}}
+                    </div>
+               </div>
+          </div>
+          <div class="flexcol gap align-normal">
+               <div>
+                    <div class="section-title">NON-ENCUMBERING ITEMS</div>
+                    <div class="non-encumbering-items-list">
+                         {{#each nonEncumberingList as |item key| }}
+                              <div class="flexrow gear-item gap-small">
+                                   <div>{{item.id}}</div>
+                                   <div>{{item.name}}</div>
+                                   <div>{{item.system.quantity}}</div>
+                                   <div class="flex0 rollable"
+                                        data-action="removeItem"
+                                        data-key="{{item.id}}">
+                                        <i class="fas fa-trash"></i>
+                                   </div>
+                              </div>
+                         {{/each}}
+                    </div>
+               </div>
+               <div>
+                    <div class="section-title">BACKPACK {{currentBackpackCapacity}} / 20</div>
+                    <div class="backpack-list">
+                         {{#each backpackList as |item key| }}
+                              <div class="flexrow gear-item gap-small">
+                                   <div>{{item.id}}</div>
+                                   <div>{{item.name}}</div>
+                                   <div>{{item.system.quantity}}</div>
+                                   <div class="flex0 rollable"
+                                        data-action="removeItem"
+                                        data-key="{{item.id}}">
+                                        <i class="fas fa-trash"></i>
+                                   </div>
+                              </div>
+                         {{/each}}
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="all-list">
+          {{#each document.items as |item key| }}
+               <div class="flexrow gear-item gap-small">
+                    <div>{{item.id}}</div>
+                    <div>{{item.name}}</div>
+                    <div>{{item.system.quantity}}</div>
+                    <div class="flex0 rollable"
+                         data-action="removeItem"
+                         data-key="{{item.id}}">
+                         <i class="fas fa-trash"></i>
+                    </div>
+               </div>
+          {{/each}}
+     </div>
+</div>

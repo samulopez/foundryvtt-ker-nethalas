@@ -15,6 +15,11 @@ interface Context {
   enrichedMechanicsOverseerInfluence: string;
   enrichedMechanicsNotes: string;
   lairDomainExitDie: number;
+  currentGearCapacity: number;
+  currentBackpackCapacity: number;
+  gearList: Item.Implementation[];
+  backpackList: Item.Implementation[];
+  nonEncumberingList: Item.Implementation[];
 }
 
 export default class CharacterSheet<
@@ -35,7 +40,17 @@ export default class CharacterSheet<
       rollLairDomainExitDie: this.#rollLairDomainExitDie,
       resetLairDomainExitDie: this.#resetLairDomainExitDie,
       markOverseerFound: this.#markOverseerFound,
+      removeItem: this.#removeItem,
+      increaseQuantityItem: this.#increaseQuantityItem,
+      decreaseQuantityItem: this.#decreaseQuantityItem,
     },
+    // Custom selectors override ActorSheetV2 defaults
+    dragDrop: [
+      {
+        dragSelector: '[data-drag="true"]', // TODO: update this one
+        dropSelector: '.gear-list, .backpack-list',
+      },
+    ],
   };
 
   static TABS = {
@@ -142,7 +157,84 @@ export default class CharacterSheet<
       context.lairDomainExitDie = this.document.system.mechanics.domainExitDie ?? 0;
     }
 
+    context.gearList = this.actor.system.gearItems();
+    context.backpackList = this.actor.system.backpackItems();
+    // TODO: count coins, gems and special supplies
+    context.currentGearCapacity = this.actor.system.currentGearCapacity();
+    context.currentBackpackCapacity = this.actor.system.currentBackpackCapacity();
+    context.nonEncumberingList = this.actor.system.nonEncumberingItems();
+
     return context;
+  }
+
+  // TODO: ?
+  // async _onDrop(event) {
+  //   const data = foundry.applications.ux.TextEditor.getDragEventData(event);
+  //   if (!data) return;
+  //   console.log('CharacterSheet _onDrop', event, this.document.itemTypes, data);
+
+  //   // data.type = 'something';
+  //   super._onDrop(event);
+
+  //   // // If alt key is held down, we will delete the original document.
+  //   // if (event.altKey) {
+  //   //   // This is from Foundry. It will get the item data from the event.
+  //   //   const TextEditor = foundry.applications.ux.TextEditor.implementation;
+  //   //   const dragData = TextEditor.getDragEventData(event);
+  //   //   // Make sure that we are dragging an item, otherwise this doesn't make sense.
+  //   //   if (dragData.type === "Item") {
+  //   //     const item = fromUuidSync(dragData.uuid);
+  //   //     await item.delete();
+  //   //   }
+  //   // }
+  // }
+
+  async _onDropItem(event, item) {
+    if (item.system.weight === 'nonEncumbering') {
+      const newItem = await super._onDropItem(event, item);
+      return newItem;
+    }
+
+    if (event.target.closest('.gear-list')) {
+      if (!this.actor.system.canAddToGearList(item.system.slots())) {
+        return null;
+      }
+      const newItem = await super._onDropItem(event, item);
+      if (!newItem) {
+        return null;
+      }
+      const uuid = newItem.getRelativeUUID(this.actor);
+      return this._onDropGearList(event, { type: 'item', id: uuid.startsWith('.') ? uuid.substring(1) : uuid });
+    }
+
+    if (event.target.closest('.backpack-list')) {
+      if (!this.actor.system.canAddToBackpackList(item.system.slots())) {
+        return null;
+      }
+      const newItem = await super._onDropItem(event, item);
+      if (!newItem) {
+        return null;
+      }
+      const uuid = newItem.getRelativeUUID(this.actor);
+      return this._onDropBackpackList(event, {
+        type: 'item',
+        id: uuid.startsWith('.') ? uuid.substring(1) : uuid,
+      });
+    }
+
+    // TODO: allow to move items between lists
+    // TODO: add other drop areas here
+    // TODO: allow to drop in any place and try to add to gear, backpack, etc.
+    // return super._onDropItem(event, item);
+    return null;
+  }
+
+  async _onDropGearList(event, item) {
+    return this.actor.system.addToGearList(item);
+  }
+
+  async _onDropBackpackList(event, item) {
+    return this.actor.system.addToBackpackList(item);
   }
 
   static async #rollTensionDie(this, event, _target) {
@@ -222,5 +314,36 @@ export default class CharacterSheet<
         },
       ],
     }).render({ force: true });
+  }
+
+  static async #removeItem(this, event, target) {
+    event.preventDefault();
+    const { key } = target.dataset;
+    const item = this.actor.getEmbeddedDocument('Item', key);
+    const uuid = item.getRelativeUUID(this.actor);
+    await this.actor.system.removeItemFromLists(uuid.startsWith('.') ? uuid.substring(1) : uuid);
+    await this.actor.deleteEmbeddedDocuments('Item', [key]);
+  }
+
+  static async #increaseQuantityItem(this, event, target) {
+    event.preventDefault();
+    const { key } = target.dataset;
+    const item = this.actor.getEmbeddedDocument('Item', key);
+    if (!item || item.system.quantity === 10) {
+      return;
+    }
+    const newQuantity = item.system.quantity + 1;
+    await item.update({ system: { quantity: newQuantity } });
+  }
+
+  static async #decreaseQuantityItem(this, event, target) {
+    event.preventDefault();
+    const { key } = target.dataset;
+    const item = this.actor.getEmbeddedDocument('Item', key);
+    if (!item || item.system.quantity === 1) {
+      return;
+    }
+    const newQuantity = item.system.quantity - 1;
+    await item.update({ system: { quantity: newQuantity } });
   }
 }
