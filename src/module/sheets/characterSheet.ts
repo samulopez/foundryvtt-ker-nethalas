@@ -17,9 +17,15 @@ interface Context {
   lairDomainExitDie: number;
   currentGearCapacity: number;
   currentBackpackCapacity: number;
+  currentPouch1Capacity: number;
+  currentPouch2Capacity: number;
+  currentPouch3Capacity: number;
   gearList: Item.Implementation[];
   backpackList: Item.Implementation[];
   nonEncumberingList: Item.Implementation[];
+  pouch1List: Item.Implementation[];
+  pouch2List: Item.Implementation[];
+  pouch3List: Item.Implementation[];
 }
 
 export default class CharacterSheet<
@@ -43,19 +49,19 @@ export default class CharacterSheet<
       removeItem: this.#removeItem,
       increaseQuantityItem: this.#increaseQuantityItem,
       decreaseQuantityItem: this.#decreaseQuantityItem,
+      toggleExpand: this.#toggleExpand,
+      editItem: this.#editItem,
     },
-    // Custom selectors override ActorSheetV2 defaults
     dragDrop: [
       {
-        dragSelector: '[data-drag="true"]', // TODO: update this one
-        dropSelector: '.gear-list, .backpack-list',
+        dropSelector: '.gear-list, .backpack-list, .pouch1-list, .pouch2-list, .pouch3-list',
       },
     ],
   };
 
   static TABS = {
     primary: {
-      initial: 'skills',
+      initial: 'inventory',
       labelPrefix: 'KN.Character.Tabs',
       tabs: [
         { id: 'skills', tooltip: 'KN.Character.Tabs.tooltip.skills' },
@@ -159,19 +165,39 @@ export default class CharacterSheet<
 
     context.gearList = this.actor.system.gearItems();
     context.backpackList = this.actor.system.backpackItems();
-    // TODO: count coins, gems and special supplies
+    context.pouch1List = this.actor.system.pouch1Items();
+    context.pouch2List = this.actor.system.pouch2Items();
+    context.pouch3List = this.actor.system.pouch3Items();
+    // TODO V2: count coins, gems and special supplies
     context.currentGearCapacity = this.actor.system.currentGearCapacity();
     context.currentBackpackCapacity = this.actor.system.currentBackpackCapacity();
     context.nonEncumberingList = this.actor.system.nonEncumberingItems();
+    context.currentPouch1Capacity = this.actor.system.currentPouch1Capacity();
+    context.currentPouch2Capacity = this.actor.system.currentPouch2Capacity();
+    context.currentPouch3Capacity = this.actor.system.currentPouch3Capacity();
 
     return context;
+  }
+
+  async _onDragStart(event) {
+    const target = event.currentTarget as HTMLElement;
+    const row = target.closest<HTMLElement>('[data-uuid]');
+    const itemId = row?.dataset.itemId ?? target.dataset.key;
+    if (itemId && event.dataTransfer) {
+      const item = this.actor.items.get(itemId);
+      if (item) {
+        const dragData = item.toDragData ? item.toDragData() : { type: 'Item', uuid: item.uuid };
+        event.dataTransfer.setData('text/plain', JSON.stringify(dragData));
+      }
+    }
+    super._onDragStart(event);
   }
 
   // TODO: ?
   // async _onDrop(event) {
   //   const data = foundry.applications.ux.TextEditor.getDragEventData(event);
   //   if (!data) return;
-  //   console.log('CharacterSheet _onDrop', event, this.document.itemTypes, data);
+  //   console.log('CharacterSheet _onDrop', event, data);
 
   //   // data.type = 'something';
   //   super._onDrop(event);
@@ -190,51 +216,139 @@ export default class CharacterSheet<
   // }
 
   async _onDropItem(event, item) {
+    const dropInGearList = !!(event.target as HTMLElement).closest('.gear-list');
+    const dropInBackpackList = !!(event.target as HTMLElement).closest('.backpack-list');
+    const dropInPouch1List = !!(event.target as HTMLElement).closest('.pouch1-list');
+    const dropInPouch2List = !!(event.target as HTMLElement).closest('.pouch2-list');
+    const dropInPouch3List = !!(event.target as HTMLElement).closest('.pouch3-list');
+
+    const sameActorItem = item?.parent?.id === this.actor.id;
+
+    if (sameActorItem) {
+      if (item.system.weight === 'nonEncumbering') {
+        return null;
+      }
+
+      if (dropInBackpackList) {
+        if (!this.actor.system.canAddToBackpackList(item.system.slots())) {
+          return null;
+        }
+        return this.actor.system.moveItemToBackpack(item);
+      }
+
+      if (dropInGearList) {
+        if (!this.actor.system.canAddToGearList(item.system.slots())) {
+          return null;
+        }
+        return this.actor.system.moveItemToGear(item);
+      }
+
+      if (dropInPouch1List) {
+        if (!this.actor.system.canAddToPouch1(item.system.slots())) {
+          return null;
+        }
+        return this.actor.system.moveItemToPouch1(item);
+      }
+
+      if (dropInPouch2List) {
+        if (!this.actor.system.canAddToPouch2(item.system.slots())) {
+          return null;
+        }
+        return this.actor.system.moveItemToPouch2(item);
+      }
+
+      if (dropInPouch3List) {
+        if (!this.actor.system.canAddToPouch3(item.system.slots())) {
+          return null;
+        }
+        return this.actor.system.moveItemToPouch3(item);
+      }
+
+      return null;
+    }
+
     if (item.system.weight === 'nonEncumbering') {
-      const newItem = await super._onDropItem(event, item);
-      return newItem;
+      return super._onDropItem(event, item);
     }
 
-    if (event.target.closest('.gear-list')) {
-      if (!this.actor.system.canAddToGearList(item.system.slots())) {
-        return null;
-      }
-      const newItem = await super._onDropItem(event, item);
-      if (!newItem) {
-        return null;
-      }
-      const uuid = newItem.getRelativeUUID(this.actor);
-      return this._onDropGearList(event, { type: 'item', id: uuid.startsWith('.') ? uuid.substring(1) : uuid });
+    if (dropInGearList) {
+      return this._onDropGearList(event, item);
     }
 
-    if (event.target.closest('.backpack-list')) {
-      if (!this.actor.system.canAddToBackpackList(item.system.slots())) {
-        return null;
-      }
-      const newItem = await super._onDropItem(event, item);
-      if (!newItem) {
-        return null;
-      }
-      const uuid = newItem.getRelativeUUID(this.actor);
-      return this._onDropBackpackList(event, {
-        type: 'item',
-        id: uuid.startsWith('.') ? uuid.substring(1) : uuid,
-      });
+    if (dropInBackpackList) {
+      return this._onDropBackpackList(event, item);
     }
 
-    // TODO: allow to move items between lists
-    // TODO: add other drop areas here
-    // TODO: allow to drop in any place and try to add to gear, backpack, etc.
-    // return super._onDropItem(event, item);
+    if (dropInPouch1List) {
+      return this._onDropPouch1(event, item);
+    }
+
+    if (dropInPouch2List) {
+      return this._onDropPouch2(event, item);
+    }
+
+    if (dropInPouch3List) {
+      return this._onDropPouch3(event, item);
+    }
+
+    // TODO V2: sorting
+    // TODO: add weapons and armor
     return null;
   }
 
   async _onDropGearList(event, item) {
-    return this.actor.system.addToGearList(item);
+    if (!this.actor.system.canAddToGearList(item.system.slots())) {
+      return null;
+    }
+    const newItem = await super._onDropItem(event, item);
+    if (!newItem) {
+      return null;
+    }
+    return this.actor.system.addToGearList(newItem);
   }
 
   async _onDropBackpackList(event, item) {
-    return this.actor.system.addToBackpackList(item);
+    if (!this.actor.system.canAddToBackpackList(item.system.slots())) {
+      return null;
+    }
+    const newItem = await super._onDropItem(event, item);
+    if (!newItem) {
+      return null;
+    }
+    return this.actor.system.addToBackpackList(newItem);
+  }
+
+  async _onDropPouch1(event, item) {
+    if (!this.actor.system.canAddToPouch1(item.system.slots())) {
+      return null;
+    }
+    const newItem = await super._onDropItem(event, item);
+    if (!newItem) {
+      return null;
+    }
+    return this.actor.system.addToPouch1(newItem);
+  }
+
+  async _onDropPouch2(event, item) {
+    if (!this.actor.system.canAddToPouch2(item.system.slots())) {
+      return null;
+    }
+    const newItem = await super._onDropItem(event, item);
+    if (!newItem) {
+      return null;
+    }
+    return this.actor.system.addToPouch2(newItem);
+  }
+
+  async _onDropPouch3(event, item) {
+    if (!this.actor.system.canAddToPouch3(item.system.slots())) {
+      return null;
+    }
+    const newItem = await super._onDropItem(event, item);
+    if (!newItem) {
+      return null;
+    }
+    return this.actor.system.addToPouch3(newItem);
   }
 
   static async #rollTensionDie(this, event, _target) {
@@ -320,8 +434,7 @@ export default class CharacterSheet<
     event.preventDefault();
     const { key } = target.dataset;
     const item = this.actor.getEmbeddedDocument('Item', key);
-    const uuid = item.getRelativeUUID(this.actor);
-    await this.actor.system.removeItemFromLists(uuid.startsWith('.') ? uuid.substring(1) : uuid);
+    await this.actor.system.removeItemFromLists(item.uuid);
     await this.actor.deleteEmbeddedDocuments('Item', [key]);
   }
 
@@ -345,5 +458,28 @@ export default class CharacterSheet<
     }
     const newQuantity = item.system.quantity - 1;
     await item.update({ system: { quantity: newQuantity } });
+  }
+
+  static async #toggleExpand(event, target) {
+    const icon = target.querySelector(':scope > i');
+    const row = target.closest('[data-uuid]');
+    const { uuid } = row.dataset;
+    const item = await fromUuid(uuid);
+    if (!item) return;
+
+    const expanded = !row.classList.contains('collapsed');
+    row.classList.toggle('collapsed', expanded);
+    icon.classList.toggle('fa-compress', !expanded);
+    icon.classList.toggle('fa-expand', expanded);
+  }
+
+  static async #editItem(this, event, target) {
+    event.preventDefault();
+    const { key } = target.dataset;
+    const item = this.actor.getEmbeddedDocument('Item', key);
+    if (!item) {
+      return;
+    }
+    item.sheet.render(true);
   }
 }

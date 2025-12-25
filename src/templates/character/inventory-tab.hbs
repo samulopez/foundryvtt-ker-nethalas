@@ -1,94 +1,551 @@
-<div class="tab inventory {{tabs.inventory.cssClass}}"
+<div class="tab inventory scrollable {{tabs.inventory.cssClass}}"
      data-group="primary"
      data-tab="inventory">
-     <div class="flexrow gap-large align-normal">
-          <div class="flexcol gap align-normal">
-               <div>
-                    <div class="section-title">EQUIPPED GEAR</div>
-               </div>
-               <div>
-                    <div class="flexrow gap-small">
-                         <div class="section-title">WEALTH</div>
-                         <div class="section-title">SUPPLIES</div>
-                    </div>
-               </div>
-               <div>
-                    <div class="section-title">GEAR {{currentGearCapacity}} / 10</div>
-                    <div class="gear-list">
-                         {{#each gearList as |item key| }}
-                              <div class="flexrow gear-item gap-small">
-                                   <div>{{item.id}}</div>
-                                   <div>{{item.name}}</div>
-                                   <div>
-                                        {{#if (eq item.system.weight "light") }}
-                                             <i data-action="decreaseQuantityItem"
-                                                data-key="{{item.id}}"
-                                                class="fas fa-minus rollable"></i>
-                                             <i data-action="increaseQuantityItem"
-                                                data-key="{{item.id}}"
-                                                class="fas fa-plus rollable"></i>
-                                        {{/if}}
-                                   </div>
-                                   <div>{{item.system.quantity}}</div>
-                                   <div class="flex0 rollable"
-                                        data-action="removeItem"
-                                        data-key="{{item.id}}">
-                                        <i class="fas fa-trash"></i>
-                                   </div>
-                              </div>
-                         {{/each}}
-                    </div>
-               </div>
+  <div class="flexcol gap align-normal">
+    <div class="flexrow gap-large align-normal">
+      <div class="flexcol gap align-normal">
+        <div>
+          <div class="section-title">EQUIPPED GEAR</div>
+        </div>
+        <div>
+          <div class="flexrow gap-small">
+            <div class="section-title">WEALTH</div>
+            <div class="section-title">SUPPLIES</div>
           </div>
-          <div class="flexcol gap align-normal">
-               <div>
-                    <div class="section-title">NON-ENCUMBERING ITEMS</div>
-                    <div class="non-encumbering-items-list">
-                         {{#each nonEncumberingList as |item key| }}
-                              <div class="flexrow gear-item gap-small">
-                                   <div>{{item.id}}</div>
-                                   <div>{{item.name}}</div>
-                                   <div>{{item.system.quantity}}</div>
-                                   <div class="flex0 rollable"
-                                        data-action="removeItem"
-                                        data-key="{{item.id}}">
-                                        <i class="fas fa-trash"></i>
-                                   </div>
-                              </div>
-                         {{/each}}
+        </div>
+      </div>
+      <div class="flexcol gap align-normal">
+        <div>
+          <div class="section-title">NON-ENCUMBERING ITEMS</div>
+          <div class="items-section non-encumbering-items-list">
+            <div class="items-header header">
+              <h3 class="item-name">Name</h3>
+              <div class="item-header item-price">Cost</div>
+              <div class="item-header item-quantity">Quantity</div>
+              <div class="item-header item-controls"></div>
+            </div>
+            <ol class="item-list unlist">
+              {{#each nonEncumberingList as |item key| }}
+                <li class="item collapsible collapsed"
+                    data-uuid="{{item.uuid}}"
+                    data-item-id="{{item.id}}"
+                    data-entry-id="{{item.id}}"
+                    data-item-name="{{item.name}}">
+                  <div class="item-row" data-key="{{item.id}}">
+                    <div class="item-name item-action">
+                      <img class="item-image gold-icon"
+                           src="{{item.img}}"
+                           alt="{{item.name}}"
+                           width="32"
+                           height="32"
+                           draggable="false" />
+                      <div class="name name-stacked">
+                        <span class="title">{{item.name}}</span>
+                      </div>
                     </div>
-               </div>
-               <div>
-                    <div class="section-title">BACKPACK {{currentBackpackCapacity}} / 20</div>
-                    <div class="backpack-list">
-                         {{#each backpackList as |item key| }}
-                              <div class="flexrow gear-item gap-small">
-                                   <div>{{item.id}}</div>
-                                   <div>{{item.name}}</div>
-                                   <div>{{item.system.quantity}}</div>
-                                   <div class="flex0 rollable"
-                                        data-action="removeItem"
-                                        data-key="{{item.id}}">
-                                        <i class="fas fa-trash"></i>
-                                   </div>
-                              </div>
-                         {{/each}}
-                    </div>
-               </div>
-          </div>
-     </div>
-     <div class="all-list">
-          {{#each document.items as |item key| }}
-               <div class="flexrow gear-item gap-small">
-                    <div>{{item.id}}</div>
-                    <div>{{item.name}}</div>
-                    <div>{{item.system.quantity}}</div>
-                    <div class="flex0 rollable"
-                         data-action="removeItem"
+                    <div class="item-detail item-price">{{item.system.cost}}</div>
+                    <div class="item-detail item-quantity">
+                      <a class="adjustment-button always-interactive"
+                         data-action="decreaseQuantityItem"
+                         data-tooltip="decrease quantity"
                          data-key="{{item.id}}">
-                         <i class="fas fa-trash"></i>
+                        <i class="fas fa-minus"></i>
+                      </a>
+                      {{item.system.quantity}}
+                      <a class="adjustment-button always-interactive"
+                         data-action="increaseQuantityItem"
+                         data-tooltip="increase quantity"
+                         data-key="{{item.id}}">
+                        <i class="fas fa-plus"></i>
+                      </a>
                     </div>
-               </div>
+                    <div class="item-detail item-controls">
+                      <button type="button"
+                              class="unbutton config-button item-control item-action always-interactive"
+                              data-tooltip="toggle description"
+                              data-action="toggleExpand">
+                        <i class="fas fa-expand"></i>
+                      </button>
+                      <button type="button"
+                              class="unbutton config-button item-control item-action always-interactive"
+                              data-tooltip="edit item"
+                              data-key="{{item.id}}"
+                              data-action="editItem">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button type="button"
+                              class="unbutton config-button item-control item-action always-interactive"
+                              data-tooltip="delete item"
+                              data-key="{{item.id}}"
+                              data-action="removeItem">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="item-description collapsible-content">
+                    <span class="wrapper">
+                      <div class="subtitle">Description</div>
+                    {{editor item.system.description engine="prosemirror"}}</span>
+                    <div class="wrapper">
+                      <div class="subtitle">Notes</div>
+                      {{editor item.system.notes engine="prosemirror"}}
+                    </div>
+                  </div>
+                </li>
+              {{/each}}
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">GEAR {{currentGearCapacity}} / 10</div>
+      <div class="items-section gear-list">
+        <div class="items-header header">
+          <h3 class="item-name">Name</h3>
+          <div class="item-header item-price">Cost</div>
+          <div class="item-header item-weight">Weight</div>
+          <div class="item-header item-quantity">Quantity</div>
+          <div class="item-header item-controls"></div>
+        </div>
+        <ol class="item-list unlist">
+          {{#each gearList as |item key| }}
+            <li class="item collapsible collapsed"
+                data-uuid="{{item.uuid}}"
+                data-item-id="{{item.id}}"
+                data-entry-id="{{item.id}}"
+                data-item-name="{{item.name}}">
+              <div class="item-row draggable" draggable="true" data-key="{{item.id}}">
+                <div class="item-name item-action">
+                  <img class="item-image gold-icon"
+                       src="{{item.img}}"
+                       alt="{{item.name}}"
+                       width="32"
+                       height="32"
+                       draggable="false" />
+                  <div class="name name-stacked">
+                    <span class="title">{{item.name}}</span>
+                  </div>
+                </div>
+                <div class="item-detail item-price">{{item.system.cost}}</div>
+                <div class="item-detail item-weight empty">{{item.system.weight}}</div>
+                <div class="item-detail item-quantity">
+                  {{#if (eq item.system.weight "light") }}
+                    <a class="adjustment-button always-interactive"
+                       data-action="decreaseQuantityItem"
+                       data-tooltip="decrease quantity"
+                       data-key="{{item.id}}">
+                      <i class="fas fa-minus"></i>
+                    </a>
+                    {{item.system.quantity}}
+                    <a class="adjustment-button always-interactive"
+                       data-action="increaseQuantityItem"
+                       data-tooltip="increase quantity"
+                       data-key="{{item.id}}">
+                      <i class="fas fa-plus"></i>
+                    </a>
+                  {{else}}
+                    {{item.system.quantity}}
+                  {{/if}}
+                </div>
+                <div class="item-detail item-controls">
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="toggle description"
+                          data-action="toggleExpand">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="edit item"
+                          data-key="{{item.id}}"
+                          data-action="editItem">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="delete item"
+                          data-key="{{item.id}}"
+                          data-action="removeItem">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="item-description collapsible-content">
+                <span class="wrapper">
+                  <div class="subtitle">Description</div>
+                {{editor item.system.description engine="prosemirror"}}</span>
+                <div class="wrapper">
+                  <div class="subtitle">Notes</div>
+                  {{editor item.system.notes engine="prosemirror"}}
+                </div>
+              </div>
+            </li>
           {{/each}}
-     </div>
+        </ol>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">BACKPACK {{currentBackpackCapacity}} / 20</div>
+      <div class="items-section backpack-list">
+        <div class="items-header header">
+          <h3 class="item-name">Name</h3>
+          <div class="item-header item-price">Cost</div>
+          <div class="item-header item-weight">Weight</div>
+          <div class="item-header item-quantity">Quantity</div>
+          <div class="item-header item-controls"></div>
+        </div>
+        <ol class="item-list unlist">
+          {{#each backpackList as |item key| }}
+            <li class="item collapsible collapsed"
+                data-uuid="{{item.uuid}}"
+                data-item-id="{{item.id}}"
+                data-entry-id="{{item.id}}"
+                data-item-name="{{item.name}}">
+              <div class="item-row draggable" draggable="true" data-key="{{item.id}}">
+                <div class="item-name item-action">
+                  <img class="item-image gold-icon"
+                       src="{{item.img}}"
+                       alt="{{item.name}}"
+                       width="32"
+                       height="32"
+                       draggable="false" />
+                  <div class="name name-stacked">
+                    <span class="title">{{item.name}}</span>
+                  </div>
+                </div>
+                <div class="item-detail item-price">{{item.system.cost}}</div>
+                <div class="item-detail item-weight empty">{{item.system.weight}}</div>
+                <div class="item-detail item-quantity">
+                  {{#if (eq item.system.weight "light") }}
+                    <a class="adjustment-button always-interactive"
+                       data-action="decreaseQuantityItem"
+                       data-tooltip="decrease quantity"
+                       data-key="{{item.id}}">
+                      <i class="fas fa-minus"></i>
+                    </a>
+                    {{item.system.quantity}}
+                    <a class="adjustment-button always-interactive"
+                       data-action="increaseQuantityItem"
+                       data-tooltip="increase quantity"
+                       data-key="{{item.id}}">
+                      <i class="fas fa-plus"></i>
+                    </a>
+                  {{else}}
+                    {{item.system.quantity}}
+                  {{/if}}
+                </div>
+                <div class="item-detail item-controls">
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="toggle description"
+                          data-action="toggleExpand">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="edit item"
+                          data-key="{{item.id}}"
+                          data-action="editItem">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="delete item"
+                          data-key="{{item.id}}"
+                          data-action="removeItem">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="item-description collapsible-content">
+                <span class="wrapper">
+                  <div class="subtitle">Description</div>
+                {{editor item.system.description engine="prosemirror"}}</span>
+                <div class="wrapper">
+                  <div class="subtitle">Notes</div>
+                  {{editor item.system.notes engine="prosemirror"}}
+                </div>
+              </div>
+            </li>
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">POUCH {{currentPouch1Capacity}} / 5</div>
+      <div class="items-section pouch1-list">
+        <div class="items-header header">
+          <h3 class="item-name">Name</h3>
+          <div class="item-header item-price">Cost</div>
+          <div class="item-header item-weight">Weight</div>
+          <div class="item-header item-quantity">Quantity</div>
+          <div class="item-header item-controls"></div>
+        </div>
+        <ol class="item-list unlist">
+          {{#each pouch1List as |item key| }}
+            <li class="item collapsible collapsed"
+                data-uuid="{{item.uuid}}"
+                data-item-id="{{item.id}}"
+                data-entry-id="{{item.id}}"
+                data-item-name="{{item.name}}">
+              <div class="item-row draggable" draggable="true" data-key="{{item.id}}">
+                <div class="item-name item-action">
+                  <img class="item-image gold-icon"
+                       src="{{item.img}}"
+                       alt="{{item.name}}"
+                       width="32"
+                       height="32"
+                       draggable="false" />
+                  <div class="name name-stacked">
+                    <span class="title">{{item.name}}</span>
+                  </div>
+                </div>
+                <div class="item-detail item-price">{{item.system.cost}}</div>
+                <div class="item-detail item-weight empty">{{item.system.weight}}</div>
+                <div class="item-detail item-quantity">
+                  {{#if (eq item.system.weight "light") }}
+                    <a class="adjustment-button always-interactive"
+                       data-action="decreaseQuantityItem"
+                       data-tooltip="decrease quantity"
+                       data-key="{{item.id}}">
+                      <i class="fas fa-minus"></i>
+                    </a>
+                    {{item.system.quantity}}
+                    <a class="adjustment-button always-interactive"
+                       data-action="increaseQuantityItem"
+                       data-tooltip="increase quantity"
+                       data-key="{{item.id}}">
+                      <i class="fas fa-plus"></i>
+                    </a>
+                  {{else}}
+                    {{item.system.quantity}}
+                  {{/if}}
+                </div>
+                <div class="item-detail item-controls">
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="toggle description"
+                          data-action="toggleExpand">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="edit item"
+                          data-key="{{item.id}}"
+                          data-action="editItem">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="delete item"
+                          data-key="{{item.id}}"
+                          data-action="removeItem">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="item-description collapsible-content">
+                <span class="wrapper">
+                  <div class="subtitle">Description</div>
+                {{editor item.system.description engine="prosemirror"}}</span>
+                <div class="wrapper">
+                  <div class="subtitle">Notes</div>
+                  {{editor item.system.notes engine="prosemirror"}}
+                </div>
+              </div>
+            </li>
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">POUCH {{currentPouch2Capacity}} / 5</div>
+      <div class="items-section pouch2-list">
+        <div class="items-header header">
+          <h3 class="item-name">Name</h3>
+          <div class="item-header item-price">Cost</div>
+          <div class="item-header item-weight">Weight</div>
+          <div class="item-header item-quantity">Quantity</div>
+          <div class="item-header item-controls"></div>
+        </div>
+        <ol class="item-list unlist">
+          {{#each pouch2List as |item key| }}
+            <li class="item collapsible collapsed"
+                data-uuid="{{item.uuid}}"
+                data-item-id="{{item.id}}"
+                data-entry-id="{{item.id}}"
+                data-item-name="{{item.name}}">
+              <div class="item-row draggable" draggable="true" data-key="{{item.id}}">
+                <div class="item-name item-action">
+                  <img class="item-image gold-icon"
+                       src="{{item.img}}"
+                       alt="{{item.name}}"
+                       width="32"
+                       height="32"
+                       draggable="false" />
+                  <div class="name name-stacked">
+                    <span class="title">{{item.name}}</span>
+                  </div>
+                </div>
+                <div class="item-detail item-price">{{item.system.cost}}</div>
+                <div class="item-detail item-weight empty">{{item.system.weight}}</div>
+                <div class="item-detail item-quantity">
+                  {{#if (eq item.system.weight "light") }}
+                    <a class="adjustment-button always-interactive"
+                       data-action="decreaseQuantityItem"
+                       data-tooltip="decrease quantity"
+                       data-key="{{item.id}}">
+                      <i class="fas fa-minus"></i>
+                    </a>
+                    {{item.system.quantity}}
+                    <a class="adjustment-button always-interactive"
+                       data-action="increaseQuantityItem"
+                       data-tooltip="increase quantity"
+                       data-key="{{item.id}}">
+                      <i class="fas fa-plus"></i>
+                    </a>
+                  {{else}}
+                    {{item.system.quantity}}
+                  {{/if}}
+                </div>
+                <div class="item-detail item-controls">
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="toggle description"
+                          data-action="toggleExpand">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="edit item"
+                          data-key="{{item.id}}"
+                          data-action="editItem">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="delete item"
+                          data-key="{{item.id}}"
+                          data-action="removeItem">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="item-description collapsible-content">
+                <span class="wrapper">
+                  <div class="subtitle">Description</div>
+                {{editor item.system.description engine="prosemirror"}}</span>
+                <div class="wrapper">
+                  <div class="subtitle">Notes</div>
+                  {{editor item.system.notes engine="prosemirror"}}
+                </div>
+              </div>
+            </li>
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">POUCH {{currentPouch3Capacity}} / 5</div>
+      <div class="items-section pouch3-list">
+        <div class="items-header header">
+          <h3 class="item-name">Name</h3>
+          <div class="item-header item-price">Cost</div>
+          <div class="item-header item-weight">Weight</div>
+          <div class="item-header item-quantity">Quantity</div>
+          <div class="item-header item-controls"></div>
+        </div>
+        <ol class="item-list unlist">
+          {{#each pouch3List as |item key| }}
+            <li class="item collapsible collapsed"
+                data-uuid="{{item.uuid}}"
+                data-item-id="{{item.id}}"
+                data-entry-id="{{item.id}}"
+                data-item-name="{{item.name}}">
+              <div class="item-row draggable" draggable="true" data-key="{{item.id}}">
+                <div class="item-name item-action">
+                  <img class="item-image gold-icon"
+                       src="{{item.img}}"
+                       alt="{{item.name}}"
+                       width="32"
+                       height="32"
+                       draggable="false" />
+                  <div class="name name-stacked">
+                    <span class="title">{{item.name}}</span>
+                  </div>
+                </div>
+                <div class="item-detail item-price">{{item.system.cost}}</div>
+                <div class="item-detail item-weight empty">{{item.system.weight}}</div>
+                <div class="item-detail item-quantity">
+                  {{#if (eq item.system.weight "light") }}
+                    <a class="adjustment-button always-interactive"
+                       data-action="decreaseQuantityItem"
+                       data-tooltip="decrease quantity"
+                       data-key="{{item.id}}">
+                      <i class="fas fa-minus"></i>
+                    </a>
+                    {{item.system.quantity}}
+                    <a class="adjustment-button always-interactive"
+                       data-action="increaseQuantityItem"
+                       data-tooltip="increase quantity"
+                       data-key="{{item.id}}">
+                      <i class="fas fa-plus"></i>
+                    </a>
+                  {{else}}
+                    {{item.system.quantity}}
+                  {{/if}}
+                </div>
+                <div class="item-detail item-controls">
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="toggle description"
+                          data-action="toggleExpand">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="edit item"
+                          data-key="{{item.id}}"
+                          data-action="editItem">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <button type="button"
+                          class="unbutton config-button item-control item-action always-interactive"
+                          data-tooltip="delete item"
+                          data-key="{{item.id}}"
+                          data-action="removeItem">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="item-description collapsible-content">
+                <span class="wrapper">
+                  <div class="subtitle">Description</div>
+                {{editor item.system.description engine="prosemirror"}}</span>
+                <div class="wrapper">
+                  <div class="subtitle">Notes</div>
+                  {{editor item.system.notes engine="prosemirror"}}
+                </div>
+              </div>
+            </li>
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="all-list">
+    {{#each document.items as |item key| }}
+      <div class="flexrow gear-item gap-small">
+        <div>{{item.id}}</div>
+        <div>{{item.name}}</div>
+        <div>{{item.system.quantity}}</div>
+        <div class="flex0 rollable"
+             data-action="removeItem"
+             data-key="{{item.id}}">
+          <i class="fas fa-trash"></i>
+        </div>
+      </div>
+    {{/each}}
+  </div>
 </div>

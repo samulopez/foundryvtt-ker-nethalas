@@ -5,5 +5,13 @@
   "printWidth": 120,
   "tabWidth": 2,
   "endOfLine": "auto",
-  "plugins": ["@prettier/plugin-oxc"]
+  "plugins": ["@prettier/plugin-oxc"],
+  "overrides": [
+    {
+      "files": "*.hbs",
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
 }

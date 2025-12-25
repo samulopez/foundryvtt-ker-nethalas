@@ -1,9 +1,9 @@
 <div class="tab notes scrollable {{tabs.notes.cssClass}}"
      data-group="primary"
      data-tab="notes">
-    <div>
+    <div class="flexcol align-normal">
         <div class="section-title">{{localize 'KN.Item.Sheet.details.notes' }}</div>
-        <div class="editor-host">
+        <div class="flex2 editor-host">
             {{#if editable }}
                 <prose-mirror name="system.notes" button="true" editable="{{editable}}" toggled="false" value="{{document.system.notes}}">
                 {{{enrichedNotes}}}
