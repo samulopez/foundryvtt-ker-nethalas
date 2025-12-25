@@ -122,6 +122,9 @@ const defineCharacterModel = () => ({
   }),
   gearList: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
   backpackList: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
+  pouch1List: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
+  pouch2List: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
+  pouch3List: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
 });
 
 type CharacterModelSchema = ReturnType<typeof defineCharacterModel>;
@@ -135,27 +138,27 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   gearItems(): Item.Implementation[] {
-    return this.parent.items.filter((item) => {
-      const id = item.getRelativeUUID(this.parent);
-      if (id.startsWith('.')) {
-        return this.parent.system.gearList?.includes(id.substring(1));
-      }
-      return this.parent.system.gearList?.includes(id);
-    });
+    return this.parent.items.filter((item) => this.parent.system.gearList?.includes(item.uuid));
   }
 
   backpackItems(): Item.Implementation[] {
-    return this.parent.items.filter((item) => {
-      const id = item.getRelativeUUID(this.parent);
-      if (id.startsWith('.')) {
-        return this.parent.system.backpackList?.includes(id.substring(1));
-      }
-      return this.parent.system.backpackList?.includes(id);
-    });
+    return this.parent.items.filter((item) => this.parent.system.backpackList?.includes(item.uuid));
   }
 
   nonEncumberingItems(): Item.Implementation[] {
     return this.parent.items.filter((item) => item.system.weight === 'nonEncumbering');
+  }
+
+  pouch1Items(): Item.Implementation[] {
+    return this.parent.items.filter((item) => this.parent.system.pouch1List?.includes(item.uuid));
+  }
+
+  pouch2Items(): Item.Implementation[] {
+    return this.parent.items.filter((item) => this.parent.system.pouch2List?.includes(item.uuid));
+  }
+
+  pouch3Items(): Item.Implementation[] {
+    return this.parent.items.filter((item) => this.parent.system.pouch3List?.includes(item.uuid));
   }
 
   currentGearCapacity(): number {
@@ -166,6 +169,18 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     return this.backpackItems().reduce((sum, item) => sum + item.system.slots(), 0);
   }
 
+  currentPouch1Capacity(): number {
+    return this.pouch1Items().reduce((sum, item) => sum + item.system.slots(), 0);
+  }
+
+  currentPouch2Capacity(): number {
+    return this.pouch2Items().reduce((sum, item) => sum + item.system.slots(), 0);
+  }
+
+  currentPouch3Capacity(): number {
+    return this.pouch3Items().reduce((sum, item) => sum + item.system.slots(), 0);
+  }
+
   canAddToGearList(newSlots: number): boolean {
     return this.gearItems().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 10;
   }
@@ -174,10 +189,22 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     return this.backpackItems().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 20;
   }
 
+  canAddToPouch1(newSlots: number): boolean {
+    return this.pouch1Items().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 5;
+  }
+
+  canAddToPouch2(newSlots: number): boolean {
+    return this.pouch2Items().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 5;
+  }
+
+  canAddToPouch3(newSlots: number): boolean {
+    return this.pouch3Items().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 5;
+  }
+
   async addToGearList(item: Item.Implementation) {
     const result = await this.parent.update({
       system: {
-        gearList: [...this.gearList, item.id],
+        gearList: [...this.gearList, item.uuid],
       },
     });
 
@@ -187,17 +214,147 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   async addToBackpackList(item: Item.Implementation) {
     const result = await this.parent.update({
       system: {
-        backpackList: [...this.backpackList, item.id],
+        backpackList: [...this.backpackList, item.uuid],
       },
     });
     return result ? item : null;
   }
 
-  async removeItemFromLists(itemId: string) {
+  async addToPouch1(item: Item.Implementation) {
+    const result = await this.parent.update({
+      system: {
+        pouch1List: [...this.pouch1List, item.uuid],
+      },
+    });
+    return result ? item : null;
+  }
+
+  async addToPouch2(item: Item.Implementation) {
+    const result = await this.parent.update({
+      system: {
+        pouch2List: [...this.pouch2List, item.uuid],
+      },
+    });
+    return result ? item : null;
+  }
+
+  async addToPouch3(item: Item.Implementation) {
+    const result = await this.parent.update({
+      system: {
+        pouch3List: [...this.pouch3List, item.uuid],
+      },
+    });
+    return result ? item : null;
+  }
+
+  async moveItemToGear(item: Item.Implementation) {
+    const filteredGear = this.gearList.filter((id) => id !== item.uuid);
+    const filteredBackpack = this.backpackList.filter((id) => id !== item.uuid);
+    const filteredPouch1 = this.pouch1List.filter((id) => id !== item.uuid);
+    const filteredPouch2 = this.pouch2List.filter((id) => id !== item.uuid);
+    const filteredPouch3 = this.pouch3List.filter((id) => id !== item.uuid);
+
+    const result = await this.parent.update({
+      system: {
+        gearList: [...filteredGear, item.uuid],
+        backpackList: filteredBackpack,
+        pouch1List: filteredPouch1,
+        pouch2List: filteredPouch2,
+        pouch3List: filteredPouch3,
+      },
+    });
+
+    return result ? item : null;
+  }
+
+  async moveItemToBackpack(item: Item.Implementation) {
+    const filteredGear = this.gearList.filter((id) => id !== item.uuid);
+    const filteredBackpack = this.backpackList.filter((id) => id !== item.uuid);
+    const filteredPouch1 = this.pouch1List.filter((id) => id !== item.uuid);
+    const filteredPouch2 = this.pouch2List.filter((id) => id !== item.uuid);
+    const filteredPouch3 = this.pouch3List.filter((id) => id !== item.uuid);
+
+    const result = await this.parent.update({
+      system: {
+        gearList: filteredGear,
+        backpackList: [...filteredBackpack, item.uuid],
+        pouch1List: filteredPouch1,
+        pouch2List: filteredPouch2,
+        pouch3List: filteredPouch3,
+      },
+    });
+
+    return result ? item : null;
+  }
+
+  async moveItemToPouch1(item: Item.Implementation) {
+    const filteredGear = this.gearList.filter((id) => id !== item.uuid);
+    const filteredBackpack = this.backpackList.filter((id) => id !== item.uuid);
+    const filteredPouch1 = this.pouch1List.filter((id) => id !== item.uuid);
+    const filteredPouch2 = this.pouch2List.filter((id) => id !== item.uuid);
+    const filteredPouch3 = this.pouch3List.filter((id) => id !== item.uuid);
+
+    const result = await this.parent.update({
+      system: {
+        gearList: filteredGear,
+        backpackList: filteredBackpack,
+        pouch1List: [...filteredPouch1, item.uuid],
+        pouch2List: filteredPouch2,
+        pouch3List: filteredPouch3,
+      },
+    });
+
+    return result ? item : null;
+  }
+
+  async moveItemToPouch2(item: Item.Implementation) {
+    const filteredGear = this.gearList.filter((id) => id !== item.uuid);
+    const filteredBackpack = this.backpackList.filter((id) => id !== item.uuid);
+    const filteredPouch1 = this.pouch1List.filter((id) => id !== item.uuid);
+    const filteredPouch2 = this.pouch2List.filter((id) => id !== item.uuid);
+    const filteredPouch3 = this.pouch3List.filter((id) => id !== item.uuid);
+
+    const result = await this.parent.update({
+      system: {
+        gearList: filteredGear,
+        backpackList: filteredBackpack,
+        pouch1List: filteredPouch1,
+        pouch2List: [...filteredPouch2, item.uuid],
+        pouch3List: filteredPouch3,
+      },
+    });
+
+    return result ? item : null;
+  }
+
+  async moveItemToPouch3(item: Item.Implementation) {
+    const filteredGear = this.gearList.filter((id) => id !== item.uuid);
+    const filteredBackpack = this.backpackList.filter((id) => id !== item.uuid);
+    const filteredPouch1 = this.pouch1List.filter((id) => id !== item.uuid);
+    const filteredPouch2 = this.pouch2List.filter((id) => id !== item.uuid);
+    const filteredPouch3 = this.pouch3List.filter((id) => id !== item.uuid);
+
+    const result = await this.parent.update({
+      system: {
+        gearList: filteredGear,
+        backpackList: filteredBackpack,
+        pouch1List: filteredPouch1,
+        pouch2List: filteredPouch2,
+        pouch3List: [...filteredPouch3, item.uuid],
+      },
+    });
+
+    return result ? item : null;
+  }
+
+  async removeItemFromLists(itemUUID: string) {
     return this.parent.update({
       system: {
-        backpackList: this.backpackList.filter((id) => id !== itemId),
-        gearList: this.gearList.filter((id) => id !== itemId),
+        backpackList: this.backpackList.filter((id) => id !== itemUUID),
+        gearList: this.gearList.filter((id) => id !== itemUUID),
+        pouch1List: this.pouch1List.filter((id) => id !== itemUUID),
+        pouch2List: this.pouch2List.filter((id) => id !== itemUUID),
+        pouch3List: this.pouch3List.filter((id) => id !== itemUUID),
       },
     });
   }
