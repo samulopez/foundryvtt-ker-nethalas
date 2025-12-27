@@ -1,6 +1,6 @@
 const { NumberField, StringField } = foundry.data.fields;
 
-const defineItemModel = () => ({
+export const defineItemModel = () => ({
   cost: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
   weight: new StringField({
     required: true,

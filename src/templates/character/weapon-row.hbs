@@ -1,0 +1,88 @@
+<div class="flexcol weapon-row collapsible collapsed"
+     data-uuid="{{weapon.uuid}}"
+     data-item-id="{{weapon.id}}"
+     data-entry-id="{{weapon.id}}"
+     data-item-name="{{weapon.name}}">
+    <div class="flexrow gap-small">
+        <img class="item-image flex0"
+             src="{{weapon.img}}"
+             alt="{{weapon.name}}"
+             width="32"
+             height="32"
+             draggable="false" />
+        <div class="flexcol flex1 gap-min">
+            <div class="flexrow gap-small">
+                <div class="flex1 weapon-name">{{weapon.name}}</div>
+                <div class="flex0 item-detail item-controls">
+                    <button type="button"
+                            class="unbutton config-button item-control item-action always-interactive"
+                            data-tooltip="KN.Item.Sheet.toggleTooltip"
+                            data-action="toggleExpand">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                    <button type="button"
+                            class="unbutton config-button item-control item-action always-interactive"
+                            data-tooltip="KN.Item.Sheet.editTooltip"
+                            data-key="{{weapon.id}}"
+                            data-action="editItem">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button type="button"
+                            class="unbutton config-button item-control item-action always-interactive"
+                            data-tooltip="KN.Item.Sheet.deleteTooltip"
+                            data-key="{{weapon.id}}"
+                            data-action="removeItem">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="item-details">
+                {{#if weapon.system.broken }}
+                    <i data-tooltip="KN.Item.Sheet.label.broken" class="fas fa-heart-crack"></i>
+                {{/if}}
+                <label class="rollable"
+                       data-action="rollSkill"
+                       data-key="{{weapon.system.skill}}">
+                    {{localize "KN.Item.Sheet.label.skill"}}:
+                    {{localize (concat "KN.Character.Skills." weapon.system.skill)}}  <i class="fas fa-dice" data-key="{{weapon.system.skill}}"></i>
+                </label>
+                <div class="weapon-speed">{{localize "KN.Item.Sheet.label.speed"}}: {{weapon.system.speed}}</div>
+                <div class="flexrow gap-min">
+                    {{localize "KN.Item.Sheet.label.traits"}}:
+                    <div class="weapon-traits">
+                        {{#if weapon.system.traits.defensive }}
+                            <span>{{localize "KN.Item.Sheet.traits.defensive"}}</span>
+                        {{/if}}
+                        {{#if weapon.system.traits.quick }}
+                            <span>{{localize "KN.Item.Sheet.traits.quick"}}</span>
+                        {{/if}}
+                        {{#if weapon.system.traits.parrying }}
+                            <span>{{localize "KN.Item.Sheet.traits.parrying"}}</span>
+                        {{/if}}
+                        {{#if weapon.system.traits.powerful }}
+                            <span>{{localize "KN.Item.Sheet.traits.powerful"}}</span>
+                        {{/if}}
+                        {{#if weapon.system.traits.simple }}
+                            <span>{{localize "KN.Item.Sheet.traits.simple"}}</span>
+                        {{/if}}
+                        {{#if weapon.system.traits.twoHanded }}
+                            <span>{{localize "KN.Item.Sheet.traits.twoHanded"}}</span>
+                        {{/if}}
+                        {{#if weapon.system.traits.versatile }}
+                            <span>{{localize "KN.Item.Sheet.traits.versatile"}}</span>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item-description collapsible-content">
+        <span class="wrapper">
+            <div class="subtitle">{{localize "KN.Item.Sheet.label.description"}}</div>
+        {{editor weapon.system.description engine="prosemirror"}}</span>
+        <div class="wrapper">
+            <div class="subtitle">{{localize "KN.Item.Sheet.label.notes"}}</div>
+            {{editor weapon.system.notes engine="prosemirror"}}
+        </div>
+    </div>
+</div>

@@ -26,7 +26,10 @@
                         <label class="left-label" for="kn.item.cost">{{localize 'KN.Item.Sheet.cost' }} (₵)</label>
                     </div>
                     <input name="system.cost"
-                           type="text"
+                           type="number"
+                           data-dtype="Number"
+                           min="0"
+                           step="1"
                            value="{{document.system.cost}}"
                            class="flex3"
                            autocomplete="off"

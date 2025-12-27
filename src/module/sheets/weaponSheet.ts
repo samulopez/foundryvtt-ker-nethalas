@@ -9,7 +9,7 @@ interface Context {
   enrichedNotes: string;
 }
 
-export default class KNItemSheet<
+export default class KNWeaponSheet<
   RenderContext extends ItemSheetV2.RenderContext & Context,
   Configuration extends ItemSheetV2.Configuration = ItemSheetV2.Configuration,
   RenderOptions extends ItemSheetV2.RenderOptions = ItemSheetV2.RenderOptions,
@@ -17,7 +17,7 @@ export default class KNItemSheet<
   static DEFAULT_OPTIONS = {
     window: { resizable: true },
     position: { width: 520, height: 600 },
-    classes: ['item'],
+    classes: ['item', 'weapon'],
     form: { submitOnChange: true },
     tag: 'form',
     actions: {},
@@ -33,16 +33,16 @@ export default class KNItemSheet<
 
   static PARTS = {
     header: {
-      template: TEMPLATES.item.header,
+      template: TEMPLATES.weapon.header,
     },
     tabs: {
       template: `templates/generic/tab-navigation.hbs`, // From FoundryVTT
     },
     details: {
-      template: TEMPLATES.item.detailsTab,
+      template: TEMPLATES.weapon.detailsTab,
     },
     notes: {
-      template: TEMPLATES.item.notesTab,
+      template: TEMPLATES.weapon.notesTab,
     },
   };
 

@@ -1,4 +1,5 @@
 import './styles/style.scss';
+import KNWeaponSheet from './module/sheets/weaponSheet';
 import KNItemSheet from './module/sheets/itemSheet';
 import CharacterSheet from './module/sheets/characterSheet';
 import { registerSettings } from './module/settings';
@@ -58,6 +59,12 @@ Hooks.once('init', async () => {
     themes: null,
     label: 'Ker Nethalas Item Sheet',
     types: ['item'],
+  });
+  foundry.documents.collections.Items.registerSheet(ID, KNWeaponSheet, {
+    makeDefault: true,
+    themes: null,
+    label: 'Ker Nethalas Weapon Sheet',
+    types: ['weapon'],
   });
 
   registerSettings();

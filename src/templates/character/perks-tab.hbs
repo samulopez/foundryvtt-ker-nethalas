@@ -62,41 +62,31 @@
                                         <input type="radio"
                                                name="system.damages.{{key}}.status"
                                                value="immune"
-                                               {{#if (eq damage.status "immune") }}
-                                               checked
-                                               {{/if }} />
+                                               {{checked (eq damage.status "immune")}} />
                                    </td>
                                    <td>
                                         <input type="radio"
                                                name="system.damages.{{key}}.status"
                                                value="vulnerable"
-                                               {{#if (eq damage.status "vulnerable") }}
-                                               checked
-                                               {{/if }} />
+                                               {{checked (eq damage.status "vulnerable")}} />
                                    </td>
                                    <td>
                                         <input type="radio"
                                                name="system.damages.{{key}}.status"
                                                value="resistant"
-                                               {{#if (eq damage.status "resistant") }}
-                                               checked
-                                               {{/if }} />
+                                               {{checked (eq damage.status "resistant")}} />
                                    </td>
                                    <td>
                                         <input type="radio"
                                                name="system.damages.{{key}}.status"
                                                value="restored"
-                                               {{#if (eq damage.status "restored") }}
-                                               checked
-                                               {{/if }} />
+                                               {{checked (eq damage.status "restored")}} />
                                    </td>
                                    <td>
                                         <input type="radio"
                                                name="system.damages.{{key}}.status"
                                                value="none"
-                                               {{#if (eq damage.status "none") }}
-                                               checked
-                                               {{/if }} />
+                                               {{checked (eq damage.status "none")}} />
                                    </td>
                                    <td>
                                         <input type="text"

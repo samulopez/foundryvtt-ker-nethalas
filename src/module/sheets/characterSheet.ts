@@ -1,5 +1,7 @@
 import { getLocalization } from '../helpers';
-import { TEMPLATES, SKILLS } from '../constants';
+import { TEMPLATES, SKILL_DISPLAY } from '../constants';
+
+import type KerNethalasItem from '../item/item';
 
 import ActorSheetV2 = foundry.applications.sheets.ActorSheetV2;
 
@@ -20,12 +22,18 @@ interface Context {
   currentPouch1Capacity: number;
   currentPouch2Capacity: number;
   currentPouch3Capacity: number;
+  currentBeltCapacity: number;
   gearList: Item.Implementation[];
   backpackList: Item.Implementation[];
   nonEncumberingList: Item.Implementation[];
   pouch1List: Item.Implementation[];
   pouch2List: Item.Implementation[];
   pouch3List: Item.Implementation[];
+  beltList: Item.Implementation[];
+  equipment: {
+    mainHand: Item.Implementation | null;
+    offHand: Item.Implementation | null;
+  };
 }
 
 export default class CharacterSheet<
@@ -51,17 +59,19 @@ export default class CharacterSheet<
       decreaseQuantityItem: this.#decreaseQuantityItem,
       toggleExpand: this.#toggleExpand,
       editItem: this.#editItem,
+      equipWeapon: this.#equipWeapon,
+      swapWeapons: this.#swapWeapons,
     },
     dragDrop: [
       {
-        dropSelector: '.gear-list, .backpack-list, .pouch1-list, .pouch2-list, .pouch3-list',
+        dropSelector: '.gear-list, .backpack-list, .pouch1-list, .pouch2-list, .pouch3-list, .main-hand, .off-hand',
       },
     ],
   };
 
   static TABS = {
     primary: {
-      initial: 'inventory',
+      initial: 'skills',
       labelPrefix: 'KN.Character.Tabs',
       tabs: [
         { id: 'skills', tooltip: 'KN.Character.Tabs.tooltip.skills' },
@@ -99,13 +109,13 @@ export default class CharacterSheet<
     context.leftSkills = {};
     context.rightSkills = {};
     Object.entries(context.document.system.skills)
-      .filter(([key, _value]) => SKILLS.left.includes(key))
+      .filter(([key, _value]) => SKILL_DISPLAY.left.includes(key))
       .forEach(([key, value]) => {
         context.leftSkills[key] = value;
       });
 
     Object.entries(context.document.system.skills)
-      .filter(([key, _value]) => SKILLS.right.includes(key))
+      .filter(([key, _value]) => SKILL_DISPLAY.right.includes(key))
       .forEach(([key, value]) => {
         context.rightSkills[key] = value;
       });
@@ -168,6 +178,7 @@ export default class CharacterSheet<
     context.pouch1List = this.actor.system.pouch1Items();
     context.pouch2List = this.actor.system.pouch2Items();
     context.pouch3List = this.actor.system.pouch3Items();
+    context.beltList = this.actor.system.beltItems();
     // TODO V2: count coins, gems and special supplies
     context.currentGearCapacity = this.actor.system.currentGearCapacity();
     context.currentBackpackCapacity = this.actor.system.currentBackpackCapacity();
@@ -175,6 +186,9 @@ export default class CharacterSheet<
     context.currentPouch1Capacity = this.actor.system.currentPouch1Capacity();
     context.currentPouch2Capacity = this.actor.system.currentPouch2Capacity();
     context.currentPouch3Capacity = this.actor.system.currentPouch3Capacity();
+    context.currentBeltCapacity = this.actor.system.currentBeltCapacity();
+
+    context.equipment = this.actor.system.equipmentItems();
 
     return context;
   }
@@ -215,22 +229,53 @@ export default class CharacterSheet<
   //   // }
   // }
 
-  async _onDropItem(event, item) {
+  async _onDropItem(event: DragEvent, item: KerNethalasItem) {
     const dropInGearList = !!(event.target as HTMLElement).closest('.gear-list');
     const dropInBackpackList = !!(event.target as HTMLElement).closest('.backpack-list');
     const dropInPouch1List = !!(event.target as HTMLElement).closest('.pouch1-list');
     const dropInPouch2List = !!(event.target as HTMLElement).closest('.pouch2-list');
     const dropInPouch3List = !!(event.target as HTMLElement).closest('.pouch3-list');
+    const dropInBeltList = !!(event.target as HTMLElement).closest('.belt-list');
+    const dropInMainHand = !!(event.target as HTMLElement).closest('.main-hand');
+    const dropInOffHand = !!(event.target as HTMLElement).closest('.off-hand');
+
+    const droppingOnHands = dropInMainHand || dropInOffHand;
 
     const sameActorItem = item?.parent?.id === this.actor.id;
 
     if (sameActorItem) {
+      if (droppingOnHands) {
+        const { result, message } = this.actor.system.canEquipWeapon(item);
+        if (!result) {
+          ui.notifications?.warn(message);
+          return null;
+        }
+
+        if (dropInMainHand && this.actor.system.equipment.offHand === item.uuid) {
+          await this.actor.update({ system: { equipment: { offHand: null } } });
+        }
+
+        if (dropInOffHand && this.actor.system.equipment.mainHand === item.uuid) {
+          await this.actor.update({ system: { equipment: { mainHand: null } } });
+        }
+
+        const targetHand = dropInMainHand ? this.actor.system.equipment.mainHand : this.actor.system.equipment.offHand;
+        if (targetHand && targetHand !== item.uuid) {
+          ui.notifications?.warn(getLocalization().localize('KN.Error.handAlreadyOccupied'));
+          return null;
+        }
+
+        return dropInMainHand ? this.actor.system.addToMainHand(item) : this.actor.system.addToOffHand(item);
+      }
+
       if (item.system.weight === 'nonEncumbering') {
+        ui.notifications?.warn(getLocalization().localize('KN.Error.nonEncumberingMoveSameActor'));
         return null;
       }
 
       if (dropInBackpackList) {
         if (!this.actor.system.canAddToBackpackList(item.system.slots())) {
+          ui.notifications?.warn(getLocalization().localize('KN.Error.backpackCapacity'));
           return null;
         }
         return this.actor.system.moveItemToBackpack(item);
@@ -238,6 +283,7 @@ export default class CharacterSheet<
 
       if (dropInGearList) {
         if (!this.actor.system.canAddToGearList(item.system.slots())) {
+          ui.notifications?.warn(getLocalization().localize('KN.Error.gearCapacity'));
           return null;
         }
         return this.actor.system.moveItemToGear(item);
@@ -245,6 +291,7 @@ export default class CharacterSheet<
 
       if (dropInPouch1List) {
         if (!this.actor.system.canAddToPouch1(item.system.slots())) {
+          ui.notifications?.warn(getLocalization().localize('KN.Error.pouchCapacity'));
           return null;
         }
         return this.actor.system.moveItemToPouch1(item);
@@ -252,6 +299,7 @@ export default class CharacterSheet<
 
       if (dropInPouch2List) {
         if (!this.actor.system.canAddToPouch2(item.system.slots())) {
+          ui.notifications?.warn(getLocalization().localize('KN.Error.pouchCapacity'));
           return null;
         }
         return this.actor.system.moveItemToPouch2(item);
@@ -259,9 +307,18 @@ export default class CharacterSheet<
 
       if (dropInPouch3List) {
         if (!this.actor.system.canAddToPouch3(item.system.slots())) {
+          ui.notifications?.warn(getLocalization().localize('KN.Error.pouchCapacity'));
           return null;
         }
         return this.actor.system.moveItemToPouch3(item);
+      }
+
+      if (dropInBeltList) {
+        if (!this.actor.system.canAddToBeltList()) {
+          ui.notifications?.warn(getLocalization().localize('KN.Error.beltCapacity'));
+          return null;
+        }
+        return this.actor.system.moveItemToBelt(item);
       }
 
       return null;
@@ -269,6 +326,27 @@ export default class CharacterSheet<
 
     if (item.system.weight === 'nonEncumbering') {
       return super._onDropItem(event, item);
+    }
+
+    if (droppingOnHands) {
+      const targetHand = dropInMainHand ? this.actor.system.equipment.mainHand : this.actor.system.equipment.offHand;
+      if (targetHand) {
+        ui.notifications?.warn(getLocalization().localize('KN.Error.handAlreadyOccupied'));
+        return null;
+      }
+
+      const { result, message } = this.actor.system.canEquipWeapon(item);
+      if (!result) {
+        ui.notifications?.warn(message);
+        return null;
+      }
+
+      const newItem = await super._onDropItem(event, item);
+      if (!newItem) {
+        return null;
+      }
+
+      return dropInMainHand ? this.actor.system.addToMainHand(newItem) : this.actor.system.addToOffHand(newItem);
     }
 
     if (dropInGearList) {
@@ -291,13 +369,22 @@ export default class CharacterSheet<
       return this._onDropPouch3(event, item);
     }
 
+    if (dropInBeltList) {
+      return this._onDropBelt(event, item);
+    }
+
+    // TODO: inventory ui
+    // TODO: equip other items on hands
     // TODO V2: sorting
-    // TODO: add weapons and armor
+    // TODO: add armor
+    // TODO: translations
+
     return null;
   }
 
   async _onDropGearList(event, item) {
     if (!this.actor.system.canAddToGearList(item.system.slots())) {
+      ui.notifications?.warn(getLocalization().localize('KN.Error.gearCapacity'));
       return null;
     }
     const newItem = await super._onDropItem(event, item);
@@ -309,6 +396,7 @@ export default class CharacterSheet<
 
   async _onDropBackpackList(event, item) {
     if (!this.actor.system.canAddToBackpackList(item.system.slots())) {
+      ui.notifications?.warn(getLocalization().localize('KN.Error.backpackCapacity'));
       return null;
     }
     const newItem = await super._onDropItem(event, item);
@@ -320,6 +408,7 @@ export default class CharacterSheet<
 
   async _onDropPouch1(event, item) {
     if (!this.actor.system.canAddToPouch1(item.system.slots())) {
+      ui.notifications?.warn(getLocalization().localize('KN.Error.pouchCapacity'));
       return null;
     }
     const newItem = await super._onDropItem(event, item);
@@ -331,6 +420,7 @@ export default class CharacterSheet<
 
   async _onDropPouch2(event, item) {
     if (!this.actor.system.canAddToPouch2(item.system.slots())) {
+      ui.notifications?.warn(getLocalization().localize('KN.Error.pouchCapacity'));
       return null;
     }
     const newItem = await super._onDropItem(event, item);
@@ -342,6 +432,7 @@ export default class CharacterSheet<
 
   async _onDropPouch3(event, item) {
     if (!this.actor.system.canAddToPouch3(item.system.slots())) {
+      ui.notifications?.warn(getLocalization().localize('KN.Error.pouchCapacity'));
       return null;
     }
     const newItem = await super._onDropItem(event, item);
@@ -349,6 +440,18 @@ export default class CharacterSheet<
       return null;
     }
     return this.actor.system.addToPouch3(newItem);
+  }
+
+  async _onDropBelt(event, item) {
+    if (!this.actor.system.canAddToBeltList()) {
+      ui.notifications?.warn(getLocalization().localize('KN.Error.beltCapacity'));
+      return null;
+    }
+    const newItem = await super._onDropItem(event, item);
+    if (!newItem) {
+      return null;
+    }
+    return this.actor.system.addToBeltList(newItem);
   }
 
   static async #rollTensionDie(this, event, _target) {
@@ -420,7 +523,7 @@ export default class CharacterSheet<
             const plusOrMinus = html.querySelector('[name="plusOrMinus"]')?.value;
             const valueModifier = html.querySelector('[name="valueModifier"]')?.value;
             if (!valueModifier?.trim()) {
-              await this.actor.rollSkill(key, '');
+              await this.actor.rollSkill(key, 0);
               return;
             }
             await this.actor.rollSkill(key, Number(`${plusOrMinus}${valueModifier}`));
@@ -433,7 +536,10 @@ export default class CharacterSheet<
   static async #removeItem(this, event, target) {
     event.preventDefault();
     const { key } = target.dataset;
-    const item = this.actor.getEmbeddedDocument('Item', key);
+    const item = this.actor.getEmbeddedDocument('Item', key, {});
+    if (!item) {
+      return;
+    }
     await this.actor.system.removeItemFromLists(item.uuid);
     await this.actor.deleteEmbeddedDocuments('Item', [key]);
   }
@@ -441,22 +547,22 @@ export default class CharacterSheet<
   static async #increaseQuantityItem(this, event, target) {
     event.preventDefault();
     const { key } = target.dataset;
-    const item = this.actor.getEmbeddedDocument('Item', key);
+    const item = this.actor.getEmbeddedDocument('Item', key, {});
     if (!item || item.system.quantity === 10) {
       return;
     }
-    const newQuantity = item.system.quantity + 1;
+    const newQuantity = (item.system.quantity ?? 0) + 1;
     await item.update({ system: { quantity: newQuantity } });
   }
 
   static async #decreaseQuantityItem(this, event, target) {
     event.preventDefault();
     const { key } = target.dataset;
-    const item = this.actor.getEmbeddedDocument('Item', key);
+    const item = this.actor.getEmbeddedDocument('Item', key, {});
     if (!item || item.system.quantity === 1) {
       return;
     }
-    const newQuantity = item.system.quantity - 1;
+    const newQuantity = (item.system.quantity ?? 0) - 1;
     await item.update({ system: { quantity: newQuantity } });
   }
 
@@ -476,10 +582,45 @@ export default class CharacterSheet<
   static async #editItem(this, event, target) {
     event.preventDefault();
     const { key } = target.dataset;
-    const item = this.actor.getEmbeddedDocument('Item', key);
+    const item = this.actor.getEmbeddedDocument('Item', key, {});
     if (!item) {
       return;
     }
-    item.sheet.render(true);
+    item.sheet?.render(true);
+  }
+
+  static async #equipWeapon(this, event: PointerEvent, target: HTMLElement) {
+    event.preventDefault();
+    const { key } = target.dataset;
+    if (!key) {
+      return;
+    }
+    const item = this.actor.getEmbeddedDocument('Item', key, {});
+    if (!item) {
+      return;
+    }
+
+    const { result, message } = this.actor.system.canEquipWeapon(item);
+    if (!result) {
+      ui.notifications?.warn(message);
+      return;
+    }
+
+    if (!this.actor.system.equipment.mainHand) {
+      await this.actor.system.addToMainHand(item);
+      return;
+    }
+
+    if (!this.actor.system.equipment.offHand) {
+      await this.actor.system.addToOffHand(item);
+      return;
+    }
+
+    ui.notifications?.warn(getLocalization().localize('KN.Error.bothHandsEquipped'));
+  }
+
+  static async #swapWeapons(this, event, _target) {
+    event.preventDefault();
+    await this.actor.system.swapMainToOffHand();
   }
 }
