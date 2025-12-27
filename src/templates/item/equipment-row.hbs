@@ -1,0 +1,99 @@
+<div class="flexcol item collapsible collapsed"
+     data-uuid="{{item.uuid}}"
+     data-item-id="{{item.id}}"
+     data-entry-id="{{item.id}}"
+     data-item-name="{{item.name}}">
+    <div class="flexrow gap-small" data-key="{{item.id }}">
+        <img class="item-image flex0"
+             src="{{item.img}}"
+             alt="{{item.name}}"
+             width="32"
+             height="32"
+             draggable="false" />
+        <div class="flexcol flex1 gap-min">
+            <div class="flexrow gap-small">
+                <div class="flex1 item-name">{{item.name}}</div>
+            </div>
+            <div class="flexrow gap">
+                <div class="flex1"></div>
+                <div class="flex0 item-detail item-controls">
+                    {{#if showSwapButton }}
+                        <button type="button"
+                                class="icon-button"
+                                data-action="swapWeapons"
+                                data-tooltip="KN.Character.Inventory.swapWeaponsTooltip">
+                            <i class="fas fa-arrow-right-arrow-left"></i>
+                        </button>
+                    {{/if}}
+                    <button type="button"
+                            class="unbutton config-button item-control item-action always-interactive"
+                            data-tooltip="KN.Item.Sheet.toggleTooltip"
+                            data-action="toggleExpand">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                    <button type="button"
+                            class="unbutton config-button item-control item-action always-interactive"
+                            data-tooltip="KN.Item.Sheet.editTooltip"
+                            data-key="{{item.id}}"
+                            data-action="editItem">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button type="button"
+                            class="unbutton config-button item-control item-action always-interactive"
+                            data-tooltip="KN.Item.Sheet.deleteTooltip"
+                            data-key="{{item.id}}"
+                            data-action="removeItem">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item-description collapsible-content">
+        <div class="item-details">
+            <div class="item-detail item-price">{{localize "KN.Item.Sheet.label.cost"}}: {{item.system.cost}}</div>
+            {{#if (eq item.type "weapon") }}
+                {{#if item.system.broken }}
+                    <i data-tooltip="KN.Item.Sheet.label.broken" class="fas fa-heart-crack"></i>
+                {{/if}}
+                <div class="item-detail item-skill">
+                    {{localize "KN.Item.Sheet.label.skill"}}: {{localize (concat "KN.Character.Skills." item.system.skill)}}
+                </div>
+                <div class="item-detail item-speed">{{localize "KN.Item.Sheet.label.speed"}}: {{item.system.speed}}</div>
+                <div class="flexrow gap-min">
+                    {{localize "KN.Item.Sheet.label.traits"}}:
+                    <div class="weapon-traits">
+                        {{#if item.system.traits.defensive }}
+                            <span>{{localize "KN.Item.Sheet.traits.defensive"}}</span>
+                        {{/if}}
+                        {{#if item.system.traits.quick }}
+                            <span>{{localize "KN.Item.Sheet.traits.quick"}}</span>
+                        {{/if}}
+                        {{#if item.system.traits.parrying }}
+                            <span>{{localize "KN.Item.Sheet.traits.parrying"}}</span>
+                        {{/if}}
+                        {{#if item.system.traits.powerful }}
+                            <span>{{localize "KN.Item.Sheet.traits.powerful"}}</span>
+                        {{/if}}
+                        {{#if item.system.traits.simple }}
+                            <span>{{localize "KN.Item.Sheet.traits.simple"}}</span>
+                        {{/if}}
+                        {{#if item.system.traits.twoHanded }}
+                            <span>{{localize "KN.Item.Sheet.traits.twoHanded"}}</span>
+                        {{/if}}
+                        {{#if item.system.traits.versatile }}
+                            <span>{{localize "KN.Item.Sheet.traits.versatile"}}</span>
+                        {{/if}}
+                    </div>
+                </div>
+            {{/if}}
+        </div>
+        <span class="wrapper">
+            <div class="subtitle">{{localize "KN.Item.Sheet.label.description"}}</div>
+        {{editor item.system.description engine="prosemirror"}}</span>
+        <div class="wrapper">
+            <div class="subtitle">{{localize "KN.Item.Sheet.label.notes"}}</div>
+            {{editor item.system.notes engine="prosemirror"}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+<header class="sheet-header">
+  <div class="header-fields">
+    <div class="header-top flexrow gap">
+      <img class="profile-img"
+           alt="item image"
+           src="{{document.img}}"
+           data-action="editImage"
+           data-edit="img"
+           data-tooltip="{{document.name}}"
+           height="150"
+           width="100" />
+      <div class="flex3">
+        <h5 class="flexrow">
+          <div class="flex0">
+            <label class="left-label" for="kn.item.name">{{localize "KN.Item.Sheet.name"}}</label>
+          </div>
+          <input name="name"
+                 type="text"
+                 value="{{document.name}}"
+                 class="flex3"
+                 autocomplete="off"
+                 id="kn.item.name" />
+        </h5>
+        <h5 class="flexrow">
+          <div class="flex0">
+            <label class="left-label" for="kn.item.cost">{{localize "KN.Item.Sheet.cost"}} (₵)</label>
+          </div>
+          <input name="system.cost"
+                 type="number"
+                 data-dtype="Number"
+                 min="0"
+                 step="1"
+                 value="{{document.system.cost}}"
+                 class="flex3"
+                 autocomplete="off"
+                 id="kn.item.cost" />
+        </h5>
+        <h5 class="flexrow">
+          <div class="flex0">
+            <label class="left-label" for="kn.item.speed">{{localize "KN.Item.Sheet.speed"}}</label>
+          </div>
+          <input name="system.speed"
+                 type="number"
+                 data-dtype="Number"
+                 step="1"
+                 value="{{document.system.speed}}"
+                 class="flex3"
+                 autocomplete="off"
+                 id="kn.item.speed" />
+        </h5>
+        <h5 class="flexrow">
+          <div class="flex0">
+            <label class="left-label" for="kn.item.skill">{{localize 'KN.Item.Sheet.skill' }}</label>
+          </div>
+          <select name="system.skill" id="kn.item.skill">
+            <option value="bladedWeapons"
+                    {{#if (eq document.system.skill "bladedWeapons") }}
+                    selected
+                    {{/if }}>{{localize 'KN.Item.Sheet.skills.bladedWeapons' }}
+            </option>
+            <option value="bludgeoningWeapons"
+                    {{#if (eq document.system.skill "bludgeoningWeapons") }}
+                    selected
+                    {{/if }}>{{localize 'KN.Item.Sheet.skills.bludgeoningWeapons' }}
+            </option>
+            <option value="shaftedWeapons"
+                    {{#if (eq document.system.skill "shaftedWeapons") }}
+                    selected
+                    {{/if }}>{{localize 'KN.Item.Sheet.skills.shaftedWeapons' }}
+            </option>
+            <option value="unarmedCombat"
+                    {{#if (eq document.system.skill "unarmedCombat") }}
+                    selected
+                    {{/if }}>{{localize 'KN.Item.Sheet.skills.unarmedCombat' }}
+            </option>
+          </select>
+        </h5>
+        <h5 class="flexrow">
+          <div class="flex0">
+            <label class="left-label" for="kn.item.broken">{{localize "KN.Item.Sheet.broken"}}</label>
+          </div>
+          <input type="checkbox"
+                 name="system.broken"
+                 id="kn.item.broken"
+                 {{checked document.system.broken}} />
+        </h5>
+      </div>
+    </div>
+  </div>
+</header>

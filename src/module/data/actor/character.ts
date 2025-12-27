@@ -1,4 +1,9 @@
+import WeaponDataModel from '../item/weapon';
+import { getLocalization } from '../../helpers';
+
 import { attributeField, damageType, skillField } from './helper';
+
+import type KerNethalasItem from '../../item/item';
 
 const { ArrayField, BooleanField, DocumentUUIDField, NumberField, SchemaField, StringField } = foundry.data.fields;
 
@@ -120,6 +125,22 @@ const defineCharacterModel = () => ({
     overseerInfluence: new StringField({ initial: '' }),
     notes: new StringField({ initial: '' }),
   }),
+  equipment: new SchemaField({
+    mainHand: new DocumentUUIDField({ type: 'Item', required: false }),
+    offHand: new DocumentUUIDField({ type: 'Item', required: false }),
+    helmet: new DocumentUUIDField({ type: 'Item', required: false }),
+    armor: new SchemaField({
+      torso: new DocumentUUIDField({ type: 'Item', required: false }),
+      vambraces: new DocumentUUIDField({ type: 'Item', required: false }),
+      greaves: new DocumentUUIDField({ type: 'Item', required: false }),
+    }),
+    gloves: new DocumentUUIDField({ type: 'Item', required: false }),
+    boots: new DocumentUUIDField({ type: 'Item', required: false }),
+    amulet: new DocumentUUIDField({ type: 'Item', required: false }),
+    ring1: new DocumentUUIDField({ type: 'Item', required: false }),
+    ring2: new DocumentUUIDField({ type: 'Item', required: false }),
+  }),
+  beltList: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
   gearList: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
   backpackList: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
   pouch1List: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
@@ -161,6 +182,17 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     return this.parent.items.filter((item) => this.parent.system.pouch3List?.includes(item.uuid));
   }
 
+  beltItems(): Item.Implementation[] {
+    return this.parent.items.filter((item) => this.parent.system.beltList?.includes(item.uuid));
+  }
+
+  equipmentItems(): { mainHand: Item.Implementation | null; offHand: Item.Implementation | null } {
+    return {
+      mainHand: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.mainHand) ?? null,
+      offHand: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.offHand) ?? null,
+    };
+  }
+
   currentGearCapacity(): number {
     return this.gearItems().reduce((sum, item) => sum + item.system.slots(), 0);
   }
@@ -181,6 +213,10 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     return this.pouch3Items().reduce((sum, item) => sum + item.system.slots(), 0);
   }
 
+  currentBeltCapacity(): number {
+    return this.beltItems().length;
+  }
+
   canAddToGearList(newSlots: number): boolean {
     return this.gearItems().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 10;
   }
@@ -199,6 +235,34 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
 
   canAddToPouch3(newSlots: number): boolean {
     return this.pouch3Items().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 5;
+  }
+
+  canAddToBeltList(): boolean {
+    return this.beltItems().length < 4;
+  }
+
+  canEquipWeapon(item: KerNethalasItem): { result: boolean; message: string } {
+    const { system } = item;
+    if (!(system instanceof WeaponDataModel)) {
+      return { result: false, message: getLocalization().localize('KN.Error.onlyWeaponsInHands') };
+    }
+
+    if (system.traits.twoHanded && (this.parent.system.equipment.mainHand || this.parent.system.equipment.offHand)) {
+      return {
+        result: false,
+        message: getLocalization().localize('KN.Error.twoHandedHandsOccupied'),
+      };
+    }
+
+    const equipment = this.equipmentItems();
+    if (equipment.mainHand?.system.traits?.twoHanded || equipment.offHand?.system.traits?.twoHanded) {
+      return {
+        result: false,
+        message: getLocalization().localize('KN.Error.twoHandedAlreadyEquipped'),
+      };
+    }
+
+    return { result: true, message: '' };
   }
 
   async addToGearList(item: Item.Implementation) {
@@ -247,20 +311,21 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     return result ? item : null;
   }
 
+  async addToBeltList(item: Item.Implementation) {
+    const result = await this.parent.update({
+      system: {
+        beltList: [...this.beltList, item.uuid],
+      },
+    });
+    return result ? item : null;
+  }
+
   async moveItemToGear(item: Item.Implementation) {
-    const filteredGear = this.gearList.filter((id) => id !== item.uuid);
-    const filteredBackpack = this.backpackList.filter((id) => id !== item.uuid);
-    const filteredPouch1 = this.pouch1List.filter((id) => id !== item.uuid);
-    const filteredPouch2 = this.pouch2List.filter((id) => id !== item.uuid);
-    const filteredPouch3 = this.pouch3List.filter((id) => id !== item.uuid);
+    await this.removeItemFromLists(item.uuid);
 
     const result = await this.parent.update({
       system: {
-        gearList: [...filteredGear, item.uuid],
-        backpackList: filteredBackpack,
-        pouch1List: filteredPouch1,
-        pouch2List: filteredPouch2,
-        pouch3List: filteredPouch3,
+        gearList: [...this.gearList, item.uuid],
       },
     });
 
@@ -268,19 +333,11 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   async moveItemToBackpack(item: Item.Implementation) {
-    const filteredGear = this.gearList.filter((id) => id !== item.uuid);
-    const filteredBackpack = this.backpackList.filter((id) => id !== item.uuid);
-    const filteredPouch1 = this.pouch1List.filter((id) => id !== item.uuid);
-    const filteredPouch2 = this.pouch2List.filter((id) => id !== item.uuid);
-    const filteredPouch3 = this.pouch3List.filter((id) => id !== item.uuid);
+    await this.removeItemFromLists(item.uuid);
 
     const result = await this.parent.update({
       system: {
-        gearList: filteredGear,
-        backpackList: [...filteredBackpack, item.uuid],
-        pouch1List: filteredPouch1,
-        pouch2List: filteredPouch2,
-        pouch3List: filteredPouch3,
+        backpackList: [...this.backpackList, item.uuid],
       },
     });
 
@@ -288,19 +345,11 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   async moveItemToPouch1(item: Item.Implementation) {
-    const filteredGear = this.gearList.filter((id) => id !== item.uuid);
-    const filteredBackpack = this.backpackList.filter((id) => id !== item.uuid);
-    const filteredPouch1 = this.pouch1List.filter((id) => id !== item.uuid);
-    const filteredPouch2 = this.pouch2List.filter((id) => id !== item.uuid);
-    const filteredPouch3 = this.pouch3List.filter((id) => id !== item.uuid);
+    await this.removeItemFromLists(item.uuid);
 
     const result = await this.parent.update({
       system: {
-        gearList: filteredGear,
-        backpackList: filteredBackpack,
-        pouch1List: [...filteredPouch1, item.uuid],
-        pouch2List: filteredPouch2,
-        pouch3List: filteredPouch3,
+        pouch1List: [...this.pouch1List, item.uuid],
       },
     });
 
@@ -308,19 +357,11 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   async moveItemToPouch2(item: Item.Implementation) {
-    const filteredGear = this.gearList.filter((id) => id !== item.uuid);
-    const filteredBackpack = this.backpackList.filter((id) => id !== item.uuid);
-    const filteredPouch1 = this.pouch1List.filter((id) => id !== item.uuid);
-    const filteredPouch2 = this.pouch2List.filter((id) => id !== item.uuid);
-    const filteredPouch3 = this.pouch3List.filter((id) => id !== item.uuid);
+    await this.removeItemFromLists(item.uuid);
 
     const result = await this.parent.update({
       system: {
-        gearList: filteredGear,
-        backpackList: filteredBackpack,
-        pouch1List: filteredPouch1,
-        pouch2List: [...filteredPouch2, item.uuid],
-        pouch3List: filteredPouch3,
+        pouch2List: [...this.pouch2List, item.uuid],
       },
     });
 
@@ -328,19 +369,23 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   async moveItemToPouch3(item: Item.Implementation) {
-    const filteredGear = this.gearList.filter((id) => id !== item.uuid);
-    const filteredBackpack = this.backpackList.filter((id) => id !== item.uuid);
-    const filteredPouch1 = this.pouch1List.filter((id) => id !== item.uuid);
-    const filteredPouch2 = this.pouch2List.filter((id) => id !== item.uuid);
-    const filteredPouch3 = this.pouch3List.filter((id) => id !== item.uuid);
+    await this.removeItemFromLists(item.uuid);
 
     const result = await this.parent.update({
       system: {
-        gearList: filteredGear,
-        backpackList: filteredBackpack,
-        pouch1List: filteredPouch1,
-        pouch2List: filteredPouch2,
-        pouch3List: [...filteredPouch3, item.uuid],
+        pouch3List: [...this.pouch3List, item.uuid],
+      },
+    });
+
+    return result ? item : null;
+  }
+
+  async moveItemToBelt(item: Item.Implementation) {
+    await this.removeItemFromLists(item.uuid);
+
+    const result = await this.parent.update({
+      system: {
+        beltList: [...this.beltList, item.uuid],
       },
     });
 
@@ -355,6 +400,53 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
         pouch1List: this.pouch1List.filter((id) => id !== itemUUID),
         pouch2List: this.pouch2List.filter((id) => id !== itemUUID),
         pouch3List: this.pouch3List.filter((id) => id !== itemUUID),
+        beltList: this.beltList.filter((id) => id !== itemUUID),
+        equipment: {
+          mainHand: this.parent.system.equipment.mainHand === itemUUID ? null : this.parent.system.equipment.mainHand,
+          offHand: this.parent.system.equipment.offHand === itemUUID ? null : this.parent.system.equipment.offHand,
+        },
+      },
+    });
+  }
+
+  async addToMainHand(item: Item.Implementation) {
+    await this.removeItemFromLists(item.uuid);
+
+    const result = await this.parent.update({
+      system: {
+        equipment: {
+          mainHand: item.uuid,
+        },
+      },
+    });
+
+    return result ? item : null;
+  }
+
+  async addToOffHand(item: Item.Implementation) {
+    await this.removeItemFromLists(item.uuid);
+
+    const result = await this.parent.update({
+      system: {
+        equipment: {
+          offHand: item.uuid,
+        },
+      },
+    });
+
+    return result ? item : null;
+  }
+
+  async swapMainToOffHand() {
+    const currentMainHand = this.parent.system.equipment.mainHand;
+    const currentOffHand = this.parent.system.equipment.offHand;
+
+    await this.parent.update({
+      system: {
+        equipment: {
+          mainHand: currentOffHand,
+          offHand: currentMainHand,
+        },
       },
     });
   }
