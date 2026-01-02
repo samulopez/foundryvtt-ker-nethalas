@@ -8,8 +8,7 @@ import ActorSheetV2 = foundry.applications.sheets.ActorSheetV2;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 
 interface Context {
-  leftSkills: Record<string, unknown>;
-  rightSkills: Record<string, unknown>;
+  skillRows: unknown[];
   enrichedPerksMadness: string;
   enrichedPerksPerks: string;
   enrichedPerksNotes: string;
@@ -106,19 +105,48 @@ export default class CharacterSheet<
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
 
-    context.leftSkills = {};
-    context.rightSkills = {};
-    Object.entries(context.document.system.skills)
-      .filter(([key, _value]) => SKILL_DISPLAY.left.includes(key))
-      .forEach(([key, value]) => {
-        context.leftSkills[key] = value;
-      });
-
-    Object.entries(context.document.system.skills)
-      .filter(([key, _value]) => SKILL_DISPLAY.right.includes(key))
-      .forEach(([key, value]) => {
-        context.rightSkills[key] = value;
-      });
+    context.skillRows = [
+      {
+        left: { ...context.document.system.skills[SKILL_DISPLAY.left[0]], id: SKILL_DISPLAY.left[0] },
+        right: { ...context.document.system.skills[SKILL_DISPLAY.right[0]], id: SKILL_DISPLAY.right[0] },
+      },
+      {
+        left: { ...context.document.system.skills[SKILL_DISPLAY.left[1]], id: SKILL_DISPLAY.left[1] },
+        right: { ...context.document.system.skills[SKILL_DISPLAY.right[1]], id: SKILL_DISPLAY.right[1] },
+      },
+      {
+        left: { ...context.document.system.skills[SKILL_DISPLAY.left[2]], id: SKILL_DISPLAY.left[2] },
+        right: { ...context.document.system.skills[SKILL_DISPLAY.right[2]], id: SKILL_DISPLAY.right[2] },
+      },
+      {
+        left: { ...context.document.system.skills[SKILL_DISPLAY.left[3]], id: SKILL_DISPLAY.left[3] },
+        right: { ...context.document.system.skills[SKILL_DISPLAY.right[3]], id: SKILL_DISPLAY.right[3] },
+      },
+      {
+        left: { ...context.document.system.skills[SKILL_DISPLAY.left[4]], id: SKILL_DISPLAY.left[4] },
+        right: { ...context.document.system.skills[SKILL_DISPLAY.right[4]], id: SKILL_DISPLAY.right[4] },
+      },
+      {
+        left: { ...context.document.system.skills[SKILL_DISPLAY.left[5]], id: SKILL_DISPLAY.left[5] },
+        right: { ...context.document.system.skills.custom1, id: 'custom1', custom: true },
+      },
+      {
+        left: { ...context.document.system.skills[SKILL_DISPLAY.left[6]], id: SKILL_DISPLAY.left[6] },
+        right: { ...context.document.system.skills.custom2, id: 'custom2', custom: true },
+      },
+      {
+        left: { ...context.document.system.skills[SKILL_DISPLAY.left[7]], id: SKILL_DISPLAY.left[7] },
+        right: { ...context.document.system.skills.custom3, id: 'custom3', custom: true },
+      },
+      {
+        left: { ...context.document.system.skills[SKILL_DISPLAY.left[8]], id: SKILL_DISPLAY.left[8] },
+        right: { ...context.document.system.skills.custom4, id: 'custom4', custom: true },
+      },
+      {
+        left: { ...context.document.system.skills[SKILL_DISPLAY.left[9]], id: SKILL_DISPLAY.left[9] },
+        right: { ...context.document.system.skills.custom5, id: 'custom5', custom: true },
+      },
+    ];
 
     context.enrichedPerksMadness = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
       this.document.system.perks.madness,

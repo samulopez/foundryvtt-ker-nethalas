@@ -203,18 +203,18 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
     const roll = new Roll('1d100');
     await roll.evaluate();
 
-    let resultString = 'Success';
+    let resultString = getLocalization().localize('KN.roll.success');
     let customClass = 'success-text';
     const total = roll.total ?? 1000;
     const isCritical = total % 11 === 0;
 
     if (total > value) {
-      resultString = 'Failure';
+      resultString = getLocalization().localize('KN.roll.failure');
       customClass = 'failure-text';
     }
 
     const html = await foundry.applications.handlebars.renderTemplate(TEMPLATES.usageDieRoll, {
-      resultString: isCritical ? `Critical ${resultString}` : resultString,
+      resultString: isCritical ? getLocalization().format('KN.roll.critical', { type: resultString }) : resultString,
       customClass,
       formula: roll.formula,
       total: roll.total,
@@ -222,7 +222,7 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
 
     const message = await roll.toMessage({
       content: html,
-      flavor: `${getLocalization().localize(`KN.Character.Skills.${skillKey}`)} Skill Check<br>Target Value: ${value} ${modifier !== 0 ? `(Base: ${skill.value} ${modifier > 0 ? ` + ${modifier}` : ` - ${Math.abs(modifier)}`})` : ''}`,
+      flavor: `${getLocalization().format('KN.roll.skillCheck', { skill: getLocalization().localize(`KN.Character.Skills.${skillKey}`) })}<br>${getLocalization().localize('KN.roll.targetValue')}: ${value} ${modifier !== 0 ? `(${getLocalization().localize('KN.roll.base')}: ${skill.value} ${modifier > 0 ? ` + ${modifier}` : ` - ${Math.abs(modifier)}`})` : ''}`,
     });
 
     const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
