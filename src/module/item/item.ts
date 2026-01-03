@@ -5,5 +5,9 @@ export default class KerNethalasItem extends Item {
       newData.img = 'icons/svg/sword.svg';
     }
     super(newData, context);
+
+    if (newData.type === 'weapon') {
+      this.updateSource({ system: { equippable: true } });
+    }
   }
 }

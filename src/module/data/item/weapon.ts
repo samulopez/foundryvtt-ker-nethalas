@@ -1,4 +1,4 @@
-import { SKILLS } from '../../constants';
+import { SKILLS, WEIGHT } from '../../constants';
 
 import { defineItemModel } from './item';
 
@@ -27,12 +27,28 @@ const defineWeaponModel = () => ({
 
 type WeaponModelSchema = ReturnType<typeof defineWeaponModel> & ItemModelSchema;
 
+type WeaponDataModelType = foundry.abstract.TypeDataModel<WeaponModelSchema, Item.Implementation>;
+
 export default class WeaponDataModel extends foundry.abstract.TypeDataModel<WeaponModelSchema, Item.Implementation> {
   static defineSchema(): WeaponModelSchema {
     return { ...defineItemModel(), ...defineWeaponModel() };
   }
 
+  _preUpdate: WeaponDataModelType['_preUpdate'] = async (changed, options, user) => {
+    if (changed.system?.traits?.twoHanded !== undefined) {
+      const { twoHanded } = changed.system.traits;
+      if (twoHanded) {
+        // eslint-disable-next-line no-param-reassign
+        changed.system.weight = WEIGHT.heavy;
+      } else {
+        // eslint-disable-next-line no-param-reassign
+        changed.system.weight = WEIGHT.normal;
+      }
+    }
+    return super._preUpdate(changed, options, user);
+  };
+
   slots(): number {
-    return this.traits.twoHanded ? 2 : 1;
+    return this.parent.system.traits.twoHanded ? 2 : 1;
   }
 }

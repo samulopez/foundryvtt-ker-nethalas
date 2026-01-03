@@ -27,6 +27,9 @@
                  draggable="true"
                  data-key="{{equipment.helmet.id}}">
               <h3 class="equipment-name">{{localize "KN.Character.Inventory.equipped.helmet"}}</h3>
+              {{#if equipment.helmet }}
+                {{> "systems/ker-nethalas/templates/item/equipment-row.hbs" item=equipment.helmet}}
+              {{/if}}
             </div>
             <div class="header armor draggable"
                  draggable="true"
@@ -37,26 +40,41 @@
                  draggable="true"
                  data-key="{{equipment.gloves.id}}">
               <h3 class="equipment-name">{{localize "KN.Character.Inventory.equipped.gloves"}}</h3>
+              {{#if equipment.gloves }}
+                {{> "systems/ker-nethalas/templates/item/equipment-row.hbs" item=equipment.gloves}}
+              {{/if}}
             </div>
             <div class="header boots draggable"
                  draggable="true"
                  data-key="{{equipment.boots.id}}">
               <h3 class="equipment-name">{{localize "KN.Character.Inventory.equipped.boots"}}</h3>
+              {{#if equipment.boots }}
+                {{> "systems/ker-nethalas/templates/item/equipment-row.hbs" item=equipment.boots}}
+              {{/if}}
             </div>
             <div class="header amulet draggable"
                  draggable="true"
                  data-key="{{equipment.amulet.id}}">
               <h3 class="equipment-name">{{localize "KN.Character.Inventory.equipped.amulet"}}</h3>
+              {{#if equipment.amulet }}
+                {{> "systems/ker-nethalas/templates/item/equipment-row.hbs" item=equipment.amulet}}
+              {{/if}}
             </div>
             <div class="header ring1 draggable"
                  draggable="true"
                  data-key="{{equipment.ring1.id}}">
               <h3 class="equipment-name">{{localize "KN.Character.Inventory.equipped.ring"}}</h3>
+              {{#if equipment.ring1 }}
+                {{> "systems/ker-nethalas/templates/item/equipment-row.hbs" item=equipment.ring1}}
+              {{/if}}
             </div>
             <div class="header ring2 draggable"
                  draggable="true"
                  data-key="{{equipment.ring2.id}}">
               <h3 class="equipment-name">{{localize "KN.Character.Inventory.equipped.ring"}}</h3>
+              {{#if equipment.ring2 }}
+                {{> "systems/ker-nethalas/templates/item/equipment-row.hbs" item=equipment.ring2}}
+              {{/if}}
             </div>
           </div>
         </div>
