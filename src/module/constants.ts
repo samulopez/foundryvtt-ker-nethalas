@@ -25,6 +25,13 @@ export const TEMPLATES = {
   },
 };
 
+export enum WEIGHT {
+  nonEncumbering = 'nonEncumbering',
+  light = 'light',
+  normal = 'normal',
+  heavy = 'heavy',
+}
+
 export enum SKILLS {
   acrobatics = 'acrobatics',
   athletics = 'athletics',

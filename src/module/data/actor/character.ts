@@ -1,5 +1,5 @@
-import WeaponDataModel from '../item/weapon';
 import { getLocalization } from '../../helpers';
+import { WEIGHT } from '../../constants';
 
 import { attributeField, damageType, skillField } from './helper';
 
@@ -167,7 +167,7 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   nonEncumberingItems(): Item.Implementation[] {
-    return this.parent.items.filter((item) => item.system.weight === 'nonEncumbering');
+    return this.parent.items.filter((item) => item.system.weight === WEIGHT.nonEncumbering);
   }
 
   pouch1Items(): Item.Implementation[] {
@@ -186,10 +186,35 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     return this.parent.items.filter((item) => this.parent.system.beltList?.includes(item.uuid));
   }
 
-  equipmentItems(): { mainHand: Item.Implementation | null; offHand: Item.Implementation | null } {
+  equipmentItems(): {
+    mainHand: Item.Implementation | null;
+    offHand: Item.Implementation | null;
+    helmet: Item.Implementation | null;
+    armor: {
+      torso: Item.Implementation | null;
+      vambraces: Item.Implementation | null;
+      greaves: Item.Implementation | null;
+    };
+    gloves: Item.Implementation | null;
+    boots: Item.Implementation | null;
+    amulet: Item.Implementation | null;
+    ring1: Item.Implementation | null;
+    ring2: Item.Implementation | null;
+  } {
     return {
       mainHand: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.mainHand) ?? null,
       offHand: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.offHand) ?? null,
+      helmet: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.helmet) ?? null,
+      armor: {
+        torso: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.armor.torso) ?? null,
+        vambraces: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.armor.vambraces) ?? null,
+        greaves: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.armor.greaves) ?? null,
+      },
+      gloves: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.gloves) ?? null,
+      boots: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.boots) ?? null,
+      amulet: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.amulet) ?? null,
+      ring1: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.ring1) ?? null,
+      ring2: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.ring2) ?? null,
     };
   }
 
@@ -243,11 +268,11 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
 
   canEquipWeapon(item: KerNethalasItem): { result: boolean; message: string } {
     const { system } = item;
-    if (!(system instanceof WeaponDataModel)) {
-      return { result: false, message: getLocalization().localize('KN.Error.onlyWeaponsInHands') };
+    if (!system.equippable) {
+      return { result: false, message: getLocalization().localize('KN.Error.notEquippable') };
     }
 
-    if (system.traits.twoHanded && (this.parent.system.equipment.mainHand || this.parent.system.equipment.offHand)) {
+    if (system.slots() > 1 && (this.parent.system.equipment.mainHand || this.parent.system.equipment.offHand)) {
       return {
         result: false,
         message: getLocalization().localize('KN.Error.twoHandedHandsOccupied'),
@@ -255,7 +280,7 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     }
 
     const equipment = this.equipmentItems();
-    if (equipment.mainHand?.system.traits?.twoHanded || equipment.offHand?.system.traits?.twoHanded) {
+    if ((equipment.mainHand?.system.slots() ?? 0) > 1 || (equipment.offHand?.system.slots() ?? 0) > 1) {
       return {
         result: false,
         message: getLocalization().localize('KN.Error.twoHandedAlreadyEquipped'),
@@ -265,127 +290,21 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     return { result: true, message: '' };
   }
 
-  async addToGearList(item: Item.Implementation) {
+  async addItemToList(list: string, item: Item.Implementation) {
     const result = await this.parent.update({
       system: {
-        gearList: [...this.gearList, item.uuid],
-      },
-    });
-
-    return result ? item : null;
-  }
-
-  async addToBackpackList(item: Item.Implementation) {
-    const result = await this.parent.update({
-      system: {
-        backpackList: [...this.backpackList, item.uuid],
+        [list]: [...this[list], item.uuid],
       },
     });
     return result ? item : null;
   }
 
-  async addToPouch1(item: Item.Implementation) {
-    const result = await this.parent.update({
-      system: {
-        pouch1List: [...this.pouch1List, item.uuid],
-      },
-    });
-    return result ? item : null;
-  }
-
-  async addToPouch2(item: Item.Implementation) {
-    const result = await this.parent.update({
-      system: {
-        pouch2List: [...this.pouch2List, item.uuid],
-      },
-    });
-    return result ? item : null;
-  }
-
-  async addToPouch3(item: Item.Implementation) {
-    const result = await this.parent.update({
-      system: {
-        pouch3List: [...this.pouch3List, item.uuid],
-      },
-    });
-    return result ? item : null;
-  }
-
-  async addToBeltList(item: Item.Implementation) {
-    const result = await this.parent.update({
-      system: {
-        beltList: [...this.beltList, item.uuid],
-      },
-    });
-    return result ? item : null;
-  }
-
-  async moveItemToGear(item: Item.Implementation) {
+  async moveItemToList(list: string, item: Item.Implementation) {
     await this.removeItemFromLists(item.uuid);
 
     const result = await this.parent.update({
       system: {
-        gearList: [...this.gearList, item.uuid],
-      },
-    });
-
-    return result ? item : null;
-  }
-
-  async moveItemToBackpack(item: Item.Implementation) {
-    await this.removeItemFromLists(item.uuid);
-
-    const result = await this.parent.update({
-      system: {
-        backpackList: [...this.backpackList, item.uuid],
-      },
-    });
-
-    return result ? item : null;
-  }
-
-  async moveItemToPouch1(item: Item.Implementation) {
-    await this.removeItemFromLists(item.uuid);
-
-    const result = await this.parent.update({
-      system: {
-        pouch1List: [...this.pouch1List, item.uuid],
-      },
-    });
-
-    return result ? item : null;
-  }
-
-  async moveItemToPouch2(item: Item.Implementation) {
-    await this.removeItemFromLists(item.uuid);
-
-    const result = await this.parent.update({
-      system: {
-        pouch2List: [...this.pouch2List, item.uuid],
-      },
-    });
-
-    return result ? item : null;
-  }
-
-  async moveItemToPouch3(item: Item.Implementation) {
-    await this.removeItemFromLists(item.uuid);
-
-    const result = await this.parent.update({
-      system: {
-        pouch3List: [...this.pouch3List, item.uuid],
-      },
-    });
-
-    return result ? item : null;
-  }
-
-  async moveItemToBelt(item: Item.Implementation) {
-    await this.removeItemFromLists(item.uuid);
-
-    const result = await this.parent.update({
-      system: {
-        beltList: [...this.beltList, item.uuid],
+        [list]: [...this[list], item.uuid],
       },
     });
 
@@ -404,6 +323,24 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
         equipment: {
           mainHand: this.parent.system.equipment.mainHand === itemUUID ? null : this.parent.system.equipment.mainHand,
           offHand: this.parent.system.equipment.offHand === itemUUID ? null : this.parent.system.equipment.offHand,
+          helmet: this.parent.system.equipment.helmet === itemUUID ? null : this.parent.system.equipment.helmet,
+          armor: {
+            torso:
+              this.parent.system.equipment.armor.torso === itemUUID ? null : this.parent.system.equipment.armor.torso,
+            vambraces:
+              this.parent.system.equipment.armor.vambraces === itemUUID
+                ? null
+                : this.parent.system.equipment.armor.vambraces,
+            greaves:
+              this.parent.system.equipment.armor.greaves === itemUUID
+                ? null
+                : this.parent.system.equipment.armor.greaves,
+          },
+          gloves: this.parent.system.equipment.gloves === itemUUID ? null : this.parent.system.equipment.gloves,
+          boots: this.parent.system.equipment.boots === itemUUID ? null : this.parent.system.equipment.boots,
+          amulet: this.parent.system.equipment.amulet === itemUUID ? null : this.parent.system.equipment.amulet,
+          ring1: this.parent.system.equipment.ring1 === itemUUID ? null : this.parent.system.equipment.ring1,
+          ring2: this.parent.system.equipment.ring2 === itemUUID ? null : this.parent.system.equipment.ring2,
         },
       },
     });
@@ -449,5 +386,19 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
         },
       },
     });
+  }
+
+  async addItemToEquipment(equipment: string, item: Item.Implementation) {
+    await this.removeItemFromLists(item.uuid);
+
+    const result = await this.parent.update({
+      system: {
+        equipment: {
+          [equipment]: item.uuid,
+        },
+      },
+    });
+
+    return result ? item : null;
   }
 }

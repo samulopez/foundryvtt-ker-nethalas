@@ -52,7 +52,9 @@
             <div class="item-details">
                 <div class="item-detail item-price">{{localize "KN.Item.Sheet.label.cost"}}: {{item.system.cost}}</div>
                 {{#if showWeight }}
-                    <div class="item-detail item-weight empty">{{localize "KN.Item.Sheet.label.weight"}}: {{item.system.weight}}</div>
+                    <div class="item-detail item-weight empty">
+                        {{localize "KN.Item.Sheet.label.weight"}}: {{ localize (concat "KN.Item.Sheet.weights." item.system.weight) }}
+                    </div>
                 {{/if}}
                 {{#if showQuantity }}
                     <div class="item-detail item-quantity">

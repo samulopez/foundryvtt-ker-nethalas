@@ -1,5 +1,5 @@
 import { getLocalization } from '../helpers';
-import { TEMPLATES, SKILL_DISPLAY } from '../constants';
+import { TEMPLATES, SKILL_DISPLAY, WEIGHT } from '../constants';
 
 import type KerNethalasItem from '../item/item';
 
@@ -257,6 +257,28 @@ export default class CharacterSheet<
   //   // }
   // }
 
+  _dropInEquipment(event: DragEvent): string {
+    if ((event.target as HTMLElement).closest('.helmet')) {
+      return 'helmet';
+    }
+    if ((event.target as HTMLElement).closest('.gloves')) {
+      return 'gloves';
+    }
+    if ((event.target as HTMLElement).closest('.boots')) {
+      return 'boots';
+    }
+    if ((event.target as HTMLElement).closest('.amulet')) {
+      return 'amulet';
+    }
+    if ((event.target as HTMLElement).closest('.ring1')) {
+      return 'ring1';
+    }
+    if ((event.target as HTMLElement).closest('.ring2')) {
+      return 'ring2';
+    }
+    return '';
+  }
+
   async _onDropItem(event: DragEvent, item: KerNethalasItem) {
     const dropInGearList = !!(event.target as HTMLElement).closest('.gear-list');
     const dropInBackpackList = !!(event.target as HTMLElement).closest('.backpack-list');
@@ -266,6 +288,7 @@ export default class CharacterSheet<
     const dropInBeltList = !!(event.target as HTMLElement).closest('.belt-list');
     const dropInMainHand = !!(event.target as HTMLElement).closest('.main-hand');
     const dropInOffHand = !!(event.target as HTMLElement).closest('.off-hand');
+    const equipmentDropped = this._dropInEquipment(event);
 
     const droppingOnHands = dropInMainHand || dropInOffHand;
 
@@ -296,9 +319,17 @@ export default class CharacterSheet<
         return dropInMainHand ? this.actor.system.addToMainHand(item) : this.actor.system.addToOffHand(item);
       }
 
-      if (item.system.weight === 'nonEncumbering') {
+      if (item.system.weight === WEIGHT.nonEncumbering) {
         ui.notifications?.warn(getLocalization().localize('KN.Error.nonEncumberingMoveSameActor'));
         return null;
+      }
+
+      if (equipmentDropped) {
+        if (this.actor.system.equipment[equipmentDropped]) {
+          ui.notifications?.warn(getLocalization().localize('KN.Error.equipmentSlotOccupied'));
+          return null;
+        }
+        return this.actor.system.addItemToEquipment(equipmentDropped, item);
       }
 
       if (dropInBackpackList) {
@@ -306,7 +337,7 @@ export default class CharacterSheet<
           ui.notifications?.warn(getLocalization().localize('KN.Error.backpackCapacity'));
           return null;
         }
-        return this.actor.system.moveItemToBackpack(item);
+        return this.actor.system.moveItemToList('backpackList', item);
       }
 
       if (dropInGearList) {
@@ -314,7 +345,7 @@ export default class CharacterSheet<
           ui.notifications?.warn(getLocalization().localize('KN.Error.gearCapacity'));
           return null;
         }
-        return this.actor.system.moveItemToGear(item);
+        return this.actor.system.moveItemToList('gearList', item);
       }
 
       if (dropInPouch1List) {
@@ -322,7 +353,7 @@ export default class CharacterSheet<
           ui.notifications?.warn(getLocalization().localize('KN.Error.pouchCapacity'));
           return null;
         }
-        return this.actor.system.moveItemToPouch1(item);
+        return this.actor.system.moveItemToList('pouch1List', item);
       }
 
       if (dropInPouch2List) {
@@ -330,7 +361,7 @@ export default class CharacterSheet<
           ui.notifications?.warn(getLocalization().localize('KN.Error.pouchCapacity'));
           return null;
         }
-        return this.actor.system.moveItemToPouch2(item);
+        return this.actor.system.moveItemToList('pouch2List', item);
       }
 
       if (dropInPouch3List) {
@@ -338,7 +369,7 @@ export default class CharacterSheet<
           ui.notifications?.warn(getLocalization().localize('KN.Error.pouchCapacity'));
           return null;
         }
-        return this.actor.system.moveItemToPouch3(item);
+        return this.actor.system.moveItemToList('pouch3List', item);
       }
 
       if (dropInBeltList) {
@@ -346,13 +377,13 @@ export default class CharacterSheet<
           ui.notifications?.warn(getLocalization().localize('KN.Error.beltCapacity'));
           return null;
         }
-        return this.actor.system.moveItemToBelt(item);
+        return this.actor.system.moveItemToList('beltList', item);
       }
 
       return null;
     }
 
-    if (item.system.weight === 'nonEncumbering') {
+    if (item.system.weight === WEIGHT.nonEncumbering) {
       return super._onDropItem(event, item);
     }
 
@@ -375,6 +406,10 @@ export default class CharacterSheet<
       }
 
       return dropInMainHand ? this.actor.system.addToMainHand(newItem) : this.actor.system.addToOffHand(newItem);
+    }
+
+    if (equipmentDropped) {
+      return this._onDropToEquipment(event, equipmentDropped, item);
     }
 
     if (dropInGearList) {
@@ -401,13 +436,23 @@ export default class CharacterSheet<
       return this._onDropBelt(event, item);
     }
 
-    // TODO: inventory ui
-    // TODO: equip other items on hands
-    // TODO V2: sorting
     // TODO: add armor
-    // TODO: translations
+
+    // TODO V2: sorting
 
     return null;
+  }
+
+  async _onDropToEquipment(event, equipmentSlot, item) {
+    if (this.actor.system.equipment[equipmentSlot]) {
+      ui.notifications?.warn(getLocalization().localize('KN.Error.equipmentSlotOccupied'));
+      return null;
+    }
+    const newItem = await super._onDropItem(event, item);
+    if (!newItem) {
+      return null;
+    }
+    return this.actor.system.addItemToEquipment(equipmentSlot, newItem);
   }
 
   async _onDropGearList(event, item) {
@@ -419,7 +464,7 @@ export default class CharacterSheet<
     if (!newItem) {
       return null;
     }
-    return this.actor.system.addToGearList(newItem);
+    return this.actor.system.addItemToList('gearList', newItem);
   }
 
   async _onDropBackpackList(event, item) {
@@ -431,7 +476,7 @@ export default class CharacterSheet<
     if (!newItem) {
       return null;
     }
-    return this.actor.system.addToBackpackList(newItem);
+    return this.actor.system.addItemToList('backpackList', newItem);
   }
 
   async _onDropPouch1(event, item) {
@@ -443,7 +488,7 @@ export default class CharacterSheet<
     if (!newItem) {
       return null;
     }
-    return this.actor.system.addToPouch1(newItem);
+    return this.actor.system.addItemToList('pouch1List', newItem);
   }
 
   async _onDropPouch2(event, item) {
@@ -455,7 +500,7 @@ export default class CharacterSheet<
     if (!newItem) {
       return null;
     }
-    return this.actor.system.addToPouch2(newItem);
+    return this.actor.system.addItemToList('pouch2List', newItem);
   }
 
   async _onDropPouch3(event, item) {
@@ -467,7 +512,7 @@ export default class CharacterSheet<
     if (!newItem) {
       return null;
     }
-    return this.actor.system.addToPouch3(newItem);
+    return this.actor.system.addItemToList('pouch3List', newItem);
   }
 
   async _onDropBelt(event, item) {
@@ -479,7 +524,7 @@ export default class CharacterSheet<
     if (!newItem) {
       return null;
     }
-    return this.actor.system.addToBeltList(newItem);
+    return this.actor.system.addItemToList('beltList', newItem);
   }
 
   static async #rollTensionDie(this, event, _target) {
