@@ -23,7 +23,20 @@ export const TEMPLATES = {
     detailsTab: `systems/${ID}/templates/weapon/details-tab.hbs`,
     notesTab: `systems/${ID}/templates/weapon/notes-tab.hbs`,
   },
+  armor: {
+    header: `systems/${ID}/templates/armor/header.hbs`,
+    detailsTab: `systems/${ID}/templates/armor/details-tab.hbs`,
+    notesTab: `systems/${ID}/templates/armor/notes-tab.hbs`,
+  },
 };
+
+export enum ARMOR {
+  shield = 'shield',
+  head = 'head',
+  torso = 'torso',
+  arms = 'arms',
+  legs = 'legs',
+}
 
 export enum WEIGHT {
   nonEncumbering = 'nonEncumbering',

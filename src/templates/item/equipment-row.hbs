@@ -14,38 +14,58 @@
             <div class="flexrow gap-small">
                 <div class="flex1 item-name">{{item.name}}</div>
             </div>
-            <div class="flexrow gap">
-                <div class="flex1"></div>
-                <div class="flex0 item-detail item-controls">
-                    {{#if showSwapButton }}
-                        <button type="button"
-                                class="icon-button"
-                                data-action="swapWeapons"
-                                data-tooltip="KN.Character.Inventory.swapWeaponsTooltip">
-                            <i class="fas fa-arrow-right-arrow-left"></i>
-                        </button>
+            <div class="item-detail item-controls">
+                {{#if showSwapButton }}
+                    <button type="button"
+                            class="icon-button"
+                            data-action="swapWeapons"
+                            data-tooltip="KN.Character.Inventory.swapWeaponsTooltip">
+                        <i class="fas fa-arrow-right-arrow-left"></i>
+                    </button>
+                {{/if}}
+                {{#if item.system.broken }}
+                    <i data-tooltip="KN.Item.Sheet.label.broken" class="fas fa-heart-crack"></i>
+                {{else}}
+                    {{#if (eq item.type "armor") }}
+                        <div class="protection-details" data-tooltip="KN.Item.Sheet.protection">
+                            {{item.system.protection}}<i class="fas fa-shield"></i>
+                        </div>
+                        <div data-tooltip="KN.Item.Sheet.rollIntegrityArmorTooltip"
+                             class="rollable integrity-details"
+                             data-key="{{item.id}}"
+                             data-action="rollArmorIntegrity">
+                            D{{item.system.currentIntegrity}}<i class="fas fa-dice" data-key="{{item.id}}"></i>
+                        </div>
                     {{/if}}
-                    <button type="button"
-                            class="unbutton config-button item-control item-action always-interactive"
-                            data-tooltip="KN.Item.Sheet.toggleTooltip"
-                            data-action="toggleExpand">
-                        <i class="fas fa-expand"></i>
-                    </button>
-                    <button type="button"
-                            class="unbutton config-button item-control item-action always-interactive"
-                            data-tooltip="KN.Item.Sheet.editTooltip"
-                            data-key="{{item.id}}"
-                            data-action="editItem">
-                        <i class="fas fa-edit"></i>
-                    </button>
-                    <button type="button"
-                            class="unbutton config-button item-control item-action always-interactive"
-                            data-tooltip="KN.Item.Sheet.deleteTooltip"
-                            data-key="{{item.id}}"
-                            data-action="removeItem">
-                        <i class="fas fa-trash"></i>
-                    </button>
-                </div>
+                    {{#if (eq item.type "weapon") }}
+                        <div data-tooltip="KN.Item.Sheet.rollSkillCheckTooltip"
+                             class="rollable integrity-details"
+                             data-key="{{item.system.skill}}"
+                             data-action="rollSkill">
+                            {{localize (concat "KN.Item.Sheet.skills." item.system.skill)}}  <i class="fas fa-dice" data-key="{{item.system.skill}}"></i>
+                        </div>
+                    {{/if}}
+                {{/if}}
+                <button type="button"
+                        class="unbutton config-button item-control item-action always-interactive"
+                        data-tooltip="KN.Item.Sheet.toggleTooltip"
+                        data-action="toggleExpand">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button type="button"
+                        class="unbutton config-button item-control item-action always-interactive"
+                        data-tooltip="KN.Item.Sheet.editTooltip"
+                        data-key="{{item.id}}"
+                        data-action="editItem">
+                    <i class="fas fa-edit"></i>
+                </button>
+                <button type="button"
+                        class="unbutton config-button item-control item-action always-interactive"
+                        data-tooltip="KN.Item.Sheet.deleteTooltip"
+                        data-key="{{item.id}}"
+                        data-action="removeItem">
+                    <i class="fas fa-trash"></i>
+                </button>
             </div>
         </div>
     </div>
@@ -53,12 +73,6 @@
         <div class="item-details">
             <div class="item-detail item-price">{{localize "KN.Item.Sheet.label.cost"}}: {{item.system.cost}}</div>
             {{#if (eq item.type "weapon") }}
-                {{#if item.system.broken }}
-                    <i data-tooltip="KN.Item.Sheet.label.broken" class="fas fa-heart-crack"></i>
-                {{/if}}
-                <div class="item-detail item-skill">
-                    {{localize "KN.Item.Sheet.label.skill"}}: {{localize (concat "KN.Character.Skills." item.system.skill)}}
-                </div>
                 <div class="item-detail item-speed">{{localize "KN.Item.Sheet.label.speed"}}: {{item.system.speed}}</div>
                 <div class="flexrow gap-min">
                     {{localize "KN.Item.Sheet.label.traits"}}:
@@ -86,6 +100,18 @@
                         {{/if}}
                     </div>
                 </div>
+            {{/if}}
+            {{#if (eq item.type "armor") }}
+                <div class="item-detail item-max-integrity">
+                    {{localize "KN.Item.Sheet.maxIntegrity"}}: D{{item.system.maxIntegrity}}
+                </div>
+                <div class="item-detail item-decrease-perception">
+                    {{localize "KN.Item.Sheet.decreasePerception"}}: -{{item.system.decreasePerception}}
+                </div>
+                <div class="item-detail item-decrease-maneuverability">
+                    {{localize "KN.Item.Sheet.decreaseManeuverability"}}: -{{item.system.decreaseManeuverability}}
+                </div>
+                <div class="item-detail item-parry-bonus">{{localize "KN.Item.Sheet.parryBonus"}}: {{item.system.parryBonus}}</div>
             {{/if}}
         </div>
         <span class="wrapper">

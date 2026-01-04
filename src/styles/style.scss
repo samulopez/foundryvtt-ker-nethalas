@@ -309,6 +309,18 @@
             display: flex;
             justify-content: center;
             gap: $gap-min;
+            align-self: flex-end;
+            .protection-details {
+              display: flex;
+              align-items: center;
+              gap: $gap-min;
+              margin-right: 0.4rem;
+            }
+            .integrity-details {
+              display: flex;
+              align-items: center;
+              gap: $gap-min;
+            }
           }
           .item-details {
             display: flex;
@@ -416,15 +428,17 @@
       box-shadow: 0 8px 16px $color-shadow;
     }
 
+    h5 {
+      margin: 0.5rem 0 0.25rem;
+      color: $color-muted;
+    }
+
     .header-fields {
       input:not([type='checkbox']),
       select {
         border: 1px solid $color-border;
       }
-      h5 {
-        margin: 0.5rem 0 0.25rem;
-        color: $color-muted;
-      }
+
       .left-label {
         display: block;
         width: 120px;
@@ -435,6 +449,7 @@
     }
     .details,
     .notes {
+      padding-top: 0.5rem;
       height: 100%;
       > div {
         flex: 2;
@@ -448,6 +463,14 @@
       background: $color-panel;
       .editor {
         height: 100%;
+      }
+    }
+  }
+
+  .armor {
+    .header-fields {
+      .left-label {
+        width: 150px;
       }
     }
   }

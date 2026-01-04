@@ -13,7 +13,7 @@ const defineCharacterModel = () => ({
     toughness: attributeField(23),
     aether: attributeField(9),
     sanity: attributeField(11),
-    magicResistance: new NumberField({ required: true, integer: true, min: 0, initial: 20, max: 80 }),
+    magicResistance: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 80 }),
     exhaustion: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
     exhaustionResistance: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
     damageModifier: new StringField({ initial: '' }),
@@ -41,27 +41,27 @@ const defineCharacterModel = () => ({
     unarmedCombat: skillField(0),
     custom1: new SchemaField({
       name: new StringField({ initial: '' }),
-      value: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 100 }),
+      value: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 80 }),
       markForImprovement: new BooleanField({ initial: false }),
     }),
     custom2: new SchemaField({
       name: new StringField({ initial: '' }),
-      value: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 100 }),
+      value: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 80 }),
       markForImprovement: new BooleanField({ initial: false }),
     }),
     custom3: new SchemaField({
       name: new StringField({ initial: '' }),
-      value: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 100 }),
+      value: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 80 }),
       markForImprovement: new BooleanField({ initial: false }),
     }),
     custom4: new SchemaField({
       name: new StringField({ initial: '' }),
-      value: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 100 }),
+      value: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 80 }),
       markForImprovement: new BooleanField({ initial: false }),
     }),
     custom5: new SchemaField({
       name: new StringField({ initial: '' }),
-      value: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 100 }),
+      value: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 80 }),
       markForImprovement: new BooleanField({ initial: false }),
     }),
   }),
@@ -128,11 +128,11 @@ const defineCharacterModel = () => ({
   equipment: new SchemaField({
     mainHand: new DocumentUUIDField({ type: 'Item', required: false }),
     offHand: new DocumentUUIDField({ type: 'Item', required: false }),
-    helmet: new DocumentUUIDField({ type: 'Item', required: false }),
     armor: new SchemaField({
+      head: new DocumentUUIDField({ type: 'Item', required: false }),
       torso: new DocumentUUIDField({ type: 'Item', required: false }),
-      vambraces: new DocumentUUIDField({ type: 'Item', required: false }),
-      greaves: new DocumentUUIDField({ type: 'Item', required: false }),
+      arms: new DocumentUUIDField({ type: 'Item', required: false }),
+      legs: new DocumentUUIDField({ type: 'Item', required: false }),
     }),
     gloves: new DocumentUUIDField({ type: 'Item', required: false }),
     boots: new DocumentUUIDField({ type: 'Item', required: false }),
@@ -189,11 +189,11 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   equipmentItems(): {
     mainHand: Item.Implementation | null;
     offHand: Item.Implementation | null;
-    helmet: Item.Implementation | null;
     armor: {
+      head: Item.Implementation | null;
       torso: Item.Implementation | null;
-      vambraces: Item.Implementation | null;
-      greaves: Item.Implementation | null;
+      arms: Item.Implementation | null;
+      legs: Item.Implementation | null;
     };
     gloves: Item.Implementation | null;
     boots: Item.Implementation | null;
@@ -204,11 +204,11 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     return {
       mainHand: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.mainHand) ?? null,
       offHand: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.offHand) ?? null,
-      helmet: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.helmet) ?? null,
       armor: {
+        head: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.armor.head) ?? null,
         torso: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.armor.torso) ?? null,
-        vambraces: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.armor.vambraces) ?? null,
-        greaves: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.armor.greaves) ?? null,
+        arms: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.armor.arms) ?? null,
+        legs: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.armor.legs) ?? null,
       },
       gloves: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.gloves) ?? null,
       boots: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.boots) ?? null,
@@ -323,18 +323,12 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
         equipment: {
           mainHand: this.parent.system.equipment.mainHand === itemUUID ? null : this.parent.system.equipment.mainHand,
           offHand: this.parent.system.equipment.offHand === itemUUID ? null : this.parent.system.equipment.offHand,
-          helmet: this.parent.system.equipment.helmet === itemUUID ? null : this.parent.system.equipment.helmet,
           armor: {
+            head: this.parent.system.equipment.armor.head === itemUUID ? null : this.parent.system.equipment.armor.head,
             torso:
               this.parent.system.equipment.armor.torso === itemUUID ? null : this.parent.system.equipment.armor.torso,
-            vambraces:
-              this.parent.system.equipment.armor.vambraces === itemUUID
-                ? null
-                : this.parent.system.equipment.armor.vambraces,
-            greaves:
-              this.parent.system.equipment.armor.greaves === itemUUID
-                ? null
-                : this.parent.system.equipment.armor.greaves,
+            arms: this.parent.system.equipment.armor.arms === itemUUID ? null : this.parent.system.equipment.armor.arms,
+            legs: this.parent.system.equipment.armor.legs === itemUUID ? null : this.parent.system.equipment.armor.legs,
           },
           gloves: this.parent.system.equipment.gloves === itemUUID ? null : this.parent.system.equipment.gloves,
           boots: this.parent.system.equipment.boots === itemUUID ? null : this.parent.system.equipment.boots,

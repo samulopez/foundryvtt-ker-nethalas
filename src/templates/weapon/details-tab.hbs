@@ -1,69 +1,83 @@
 <div class="tab details scrollable {{tabs.details.cssClass}}"
      data-group="primary"
      data-tab="details">
-  <div class="flexcol align-normal">
-    <div class="section-title">{{localize 'KN.Item.Sheet.traits.title' }}</div>
-    <div class="flexrow gap align-normal">
-      <div class="flexcol gap">
-        <label class="checkbox-label">
-          <input type="checkbox"
-                 name="system.traits.defensive"
-                 {{checked document.system.traits.defensive}} />
-          {{localize 'KN.Item.Sheet.traits.defensive' }}
-        </label>
-        <label class="checkbox-label">
-          <input type="checkbox"
-                 name="system.traits.simple"
-                 {{checked document.system.traits.simple}} />
-          {{localize 'KN.Item.Sheet.traits.simple' }}
-        </label>
+  <div class="flexcol align-normal gap-small">
+    <div class="flexrow">
+      <div class="flex3">
+        <label class="left-label" for="kn.item.broken">{{localize "KN.Item.Sheet.broken"}}</label>
       </div>
-      <div class="flexcol gap">
-        <label class="checkbox-label">
-          <input type="checkbox"
-                 name="system.traits.quick"
-                 {{checked document.system.traits.quick}} />
-          {{localize 'KN.Item.Sheet.traits.quick' }}
-        </label>
-        <label class="checkbox-label">
-          <input type="checkbox"
-                 name="system.traits.twoHanded"
-                 {{checked document.system.traits.twoHanded}} />
-          {{localize 'KN.Item.Sheet.traits.twoHanded' }}
-        </label>
-      </div>
-      <div class="flexcol gap">
-        <label class="checkbox-label">
-          <input type="checkbox"
-                 name="system.traits.parrying"
-                 {{checked document.system.traits.parrying}} />
-          {{localize 'KN.Item.Sheet.traits.parrying' }}
-        </label>
-        <label class="checkbox-label">
-          <input type="checkbox"
-                 name="system.traits.versatile"
-                 {{checked document.system.traits.versatile}} />
-          {{localize 'KN.Item.Sheet.traits.versatile' }}
-        </label>
-      </div>
-      <div class="flexcol gap">
-        <label class="checkbox-label">
-          <input type="checkbox"
-                 name="system.traits.powerful"
-                 {{checked document.system.traits.powerful}} />
-          {{localize 'KN.Item.Sheet.traits.powerful' }}
-        </label>
+      <input type="checkbox"
+             name="system.broken"
+             id="kn.item.broken"
+             class="flex0"
+             {{checked document.system.broken}} />
+    </div>
+    <div>
+      <div class="section-title">{{localize 'KN.Item.Sheet.traits.title' }}</div>
+      <div class="flexrow gap align-normal">
+        <div class="flexcol gap-small">
+          <label class="checkbox-label">
+            <input type="checkbox"
+                   name="system.traits.defensive"
+                   {{checked document.system.traits.defensive}} />
+            {{localize 'KN.Item.Sheet.traits.defensive' }}
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox"
+                   name="system.traits.simple"
+                   {{checked document.system.traits.simple}} />
+            {{localize 'KN.Item.Sheet.traits.simple' }}
+          </label>
+        </div>
+        <div class="flexcol gap-small">
+          <label class="checkbox-label">
+            <input type="checkbox"
+                   name="system.traits.quick"
+                   {{checked document.system.traits.quick}} />
+            {{localize 'KN.Item.Sheet.traits.quick' }}
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox"
+                   name="system.traits.twoHanded"
+                   {{checked document.system.traits.twoHanded}} />
+            {{localize 'KN.Item.Sheet.traits.twoHanded' }}
+          </label>
+        </div>
+        <div class="flexcol gap-small">
+          <label class="checkbox-label">
+            <input type="checkbox"
+                   name="system.traits.parrying"
+                   {{checked document.system.traits.parrying}} />
+            {{localize 'KN.Item.Sheet.traits.parrying' }}
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox"
+                   name="system.traits.versatile"
+                   {{checked document.system.traits.versatile}} />
+            {{localize 'KN.Item.Sheet.traits.versatile' }}
+          </label>
+        </div>
+        <div class="flexcol gap-small">
+          <label class="checkbox-label">
+            <input type="checkbox"
+                   name="system.traits.powerful"
+                   {{checked document.system.traits.powerful}} />
+            {{localize 'KN.Item.Sheet.traits.powerful' }}
+          </label>
+        </div>
       </div>
     </div>
-    <div class="section-title">{{localize 'KN.Item.Sheet.details.description' }}</div>
-    <div class="flex2 editor-host">
-      {{#if editable }}
-        <prose-mirror name="system.description" button="true" editable="{{editable}}" toggled="false" value="{{document.system.description}}">
-        {{{enrichedDescription}}}
-        </prose-mirror>
-      {{else}}
-        {{{enrichedDescription}}}
-      {{/if}}
+    <div>
+      <div class="section-title">{{localize 'KN.Item.Sheet.details.description' }}</div>
+      <div class="flex2 editor-host">
+        {{#if editable }}
+          <prose-mirror name="system.description" button="true" editable="{{editable}}" toggled="false" value="{{document.system.description}}">
+          {{{enrichedDescription}}}
+          </prose-mirror>
+        {{else}}
+          {{{enrichedDescription}}}
+        {{/if}}
+      </div>
     </div>
   </div>
 </div>

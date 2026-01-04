@@ -9,7 +9,7 @@ const attributeField = (initial: number) =>
 
 const skillField = (initial: number) =>
   new SchemaField({
-    value: new NumberField({ required: true, integer: true, min: 0, initial, max: 100 }),
+    value: new NumberField({ required: true, integer: true, min: 0, initial, max: 80 }),
     markForImprovement: new BooleanField({ initial: false }),
     defaultValue: new NumberField({ initial }),
   });

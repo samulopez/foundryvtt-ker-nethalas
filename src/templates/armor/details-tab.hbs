@@ -1,0 +1,162 @@
+<div class="tab details scrollable {{tabs.details.cssClass}}"
+     data-group="primary"
+     data-tab="details">
+    <div class="flexcol align-normal gap-small">
+        <div class="flexrow">
+            <div class="flex3">
+                <label class="left-label" for="kn.item.broken">{{localize "KN.Item.Sheet.broken"}}</label>
+            </div>
+            <input type="checkbox"
+                   name="system.broken"
+                   id="kn.item.broken"
+                   class="flex0"
+                   {{checked document.system.broken}} />
+        </div>
+        <div class="flexrow">
+            <div class="flex3">
+                <label class="left-label" for="kn.item.maxIntegrity">{{localize 'KN.Item.Sheet.maxIntegrity' }}</label>
+            </div>
+            <select name="system.maxIntegrity" id="kn.item.maxIntegrity">
+                <option value="20"
+                        {{#if (eq document.system.maxIntegrity 20) }}
+                        selected
+                        {{/if }}>D20
+                </option>
+                <option value="12"
+                        {{#if (eq document.system.maxIntegrity 12) }}
+                        selected
+                        {{/if }}>D12
+                </option>
+                <option value="10"
+                        {{#if (eq document.system.maxIntegrity 10) }}
+                        selected
+                        {{/if }}>D10
+                </option>
+                <option value="8"
+                        {{#if (eq document.system.maxIntegrity 8) }}
+                        selected
+                        {{/if }}>D8
+                </option>
+                <option value="6"
+                        {{#if (eq document.system.maxIntegrity 6) }}
+                        selected
+                        {{/if }}>D6
+                </option>
+                <option value="4"
+                        {{#if (eq document.system.maxIntegrity 4) }}
+                        selected
+                        {{/if }}>D4
+                </option>
+            </select>
+        </div>
+        <div class="flexrow">
+            <div class="flex3">
+                <label class="left-label" for="kn.item.currentIntegrity">{{localize 'KN.Item.Sheet.currentIntegrity' }}</label>
+            </div>
+            <select name="system.currentIntegrity" id="kn.item.currentIntegrity">
+                <option value="20"
+                        {{#if (eq document.system.currentIntegrity 20) }}
+                        selected
+                        {{/if }}>D20
+                </option>
+                <option value="12"
+                        {{#if (eq document.system.currentIntegrity 12) }}
+                        selected
+                        {{/if }}>D12
+                </option>
+                <option value="10"
+                        {{#if (eq document.system.currentIntegrity 10) }}
+                        selected
+                        {{/if }}>D10
+                </option>
+                <option value="8"
+                        {{#if (eq document.system.currentIntegrity 8) }}
+                        selected
+                        {{/if }}>D8
+                </option>
+                <option value="6"
+                        {{#if (eq document.system.currentIntegrity 6) }}
+                        selected
+                        {{/if }}>D6
+                </option>
+                <option value="4"
+                        {{#if (eq document.system.currentIntegrity 4) }}
+                        selected
+                        {{/if }}>D4
+                </option>
+            </select>
+        </div>
+        <div class="flexrow">
+            <div class="flex3">
+                <label class="left-label" for="kn.item.protection">{{localize "KN.Item.Sheet.protection"}}</label>
+            </div>
+            <input name="system.protection"
+                   type="number"
+                   data-dtype="Number"
+                   min="0"
+                   step="1"
+                   value="{{document.system.protection}}"
+                   autocomplete="off"
+                   id="kn.item.protection" />
+        </div>
+        <div class="flexrow">
+            <div class="flex3">
+                <label class="left-label" for="kn.item.decreasePerception">{{localize "KN.Item.Sheet.decreasePerception"}}</label>
+            </div>
+            <div class="flexrow gap-min">
+                <i class="fas fa-minus flex0"></i>
+                <input name="system.decreasePerception"
+                       type="number"
+                       data-dtype="Number"
+                       min="0"
+                       step="1"
+                       value="{{document.system.decreasePerception}}"
+                       autocomplete="off"
+                       id="kn.item.decreasePerception" />
+            </div>
+        </div>
+        <div class="flexrow">
+            <div class="flex3">
+                <label class="left-label" for="kn.item.decreaseManeuverability">
+                    {{localize "KN.Item.Sheet.decreaseManeuverability"}}
+                </label>
+            </div>
+            <div class="flexrow gap-min">
+                <i class="fas fa-minus flex0"></i>
+                <input name="system.decreaseManeuverability"
+                       type="number"
+                       data-dtype="Number"
+                       min="0"
+                       step="1"
+                       value="{{document.system.decreaseManeuverability}}"
+                       autocomplete="off"
+                       id="kn.item.decreaseManeuverability" />
+            </div>
+        </div>
+        <div class="flexrow">
+            <div class="flex3">
+                <label class="left-label" for="kn.item.parryBonus">{{localize "KN.Item.Sheet.parryBonus"}}</label>
+            </div>
+            <input name="system.parryBonus"
+                   type="number"
+                   data-dtype="Number"
+                   min="0"
+                   step="1"
+                   value="{{document.system.parryBonus}}"
+                   autocomplete="off"
+                   id="kn.item.parryBonus" />
+        </div>
+        <div>
+            <div class="section-title">{{localize 'KN.Item.Sheet.details.description' }}</div>
+            <div class="flex2 editor-host">
+                {{#if editable }}
+                    <prose-mirror name="system.description" button="true" editable="{{editable}}" toggled="false" value="{{document.system.description}}">
+                    {{{enrichedDescription}}}
+                    </prose-mirror>
+                {{else}}
+                    {{{enrichedDescription}}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>
