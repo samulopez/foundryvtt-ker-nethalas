@@ -40,13 +40,13 @@
                 <div class="item-details">
                     {{#if weapon.system.broken }}
                         <i data-tooltip="KN.Item.Sheet.label.broken" class="fas fa-heart-crack"></i>
+                    {{else}}
+                        <label class="rollable"
+                               data-action="rollSkill"
+                               data-key="{{weapon.system.skill}}">
+                            {{localize (concat "KN.Item.Sheet.skills." weapon.system.skill)}}  <i class="fas fa-dice" data-key="{{weapon.system.skill}}"></i>
+                        </label>
                     {{/if}}
-                    <label class="rollable"
-                           data-action="rollSkill"
-                           data-key="{{weapon.system.skill}}">
-                        {{localize "KN.Item.Sheet.label.skill"}}:
-                        {{localize (concat "KN.Character.Skills." weapon.system.skill)}}  <i class="fas fa-dice" data-key="{{weapon.system.skill}}"></i>
-                    </label>
                     <div class="weapon-speed">{{localize "KN.Item.Sheet.label.speed"}}: {{weapon.system.speed}}</div>
                     <div class="flexrow gap-min">
                         {{localize "KN.Item.Sheet.label.traits"}}:

@@ -48,6 +48,7 @@ export default class CharacterSheet<
     tag: 'form',
     actions: {
       rollSkill: this.#rollSkill,
+      rollArmorIntegrity: this.#rollArmorIntegrity,
       rollTensionDie: this.#rollTensionDie,
       resetTensionDie: this.#resetTensionDie,
       rollLairDomainExitDie: this.#rollLairDomainExitDie,
@@ -59,6 +60,7 @@ export default class CharacterSheet<
       toggleExpand: this.#toggleExpand,
       editItem: this.#editItem,
       equipWeapon: this.#equipWeapon,
+      equipArmor: this.#equipArmor,
       swapWeapons: this.#swapWeapons,
     },
     dragDrop: [
@@ -259,7 +261,16 @@ export default class CharacterSheet<
 
   _dropInEquipment(event: DragEvent): string {
     if ((event.target as HTMLElement).closest('.helmet')) {
-      return 'helmet';
+      return 'armor.head';
+    }
+    if ((event.target as HTMLElement).closest('.armor-torso')) {
+      return 'armor.torso';
+    }
+    if ((event.target as HTMLElement).closest('.armor-arms')) {
+      return 'armor.arms';
+    }
+    if ((event.target as HTMLElement).closest('.armor-legs')) {
+      return 'armor.legs';
     }
     if ((event.target as HTMLElement).closest('.gloves')) {
       return 'gloves';
@@ -325,6 +336,14 @@ export default class CharacterSheet<
       }
 
       if (equipmentDropped) {
+        if (!item.system.equippable) {
+          ui.notifications?.warn(getLocalization().localize('KN.Error.notEquippable'));
+          return null;
+        }
+        if (item.type === 'armor' && item.system.canEquipInSlot && !item.system.canEquipInSlot(equipmentDropped)) {
+          ui.notifications?.warn(getLocalization().localize('KN.Error.armorSlotMismatch'));
+          return null;
+        }
         if (this.actor.system.equipment[equipmentDropped]) {
           ui.notifications?.warn(getLocalization().localize('KN.Error.equipmentSlotOccupied'));
           return null;
@@ -409,6 +428,14 @@ export default class CharacterSheet<
     }
 
     if (equipmentDropped) {
+      if (!item.system.equippable) {
+        ui.notifications?.warn(getLocalization().localize('KN.Error.notEquippable'));
+        return null;
+      }
+      if (item.type === 'armor' && item.system.canEquipInSlot && !item.system.canEquipInSlot(equipmentDropped)) {
+        ui.notifications?.warn(getLocalization().localize('KN.Error.armorSlotMismatch'));
+        return null;
+      }
       return this._onDropToEquipment(event, equipmentDropped, item);
     }
 
@@ -436,7 +463,7 @@ export default class CharacterSheet<
       return this._onDropBelt(event, item);
     }
 
-    // TODO: add armor
+    // TODO: allow to roll armor integrity
 
     // TODO V2: sorting
 
@@ -553,6 +580,24 @@ export default class CharacterSheet<
     await this.actor.markOverseerFound(checkbox.checked);
   }
 
+  static async #rollArmorIntegrity(this, event: PointerEvent) {
+    event.preventDefault();
+    const button = event.target as HTMLElement;
+    const { key } = button.dataset;
+    if (!key) {
+      return;
+    }
+
+    const item = this.actor.getEmbeddedDocument('Item', key, {});
+    if (!item) {
+      return;
+    }
+    const result = await item.rollArmorIntegrity();
+    if (result) {
+      ui.notifications?.warn(result);
+    }
+  }
+
   static async #rollSkill(this, event: PointerEvent) {
     event.preventDefault();
     const button = event.target as HTMLElement;
@@ -660,6 +705,29 @@ export default class CharacterSheet<
       return;
     }
     item.sheet?.render(true);
+  }
+
+  static async #equipArmor(this, event: PointerEvent, target: HTMLElement) {
+    event.preventDefault();
+    const { key } = target.dataset;
+    if (!key) {
+      return;
+    }
+    const item = this.actor.getEmbeddedDocument('Item', key, {});
+    if (!item) {
+      return;
+    }
+
+    if (!item.system.armorType) {
+      return;
+    }
+
+    if (this.actor.system.equipment.armor[item.system.armorType]) {
+      ui.notifications?.warn(getLocalization().localize('KN.Error.equipmentSlotOccupied'));
+      return;
+    }
+
+    await this.actor.system.addItemToEquipment(`armor.${item.system.armorType}`, item);
   }
 
   static async #equipWeapon(this, event: PointerEvent, target: HTMLElement) {

@@ -27,6 +27,15 @@
                             <i class="fas fa-shield-halved"></i>
                         </button>
                     {{/if}}
+                    {{#if (eq item.type "armor") }}
+                        <button type="button"
+                                class="unbutton config-button item-control item-action always-interactive"
+                                data-tooltip="KN.Item.Sheet.equipTooltip"
+                                data-key="{{item.id}}"
+                                data-action="equipArmor">
+                            <i class="fas fa-shield-halved"></i>
+                        </button>
+                    {{/if}}
                     <button type="button"
                             class="unbutton config-button item-control item-action always-interactive"
                             data-tooltip="KN.Item.Sheet.toggleTooltip"

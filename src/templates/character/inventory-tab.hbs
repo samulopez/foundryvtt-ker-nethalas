@@ -25,16 +25,35 @@
             </div>
             <div class="header helmet draggable"
                  draggable="true"
-                 data-key="{{equipment.helmet.id}}">
+                 data-key="{{equipment.armor.head.id}}">
               <h3 class="equipment-name">{{localize "KN.Character.Inventory.equipped.helmet"}}</h3>
-              {{#if equipment.helmet }}
-                {{> "systems/ker-nethalas/templates/item/equipment-row.hbs" item=equipment.helmet}}
+              {{#if equipment.armor.head }}
+                {{> "systems/ker-nethalas/templates/item/equipment-row.hbs" item=equipment.armor.head}}
               {{/if}}
             </div>
-            <div class="header armor draggable"
+            <div class="header armor-torso draggable"
                  draggable="true"
-                 data-key="{{equipment.armor.id}}">
-              <h3 class="equipment-name">{{localize "KN.Character.Inventory.equipped.armor"}}</h3>
+                 data-key="{{equipment.armor.torso.id}}">
+              <h3 class="equipment-name">{{localize "KN.Character.Inventory.equipped.armorTorso"}}</h3>
+              {{#if equipment.armor.torso }}
+                {{> "systems/ker-nethalas/templates/item/equipment-row.hbs" item=equipment.armor.torso}}
+              {{/if}}
+            </div>
+            <div class="header armor-arms draggable"
+                 draggable="true"
+                 data-key="{{equipment.armor.arms.id}}">
+              <h3 class="equipment-name">{{localize "KN.Character.Inventory.equipped.armorArms"}}</h3>
+              {{#if equipment.armor.arms }}
+                {{> "systems/ker-nethalas/templates/item/equipment-row.hbs" item=equipment.armor.arms}}
+              {{/if}}
+            </div>
+            <div class="header armor-legs draggable"
+                 draggable="true"
+                 data-key="{{equipment.armor.legs.id}}">
+              <h3 class="equipment-name">{{localize "KN.Character.Inventory.equipped.armorLegs"}}</h3>
+              {{#if equipment.armor.legs }}
+                {{> "systems/ker-nethalas/templates/item/equipment-row.hbs" item=equipment.armor.legs}}
+              {{/if}}
             </div>
             <div class="header gloves draggable"
                  draggable="true"

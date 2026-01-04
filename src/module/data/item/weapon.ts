@@ -49,6 +49,6 @@ export default class WeaponDataModel extends foundry.abstract.TypeDataModel<Weap
   };
 
   slots(): number {
-    return this.parent.system.traits.twoHanded ? 2 : 1;
+    return this.parent.system.traits?.twoHanded ? 2 : 1;
   }
 }

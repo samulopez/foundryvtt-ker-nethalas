@@ -12,7 +12,7 @@
             <div class="flex3">
                 <h5 class="flexrow">
                     <div class="flex0">
-                        <label class="left-label" for="kn.item.name">{{localize 'KN.Item.Sheet.name' }}</label>
+                        <label class="left-label" for="kn.item.name">{{localize "KN.Item.Sheet.name"}}</label>
                     </div>
                     <input name="name"
                            type="text"
@@ -23,7 +23,7 @@
                 </h5>
                 <h5 class="flexrow">
                     <div class="flex0">
-                        <label class="left-label" for="kn.item.cost">{{localize 'KN.Item.Sheet.cost' }} (₵)</label>
+                        <label class="left-label" for="kn.item.cost">{{localize "KN.Item.Sheet.cost"}} (₵)</label>
                     </div>
                     <input name="system.cost"
                            type="number"
@@ -50,26 +50,39 @@
                                 selected
                                 {{/if }}>{{localize 'KN.Item.Sheet.weights.normal' }}
                         </option>
-                        <option value="light"
-                                {{#if (eq document.system.weight "light") }}
-                                selected
-                                {{/if }}>{{localize 'KN.Item.Sheet.weights.light' }}
-                        </option>
-                        <option value="nonEncumbering"
-                                {{#if (eq document.system.weight "nonEncumbering") }}
-                                selected
-                                {{/if }}>{{localize 'KN.Item.Sheet.weights.nonEncumbering' }}
-                        </option>
                     </select>
                 </h5>
                 <h5 class="flexrow">
                     <div class="flex0">
-                        <label class="left-label" for="kn.item.equippable">{{localize "KN.Item.Sheet.equippable"}}</label>
+                        <label class="left-label" for="kn.item.armorType">{{localize 'KN.Item.Sheet.armorType' }}</label>
                     </div>
-                    <input type="checkbox"
-                           name="system.equippable"
-                           id="kn.item.equippable"
-                           {{checked document.system.equippable}} />
+                    <select name="system.armorType" id="kn.item.armorType">
+                        <option value="shield"
+                                {{#if (eq document.system.armorType "shield") }}
+                                selected
+                                {{/if }}>{{localize 'KN.Item.Sheet.armorTypes.shield' }}
+                        </option>
+                        <option value="head"
+                                {{#if (eq document.system.armorType "head") }}
+                                selected
+                                {{/if }}>{{localize 'KN.Item.Sheet.armorTypes.head' }}
+                        </option>
+                        <option value="torso"
+                                {{#if (eq document.system.armorType "torso") }}
+                                selected
+                                {{/if }}>{{localize 'KN.Item.Sheet.armorTypes.torso' }}
+                        </option>
+                        <option value="arms"
+                                {{#if (eq document.system.armorType "arms") }}
+                                selected
+                                {{/if }}>{{localize 'KN.Item.Sheet.armorTypes.arms' }}
+                        </option>
+                        <option value="legs"
+                                {{#if (eq document.system.armorType "legs") }}
+                                selected
+                                {{/if }}>{{localize 'KN.Item.Sheet.armorTypes.legs' }}
+                        </option>
+                    </select>
                 </h5>
             </div>
         </div>
