@@ -223,7 +223,10 @@
         }
       }
       .die-mechanics {
-        text-align: center;
+        justify-content: center;
+        select {
+          max-width: 70px;
+        }
       }
       .rollable {
         text-decoration: underline;
