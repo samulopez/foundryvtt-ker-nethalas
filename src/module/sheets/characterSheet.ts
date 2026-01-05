@@ -15,7 +15,6 @@ interface Context {
   enrichedMechanicsActiveEvents: string;
   enrichedMechanicsOverseerInfluence: string;
   enrichedMechanicsNotes: string;
-  lairDomainExitDie: number;
   currentGearCapacity: number;
   currentBackpackCapacity: number;
   currentPouch1Capacity: number;
@@ -50,9 +49,7 @@ export default class CharacterSheet<
       rollSkill: this.#rollSkill,
       rollArmorIntegrity: this.#rollArmorIntegrity,
       rollTensionDie: this.#rollTensionDie,
-      resetTensionDie: this.#resetTensionDie,
       rollLairDomainExitDie: this.#rollLairDomainExitDie,
-      resetLairDomainExitDie: this.#resetLairDomainExitDie,
       markOverseerFound: this.#markOverseerFound,
       removeItem: this.#removeItem,
       increaseQuantityItem: this.#increaseQuantityItem,
@@ -197,11 +194,6 @@ export default class CharacterSheet<
         relativeTo: this.document,
       },
     );
-
-    context.lairDomainExitDie = this.document.system.mechanics.lairDie ?? 0;
-    if (this.document.system.mechanics.overseerFound) {
-      context.lairDomainExitDie = this.document.system.mechanics.domainExitDie ?? 0;
-    }
 
     context.gearList = this.actor.system.gearItems();
     context.backpackList = this.actor.system.backpackItems();
@@ -463,8 +455,6 @@ export default class CharacterSheet<
       return this._onDropBelt(event, item);
     }
 
-    // TODO: allow to roll armor integrity
-
     // TODO V2: sorting
 
     return null;
@@ -559,24 +549,14 @@ export default class CharacterSheet<
     await this.actor.rollTensionDie();
   }
 
-  static async #resetTensionDie(this, event, _target) {
-    event.preventDefault();
-    await this.actor.resetTensionDie();
-  }
-
   static async #rollLairDomainExitDie(this, event, _target) {
     event.preventDefault();
     await this.actor.rollLairDomainExitDie();
   }
 
-  static async #resetLairDomainExitDie(this, event, _target) {
-    event.preventDefault();
-    await this.actor.resetLairDomainExitDie();
-  }
-
   static async #markOverseerFound(this, event, _target) {
     event.preventDefault();
-    const checkbox = event.currentTarget as HTMLInputElement;
+    const checkbox = event.target as HTMLInputElement;
     await this.actor.markOverseerFound(checkbox.checked);
   }
 

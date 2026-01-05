@@ -11,15 +11,15 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
     const roll = new Roll(`1d${dieSize}`);
     await roll.evaluate();
 
-    let resultString = 'No effect';
+    let resultString = getLocalization().localize('KN.Error.tensionDieCheck.noEffect');
     let customClass = '';
 
     if ((roll.total ?? 100) <= 2) {
-      resultString = 'Tension Die decreases';
+      resultString = getLocalization().localize('KN.Error.tensionDieCheck.decreases');
       customClass = 'failure-text';
       this.system.mechanics.tensionDie = dieSize - 2;
       if (dieSize === 4) {
-        resultString = 'Growing Darkness Event Triggered!';
+        resultString = getLocalization().localize('KN.Error.tensionDieCheck.growingDarkness');
         this.system.mechanics.tensionDie = 8;
       }
     }
@@ -33,7 +33,7 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
 
     const message = await roll.toMessage({
       content: html,
-      flavor: 'Tension Die check',
+      flavor: getLocalization().localize('KN.Error.tensionDieCheck.title'),
     });
 
     const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
@@ -43,14 +43,6 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
     await this.update({
       system: {
         mechanics: { tensionDie: this.system.mechanics.tensionDie },
-      },
-    });
-  }
-
-  async resetTensionDie() {
-    await this.update({
-      system: {
-        mechanics: { tensionDie: 8 },
       },
     });
   }
