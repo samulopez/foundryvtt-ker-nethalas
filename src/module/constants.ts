@@ -3,6 +3,7 @@ export const ID = 'ker-nethalas';
 export const TEMPLATES = {
   modifyRoll: `systems/${ID}/templates/roll/modify-roll.hbs`,
   usageDieRoll: `systems/${ID}/templates/roll/usage-die-roll.hbs`,
+  actionsRoll: `systems/${ID}/templates/roll/actions-roll.hbs`,
   character: {
     header: `systems/${ID}/templates/character/header.hbs`,
     skillsTab: `systems/${ID}/templates/character/skills-tab.hbs`,
@@ -10,6 +11,11 @@ export const TEMPLATES = {
     inventoryTab: `systems/${ID}/templates/character/inventory-tab.hbs`,
     mechanicsTab: `systems/${ID}/templates/character/mechanics-tab.hbs`,
     weaponRow: `systems/${ID}/templates/character/weapon-row.hbs`,
+  },
+  monster: {
+    header: `systems/${ID}/templates/monster/header.hbs`,
+    detailsTab: `systems/${ID}/templates/monster/details-tab.hbs`,
+    notesTab: `systems/${ID}/templates/monster/notes-tab.hbs`,
   },
   item: {
     header: `systems/${ID}/templates/item/header.hbs`,
@@ -31,18 +37,40 @@ export const TEMPLATES = {
 };
 
 export enum ARMOR {
-  shield = 'shield',
-  head = 'head',
-  torso = 'torso',
   arms = 'arms',
+  head = 'head',
   legs = 'legs',
+  shield = 'shield',
+  torso = 'torso',
+}
+
+export enum MONSTER {
+  animal = 'animal',
+  astral = 'astral',
+  construct = 'construct',
+  demon = 'demon',
+  elemental = 'elemental',
+  humanoid = 'humanoid',
+  plant = 'plant',
+  undead = 'undead',
+}
+
+// eslint-disable-next-line @typescript-eslint/naming-convention
+export enum HIT_LOCATIONS {
+  none = 'none',
+  arachnid = 'arachnid',
+  humanoid = 'humanoid',
+  insectoid = 'insectoid',
+  quadruped = 'quadruped',
+  serpentoid = 'serpentoid',
+  winged = 'winged',
 }
 
 export enum WEIGHT {
-  nonEncumbering = 'nonEncumbering',
-  light = 'light',
-  normal = 'normal',
   heavy = 'heavy',
+  light = 'light',
+  nonEncumbering = 'nonEncumbering',
+  normal = 'normal',
 }
 
 export enum SKILLS {

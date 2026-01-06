@@ -1,5 +1,7 @@
 import { TEMPLATES } from '../constants';
 
+import type KerNethalasItem from '../item/item';
+
 import ItemSheetV2 = foundry.applications.sheets.ItemSheetV2;
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -46,11 +48,11 @@ export default class KNArmorSheet<
     },
   };
 
-  override get document(): Item.OfType<'armor'> {
-    if (!super.item.isArmor()) {
+  override get document(): KerNethalasItem<'armor'> {
+    if (!super.document.isArmor()) {
       throw new Error('Item is not armor');
     }
-    return super.item;
+    return super.document;
   }
 
   async _prepareContext(options) {

@@ -8,7 +8,7 @@ import type {
   NPCDataModel,
   WeaponDataModel,
 } from './module/data';
-import type KerNethalasCharacterActor from './module/actor/character';
+import type KerNethalasActor from './module/actor/actor';
 
 declare module 'fvtt-types/configuration' {
   interface DataModelConfig {
@@ -26,12 +26,16 @@ declare module 'fvtt-types/configuration' {
   }
 
   interface DocumentClassConfig {
-    Actor: typeof KerNethalasCharacterActor;
+    Actor: typeof KerNethalasActor<Actor.SubType>;
     Item: typeof KerNethalasItem<Item.SubType>;
   }
 
   interface ConfiguredItem<SubType extends Item.SubType> {
     document: KerNethalasItem<SubType>;
+  }
+
+  interface ConfiguredActor<SubType extends Actor.SubType> {
+    document: KerNethalasActor<SubType>;
   }
 
   interface SettingConfig {

@@ -2,6 +2,7 @@ import { getLocalization } from '../helpers';
 import { TEMPLATES, SKILL_DISPLAY, WEIGHT } from '../constants';
 
 import type KerNethalasItem from '../item/item';
+import type KerNethalasActor from '../actor/actor';
 
 import ActorSheetV2 = foundry.applications.sheets.ActorSheetV2;
 
@@ -101,49 +102,56 @@ export default class CharacterSheet<
     },
   };
 
+  get document(): KerNethalasActor<'character'> {
+    if (!super.document.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
+    return super.document;
+  }
+
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
 
     context.skillRows = [
       {
-        left: { ...context.document.system.skills[SKILL_DISPLAY.left[0]], id: SKILL_DISPLAY.left[0] },
-        right: { ...context.document.system.skills[SKILL_DISPLAY.right[0]], id: SKILL_DISPLAY.right[0] },
+        left: { ...this.document.system.skills[SKILL_DISPLAY.left[0]], id: SKILL_DISPLAY.left[0] },
+        right: { ...this.document.system.skills[SKILL_DISPLAY.right[0]], id: SKILL_DISPLAY.right[0] },
       },
       {
-        left: { ...context.document.system.skills[SKILL_DISPLAY.left[1]], id: SKILL_DISPLAY.left[1] },
-        right: { ...context.document.system.skills[SKILL_DISPLAY.right[1]], id: SKILL_DISPLAY.right[1] },
+        left: { ...this.document.system.skills[SKILL_DISPLAY.left[1]], id: SKILL_DISPLAY.left[1] },
+        right: { ...this.document.system.skills[SKILL_DISPLAY.right[1]], id: SKILL_DISPLAY.right[1] },
       },
       {
-        left: { ...context.document.system.skills[SKILL_DISPLAY.left[2]], id: SKILL_DISPLAY.left[2] },
-        right: { ...context.document.system.skills[SKILL_DISPLAY.right[2]], id: SKILL_DISPLAY.right[2] },
+        left: { ...this.document.system.skills[SKILL_DISPLAY.left[2]], id: SKILL_DISPLAY.left[2] },
+        right: { ...this.document.system.skills[SKILL_DISPLAY.right[2]], id: SKILL_DISPLAY.right[2] },
       },
       {
-        left: { ...context.document.system.skills[SKILL_DISPLAY.left[3]], id: SKILL_DISPLAY.left[3] },
-        right: { ...context.document.system.skills[SKILL_DISPLAY.right[3]], id: SKILL_DISPLAY.right[3] },
+        left: { ...this.document.system.skills[SKILL_DISPLAY.left[3]], id: SKILL_DISPLAY.left[3] },
+        right: { ...this.document.system.skills[SKILL_DISPLAY.right[3]], id: SKILL_DISPLAY.right[3] },
       },
       {
-        left: { ...context.document.system.skills[SKILL_DISPLAY.left[4]], id: SKILL_DISPLAY.left[4] },
-        right: { ...context.document.system.skills[SKILL_DISPLAY.right[4]], id: SKILL_DISPLAY.right[4] },
+        left: { ...this.document.system.skills[SKILL_DISPLAY.left[4]], id: SKILL_DISPLAY.left[4] },
+        right: { ...this.document.system.skills[SKILL_DISPLAY.right[4]], id: SKILL_DISPLAY.right[4] },
       },
       {
-        left: { ...context.document.system.skills[SKILL_DISPLAY.left[5]], id: SKILL_DISPLAY.left[5] },
-        right: { ...context.document.system.skills.custom1, id: 'custom1', custom: true },
+        left: { ...this.document.system.skills[SKILL_DISPLAY.left[5]], id: SKILL_DISPLAY.left[5] },
+        right: { ...this.document.system.skills.custom1, id: 'custom1', custom: true },
       },
       {
-        left: { ...context.document.system.skills[SKILL_DISPLAY.left[6]], id: SKILL_DISPLAY.left[6] },
-        right: { ...context.document.system.skills.custom2, id: 'custom2', custom: true },
+        left: { ...this.document.system.skills[SKILL_DISPLAY.left[6]], id: SKILL_DISPLAY.left[6] },
+        right: { ...this.document.system.skills.custom2, id: 'custom2', custom: true },
       },
       {
-        left: { ...context.document.system.skills[SKILL_DISPLAY.left[7]], id: SKILL_DISPLAY.left[7] },
-        right: { ...context.document.system.skills.custom3, id: 'custom3', custom: true },
+        left: { ...this.document.system.skills[SKILL_DISPLAY.left[7]], id: SKILL_DISPLAY.left[7] },
+        right: { ...this.document.system.skills.custom3, id: 'custom3', custom: true },
       },
       {
-        left: { ...context.document.system.skills[SKILL_DISPLAY.left[8]], id: SKILL_DISPLAY.left[8] },
-        right: { ...context.document.system.skills.custom4, id: 'custom4', custom: true },
+        left: { ...this.document.system.skills[SKILL_DISPLAY.left[8]], id: SKILL_DISPLAY.left[8] },
+        right: { ...this.document.system.skills.custom4, id: 'custom4', custom: true },
       },
       {
-        left: { ...context.document.system.skills[SKILL_DISPLAY.left[9]], id: SKILL_DISPLAY.left[9] },
-        right: { ...context.document.system.skills.custom5, id: 'custom5', custom: true },
+        left: { ...this.document.system.skills[SKILL_DISPLAY.left[9]], id: SKILL_DISPLAY.left[9] },
+        right: { ...this.document.system.skills.custom5, id: 'custom5', custom: true },
       },
     ];
 

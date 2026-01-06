@@ -1,0 +1,22 @@
+<div class="dice-roll" data-action="expandRoll">
+  <div class="dice-result">
+    <div class="dice-formula {{customClass}}">{{resultString}}</div>
+    <div class="dice-tooltip">
+      <div class="wrapper">
+        <section class="tooltip-part">
+          <div class="dice part-header">
+            <header class="part-header flexrow">
+              <span class="part-formula">{{formula}}</span>
+              <span class="part-total">{{total}}</span>
+            </header>
+            <ol class="dice-rolls">
+              <li class="roll die {{formula}}">{{total}}</li>
+            </ol>
+          </div>
+          <div>{{{description}}}</div>
+        </section>
+      </div>
+    </div>
+    <h4 class="dice-total">{{total}}</h4>
+  </div>
+</div>

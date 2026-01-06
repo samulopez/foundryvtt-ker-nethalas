@@ -1,8 +1,22 @@
 import { getGame, getLocalization } from '../helpers';
 import { ID, KNSettings, TEMPLATES } from '../constants';
 
-export default class KerNethalasCharacterActor extends Actor<'character'> {
+export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.SubType> extends Actor<SubType> {
+  constructor(data: Actor.CreateData<SubType>, context?: Actor.ConstructionContext) {
+    const newData = data;
+    if (!newData.img) {
+      if (newData.type === 'monster') {
+        newData.img = 'icons/svg/terror.svg';
+      }
+    }
+
+    super(newData, context);
+  }
+
   async rollTensionDie() {
+    if (!this.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
     const dieSize = this.system.mechanics.tensionDie;
     if (!dieSize) {
       return;
@@ -11,15 +25,15 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
     const roll = new Roll(`1d${dieSize}`);
     await roll.evaluate();
 
-    let resultString = getLocalization().localize('KN.Error.tensionDieCheck.noEffect');
+    let resultString = getLocalization().localize('KN.Rolls.tensionDieCheck.noEffect');
     let customClass = '';
 
     if ((roll.total ?? 100) <= 2) {
-      resultString = getLocalization().localize('KN.Error.tensionDieCheck.decreases');
+      resultString = getLocalization().localize('KN.Rolls.tensionDieCheck.decreases');
       customClass = 'failure-text';
       this.system.mechanics.tensionDie = dieSize - 2;
       if (dieSize === 4) {
-        resultString = getLocalization().localize('KN.Error.tensionDieCheck.growingDarkness');
+        resultString = getLocalization().localize('KN.Rolls.tensionDieCheck.growingDarkness');
         this.system.mechanics.tensionDie = 8;
       }
     }
@@ -33,7 +47,7 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
 
     const message = await roll.toMessage({
       content: html,
-      flavor: getLocalization().localize('KN.Error.tensionDieCheck.title'),
+      flavor: getLocalization().localize('KN.Rolls.tensionDieCheck.title'),
     });
 
     const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
@@ -48,6 +62,9 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
   }
 
   async resetLairDomainExitDie() {
+    if (!this.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
     await this.update({
       system: {
         mechanics: {
@@ -60,6 +77,9 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
   }
 
   async rollLairDomainExitDie() {
+    if (!this.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
     if (this.system.mechanics.overseerFound) {
       return this.rollDomainExitDie();
     }
@@ -67,6 +87,9 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
   }
 
   async rollDomainExitDie() {
+    if (!this.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
     const dieSize = this.system.mechanics.domainExitDie;
     if (!dieSize) {
       return;
@@ -97,7 +120,7 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
 
     const message = await roll.toMessage({
       content: html,
-      flavor: 'Domain Exit check',
+      flavor: getLocalization().localize('KN.Rolls.domainExitCheck.title'),
     });
 
     const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
@@ -115,6 +138,9 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
   }
 
   async rollLairDie() {
+    if (!this.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
     const dieSize = this.system.mechanics.lairDie;
     if (!dieSize) {
       return;
@@ -147,7 +173,7 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
 
     const message = await roll.toMessage({
       content: html,
-      flavor: 'Lair check',
+      flavor: getLocalization().localize('KN.Rolls.lairCheck.title'),
     });
 
     const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
@@ -167,6 +193,9 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
   }
 
   async markOverseerFound(found: boolean) {
+    if (!this.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
     await this.resetLairDomainExitDie();
     await this.update({
       system: {
@@ -178,6 +207,9 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
   }
 
   async rollSkill(skillKey: string, modifier: number) {
+    if (!this.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
     const skill = this.system.skills[skillKey];
     if (!skill) {
       return;
@@ -239,5 +271,49 @@ export default class KerNethalasCharacterActor extends Actor<'character'> {
         },
       },
     });
+  }
+
+  async rollActions() {
+    if (!this.isMonster() || this.system.actions.length === 0) {
+      return;
+    }
+
+    const roll = new Roll('1d6');
+    await roll.evaluate();
+    const total = roll.total ?? 0;
+
+    const action = this.system.actions.find((a) => total >= (a.startDie ?? 0) && total <= (a.endDie ?? 0));
+    if (!action) {
+      return;
+    }
+
+    const html = await foundry.applications.handlebars.renderTemplate(TEMPLATES.actionsRoll, {
+      resultString: action.name,
+      customClass: '',
+      formula: roll.formula,
+      total: roll.total,
+      description: await foundry.applications.ux.TextEditor.implementation.enrichHTML(action.description, {
+        secrets: this.isOwner,
+        relativeTo: this,
+      }),
+    });
+
+    const message = await roll.toMessage({
+      content: html,
+      flavor: `${this.name}: ${getLocalization().localize('KN.Rolls.rollActionsFlavor')}`,
+    });
+
+    const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
+    if (diceSoNice && message) {
+      await getGame().dice3d?.waitFor3DAnimationByMessageID(message.id);
+    }
+  }
+
+  isCharacter(): this is KerNethalasActor<'character'> {
+    return this.type === 'character';
+  }
+
+  isMonster(): this is KerNethalasActor<'monster'> {
+    return this.type === 'monster';
   }
 }

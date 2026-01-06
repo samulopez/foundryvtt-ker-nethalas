@@ -1,0 +1,424 @@
+<div class="tab details scrollable {{tabs.details.cssClass}}"
+     data-group="primary"
+     data-tab="details">
+    <div class="flexcol gap align-normal">
+        <div class="flexrow gap-large align-normal">
+            <div class="flexcol gap-small">
+                <div class="flexrow gap-small">
+                    <input type="number"
+                           name="system.attributes.health.value"
+                           id="system.attributes.health.value"
+                           class="flex0"
+                           min="0"
+                           step="1"
+                           data-dtype="Number"
+                           value="{{document.system.attributes.health.value}}" />
+                    /
+                    <input type="number"
+                           name="system.attributes.health.max"
+                           id="system.attributes.health.max"
+                           class="flex0"
+                           min="0"
+                           step="1"
+                           data-dtype="Number"
+                           value="{{document.system.attributes.health.max}}" />
+                    <div>{{localize "KN.Monster.Sheet.health"}}</div>
+                </div>
+                <div class="flexrow gap-small">
+                    <input type="number"
+                           name="system.attributes.mind"
+                           id="system.attributes.mind"
+                           class="flex0"
+                           min="0"
+                           step="1"
+                           data-dtype="Number"
+                           value="{{document.system.attributes.mind}}" />
+                    <div>{{localize "KN.Monster.Sheet.mind"}}</div>
+                </div>
+                <div class="flexrow gap-small">
+                    <input type="number"
+                           name="system.attributes.endurance"
+                           id="system.attributes.endurance"
+                           class="flex0"
+                           min="0"
+                           step="1"
+                           data-dtype="Number"
+                           value="{{document.system.attributes.endurance}}" />
+                    <div>{{localize "KN.Monster.Sheet.endurance"}}</div>
+                </div>
+                <div class="flexrow gap-small">
+                    <input type="number"
+                           name="system.attributes.body"
+                           id="system.attributes.body"
+                           class="flex0"
+                           min="0"
+                           step="1"
+                           data-dtype="Number"
+                           value="{{document.system.attributes.body}}" />
+                    <div>{{localize "KN.Monster.Sheet.body"}}</div>
+                </div>
+                <div class="flexrow gap-small">
+                    <input type="number"
+                           name="system.attributes.combatSkill"
+                           id="system.attributes.combatSkill"
+                           class="flex0"
+                           min="0"
+                           step="1"
+                           data-dtype="Number"
+                           value="{{document.system.attributes.combatSkill}}" />
+                    <div>{{localize "KN.Monster.Sheet.combatSkill"}}</div>
+                </div>
+                <div class="flexrow gap-small">
+                    <input type="number"
+                           name="system.attributes.magicResistance"
+                           id="system.attributes.magicResistance"
+                           class="flex0"
+                           min="0"
+                           step="1"
+                           data-dtype="Number"
+                           value="{{document.system.attributes.magicResistance}}" />
+                    <div>{{localize "KN.Monster.Sheet.magicResistance"}}</div>
+                </div>
+                <div class="flexrow gap-small">
+                    <div class="flex0">
+                        <div class="left-label" for="kn.monster.hitLocation">{{localize 'KN.Monster.Sheet.hitLocation.title' }}</div>
+                    </div>
+                    <select name="system.hitLocation"  id="kn.monster.hitLocation">
+                        <option value="none"
+                                {{#if (eq document.system.hitLocation "none") }}
+                                selected
+                                {{/if }}>
+                        </option>
+                        <option value="arachnid"
+                                {{#if (eq document.system.hitLocation "arachnid") }}
+                                selected
+                                {{/if }}>{{localize "KN.Monster.Sheet.hitLocation.arachnid" }}
+                        </option>
+                        <option value="humanoid"
+                                {{#if (eq document.system.hitLocation "humanoid") }}
+                                selected
+                                {{/if }}>{{localize "KN.Monster.Sheet.hitLocation.humanoid" }}
+                        </option>
+                        <option value="insectoid"
+                                {{#if (eq document.system.hitLocation "insectoid") }}
+                                selected
+                                {{/if }}>{{localize "KN.Monster.Sheet.hitLocation.insectoid" }}
+                        </option>
+                        <option value="quadruped"
+                                {{#if (eq document.system.hitLocation "quadruped") }}
+                                selected
+                                {{/if }}>{{localize "KN.Monster.Sheet.hitLocation.quadruped" }}
+                        </option>
+                        <option value="serpentoid"
+                                {{#if (eq document.system.hitLocation "serpentoid") }}
+                                selected
+                                {{/if }}>{{localize "KN.Monster.Sheet.hitLocation.serpentoid" }}
+                        </option>
+                        <option value="winged"
+                                {{#if (eq document.system.hitLocation "winged") }}
+                                selected
+                                {{/if }}>{{localize "KN.Monster.Sheet.hitLocation.winged" }}
+                        </option>
+                    </select>
+                </div>
+                {{#if showWeakSpotInput }}
+                    <div class="flexrow gap-small">
+                        <div class="flex0">
+                            <div class="left-label" for="kn.monster.weakSpot">{{localize 'KN.Monster.Sheet.weakSpot.title' }}</div>
+                        </div>
+                        <select name="system.weakSpot"  id="kn.monster.weakSpot">
+                            {{#each weakSpotOptions as |option| }}
+                                <option value="{{option.value}}"
+                                        {{#if (eq @root.document.system.weakSpot option.value) }}
+                                        selected
+                                        {{/if }}>
+                                    {{option.label}}
+                                </option>
+                            {{/each}}
+                        </select>
+                    </div>
+                {{/if}}
+            </div>
+            <div class="flexcol gap">
+                <div>
+                    <div class="section-title">{{localize "KN.Monster.Sheet.type.title"}}</div>
+                    <div class="flexrow gap-small">
+                        <div class="flexcol gap-min">
+                            <label class="checkbox-label">
+                                <input type="checkbox"
+                                       name="system.type.animal"
+                                       {{checked document.system.type.animal}} />
+                                {{localize 'KN.Monster.Sheet.type.animal' }}
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox"
+                                       name="system.type.astral"
+                                       {{checked document.system.type.astral}} />
+                                {{localize 'KN.Monster.Sheet.type.astral' }}
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox"
+                                       name="system.type.construct"
+                                       {{checked document.system.type.construct}} />
+                                {{localize 'KN.Monster.Sheet.type.construct' }}
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox"
+                                       name="system.type.demon"
+                                       {{checked document.system.type.demon}} />
+                                {{localize 'KN.Monster.Sheet.type.demon' }}
+                            </label>
+                        </div>
+                        <div class="flexcol gap-min">
+                            <label class="checkbox-label">
+                                <input type="checkbox"
+                                       name="system.type.elemental"
+                                       {{checked document.system.type.elemental}} />
+                                {{localize 'KN.Monster.Sheet.type.elemental' }}
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox"
+                                       name="system.type.humanoid"
+                                       {{checked document.system.type.humanoid}} />
+                                {{localize 'KN.Monster.Sheet.type.humanoid' }}
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox"
+                                       name="system.type.plant"
+                                       {{checked document.system.type.plant}} />
+                                {{localize 'KN.Monster.Sheet.type.plant' }}
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox"
+                                       name="system.type.undead"
+                                       {{checked document.system.type.undead}} />
+                                {{localize 'KN.Monster.Sheet.type.undead' }}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="section-title">{{localize "KN.Monster.Sheet.armor.title"}}</div>
+                    <div class="flexrow gap-small align-normal">
+                        <div class="flexcol gap-min">
+                            <label class="checkbox-label">
+                                <input type="number"
+                                       name="system.armor.abdomen"
+                                       min="0"
+                                       step="1"
+                                       data-dtype="Number"
+                                       value="{{document.system.armor.abdomen}}" />
+                                {{localize 'KN.Monster.Sheet.armor.abdomen' }}
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="number"
+                                       name="system.armor.body"
+                                       min="0"
+                                       step="1"
+                                       data-dtype="Number"
+                                       value="{{document.system.armor.body}}" />
+                                {{localize 'KN.Monster.Sheet.armor.body' }}
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="number"
+                                       name="system.armor.chest"
+                                       min="0"
+                                       step="1"
+                                       data-dtype="Number"
+                                       value="{{document.system.armor.chest}}" />
+                                {{localize 'KN.Monster.Sheet.armor.chest' }}
+                            </label>
+                        </div>
+                        <div class="flexcol gap-min">
+                            <label class="checkbox-label">
+                                <input type="number"
+                                       name="system.armor.forequarters"
+                                       min="0"
+                                       step="1"
+                                       data-dtype="Number"
+                                       value="{{document.system.armor.forequarters}}" />
+                                {{localize 'KN.Monster.Sheet.armor.forequarters' }}
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="number"
+                                       name="system.armor.head"
+                                       min="0"
+                                       step="1"
+                                       data-dtype="Number"
+                                       value="{{document.system.armor.head}}" />
+                                {{localize 'KN.Monster.Sheet.armor.head' }}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="section-title">{{localize "KN.Monster.Sheet.traits.title"}}</div>
+            <div class="flexrow gap-small align-normal">
+                <div class="flexcol gap-min">
+                    <label class="checkbox-label">
+                        <input type="checkbox"
+                               name="system.traits.alert"
+                               {{checked document.system.traits.alert}} />
+                        {{localize 'KN.Monster.Sheet.traits.alert' }}
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox"
+                               name="system.traits.frightening"
+                               {{checked document.system.traits.frightening}} />
+                        {{localize 'KN.Monster.Sheet.traits.frightening' }}
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox"
+                               name="system.traits.horrifying"
+                               {{checked document.system.traits.horrifying}} />
+                        {{localize 'KN.Monster.Sheet.traits.horrifying' }}
+                    </label>
+                </div>
+                <div class="flexcol gap-min">
+                    <label class="checkbox-label">
+                        <input type="checkbox"
+                               name="system.traits.pack"
+                               {{checked document.system.traits.pack}} />
+                        {{localize 'KN.Monster.Sheet.traits.pack' }}
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox"
+                               name="system.traits.penetrating.active"
+                               {{checked document.system.traits.penetrating.active}} />
+                        <input type="number"
+                               name="system.traits.penetrating.value"
+                               min="0"
+                               step="1"
+                               data-dtype="Number"
+                               value="{{document.system.traits.penetrating.value}}" />
+                        {{localize 'KN.Monster.Sheet.traits.penetrating' }}
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox"
+                               name="system.traits.ruthlessness.active"
+                               {{checked document.system.traits.ruthlessness.active}} />
+                        <input type="number"
+                               name="system.traits.ruthlessness.value"
+                               min="0"
+                               step="1"
+                               data-dtype="Number"
+                               value="{{document.system.traits.ruthlessness.value}}" />
+                        {{localize 'KN.Monster.Sheet.traits.ruthlessness' }}
+                    </label>
+                </div>
+                <div class="flexcol gap-min">
+                    <label class="checkbox-label">
+                        <input type="checkbox"
+                               name="system.traits.savage"
+                               {{checked document.system.traits.savage}} />
+                        {{localize 'KN.Monster.Sheet.traits.savage' }}
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox"
+                               name="system.traits.swift"
+                               {{checked document.system.traits.swift}} />
+                        {{localize 'KN.Monster.Sheet.traits.swift' }}
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox"
+                               name="system.traits.venomous"
+                               {{checked document.system.traits.venomous}} />
+                        {{localize 'KN.Monster.Sheet.traits.venomous' }}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="section-title">{{localize 'KN.Monster.Sheet.actions.title' }}</div>
+            <div class="actions-list">
+                <div class="flexrow actions-header gap-min">
+                    <div class="action-header flexrow gap-min d6">
+                        D6<i data-tooltip="KN.Monster.Sheet.rollActions"
+   data-action="rollActions"
+   class="fas fa-dice rollable flex0"></i>
+                    </div>
+                    <div class="action-header name">{{localize 'KN.Monster.Sheet.actions.name' }}</div>
+                    <div class="action-header description">{{localize 'KN.Monster.Sheet.actions.description' }}</div>
+                    <div class="action-header actions">
+                        <button type="button"
+                                data-tooltip="KN.Monster.Sheet.actionsAdd"
+                                class="btn add-action-button"
+                                data-action="addAction">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="flexcol gap-small">
+                    {{#each actions as |action index| }}
+                        <div class="flexrow gap-min align-normal">
+                            <div class="d6">
+                                <input type="number"
+                                       name="system.actions.{{index}}.startDie"
+                                       min="0"
+                                       step="1"
+                                       data-dtype="Number"
+                                       value="{{action.startDie}}" />
+                                -
+                                <input type="number"
+                                       name="system.actions.{{index}}.endDie"
+                                       min="0"
+                                       step="1"
+                                       data-dtype="Number"
+                                       value="{{action.endDie}}" />
+                            </div>
+                            <div class="name">
+                                <input type="text"
+                                       name="system.actions.{{index}}.name"
+                                       value="{{action.name}}" />
+                            </div>
+                            <div class="flex2 description editor-host">
+                                {{#if @root.editable }}
+                                    <prose-mirror name="system.actions.{{index}}.description" button="true" editable="{{@root.editable}}" toggled="false" value="{{action.description}}">
+                                    {{{action.enrichedDescription}}}
+                                    </prose-mirror>
+                                {{else}}
+                                    {{{action.enrichedDescription}}}
+                                {{/if}}
+                            </div>
+                            <div class="actions">
+                                <button type="button"
+                                        data-tooltip="KN.Monster.Sheet.actionsDelete"
+                                        class="btn"
+                                        data-action="deleteAction"
+                                        data-index="{{index}}">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="section-title">{{localize 'KN.Monster.Sheet.levelAdaptation' }}</div>
+            <div class="flex2 editor-host">
+                {{#if editable }}
+                    <prose-mirror name="system.levelAdaptation" button="true" editable="{{editable}}" toggled="false" value="{{document.system.levelAdaptation}}">
+                    {{{enrichedLevelAdaptation}}}
+                    </prose-mirror>
+                {{else}}
+                    {{{enrichedLevelAdaptation}}}
+                {{/if}}
+            </div>
+        </div>
+        <div>
+            <div class="section-title">{{localize 'KN.Monster.Sheet.description' }}</div>
+            <div class="flex2 editor-host">
+                {{#if editable }}
+                    <prose-mirror name="system.description" button="true" editable="{{editable}}" toggled="false" value="{{document.system.description}}">
+                    {{{enrichedDescription}}}
+                    </prose-mirror>
+                {{else}}
+                    {{{enrichedDescription}}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>

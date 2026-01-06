@@ -2,6 +2,7 @@ import { SKILLS, WEIGHT } from '../../constants';
 
 import { defineItemModel } from './item';
 
+import type KerNethalasItem from '../../item/item';
 import type { ItemModelSchema } from './item';
 
 const { BooleanField, NumberField, SchemaField, StringField } = foundry.data.fields;
@@ -27,9 +28,12 @@ const defineWeaponModel = () => ({
 
 type WeaponModelSchema = ReturnType<typeof defineWeaponModel> & ItemModelSchema;
 
-type WeaponDataModelType = foundry.abstract.TypeDataModel<WeaponModelSchema, Item.Implementation>;
+type WeaponDataModelType = foundry.abstract.TypeDataModel<WeaponModelSchema, KerNethalasItem<'weapon'>>;
 
-export default class WeaponDataModel extends foundry.abstract.TypeDataModel<WeaponModelSchema, Item.Implementation> {
+export default class WeaponDataModel extends foundry.abstract.TypeDataModel<
+  WeaponModelSchema,
+  KerNethalasItem<'weapon'>
+> {
   static defineSchema(): WeaponModelSchema {
     return { ...defineItemModel(), ...defineWeaponModel() };
   }
@@ -49,6 +53,6 @@ export default class WeaponDataModel extends foundry.abstract.TypeDataModel<Weap
   };
 
   slots(): number {
-    return this.parent.system.traits?.twoHanded ? 2 : 1;
+    return this.parent.system.traits.twoHanded ? 2 : 1;
   }
 }

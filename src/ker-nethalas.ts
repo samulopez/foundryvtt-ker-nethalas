@@ -1,5 +1,6 @@
 import './styles/style.scss';
 import KNWeaponSheet from './module/sheets/weaponSheet';
+import MonsterSheet from './module/sheets/monsterSheet';
 import KNItemSheet from './module/sheets/itemSheet';
 import CharacterSheet from './module/sheets/characterSheet';
 import KNArmorSheet from './module/sheets/armorSheet';
@@ -15,11 +16,11 @@ import {
   WeaponDataModel,
 } from './module/data';
 import { ID, TEMPLATES } from './module/constants';
-import KerNethalasCharacterActor from './module/actor/character';
+import KerNethalasActor from './module/actor/actor';
 
 Hooks.once('init', async () => {
   // Configure custom Document implementations.
-  CONFIG.Actor.documentClass = KerNethalasCharacterActor;
+  CONFIG.Actor.documentClass = KerNethalasActor;
   CONFIG.Item.documentClass = KerNethalasItem;
   // Configure System Data Models.
   CONFIG.Actor.dataModels = {
@@ -53,6 +54,12 @@ Hooks.once('init', async () => {
     themes: null,
     label: 'Ker Nethalas Character Sheet',
     types: ['character'],
+  });
+  foundry.documents.collections.Actors.registerSheet(ID, MonsterSheet, {
+    makeDefault: true,
+    themes: null,
+    label: 'Ker Nethalas Monster Sheet',
+    types: ['monster'],
   });
   foundry.documents.collections.Items.unregisterSheet('core', foundry.appv1.sheets.ItemSheet);
   foundry.documents.collections.Items.registerSheet(ID, KNItemSheet, {
