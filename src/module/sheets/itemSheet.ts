@@ -1,5 +1,7 @@
 import { TEMPLATES } from '../constants';
 
+import type KerNethalasItem from '../item/item';
+
 import ItemSheetV2 = foundry.applications.sheets.ItemSheetV2;
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -46,11 +48,11 @@ export default class KNItemSheet<
     },
   };
 
-  override get document(): Item.OfType<'item'> {
-    if (!super.item.isItem()) {
+  override get document(): KerNethalasItem<'item'> {
+    if (!super.document.isItem()) {
       throw new Error('Item is not of type item');
     }
-    return super.item;
+    return super.document;
   }
 
   async _prepareContext(options) {

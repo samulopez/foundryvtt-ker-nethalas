@@ -1,5 +1,7 @@
 import { WEIGHT } from '../../constants';
 
+import type KerNethalasItem from '../../item/item';
+
 const { BooleanField, NumberField, StringField } = foundry.data.fields;
 
 export const defineItemModel = () => ({
@@ -17,7 +19,7 @@ export const defineItemModel = () => ({
 
 export type ItemModelSchema = ReturnType<typeof defineItemModel>;
 
-export default class ItemDataModel extends foundry.abstract.TypeDataModel<ItemModelSchema, Item.Implementation> {
+export default class ItemDataModel extends foundry.abstract.TypeDataModel<ItemModelSchema, KerNethalasItem<'item'>> {
   static defineSchema(): ItemModelSchema {
     return defineItemModel();
   }

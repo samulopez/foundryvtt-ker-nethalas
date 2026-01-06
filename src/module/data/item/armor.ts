@@ -2,6 +2,7 @@ import { ARMOR, WEIGHT } from '../../constants';
 
 import { defineItemModel } from './item';
 
+import type KerNethalasItem from '../../item/item';
 import type { ItemModelSchema } from './item';
 
 const { BooleanField, NumberField, StringField } = foundry.data.fields;
@@ -23,9 +24,9 @@ const defineArmorModel = () => ({
 
 type ArmorModelSchema = ReturnType<typeof defineArmorModel> & ItemModelSchema;
 
-type ArmorDataModelType = foundry.abstract.TypeDataModel<ArmorModelSchema, Item.Implementation>;
+type ArmorDataModelType = foundry.abstract.TypeDataModel<ArmorModelSchema, KerNethalasItem<'armor'>>;
 
-export default class ArmorDataModel extends foundry.abstract.TypeDataModel<ArmorModelSchema, Item.Implementation> {
+export default class ArmorDataModel extends foundry.abstract.TypeDataModel<ArmorModelSchema, KerNethalasItem<'armor'>> {
   static defineSchema(): ArmorModelSchema {
     return { ...defineItemModel(), ...defineArmorModel() };
   }
