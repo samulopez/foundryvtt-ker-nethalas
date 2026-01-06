@@ -1,8 +1,8 @@
 import { getGame, getLocalization } from '../helpers';
 import { TEMPLATES } from '../constants';
 
-export default class KerNethalasItem extends Item {
-  constructor(data: Item.CreateData, context?: Item.ConstructionContext) {
+export default class KerNethalasItem<out SubType extends Item.SubType = Item.SubType> extends Item<SubType> {
+  constructor(data: Item.CreateData<SubType>, context?: Item.ConstructionContext) {
     const newData = data;
     if (!newData.img) {
       if (newData.type === 'weapon') {
@@ -21,6 +21,9 @@ export default class KerNethalasItem extends Item {
   }
 
   async rollArmorIntegrity(): Promise<string> {
+    if (!this.isArmor()) {
+      throw new Error('Item is not armor');
+    }
     const { broken, currentIntegrity } = this.system;
     if (broken || !currentIntegrity) {
       return getLocalization().localize('KN.Error.armorBroken');
@@ -74,5 +77,17 @@ export default class KerNethalasItem extends Item {
     });
 
     return '';
+  }
+
+  isArmor(): this is KerNethalasItem<'armor'> {
+    return this.type === 'armor';
+  }
+
+  isWeapon(): this is KerNethalasItem<'weapon'> {
+    return this.type === 'weapon';
+  }
+
+  isItem(): this is KerNethalasItem<'item'> {
+    return this.type === 'item';
   }
 }

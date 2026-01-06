@@ -159,31 +159,39 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   gearItems(): Item.Implementation[] {
-    return this.parent.items.filter((item) => this.parent.system.gearList?.includes(item.uuid));
+    return this.parent.getEmbeddedCollection('Item').filter((item) => this.parent.system.gearList?.includes(item.uuid));
   }
 
   backpackItems(): Item.Implementation[] {
-    return this.parent.items.filter((item) => this.parent.system.backpackList?.includes(item.uuid));
+    return this.parent
+      .getEmbeddedCollection('Item')
+      .filter((item) => this.parent.system.backpackList?.includes(item.uuid));
   }
 
   nonEncumberingItems(): Item.Implementation[] {
-    return this.parent.items.filter((item) => item.system.weight === WEIGHT.nonEncumbering);
+    return this.parent.getEmbeddedCollection('Item').filter((item) => item.system.weight === WEIGHT.nonEncumbering);
   }
 
   pouch1Items(): Item.Implementation[] {
-    return this.parent.items.filter((item) => this.parent.system.pouch1List?.includes(item.uuid));
+    return this.parent
+      .getEmbeddedCollection('Item')
+      .filter((item) => this.parent.system.pouch1List?.includes(item.uuid));
   }
 
   pouch2Items(): Item.Implementation[] {
-    return this.parent.items.filter((item) => this.parent.system.pouch2List?.includes(item.uuid));
+    return this.parent
+      .getEmbeddedCollection('Item')
+      .filter((item) => this.parent.system.pouch2List?.includes(item.uuid));
   }
 
   pouch3Items(): Item.Implementation[] {
-    return this.parent.items.filter((item) => this.parent.system.pouch3List?.includes(item.uuid));
+    return this.parent
+      .getEmbeddedCollection('Item')
+      .filter((item) => this.parent.system.pouch3List?.includes(item.uuid));
   }
 
   beltItems(): Item.Implementation[] {
-    return this.parent.items.filter((item) => this.parent.system.beltList?.includes(item.uuid));
+    return this.parent.getEmbeddedCollection('Item').filter((item) => this.parent.system.beltList?.includes(item.uuid));
   }
 
   equipmentItems(): {
@@ -202,19 +210,45 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     ring2: Item.Implementation | null;
   } {
     return {
-      mainHand: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.mainHand) ?? null,
-      offHand: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.offHand) ?? null,
+      mainHand:
+        this.parent.getEmbeddedCollection('Item').find((item) => item.uuid === this.parent.system.equipment.mainHand) ??
+        null,
+      offHand:
+        this.parent.getEmbeddedCollection('Item').find((item) => item.uuid === this.parent.system.equipment.offHand) ??
+        null,
       armor: {
-        head: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.armor.head) ?? null,
-        torso: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.armor.torso) ?? null,
-        arms: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.armor.arms) ?? null,
-        legs: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.armor.legs) ?? null,
+        head:
+          this.parent
+            .getEmbeddedCollection('Item')
+            .find((item) => item.uuid === this.parent.system.equipment.armor.head) ?? null,
+        torso:
+          this.parent
+            .getEmbeddedCollection('Item')
+            .find((item) => item.uuid === this.parent.system.equipment.armor.torso) ?? null,
+        arms:
+          this.parent
+            .getEmbeddedCollection('Item')
+            .find((item) => item.uuid === this.parent.system.equipment.armor.arms) ?? null,
+        legs:
+          this.parent
+            .getEmbeddedCollection('Item')
+            .find((item) => item.uuid === this.parent.system.equipment.armor.legs) ?? null,
       },
-      gloves: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.gloves) ?? null,
-      boots: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.boots) ?? null,
-      amulet: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.amulet) ?? null,
-      ring1: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.ring1) ?? null,
-      ring2: this.parent.items.find((item) => item.uuid === this.parent.system.equipment.ring2) ?? null,
+      gloves:
+        this.parent.getEmbeddedCollection('Item').find((item) => item.uuid === this.parent.system.equipment.gloves) ??
+        null,
+      boots:
+        this.parent.getEmbeddedCollection('Item').find((item) => item.uuid === this.parent.system.equipment.boots) ??
+        null,
+      amulet:
+        this.parent.getEmbeddedCollection('Item').find((item) => item.uuid === this.parent.system.equipment.amulet) ??
+        null,
+      ring1:
+        this.parent.getEmbeddedCollection('Item').find((item) => item.uuid === this.parent.system.equipment.ring1) ??
+        null,
+      ring2:
+        this.parent.getEmbeddedCollection('Item').find((item) => item.uuid === this.parent.system.equipment.ring2) ??
+        null,
     };
   }
 
