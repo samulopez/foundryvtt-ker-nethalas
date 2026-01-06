@@ -27,7 +27,11 @@ declare module 'fvtt-types/configuration' {
 
   interface DocumentClassConfig {
     Actor: typeof KerNethalasCharacterActor;
-    Item: typeof KerNethalasItem;
+    Item: typeof KerNethalasItem<Item.SubType>;
+  }
+
+  interface ConfiguredItem<SubType extends Item.SubType> {
+    document: KerNethalasItem<SubType>;
   }
 
   interface SettingConfig {

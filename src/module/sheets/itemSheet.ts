@@ -46,6 +46,13 @@ export default class KNItemSheet<
     },
   };
 
+  override get document(): Item.OfType<'item'> {
+    if (!super.item.isItem()) {
+      throw new Error('Item is not of type item');
+    }
+    return super.item;
+  }
+
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
 

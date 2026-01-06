@@ -46,6 +46,13 @@ export default class KNArmorSheet<
     },
   };
 
+  override get document(): Item.OfType<'armor'> {
+    if (!super.item.isArmor()) {
+      throw new Error('Item is not armor');
+    }
+    return super.item;
+  }
+
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
 

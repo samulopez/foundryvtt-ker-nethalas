@@ -46,6 +46,13 @@ export default class KNWeaponSheet<
     },
   };
 
+  override get document(): Item.OfType<'weapon'> {
+    if (!super.item.isWeapon()) {
+      throw new Error('Item is not weapon');
+    }
+    return super.item;
+  }
+
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
 
