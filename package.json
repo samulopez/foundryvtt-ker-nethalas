@@ -33,6 +33,6 @@
     "sass-embedded": "1.97.1",
     "typescript": "5.9.3",
     "typescript-eslint": "^8.52.0",
-    "vite": "7.2.7"
+    "vite": "7.3.1"
   }
 }
