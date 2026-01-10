@@ -2,9 +2,9 @@
      data-group="primary"
      data-tab="skills">
     <div class="flexcol gap">
-        <div class="flexrow gap-large align-normal">
+        <div class="flexrow gap align-normal">
             <div class="flexcol gap">
-                <div class="flexrow gap-small">
+                <div class="flexrow gap-min">
                     <input type="number"
                            name="system.attributes.health.value"
                            id="system.attributes.health.value"
@@ -22,7 +22,7 @@
                            value="{{document.system.attributes.health.max}}" />
                     <div>{{localize "KN.Character.Attributes.health"}}</div>
                 </div>
-                <div class="flexrow gap-small">
+                <div class="flexrow gap-min">
                     <input type="number"
                            name="system.attributes.toughness.value"
                            id="system.attributes.toughness.value"
@@ -40,7 +40,7 @@
                            value="{{document.system.attributes.toughness.max}}" />
                     <div>{{localize "KN.Character.Attributes.toughness"}}</div>
                 </div>
-                <div class="flexrow gap-small">
+                <div class="flexrow gap-min">
                     <input type="number"
                            name="system.attributes.aether.value"
                            id="system.attributes.aether.value"
@@ -58,7 +58,7 @@
                            value="{{document.system.attributes.aether.max}}" />
                     <div>{{localize "KN.Character.Attributes.aether"}}</div>
                 </div>
-                <div class="flexrow gap-small">
+                <div class="flexrow gap-min">
                     <input type="number"
                            name="system.attributes.sanity.value"
                            id="system.attributes.sanity.value"
@@ -77,18 +77,9 @@
                     <div>{{localize "KN.Character.Attributes.sanity"}}</div>
                 </div>
                 <div class="flexrow gap-small">
-                    <input type="number"
-                           name="system.attributes.magicResistance"
-                           id="system.attributes.magicResistance"
-                           class="flex0"
-                           min="0"
-                           step="1"
-                           value="{{document.system.attributes.magicResistance}}" />
-                    <div>{{localize "KN.Character.Attributes.magicResistance"}}</div>
-                </div>
-                <div class="flexrow gap-small">
                     <div>{{localize "KN.Character.Attributes.damageModifier"}}</div>
                     <input type="number"
+                           data-dtype="Number"
                            name="system.attributes.damageModifier"
                            id="system.attributes.damageModifier"
                            class="flex0"
@@ -97,90 +88,129 @@
                 </div>
                 <div class="flexrow gap-small">
                     <div>{{localize "KN.Character.Attributes.exhaustion"}}</div>
+                    <input type="number"
+                           data-dtype="Number"
+                           name="system.attributes.exhaustion"
+                           id="system.attributes.exhaustion"
+                           class="flex0"
+                           min="0"
+                           step="1"
+                           value="{{document.system.attributes.exhaustion}}" />
+                </div>
+                <div class="flexrow gap-small">
+                    <div>{{localize "KN.Character.Resistances.title"}}</div>
                     <div>
                         <div class="flexrow">
-                            <div>{{localize "KN.Character.Attributes.exhaustionCurrent"}}</div>
+                            <div>{{localize "KN.Character.Resistances.endurance"}}</div>
                             <input type="number"
-                                   name="system.attributes.exhaustion"
-                                   id="system.attributes.exhaustion"
+                                   name="system.resistances.endurance"
+                                   id="system.resistances.endurance"
                                    class="flex0"
                                    min="0"
                                    step="1"
-                                   value="{{document.system.attributes.exhaustion}}" />
+                                   value="{{document.system.resistances.endurance}}" />
                         </div>
                         <div class="flexrow">
-                            <div>{{localize "KN.Character.Attributes.exhaustionResistance"}}</div>
+                            <div>{{localize "KN.Character.Resistances.resolve"}}</div>
                             <input type="number"
-                                   name="system.attributes.exhaustionResistance"
-                                   id="system.attributes.exhaustionResistance"
+                                   name="system.resistances.resolve"
+                                   id="system.resistances.resolve"
                                    class="flex0"
                                    min="0"
                                    step="1"
-                                   value="{{document.system.attributes.exhaustionResistance}}" />
+                                   value="{{document.system.resistances.resolve}}" />
+                        </div>
+                        <div class="flexrow">
+                            <div>{{localize "KN.Character.Resistances.spellward"}}</div>
+                            <input type="number"
+                                   name="system.resistances.spellward"
+                                   id="system.resistances.spellward"
+                                   class="flex0"
+                                   min="0"
+                                   step="1"
+                                   value="{{document.system.resistances.spellward}}" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="flex2">
-                <div class="section-title">{{localize "KN.Character.Skills.title"}}</div>
-                <div class="flexcol skill-table">
-                    {{#each skillRows as |skills key| }}
-                        <div class="flexrow skill-row gap-small">
-                            <div class="flexrow gap-min">
-                                <input type="checkbox"
-                                       name="system.skills.{{skills.left.id}}.markForImprovement"
-                                       data-tooltip="KN.Character.Skills.markForImprovement"
-                                       class="flex0"
-                                       {{checked skills.left.markForImprovement}} />
-                                <input type="number"
-                                       name="system.skills.{{skills.left.id}}.value"
-                                       id="system.skills.{{skills.left.id}}.value"
-                                       class="flex0"
-                                       min="0"
-                                       step="1"
-                                       value="{{skills.left.value}}" />
-                                <label class="rollable"
-                                       data-action="rollSkill"
-                                       data-key="{{skills.left.id}}"
-                                       for="system.skills.{{skills.left.id}}.value">
-                                    {{localize (concat "KN.Character.Skills." skills.left.id)}} {{#unless (eq skills.left.defaultValue 0)}}({{skills.left.defaultValue}}){{/unless}} <i class="fas fa-dice" data-key="{{skills.left.id}}"></i>
-                                </label>
-                            </div>
-                            <div class="flexrow gap-min">
-                                <input type="checkbox"
-                                       name="system.skills.{{skills.right.id}}.markForImprovement"
-                                       data-tooltip="KN.Character.Skills.markForImprovement"
-                                       class="flex0"
-                                       {{checked skills.right.markForImprovement}} />
-                                <input type="number"
-                                       name="system.skills.{{skills.right.id}}.value"
-                                       id="system.skills.{{skills.right.id}}.value"
-                                       class="flex0"
-                                       min="0"
-                                       step="1"
-                                       value="{{skills.right.value}}" />
-                                {{#if skills.right.custom }}
-                                    <input type="text"
-                                           name="system.skills.{{skills.right.id}}.name"
-                                           class="flex1"
-                                           value="{{document.system.skills.custom1.name}}" />
-                                    <label class="flex0 rollable"
-                                           data-action="rollSkill"
-                                           data-key="{{skills.right.id}}"
-                                           for="system.skills.{{skills.right.id}}.value">
-                                        <i class="fas fa-dice" data-key="{{skills.right.id}}"></i>
-                                    </label>
-                                {{else}}
+            <div class="flex2 flexcol gap">
+                <div>
+                    <div class="section-title">{{localize "KN.Character.Skills.title"}}</div>
+                    <div class="flexcol skill-table">
+                        {{#each skillRows as |skills key| }}
+                            <div class="flexrow skill-row gap-small">
+                                <div class="flexrow gap-min">
+                                    <input type="checkbox"
+                                           name="system.skills.{{skills.left.id}}.markForImprovement"
+                                           data-tooltip="KN.Character.Skills.markForImprovement"
+                                           class="flex0"
+                                           {{checked skills.left.markForImprovement}} />
+                                    <input type="number"
+                                           name="system.skills.{{skills.left.id}}.value"
+                                           id="system.skills.{{skills.left.id}}.value"
+                                           data-tooltip="KN.Character.Skills.tooltip.skillValue"
+                                           class="flex0"
+                                           min="0"
+                                           step="1"
+                                           value="{{skills.left.value}}" />
+                                    <input type="number"
+                                           name="system.skills.{{skills.left.id}}.temporaryModifier"
+                                           id="system.skills.{{skills.left.id}}.temporaryModifier"
+                                           data-tooltip="KN.Character.Skills.tooltip.temporaryModifier"
+                                           class="flex0"
+                                           step="1"
+                                           value="{{skills.left.temporaryModifier}}" />
                                     <label class="rollable"
                                            data-action="rollSkill"
-                                           data-key="{{skills.right.id}}"
-                                           for="system.skills.{{skills.right.id}}.value">
-                                        {{localize (concat "KN.Character.Skills." skills.right.id)}} {{#unless (eq skills.right.defaultValue 0)}}({{skills.right.defaultValue}}){{/unless}} <i class="fas fa-dice" data-key="{{skills.right.id}}"></i>
+                                           data-key="{{skills.left.id}}"
+                                           for="system.skills.{{skills.left.id}}.value">
+                                        {{localize (concat "KN.Character.Skills." skills.left.id)}} {{#unless (eq skills.left.defaultValue 0)}}({{skills.left.defaultValue}}){{/unless}} <i class="fas fa-dice" data-key="{{skills.left.id}}"></i>
                                     </label>
-                                {{/if}}
+                                </div>
+                                <div class="flexrow gap-min">
+                                    <input type="checkbox"
+                                           name="system.skills.{{skills.right.id}}.markForImprovement"
+                                           data-tooltip="KN.Character.Skills.markForImprovement"
+                                           class="flex0"
+                                           {{checked skills.right.markForImprovement}} />
+                                    <input type="number"
+                                           name="system.skills.{{skills.right.id}}.value"
+                                           id="system.skills.{{skills.right.id}}.value"
+                                           data-tooltip="KN.Character.Skills.tooltip.skillValue"
+                                           class="flex0"
+                                           min="0"
+                                           step="1"
+                                           value="{{skills.right.value}}" />
+                                    <input type="number"
+                                           name="system.skills.{{skills.right.id}}.temporaryModifier"
+                                           id="system.skills.{{skills.right.id}}.temporaryModifier"
+                                           data-tooltip="KN.Character.Skills.tooltip.temporaryModifier"
+                                           class="flex0"
+                                           step="1"
+                                           value="{{skills.right.temporaryModifier}}" />
+                                    {{#if skills.right.custom }}
+                                        <input type="text"
+                                               name="system.skills.{{skills.right.id}}.name"
+                                               class="flex1"
+                                               value="{{document.system.skills.custom1.name}}" />
+                                        <label class="flex0 rollable"
+                                               data-action="rollSkill"
+                                               data-key="{{skills.right.id}}"
+                                               for="system.skills.{{skills.right.id}}.value">
+                                            <i class="fas fa-dice" data-key="{{skills.right.id}}"></i>
+                                        </label>
+                                    {{else}}
+                                        <label class="rollable"
+                                               data-action="rollSkill"
+                                               data-key="{{skills.right.id}}"
+                                               for="system.skills.{{skills.right.id}}.value">
+                                            {{localize (concat "KN.Character.Skills." skills.right.id)}} {{#unless (eq skills.right.defaultValue 0)}}({{skills.right.defaultValue}}){{/unless}} <i class="fas fa-dice" data-key="{{skills.right.id}}"></i>
+                                        </label>
+                                    {{/if}}
+                                </div>
                             </div>
-                        </div>
-                    {{/each}}
+                        {{/each}}
+                    </div>
                 </div>
                 <div class="flexrow">
                     <div>

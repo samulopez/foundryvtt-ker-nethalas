@@ -135,23 +135,11 @@ export default class CharacterSheet<
       },
       {
         left: { ...this.document.system.skills[SKILL_DISPLAY.left[5]], id: SKILL_DISPLAY.left[5] },
-        right: { ...this.document.system.skills.custom1, id: 'custom1', custom: true },
+        right: { ...this.document.system.skills[SKILL_DISPLAY.right[5]], id: SKILL_DISPLAY.right[5] },
       },
       {
         left: { ...this.document.system.skills[SKILL_DISPLAY.left[6]], id: SKILL_DISPLAY.left[6] },
-        right: { ...this.document.system.skills.custom2, id: 'custom2', custom: true },
-      },
-      {
-        left: { ...this.document.system.skills[SKILL_DISPLAY.left[7]], id: SKILL_DISPLAY.left[7] },
-        right: { ...this.document.system.skills.custom3, id: 'custom3', custom: true },
-      },
-      {
-        left: { ...this.document.system.skills[SKILL_DISPLAY.left[8]], id: SKILL_DISPLAY.left[8] },
-        right: { ...this.document.system.skills.custom4, id: 'custom4', custom: true },
-      },
-      {
-        left: { ...this.document.system.skills[SKILL_DISPLAY.left[9]], id: SKILL_DISPLAY.left[9] },
-        right: { ...this.document.system.skills.custom5, id: 'custom5', custom: true },
+        right: { ...this.document.system.skills.custom1, id: 'custom1', custom: true },
       },
     ];
 
