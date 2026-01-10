@@ -210,16 +210,22 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
     if (!this.isCharacter()) {
       throw new Error('Actor is not a character');
     }
-    const skill = this.system.skills[skillKey];
+    const skill = this.system.skills[skillKey] as
+      | { value: number; markForImprovement: boolean; temporaryModifier: number }
+      | undefined;
     if (!skill) {
       return;
     }
 
-    if (skill.value === 0 && !modifier) {
+    if (skill.value === 0 && !modifier && skill.temporaryModifier === 0) {
       return;
     }
 
     let value = modifier ? skill.value + modifier : skill.value;
+    const temporaryModifier = skill.temporaryModifier || 0;
+    if (temporaryModifier !== 0) {
+      value += temporaryModifier;
+    }
     if (value <= 0) {
       value = 0;
     }
@@ -227,18 +233,18 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
     const roll = new Roll('1d100');
     await roll.evaluate();
 
-    let resultString = getLocalization().localize('KN.roll.success');
+    let resultString = getLocalization().localize('KN.Rolls.success');
     let customClass = 'success-text';
     const total = roll.total ?? 1000;
     const isCritical = total % 11 === 0;
 
     if (total > value) {
-      resultString = getLocalization().localize('KN.roll.failure');
+      resultString = getLocalization().localize('KN.Rolls.failure');
       customClass = 'failure-text';
     }
 
     const html = await foundry.applications.handlebars.renderTemplate(TEMPLATES.usageDieRoll, {
-      resultString: isCritical ? getLocalization().format('KN.roll.critical', { type: resultString }) : resultString,
+      resultString: isCritical ? getLocalization().format('KN.Rolls.critical', { type: resultString }) : resultString,
       customClass,
       formula: roll.formula,
       total: roll.total,
@@ -246,7 +252,7 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
 
     const message = await roll.toMessage({
       content: html,
-      flavor: `${getLocalization().format('KN.roll.skillCheck', { skill: getLocalization().localize(`KN.Character.Skills.${skillKey}`) })}<br>${getLocalization().localize('KN.roll.targetValue')}: ${value} ${modifier !== 0 ? `(${getLocalization().localize('KN.roll.base')}: ${skill.value} ${modifier > 0 ? ` + ${modifier}` : ` - ${Math.abs(modifier)}`})` : ''}`,
+      flavor: `${getLocalization().format('KN.Rolls.skillCheck', { skill: getLocalization().localize(`KN.Character.Skills.${skillKey}`) })}<br>${getLocalization().localize('KN.Rolls.targetValue')}: ${value} (${skill.value} ${getLocalization().localize('KN.Rolls.base')}${temporaryModifier !== 0 ? ` ${temporaryModifier > 0 ? '+ ' : '- '} ${Math.abs(temporaryModifier)} ${getLocalization().localize('KN.Rolls.tempModifier')}` : ''}${modifier !== 0 ? ` ${modifier > 0 ? ` + ${modifier}` : ` - ${Math.abs(modifier)}`}` : ''})`,
     });
 
     const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;

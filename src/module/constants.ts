@@ -79,10 +79,8 @@ export enum SKILLS {
   bladedWeapons = 'bladedWeapons',
   bludgeoningWeapons = 'bludgeoningWeapons',
   dodge = 'dodge',
-  endurance = 'endurance',
   medicine = 'medicine',
   perception = 'perception',
-  resolve = 'resolve',
   reason = 'reason',
   scavenge = 'scavenge',
   shaftedWeapons = 'shaftedWeapons',
@@ -98,13 +96,10 @@ export const SKILL_DISPLAY: Record<'left' | 'right', string[]> = {
     SKILLS.bladedWeapons,
     SKILLS.bludgeoningWeapons,
     SKILLS.dodge,
-    SKILLS.endurance,
     SKILLS.medicine,
     SKILLS.perception,
-    SKILLS.resolve,
-    SKILLS.reason,
   ],
-  right: [SKILLS.scavenge, SKILLS.shaftedWeapons, SKILLS.stealth, SKILLS.thievery, SKILLS.unarmedCombat],
+  right: [SKILLS.reason, SKILLS.scavenge, SKILLS.shaftedWeapons, SKILLS.stealth, SKILLS.thievery, SKILLS.unarmedCombat],
 } satisfies Record<'left' | 'right', SKILLS[]>;
 
 export enum KNSettings {

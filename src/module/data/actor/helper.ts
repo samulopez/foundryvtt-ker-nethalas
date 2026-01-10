@@ -12,6 +12,7 @@ const skillField = (initial: number) =>
     value: new NumberField({ required: true, integer: true, min: 0, initial, max: 80 }),
     markForImprovement: new BooleanField({ initial: false }),
     defaultValue: new NumberField({ initial }),
+    temporaryModifier: new NumberField({ integer: true }),
   });
 
 const damageType = () =>
