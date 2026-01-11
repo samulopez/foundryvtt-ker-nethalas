@@ -322,6 +322,9 @@
       .left-label {
         width: 150px;
       }
+      .editor-host {
+        font-size: 0.9rem;
+      }
     }
     .details {
       padding: 0.5rem 0;
@@ -352,18 +355,6 @@
             min-height: 200px;
           }
         }
-        // .editor-host {
-        //   min-height: 60px;
-        //   border: 1px dashed $color-border;
-        //   padding: 0.25rem;
-        //   background: $color-panel;
-        //   .inactive {
-        //     min-height: 60px;
-        //   }
-        //   .active {
-        //     min-height: 200px;
-        //   }
-        // }
       }
     }
   }
@@ -485,7 +476,7 @@
 
   .editor-host {
     border: 1px dashed $color-border;
-    padding: 0.25rem;
+    padding: 0 0.25rem;
     background: $color-panel;
     .active {
       min-height: 200px;
