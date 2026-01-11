@@ -170,6 +170,7 @@
   "KN.Monster.Sheet.weakSpot.option.body": "Body",
   "KN.Monster.Sheet.weakSpot.option.rightWing": "Right Wing",
   "KN.Monster.Sheet.weakSpot.option.leftWing": "Left Wing",
+  "KN.Monster.Sheet.magicResistance": "MAGIC RESISTANCE",
   "KN.Item.Tabs.details": "Details",
   "KN.Item.Tabs.notes": "Notes",
   "KN.Item.Sheet.name": "NAME",

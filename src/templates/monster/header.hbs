@@ -21,6 +21,20 @@
                            autocomplete="off"
                            id="kn.monster.name" />
                 </h5>
+                <h5 class="flexrow">
+                    <div class="flex0">
+                        <label class="left-label" for="kn.monster.description">{{localize 'KN.Monster.Sheet.description' }}</label>
+                    </div>
+                    <div class="editor-host">
+                        {{#if editable }}
+                            <prose-mirror name="system.description" id="kn.monster.description" button="true" editable="{{editable}}" toggled="false" value="{{document.system.description}}">
+                            {{{enrichedDescription}}}
+                            </prose-mirror>
+                        {{else}}
+                            {{{enrichedDescription}}}
+                        {{/if}}
+                    </div>
+                </h5>
             </div>
         </div>
     </div>

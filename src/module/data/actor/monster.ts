@@ -87,7 +87,21 @@ export default class MonsterDataModel extends foundry.abstract.TypeDataModel<
 
   async addAction() {
     const actions = this.parent.system.actions.slice();
-    actions.push({ name: 'New Action', description: '', startDie: 1, endDie: 2 });
+    const usedDie = new Set<number>();
+    this.parent.system.actions.forEach((action) => {
+      usedDie.add(action.startDie ?? 0);
+      usedDie.add(action.endDie ?? 0);
+    });
+    let startDie = -1;
+    let i = 1;
+    while (startDie === -1) {
+      if (!usedDie.has(i)) {
+        startDie = i;
+      }
+      i += 1;
+    }
+
+    actions.splice(startDie - 1, 0, { name: 'New Action', description: '', startDie, endDie: startDie });
     await this.parent.update({ system: { actions } });
   }
 
