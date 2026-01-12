@@ -12,6 +12,11 @@ export const TEMPLATES = {
     mechanicsTab: `systems/${ID}/templates/character/mechanics-tab.hbs`,
     weaponRow: `systems/${ID}/templates/character/weapon-row.hbs`,
   },
+  minion: {
+    header: `systems/${ID}/templates/minion/header.hbs`,
+    detailsTab: `systems/${ID}/templates/minion/details-tab.hbs`,
+    notesTab: `systems/${ID}/templates/minion/notes-tab.hbs`,
+  },
   monster: {
     header: `systems/${ID}/templates/monster/header.hbs`,
     detailsTab: `systems/${ID}/templates/monster/details-tab.hbs`,

@@ -1,0 +1,41 @@
+<header class="sheet-header">
+    <div class="header-fields">
+        <div class="header-top flexrow gap align-normal">
+            <img class="profile-img"
+                 alt="portrait image"
+                 src="{{document.img}}"
+                 data-action="editImage"
+                 data-edit="img"
+                 data-tooltip="{{document.name}}"
+                 height="150"
+                 width="100" />
+            <div class="flex3">
+                <h5 class="flexrow">
+                    <div class="flex0">
+                        <label class="left-label" for="kn.monster.name">{{localize 'KN.Monster.Sheet.name' }}</label>
+                    </div>
+                    <input name="name"
+                           type="text"
+                           value="{{document.name}}"
+                           class="flex3"
+                           autocomplete="off"
+                           id="kn.monster.name" />
+                </h5>
+                <h5 class="flexrow">
+                    <div class="flex0">
+                        <label class="left-label" for="kn.monster.description">{{localize 'KN.Monster.Sheet.description' }}</label>
+                    </div>
+                    <div class="editor-host">
+                        {{#if editable }}
+                            <prose-mirror name="system.description" id="kn.monster.description" button="true" editable="{{editable}}" toggled="false" value="{{document.system.description}}">
+                            {{{enrichedDescription}}}
+                            </prose-mirror>
+                        {{else}}
+                            {{{enrichedDescription}}}
+                        {{/if}}
+                    </div>
+                </h5>
+            </div>
+        </div>
+    </div>
+</header>

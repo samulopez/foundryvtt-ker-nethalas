@@ -252,7 +252,7 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
 
     const message = await roll.toMessage({
       content: html,
-      flavor: `${getLocalization().format('KN.Rolls.skillCheck', { skill: getLocalization().localize(`KN.Character.Skills.${skillKey}`) })}<br>${getLocalization().localize('KN.Rolls.targetValue')}: ${value} (${skill.value} ${getLocalization().localize('KN.Rolls.base')}${temporaryModifier !== 0 ? ` ${temporaryModifier > 0 ? '+ ' : '- '} ${Math.abs(temporaryModifier)} ${getLocalization().localize('KN.Rolls.tempModifier')}` : ''}${modifier !== 0 ? ` ${modifier > 0 ? ` + ${modifier}` : ` - ${Math.abs(modifier)}`}` : ''})`,
+      flavor: `${this.name}: ${getLocalization().format('KN.Rolls.skillCheck', { skill: getLocalization().localize(`KN.Character.Skills.${skillKey}`) })}<br>${getLocalization().localize('KN.Rolls.targetValue')}: ${value} (${skill.value} ${getLocalization().localize('KN.Rolls.base')}${temporaryModifier !== 0 ? ` ${temporaryModifier > 0 ? '+ ' : '- '} ${Math.abs(temporaryModifier)} ${getLocalization().localize('KN.Rolls.tempModifier')}` : ''}${modifier !== 0 ? ` ${modifier > 0 ? ` + ${modifier}` : ` - ${Math.abs(modifier)}`}` : ''})`,
     });
 
     const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
@@ -280,7 +280,7 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
   }
 
   async rollActions() {
-    if (!this.isMonster() || this.system.actions.length === 0) {
+    if ((!this.isMonster() && !this.isMinion()) || this.system.actions.length === 0) {
       return;
     }
 
@@ -355,13 +355,13 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
 
     await roll.toMessage({
       content: html,
-      flavor: `${getLocalization().format('KN.Rolls.resistanceCheck', { resistance: getLocalization().localize(`KN.Character.Resistances.${resistanceKey}`) })}<br>${getLocalization().localize('KN.Rolls.targetValue')}: ${value} (${resistance} ${getLocalization().localize('KN.Rolls.base')}${modifier !== 0 ? ` ${modifier > 0 ? ` + ${modifier}` : ` - ${Math.abs(modifier)}`}` : ''})`,
+      flavor: `${this.name}: ${getLocalization().format('KN.Rolls.resistanceCheck', { resistance: getLocalization().localize(`KN.Character.Resistances.${resistanceKey}`) })}<br>${getLocalization().localize('KN.Rolls.targetValue')}: ${value} (${resistance} ${getLocalization().localize('KN.Rolls.base')}${modifier !== 0 ? ` ${modifier > 0 ? ` + ${modifier}` : ` - ${Math.abs(modifier)}`}` : ''})`,
     });
   }
 
   async rollAttribute(attributeKey: string, modifier: number) {
-    if (!this.isMonster()) {
-      throw new Error('Actor is not a monster');
+    if (!this.isMonster() && !this.isMinion()) {
+      throw new Error('Actor is not a monster or minion');
     }
     const attribute = this.system.attributes[attributeKey] as number | undefined;
     if (!attribute) {
@@ -399,12 +399,12 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
 
     await roll.toMessage({
       content: html,
-      flavor: `${getLocalization().format('KN.Rolls.labelCheck', { label: getLocalization().localize(`KN.Monster.Sheet.attributes.${attributeKey}`) })}<br>${getLocalization().localize('KN.Rolls.targetValue')}: ${value} (${attribute} ${getLocalization().localize('KN.Rolls.base')}${modifier !== 0 ? ` ${modifier > 0 ? ` + ${modifier}` : ` - ${Math.abs(modifier)}`}` : ''})`,
+      flavor: `${this.name}: ${getLocalization().format('KN.Rolls.labelCheck', { label: getLocalization().localize(`KN.Monster.Sheet.attributes.${attributeKey}`) })}<br>${getLocalization().localize('KN.Rolls.targetValue')}: ${value} (${attribute} ${getLocalization().localize('KN.Rolls.base')}${modifier !== 0 ? ` ${modifier > 0 ? ` + ${modifier}` : ` - ${Math.abs(modifier)}`}` : ''})`,
     });
   }
 
   async rollHitLocation() {
-    if (!this.isMonster() || this.system.hitLocation === HIT_LOCATIONS.none) {
+    if ((!this.isMonster() && !this.isMinion()) || this.system.hitLocation === HIT_LOCATIONS.none) {
       return;
     }
 
@@ -437,9 +437,9 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
 
     const message = await roll.toMessage({
       content: html,
-      flavor: getLocalization().format('KN.Rolls.rollHitLocation', {
+      flavor: `${this.name}: ${getLocalization().format('KN.Rolls.rollHitLocation', {
         locationType: getLocalization().localize(`KN.Monster.Sheet.hitLocation.${this.system.hitLocation}`),
-      }),
+      })}`,
     });
 
     const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
@@ -450,6 +450,10 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
 
   isCharacter(): this is KerNethalasActor<'character'> {
     return this.type === 'character';
+  }
+
+  isMinion(): this is KerNethalasActor<'minion'> {
+    return this.type === 'minion';
   }
 
   isMonster(): this is KerNethalasActor<'monster'> {

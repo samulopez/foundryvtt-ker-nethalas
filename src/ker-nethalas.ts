@@ -1,6 +1,7 @@
 import './styles/style.scss';
 import KNWeaponSheet from './module/sheets/weaponSheet';
 import MonsterSheet from './module/sheets/monsterSheet';
+import MinionSheet from './module/sheets/minionSheet';
 import KNItemSheet from './module/sheets/itemSheet';
 import CharacterSheet from './module/sheets/characterSheet';
 import KNArmorSheet from './module/sheets/armorSheet';
@@ -52,6 +53,12 @@ Hooks.once('init', async () => {
     themes: null,
     label: 'Ker Nethalas Character Sheet',
     types: ['character'],
+  });
+  foundry.documents.collections.Actors.registerSheet(ID, MinionSheet, {
+    makeDefault: true,
+    themes: null,
+    label: 'Ker Nethalas Minion Sheet',
+    types: ['minion'],
   });
   foundry.documents.collections.Actors.registerSheet(ID, MonsterSheet, {
     makeDefault: true,

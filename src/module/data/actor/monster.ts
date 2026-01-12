@@ -6,7 +6,7 @@ import type KerNethalasActor from '../../actor/actor';
 
 const { ArrayField, BooleanField, NumberField, SchemaField, StringField } = foundry.data.fields;
 
-const defineMonsterModel = () => ({
+export const defineMonsterModel = () => ({
   attributes: new SchemaField({
     body: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
     mind: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
