@@ -121,6 +121,10 @@
         }
       }
 
+      .resistances-list {
+        min-width: 55%;
+      }
+
       .masteries {
         label {
           min-width: 50px;
@@ -332,8 +336,9 @@
         width: 2rem;
       }
       .left-label {
-        display: block;
-        width: 100px;
+        display: flex;
+        gap: $gap-min;
+        width: 120px;
       }
       .actions-list {
         .actions-header {

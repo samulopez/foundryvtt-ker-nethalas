@@ -1,5 +1,5 @@
 import { getLocalization } from '../helpers';
-import { HIT_LOCATIONS, TEMPLATES } from '../constants';
+import { HIT_LOCATIONS, HIT_LOCATION_TABLES, TEMPLATES } from '../constants';
 
 import type KerNethalasActor from '../actor/actor';
 
@@ -37,6 +37,8 @@ export default class MonsterSheet<
       addAction: this.#addAction,
       deleteAction: this.#deleteAction,
       rollActions: this.#rollActions,
+      rollAttribute: this.#rollAttribute,
+      rollHitLocation: this.#rollHitLocation,
     },
   };
 
@@ -114,87 +116,55 @@ export default class MonsterSheet<
       case HIT_LOCATIONS.arachnid:
         context.weakSpotOptions = [
           { value: 'none', label: '' },
-          { value: 'rightRearLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightRearLeg') },
-          { value: 'leftRearLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftRearLeg') },
-          { value: 'rightMidLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightMidLeg') },
-          { value: 'leftMidLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftMidLeg') },
-          { value: 'rightForeLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightForeLeg') },
-          { value: 'leftForeLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftForeLeg') },
-          { value: 'abdomen', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.abdomen') },
-          {
-            value: 'rightFrontLeg',
-            label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightFrontLeg'),
-          },
-          { value: 'leftFrontLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftFrontLeg') },
-          {
-            value: 'cephalothorax',
-            label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.cephalothorax'),
-          },
+          ...HIT_LOCATION_TABLES[HIT_LOCATIONS.arachnid].map((hl) => ({
+            value: hl.location,
+            label: getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hl.location}`),
+          })),
         ];
         break;
       case HIT_LOCATIONS.humanoid:
         context.weakSpotOptions = [
           { value: 'none', label: '' },
-          { value: 'rightLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightLeg') },
-          { value: 'leftLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftLeg') },
-          { value: 'abdomen', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.abdomen') },
-          { value: 'chest', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.chest') },
-          { value: 'leftArm', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftArm') },
-          { value: 'rightArm', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightArm') },
-          { value: 'head', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.head') },
+          ...HIT_LOCATION_TABLES[HIT_LOCATIONS.humanoid].map((hl) => ({
+            value: hl.location,
+            label: getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hl.location}`),
+          })),
         ];
         break;
       case HIT_LOCATIONS.insectoid:
         context.weakSpotOptions = [
           { value: 'none', label: '' },
-          { value: 'rightRearLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightRearLeg') },
-          { value: 'leftRearLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftRearLeg') },
-          { value: 'rightMidLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightMidLeg') },
-          { value: 'leftMidLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftMidLeg') },
-          { value: 'abdomen', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.abdomen') },
-          { value: 'thorax', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.thorax') },
-          {
-            value: 'rightFrontLeg',
-            label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightFrontLeg'),
-          },
-          { value: 'leftFrontLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftFrontLeg') },
-          { value: 'head', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.head') },
+          ...HIT_LOCATION_TABLES[HIT_LOCATIONS.insectoid].map((hl) => ({
+            value: hl.location,
+            label: getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hl.location}`),
+          })),
         ];
         break;
       case HIT_LOCATIONS.quadruped:
         context.weakSpotOptions = [
           { value: 'none', label: '' },
-          { value: 'rightHindLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightHindLeg') },
-          { value: 'leftHindLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftHindLeg') },
-          { value: 'hindquarters', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.hindquarters') },
-          { value: 'forequarters', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.forequarters') },
-          {
-            value: 'rightFrontLeg',
-            label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightFrontLeg'),
-          },
-          { value: 'leftFrontLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftFrontLeg') },
-          { value: 'head', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.head') },
+          ...HIT_LOCATION_TABLES[HIT_LOCATIONS.quadruped].map((hl) => ({
+            value: hl.location,
+            label: getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hl.location}`),
+          })),
         ];
         break;
       case HIT_LOCATIONS.serpentoid:
         context.weakSpotOptions = [
           { value: 'none', label: '' },
-          { value: 'body', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.body') },
-          { value: 'head', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.head') },
+          ...HIT_LOCATION_TABLES[HIT_LOCATIONS.serpentoid].map((hl) => ({
+            value: hl.location,
+            label: getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hl.location}`),
+          })),
         ];
         break;
       case HIT_LOCATIONS.winged:
         context.weakSpotOptions = [
           { value: 'none', label: '' },
-          { value: 'rightLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightLeg') },
-          { value: 'leftLeg', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftLeg') },
-          { value: 'abdomen', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.abdomen') },
-          { value: 'chest', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.chest') },
-          { value: 'rightWing', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightWing') },
-          { value: 'leftWing', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftWing') },
-          { value: 'rightArm', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.rightArm') },
-          { value: 'leftArm', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.leftArm') },
-          { value: 'head', label: getLocalization().localize('KN.Monster.Sheet.weakSpot.option.head') },
+          ...HIT_LOCATION_TABLES[HIT_LOCATIONS.winged].map((hl) => ({
+            value: hl.location,
+            label: getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hl.location}`),
+          })),
         ];
         break;
       default:
@@ -225,5 +195,63 @@ export default class MonsterSheet<
   static async #rollActions(this, event: PointerEvent) {
     event.preventDefault();
     await this.actor.rollActions();
+  }
+
+  static async #rollHitLocation(this, event: PointerEvent) {
+    event.preventDefault();
+    await this.actor.rollHitLocation();
+  }
+
+  static async #rollAttribute(this, event: PointerEvent) {
+    event.preventDefault();
+    const button = event.target as HTMLElement;
+    const { key } = button.dataset;
+    if (!key) {
+      return;
+    }
+
+    if (!event.ctrlKey && !event.shiftKey) {
+      await this.actor.rollAttribute(key, 0);
+      return;
+    }
+
+    const content = await foundry.applications.handlebars.renderTemplate(TEMPLATES.modifyRoll, {
+      originalValue: this.actor.system.attributes[key],
+    });
+
+    new foundry.applications.api.DialogV2({
+      window: { title: getLocalization().localize('KN.ModifySkillRollDialogue.title') },
+      modal: true,
+      classes: ['modify-roll-dialogue'],
+      content,
+      actions: {
+        rollWithModifier: async (eventButton) => {
+          const buttonSubmit = eventButton.target as HTMLButtonElement;
+          const { value } = buttonSubmit.dataset;
+          if (!value) {
+            return;
+          }
+          await this.actor.rollAttribute(key, Number(value));
+        },
+      },
+      buttons: [
+        {
+          default: true,
+          action: 'roll',
+          icon: 'fas fa-dice',
+          label: getLocalization().localize('KN.ModifySkillRollDialogue.action'),
+          callback: async (eventDialog, buttonDialog, dialog) => {
+            const html = dialog.element;
+            const plusOrMinus = html.querySelector('[name="plusOrMinus"]')?.value;
+            const valueModifier = html.querySelector('[name="valueModifier"]')?.value;
+            if (!valueModifier?.trim()) {
+              await this.actor.rollAttribute(key, 0);
+              return;
+            }
+            await this.actor.rollAttribute(key, Number(`${plusOrMinus}${valueModifier}`));
+          },
+        },
+      ],
+    }).render({ force: true });
   }
 }

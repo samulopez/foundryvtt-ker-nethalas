@@ -1,5 +1,5 @@
 import { getGame, getLocalization } from '../helpers';
-import { ID, KNSettings, TEMPLATES } from '../constants';
+import { HIT_LOCATIONS, HIT_LOCATION_TABLES, ID, KNSettings, TEMPLATES } from '../constants';
 
 export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.SubType> extends Actor<SubType> {
   constructor(data: Actor.CreateData<SubType>, context?: Actor.ConstructionContext) {
@@ -307,6 +307,139 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
     const message = await roll.toMessage({
       content: html,
       flavor: `${this.name}: ${getLocalization().localize('KN.Rolls.rollActionsFlavor')}`,
+    });
+
+    const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
+    if (diceSoNice && message) {
+      await getGame().dice3d?.waitFor3DAnimationByMessageID(message.id);
+    }
+  }
+
+  async rollResistance(resistanceKey: string, modifier: number) {
+    if (!this.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
+    const resistance = this.system.resistances[resistanceKey] as number | undefined;
+    if (!resistance) {
+      return;
+    }
+
+    if (resistance === 0 && !modifier) {
+      return;
+    }
+
+    let value = modifier ? resistance + modifier : resistance;
+    if (value <= 0) {
+      value = 0;
+    }
+
+    const roll = new Roll('1d100');
+    await roll.evaluate();
+
+    let resultString = getLocalization().localize('KN.Rolls.success');
+    let customClass = 'success-text';
+    const total = roll.total ?? 1000;
+    const isCritical = total % 11 === 0;
+
+    if (total > value) {
+      resultString = getLocalization().localize('KN.Rolls.failure');
+      customClass = 'failure-text';
+    }
+
+    const html = await foundry.applications.handlebars.renderTemplate(TEMPLATES.usageDieRoll, {
+      resultString: isCritical ? getLocalization().format('KN.Rolls.critical', { type: resultString }) : resultString,
+      customClass,
+      formula: roll.formula,
+      total: roll.total,
+    });
+
+    await roll.toMessage({
+      content: html,
+      flavor: `${getLocalization().format('KN.Rolls.resistanceCheck', { resistance: getLocalization().localize(`KN.Character.Resistances.${resistanceKey}`) })}<br>${getLocalization().localize('KN.Rolls.targetValue')}: ${value} (${resistance} ${getLocalization().localize('KN.Rolls.base')}${modifier !== 0 ? ` ${modifier > 0 ? ` + ${modifier}` : ` - ${Math.abs(modifier)}`}` : ''})`,
+    });
+  }
+
+  async rollAttribute(attributeKey: string, modifier: number) {
+    if (!this.isMonster()) {
+      throw new Error('Actor is not a monster');
+    }
+    const attribute = this.system.attributes[attributeKey] as number | undefined;
+    if (!attribute) {
+      return;
+    }
+
+    if (attribute === 0 && !modifier) {
+      return;
+    }
+
+    let value = modifier ? attribute + modifier : attribute;
+    if (value <= 0) {
+      value = 0;
+    }
+
+    const roll = new Roll('1d100');
+    await roll.evaluate();
+
+    let resultString = getLocalization().localize('KN.Rolls.success');
+    let customClass = 'success-text';
+    const total = roll.total ?? 1000;
+    const isCritical = total % 11 === 0;
+
+    if (total > value) {
+      resultString = getLocalization().localize('KN.Rolls.failure');
+      customClass = 'failure-text';
+    }
+
+    const html = await foundry.applications.handlebars.renderTemplate(TEMPLATES.usageDieRoll, {
+      resultString: isCritical ? getLocalization().format('KN.Rolls.critical', { type: resultString }) : resultString,
+      customClass,
+      formula: roll.formula,
+      total: roll.total,
+    });
+
+    await roll.toMessage({
+      content: html,
+      flavor: `${getLocalization().format('KN.Rolls.labelCheck', { label: getLocalization().localize(`KN.Monster.Sheet.attributes.${attributeKey}`) })}<br>${getLocalization().localize('KN.Rolls.targetValue')}: ${value} (${attribute} ${getLocalization().localize('KN.Rolls.base')}${modifier !== 0 ? ` ${modifier > 0 ? ` + ${modifier}` : ` - ${Math.abs(modifier)}`}` : ''})`,
+    });
+  }
+
+  async rollHitLocation() {
+    if (!this.isMonster() || this.system.hitLocation === HIT_LOCATIONS.none) {
+      return;
+    }
+
+    const roll = new Roll('1d20');
+    await roll.evaluate();
+    const total = roll.total ?? 0;
+
+    const hitLocationTable = HIT_LOCATION_TABLES[this.system.hitLocation];
+    if (!hitLocationTable) {
+      return;
+    }
+
+    const hitLocation = hitLocationTable.find((hl) => total >= hl.startDie && total <= hl.endDie);
+    if (!hitLocation) {
+      return;
+    }
+    let resultString = getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hitLocation.location}`);
+    let customClass = '';
+    if (hitLocation.location === this.system.weakSpot) {
+      customClass = 'success-text';
+      resultString = `${getLocalization().format('KN.Rolls.criticalStrike')}! ${resultString}`;
+    }
+
+    const html = await foundry.applications.handlebars.renderTemplate(TEMPLATES.usageDieRoll, {
+      resultString,
+      customClass,
+      formula: roll.formula,
+      total: roll.total,
+    });
+
+    const message = await roll.toMessage({
+      content: html,
+      flavor: getLocalization().format('KN.Rolls.rollHitLocation', {
+        locationType: getLocalization().localize(`KN.Monster.Sheet.hitLocation.${this.system.hitLocation}`),
+      }),
     });
 
     const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;

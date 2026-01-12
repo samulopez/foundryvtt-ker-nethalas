@@ -44,9 +44,9 @@ const defineCharacterModel = () => ({
     }),
   }),
   resistances: new SchemaField({
-    endurance: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
-    resolve: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
-    spellward: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
+    endurance: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 80 }),
+    resolve: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 80 }),
+    spellward: new NumberField({ required: true, integer: true, min: 0, initial: 0, max: 80 }),
   }),
   masteries: new SchemaField({
     mastery1: new SchemaField({

@@ -48,6 +48,7 @@ export default class CharacterSheet<
     tag: 'form',
     actions: {
       rollSkill: this.#rollSkill,
+      rollResistance: this.#rollResistance,
       rollArmorIntegrity: this.#rollArmorIntegrity,
       rollTensionDie: this.#rollTensionDie,
       rollLairDomainExitDie: this.#rollLairDomainExitDie,
@@ -621,6 +622,59 @@ export default class CharacterSheet<
               return;
             }
             await this.actor.rollSkill(key, Number(`${plusOrMinus}${valueModifier}`));
+          },
+        },
+      ],
+    }).render({ force: true });
+  }
+
+  static async #rollResistance(this, event: PointerEvent) {
+    event.preventDefault();
+    const button = event.target as HTMLElement;
+    const { key } = button.dataset;
+    if (!key) {
+      return;
+    }
+
+    if (!event.ctrlKey && !event.shiftKey) {
+      await this.actor.rollResistance(key, 0);
+      return;
+    }
+
+    const content = await foundry.applications.handlebars.renderTemplate(TEMPLATES.modifyRoll, {
+      originalValue: this.actor.system.resistances[key],
+    });
+
+    new foundry.applications.api.DialogV2({
+      window: { title: getLocalization().localize('KN.ModifySkillRollDialogue.title') },
+      modal: true,
+      classes: ['modify-roll-dialogue'],
+      content,
+      actions: {
+        rollWithModifier: async (eventButton) => {
+          const buttonSubmit = eventButton.target as HTMLButtonElement;
+          const { value } = buttonSubmit.dataset;
+          if (!value) {
+            return;
+          }
+          await this.actor.rollResistance(key, Number(value));
+        },
+      },
+      buttons: [
+        {
+          default: true,
+          action: 'roll',
+          icon: 'fas fa-dice',
+          label: getLocalization().localize('KN.ModifySkillRollDialogue.action'),
+          callback: async (eventDialog, buttonDialog, dialog) => {
+            const html = dialog.element;
+            const plusOrMinus = html.querySelector('[name="plusOrMinus"]')?.value;
+            const valueModifier = html.querySelector('[name="valueModifier"]')?.value;
+            if (!valueModifier?.trim()) {
+              await this.actor.rollResistance(key, 0);
+              return;
+            }
+            await this.actor.rollResistance(key, Number(`${plusOrMinus}${valueModifier}`));
           },
         },
       ],

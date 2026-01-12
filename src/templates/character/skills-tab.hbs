@@ -99,9 +99,13 @@
                 </div>
                 <div class="flexrow gap-small">
                     <div>{{localize "KN.Character.Resistances.title"}}</div>
-                    <div>
+                    <div class="resistances-list">
                         <div class="flexrow">
-                            <div>{{localize "KN.Character.Resistances.endurance"}}</div>
+                            <div class="flexrow gap-min rollable"
+                                 data-action="rollResistance"
+                                 data-key="endurance">
+                                {{localize "KN.Character.Resistances.endurance"}}<i class="fas fa-dice" data-key="endurance"></i>
+                            </div>
                             <input type="number"
                                    name="system.resistances.endurance"
                                    id="system.resistances.endurance"
@@ -111,7 +115,11 @@
                                    value="{{document.system.resistances.endurance}}" />
                         </div>
                         <div class="flexrow">
-                            <div>{{localize "KN.Character.Resistances.resolve"}}</div>
+                            <div class="flexrow gap-min rollable"
+                                 data-action="rollResistance"
+                                 data-key="resolve">
+                                {{localize "KN.Character.Resistances.resolve"}}<i class="fas fa-dice" data-key="resolve"></i>
+                            </div>
                             <input type="number"
                                    name="system.resistances.resolve"
                                    id="system.resistances.resolve"
@@ -121,7 +129,11 @@
                                    value="{{document.system.resistances.resolve}}" />
                         </div>
                         <div class="flexrow">
-                            <div>{{localize "KN.Character.Resistances.spellward"}}</div>
+                            <div class="flexrow gap-min rollable"
+                                 data-action="rollResistance"
+                                 data-key="spellward">
+                                {{localize "KN.Character.Resistances.spellward"}}<i class="fas fa-dice" data-key="spellward"></i>
+                            </div>
                             <input type="number"
                                    name="system.resistances.spellward"
                                    id="system.resistances.spellward"
