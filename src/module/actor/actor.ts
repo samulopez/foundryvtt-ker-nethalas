@@ -8,6 +8,9 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
       if (newData.type === 'monster') {
         newData.img = 'icons/svg/terror.svg';
       }
+      if (newData.type === 'minion') {
+        newData.img = 'icons/svg/mole.svg';
+      }
     }
 
     super(newData, context);
@@ -404,7 +407,7 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
   }
 
   async rollHitLocation() {
-    if ((!this.isMonster() && !this.isMinion()) || this.system.hitLocation === HIT_LOCATIONS.none) {
+    if (this.system.hitLocation === HIT_LOCATIONS.none) {
       return;
     }
 
@@ -424,7 +427,7 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
     let resultString = getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hitLocation.location}`);
     let customClass = '';
     if (hitLocation.location === this.system.weakSpot) {
-      customClass = 'success-text';
+      customClass = 'bold-text';
       resultString = `${getLocalization().format('KN.Rolls.criticalStrike')}! ${resultString}`;
     }
 

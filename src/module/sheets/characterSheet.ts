@@ -61,6 +61,7 @@ export default class CharacterSheet<
       equipWeapon: this.#equipWeapon,
       equipArmor: this.#equipArmor,
       swapWeapons: this.#swapWeapons,
+      rollHitLocation: this.#rollHitLocation,
     },
     dragDrop: [
       {
@@ -549,6 +550,11 @@ export default class CharacterSheet<
   static async #rollLairDomainExitDie(this, event, _target) {
     event.preventDefault();
     await this.actor.rollLairDomainExitDie();
+  }
+
+  static async #rollHitLocation(this, event: PointerEvent) {
+    event.preventDefault();
+    await this.actor.rollHitLocation();
   }
 
   static async #markOverseerFound(this, event, _target) {
