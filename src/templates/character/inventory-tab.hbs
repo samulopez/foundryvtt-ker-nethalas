@@ -106,6 +106,17 @@
       </div>
       <div class="flexcol gap align-normal">
         <div>
+          {{#if (eq document.system.sorting "alphabetically") }}
+            <button type="button"
+                    class="inline-control toggle-sort icon fas fa-arrow-down-a-z"
+                    data-tooltip="KN.Sorting.alphabetically"
+                    data-action="toggleSorting"></button>
+          {{else}}
+            <button type="button"
+                    class="inline-control toggle-sort icon fas fa-arrow-down-short-wide"
+                    data-tooltip="KN.Sorting.manually"
+                    data-action="toggleSorting"></button>
+          {{/if}}
           <div class="section-title">{{localize "KN.Character.Inventory.beltQuickSlots"}} {{currentBeltCapacity}} / 4</div>
           <div class="items-section belt-list">
             <ol class="item-list unlist">
@@ -120,7 +131,7 @@
           <div class="items-section non-encumbering-items-list">
             <ol class="item-list unlist">
               {{#each nonEncumberingList as |item key| }}
-                {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=false showWeight=false showQuantity=true}}
+                {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=false showQuantity=true}}
               {{/each}}
             </ol>
           </div>
@@ -177,19 +188,5 @@
         </ol>
       </div>
     </div>
-  </div>
-  <div class="all-list">
-    {{#each document.items as |item key| }}
-      <div class="flexrow gear-item gap-small">
-        <div>{{item.id}}</div>
-        <div>{{item.name}}</div>
-        <div>{{item.system.quantity}}</div>
-        <div class="flex0 rollable"
-             data-action="removeItem"
-             data-key="{{item.id}}">
-          <i class="fas fa-trash"></i>
-        </div>
-      </div>
-    {{/each}}
   </div>
 </div>

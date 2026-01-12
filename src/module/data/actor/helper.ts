@@ -1,3 +1,5 @@
+import { SORTING } from '../../constants';
+
 const { BooleanField, NumberField, SchemaField, StringField } = foundry.data.fields;
 
 const attributeField = (initial: number) =>
@@ -20,5 +22,12 @@ const damageType = () =>
     status: new StringField({ initial: 'none', choices: ['none', 'immune', 'vulnerable', 'resistant', 'restored'] }),
     reduction: new StringField({ initial: '' }),
   });
+
+export const sortingField = () => ({
+  sorting: new StringField({
+    choices: [SORTING.alphabetically, SORTING.manually],
+    initial: SORTING.manually,
+  }),
+});
 
 export { attributeField, damageType, skillField };

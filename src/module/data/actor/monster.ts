@@ -1,6 +1,6 @@
 import { HIT_LOCATIONS } from '../../constants';
 
-import { attributeField } from './helper';
+import { attributeField, sortingField } from './helper';
 
 import type KerNethalasActor from '../../actor/actor';
 
@@ -73,6 +73,7 @@ export const defineMonsterModel = () => ({
   ),
   description: new StringField({ initial: '' }),
   notes: new StringField({ initial: '' }),
+  ...sortingField(),
 });
 
 type MonsterModelSchema = ReturnType<typeof defineMonsterModel>;
