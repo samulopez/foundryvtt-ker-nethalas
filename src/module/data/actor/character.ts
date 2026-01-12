@@ -1,5 +1,5 @@
 import { getLocalization } from '../../helpers';
-import { WEIGHT } from '../../constants';
+import { HIT_LOCATIONS, WEIGHT } from '../../constants';
 
 import { attributeField, damageType, skillField } from './helper';
 
@@ -77,6 +77,11 @@ const defineCharacterModel = () => ({
       tier5: new StringField({ initial: '' }),
     }),
   }),
+  hitLocation: new StringField({
+    choices: [HIT_LOCATIONS.humanoid],
+    initial: HIT_LOCATIONS.humanoid,
+  }),
+  weakSpot: new StringField({ initial: 'head' }),
   perks: new SchemaField({
     madness: new StringField({ initial: '' }),
     perks: new StringField({ initial: '' }),

@@ -232,6 +232,7 @@
   "KN.Item.Sheet.parryBonus": "Parry Bonus",
   "KN.Item.Sheet.rollIntegrityArmorTooltip": "Roll Armor Integrity",
   "KN.Item.Sheet.rollSkillCheckTooltip": "Roll Skill check",
+  "KN.Rolls.rollHitLocationCharacter": "ROLL HIT LOCATION",
   "KN.Rolls.tensionDieCheck.title": "Tension Die check",
   "KN.Rolls.tensionDieCheck.noEffect": "No effect",
   "KN.Rolls.tensionDieCheck.decreases": "Tension Die decreases",

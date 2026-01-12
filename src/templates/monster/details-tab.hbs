@@ -107,11 +107,9 @@
                 <div class="flexrow gap-small">
                     <div class="flex0">
                         {{#if (eq document.system.hitLocation "none") }}
-                            <div class="left-label" for="kn.monster.hitLocation">{{localize 'KN.Monster.Sheet.hitLocation.title' }}</div>
+                            <div class="left-label">{{localize 'KN.Monster.Sheet.hitLocation.title' }}</div>
                         {{else}}
-                            <div class="left-label rollable"
-                                 for="kn.monster.hitLocation"
-                                 data-action="rollHitLocation">
+                            <div class="left-label rollable" data-action="rollHitLocation">
                                 {{localize 'KN.Monster.Sheet.hitLocation.title' }}<i class="fas fa-dice"></i>
                             </div>
                         {{/if}}
@@ -157,7 +155,7 @@
                 {{#if showWeakSpotInput }}
                     <div class="flexrow gap-small">
                         <div class="flex0">
-                            <div class="left-label" for="kn.monster.weakSpot">{{localize 'KN.Monster.Sheet.weakSpot.title' }}</div>
+                            <div class="left-label">{{localize 'KN.Monster.Sheet.weakSpot.title' }}</div>
                         </div>
                         <select name="system.weakSpot"  id="kn.monster.weakSpot">
                             {{#each weakSpotOptions as |option| }}
