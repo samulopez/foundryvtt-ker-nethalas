@@ -5,7 +5,6 @@ import type {
   MonsterDataModel,
   ItemDataModel,
   MinionDataModel,
-  NPCDataModel,
   WeaponDataModel,
 } from './module/data';
 import type KerNethalasActor from './module/actor/actor';
@@ -15,7 +14,6 @@ declare module 'fvtt-types/configuration' {
     Actor: {
       character: typeof CharacterDataModel;
       minion: typeof MinionDataModel;
-      npc: typeof NPCDataModel;
       monster: typeof MonsterDataModel;
     };
     Item: {

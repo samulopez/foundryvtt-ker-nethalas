@@ -29,7 +29,6 @@
     "Actor": {
       "character": {},
       "minion": {},
-      "npc": {},
       "monster": {}
     },
     "Item": {

@@ -66,6 +66,65 @@ export enum HIT_LOCATIONS {
   winged = 'winged',
 }
 
+export const HIT_LOCATION_TABLES = {
+  [HIT_LOCATIONS.arachnid]: [
+    { startDie: 1, endDie: 2, location: 'rightRearLeg' },
+    { startDie: 3, endDie: 4, location: 'leftRearLeg' },
+    { startDie: 5, endDie: 6, location: 'rightMidLeg' },
+    { startDie: 7, endDie: 8, location: 'leftMidLeg' },
+    { startDie: 9, endDie: 10, location: 'rightForeLeg' },
+    { startDie: 11, endDie: 12, location: 'leftForeLeg' },
+    { startDie: 13, endDie: 14, location: 'abdomen' },
+    { startDie: 15, endDie: 16, location: 'rightFrontLeg' },
+    { startDie: 17, endDie: 18, location: 'leftFrontLeg' },
+    { startDie: 19, endDie: 20, location: 'cephalothorax' },
+  ],
+  [HIT_LOCATIONS.humanoid]: [
+    { startDie: 1, endDie: 3, location: 'rightLeg' },
+    { startDie: 4, endDie: 6, location: 'leftLeg' },
+    { startDie: 7, endDie: 9, location: 'abdomen' },
+    { startDie: 10, endDie: 12, location: 'chest' },
+    { startDie: 13, endDie: 15, location: 'leftArm' },
+    { startDie: 16, endDie: 18, location: 'rightArm' },
+    { startDie: 19, endDie: 20, location: 'head' },
+  ],
+  [HIT_LOCATIONS.insectoid]: [
+    { startDie: 1, endDie: 1, location: 'rightRearLeg' },
+    { startDie: 2, endDie: 2, location: 'leftRearLeg' },
+    { startDie: 3, endDie: 3, location: 'rightMidLeg' },
+    { startDie: 4, endDie: 4, location: 'leftMidLeg' },
+    { startDie: 5, endDie: 9, location: 'abdomen' },
+    { startDie: 10, endDie: 13, location: 'thorax' },
+    { startDie: 14, endDie: 14, location: 'rightFrontLeg' },
+    { startDie: 15, endDie: 15, location: 'leftFrontLeg' },
+    { startDie: 16, endDie: 20, location: 'head' },
+  ],
+  [HIT_LOCATIONS.quadruped]: [
+    { startDie: 1, endDie: 3, location: 'rightHindLeg' },
+    { startDie: 4, endDie: 6, location: 'leftHindLeg' },
+    { startDie: 7, endDie: 9, location: 'hindquarters' },
+    { startDie: 10, endDie: 12, location: 'forequarters' },
+    { startDie: 13, endDie: 15, location: 'rightFrontLeg' },
+    { startDie: 16, endDie: 18, location: 'leftFrontLeg' },
+    { startDie: 19, endDie: 20, location: 'head' },
+  ],
+  [HIT_LOCATIONS.serpentoid]: [
+    { startDie: 1, endDie: 17, location: 'body' },
+    { startDie: 18, endDie: 20, location: 'head' },
+  ],
+  [HIT_LOCATIONS.winged]: [
+    { startDie: 1, endDie: 1, location: 'rightLeg' },
+    { startDie: 2, endDie: 2, location: 'leftLeg' },
+    { startDie: 3, endDie: 3, location: 'abdomen' },
+    { startDie: 4, endDie: 4, location: 'chest' },
+    { startDie: 5, endDie: 9, location: 'rightWing' },
+    { startDie: 10, endDie: 13, location: 'leftWing' },
+    { startDie: 14, endDie: 14, location: 'rightArm' },
+    { startDie: 15, endDie: 15, location: 'leftArm' },
+    { startDie: 16, endDie: 20, location: 'head' },
+  ],
+};
+
 export enum WEIGHT {
   heavy = 'heavy',
   light = 'light',

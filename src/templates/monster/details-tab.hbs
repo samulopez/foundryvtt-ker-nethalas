@@ -33,7 +33,12 @@
                            step="1"
                            data-dtype="Number"
                            value="{{document.system.attributes.mind}}" />
-                    <div>{{localize "KN.Monster.Sheet.mind"}}</div>
+                    <div class="flexrow gap-min rollable"
+                         data-action="rollAttribute"
+                         data-key="mind">
+                        {{localize "KN.Monster.Sheet.mind"}}<i class="fas fa-dice" data-key="mind"></i>
+                    </div>
+                    <div class="flex3"></div>
                 </div>
                 <div class="flexrow gap-small">
                     <input type="number"
@@ -44,7 +49,12 @@
                            step="1"
                            data-dtype="Number"
                            value="{{document.system.attributes.endurance}}" />
-                    <div>{{localize "KN.Monster.Sheet.endurance"}}</div>
+                    <div class="flexrow gap-min rollable"
+                         data-action="rollAttribute"
+                         data-key="endurance">
+                        {{localize "KN.Monster.Sheet.endurance"}}<i class="fas fa-dice" data-key="endurance"></i>
+                    </div>
+                    <div class="flex"></div>
                 </div>
                 <div class="flexrow gap-small">
                     <input type="number"
@@ -55,7 +65,12 @@
                            step="1"
                            data-dtype="Number"
                            value="{{document.system.attributes.body}}" />
-                    <div>{{localize "KN.Monster.Sheet.body"}}</div>
+                    <div class="flexrow gap-min rollable"
+                         data-action="rollAttribute"
+                         data-key="body">
+                        {{localize "KN.Monster.Sheet.body"}}<i class="fas fa-dice" data-key="body"></i>
+                    </div>
+                    <div class="flex3"></div>
                 </div>
                 <div class="flexrow gap-small">
                     <input type="number"
@@ -66,7 +81,12 @@
                            step="1"
                            data-dtype="Number"
                            value="{{document.system.attributes.combatSkill}}" />
-                    <div>{{localize "KN.Monster.Sheet.combatSkill"}}</div>
+                    <div class="flexrow gap-min rollable"
+                         data-action="rollAttribute"
+                         data-key="combatSkill">
+                        {{localize "KN.Monster.Sheet.combatSkill"}}<i class="fas fa-dice" data-key="combatSkill"></i>
+                    </div>
+                    <div class="flex"></div>
                 </div>
                 <div class="flexrow gap-small">
                     <input type="number"
@@ -77,11 +97,24 @@
                            step="1"
                            data-dtype="Number"
                            value="{{document.system.attributes.magicResistance}}" />
-                    <div>{{localize "KN.Monster.Sheet.magicResistance"}}</div>
+                    <div class="flexrow gap-min rollable"
+                         data-action="rollAttribute"
+                         data-key="magicResistance">
+                        {{localize "KN.Monster.Sheet.magicResistance"}}<i class="fas fa-dice" data-key="magicResistance"></i>
+                    </div>
+                    <div class="flex"></div>
                 </div>
                 <div class="flexrow gap-small">
                     <div class="flex0">
-                        <div class="left-label" for="kn.monster.hitLocation">{{localize 'KN.Monster.Sheet.hitLocation.title' }}</div>
+                        {{#if (eq document.system.hitLocation "none") }}
+                            <div class="left-label" for="kn.monster.hitLocation">{{localize 'KN.Monster.Sheet.hitLocation.title' }}</div>
+                        {{else}}
+                            <div class="left-label rollable"
+                                 for="kn.monster.hitLocation"
+                                 data-action="rollHitLocation">
+                                {{localize 'KN.Monster.Sheet.hitLocation.title' }}<i class="fas fa-dice"></i>
+                            </div>
+                        {{/if}}
                     </div>
                     <select name="system.hitLocation"  id="kn.monster.hitLocation">
                         <option value="none"

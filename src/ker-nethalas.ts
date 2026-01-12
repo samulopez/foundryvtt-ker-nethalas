@@ -12,7 +12,6 @@ import {
   ItemDataModel,
   MinionDataModel,
   MonsterDataModel,
-  NPCDataModel,
   WeaponDataModel,
 } from './module/data';
 import { ID, TEMPLATES } from './module/constants';
@@ -27,7 +26,6 @@ Hooks.once('init', async () => {
     character: CharacterDataModel,
     minion: MinionDataModel,
     monster: MonsterDataModel,
-    npc: NPCDataModel,
   };
   CONFIG.Item.dataModels = {
     item: ItemDataModel,
