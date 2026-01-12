@@ -153,6 +153,11 @@ export enum SKILLS {
   unarmedCombat = 'unarmedCombat',
 }
 
+export enum SORTING {
+  alphabetically = 'alphabetically',
+  manually = 'manually',
+}
+
 export const SKILL_DISPLAY: Record<'left' | 'right', string[]> = {
   left: [
     SKILLS.acrobatics,

@@ -1,7 +1,7 @@
 import { getLocalization } from '../../helpers';
-import { HIT_LOCATIONS, WEIGHT } from '../../constants';
+import { HIT_LOCATIONS, SORTING, WEIGHT } from '../../constants';
 
-import { attributeField, damageType, skillField } from './helper';
+import { attributeField, damageType, skillField, sortingField } from './helper';
 
 import type KerNethalasItem from '../../item/item';
 import type KerNethalasActor from '../../actor/actor';
@@ -134,6 +134,7 @@ const defineCharacterModel = () => ({
   pouch1List: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
   pouch2List: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
   pouch3List: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
+  ...sortingField(),
 });
 
 type CharacterModelSchema = ReturnType<typeof defineCharacterModel>;
@@ -146,32 +147,39 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     return defineCharacterModel();
   }
 
-  gearItems(): Item.Implementation[] {
-    return this.parent.items.filter((item) => this.parent.system.gearList.includes(item.uuid));
+  sortedItems(): Item.Implementation[] {
+    if (this.parent.system.sorting === SORTING.alphabetically) {
+      return this.parent.items.contents.sort((a, b) => a.name.localeCompare(b.name));
+    }
+    return this.parent.items.contents.sort((a, b) => a.sort - b.sort);
   }
 
-  backpackItems(): Item.Implementation[] {
-    return this.parent.items.filter((item) => this.parent.system.backpackList.includes(item.uuid));
+  gearItems(sortedItems: Item.Implementation[]): Item.Implementation[] {
+    return sortedItems.filter((item) => this.parent.system.gearList.includes(item.uuid));
   }
 
-  nonEncumberingItems(): Item.Implementation[] {
-    return this.parent.items.filter((item) => item.system.weight === WEIGHT.nonEncumbering);
+  backpackItems(sortedItems: Item.Implementation[]): Item.Implementation[] {
+    return sortedItems.filter((item) => this.parent.system.backpackList.includes(item.uuid));
   }
 
-  pouch1Items(): Item.Implementation[] {
-    return this.parent.items.filter((item) => this.parent.system.pouch1List.includes(item.uuid));
+  nonEncumberingItems(sortedItems: Item.Implementation[]): Item.Implementation[] {
+    return sortedItems.filter((item) => item.system.weight === WEIGHT.nonEncumbering);
   }
 
-  pouch2Items(): Item.Implementation[] {
-    return this.parent.items.filter((item) => this.parent.system.pouch2List.includes(item.uuid));
+  pouch1Items(sortedItems: Item.Implementation[]): Item.Implementation[] {
+    return sortedItems.filter((item) => this.parent.system.pouch1List.includes(item.uuid));
   }
 
-  pouch3Items(): Item.Implementation[] {
-    return this.parent.items.filter((item) => this.parent.system.pouch3List.includes(item.uuid));
+  pouch2Items(sortedItems: Item.Implementation[]): Item.Implementation[] {
+    return sortedItems.filter((item) => this.parent.system.pouch2List.includes(item.uuid));
   }
 
-  beltItems(): Item.Implementation[] {
-    return this.parent.items.filter((item) => this.parent.system.beltList.includes(item.uuid));
+  pouch3Items(sortedItems: Item.Implementation[]): Item.Implementation[] {
+    return sortedItems.filter((item) => this.parent.system.pouch3List.includes(item.uuid));
+  }
+
+  beltItems(sortedItems: Item.Implementation[]): Item.Implementation[] {
+    return sortedItems.filter((item) => this.parent.system.beltList.includes(item.uuid));
   }
 
   equipmentItems(): {
@@ -207,51 +215,62 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   currentGearCapacity(): number {
-    return this.gearItems().reduce((sum, item) => sum + item.system.slots(), 0);
+    return this.gearItems(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0);
   }
 
   currentBackpackCapacity(): number {
-    return this.backpackItems().reduce((sum, item) => sum + item.system.slots(), 0);
+    return this.backpackItems(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0);
   }
 
   currentPouch1Capacity(): number {
-    return this.pouch1Items().reduce((sum, item) => sum + item.system.slots(), 0);
+    return this.pouch1Items(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0);
   }
 
   currentPouch2Capacity(): number {
-    return this.pouch2Items().reduce((sum, item) => sum + item.system.slots(), 0);
+    return this.pouch2Items(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0);
   }
 
   currentPouch3Capacity(): number {
-    return this.pouch3Items().reduce((sum, item) => sum + item.system.slots(), 0);
+    return this.pouch3Items(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0);
   }
 
   currentBeltCapacity(): number {
-    return this.beltItems().length;
+    return this.beltItems(this.parent.items.contents).length;
   }
 
   canAddToGearList(newSlots: number): boolean {
-    return this.gearItems().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 10;
+    return (
+      this.gearItems(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 10
+    );
   }
 
   canAddToBackpackList(newSlots: number): boolean {
-    return this.backpackItems().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 20;
+    return (
+      this.backpackItems(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <=
+      20
+    );
   }
 
   canAddToPouch1(newSlots: number): boolean {
-    return this.pouch1Items().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 5;
+    return (
+      this.pouch1Items(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 5
+    );
   }
 
   canAddToPouch2(newSlots: number): boolean {
-    return this.pouch2Items().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 5;
+    return (
+      this.pouch2Items(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 5
+    );
   }
 
   canAddToPouch3(newSlots: number): boolean {
-    return this.pouch3Items().reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 5;
+    return (
+      this.pouch3Items(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 5
+    );
   }
 
   canAddToBeltList(): boolean {
-    return this.beltItems().length < 4;
+    return this.beltItems(this.parent.items.contents).length < 4;
   }
 
   canEquipWeapon(item: KerNethalasItem): { result: boolean; message: string } {
@@ -297,6 +316,44 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     });
 
     return result ? item : null;
+  }
+
+  canAddToList(list: string, newSlots: number): boolean {
+    switch (list) {
+      case 'backpackList':
+        return this.canAddToBackpackList(newSlots);
+      case 'gearList':
+        return this.canAddToGearList(newSlots);
+      case 'pouch1List':
+        return this.canAddToPouch1(newSlots);
+      case 'pouch2List':
+        return this.canAddToPouch2(newSlots);
+      case 'pouch3List':
+        return this.canAddToPouch3(newSlots);
+      case 'beltList':
+        return this.canAddToBeltList();
+      default:
+        return false;
+    }
+  }
+
+  isItemInList(list: string, item: Item.Implementation): boolean {
+    switch (list) {
+      case 'backpackList':
+        return this.parent.system.backpackList.includes(item.uuid);
+      case 'gearList':
+        return this.parent.system.gearList.includes(item.uuid);
+      case 'pouch1List':
+        return this.parent.system.pouch1List.includes(item.uuid);
+      case 'pouch2List':
+        return this.parent.system.pouch2List.includes(item.uuid);
+      case 'pouch3List':
+        return this.parent.system.pouch3List.includes(item.uuid);
+      case 'beltList':
+        return this.parent.system.beltList.includes(item.uuid);
+      default:
+        return false;
+    }
   }
 
   async removeItemFromLists(itemUUID: string) {
@@ -382,5 +439,14 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     });
 
     return result ? item : null;
+  }
+
+  async toggleSorting() {
+    const newSorting = this.parent.system.sorting === SORTING.manually ? SORTING.alphabetically : SORTING.manually;
+    await this.parent.update({
+      system: {
+        sorting: newSorting,
+      },
+    });
   }
 }
