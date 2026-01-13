@@ -98,24 +98,58 @@
           </div>
         </div>
         <div>
-          <div class="flexrow gap-small">
+          <div class="flexrow gap-small align-normal">
             <div>
               <div class="section-title">{{localize "KN.Character.Inventory.wealth"}}</div>
-              <div class="flexrow gap-min">
-                <input type="number"
-                       data-dtype="Number"
-                       name="system.coins"
-                       step="1"
-                       min="0"
-                       class="flex0 wealth-input"
-                       value="{{document.system.coins}}">
-                {{localize "KN.Character.Inventory.wealthCoins"}}
+              <div class="flexcol gap-min">
+                <div class="flexrow gap-min">
+                  <input type="number"
+                         data-dtype="Number"
+                         name="system.coins"
+                         step="1"
+                         min="0"
+                         class="flex0 wealth-input"
+                         value="{{document.system.coins}}">
+                  {{localize "KN.Character.Inventory.wealthCoins"}}
+                </div>
+                <div class="flexrow">{{localize "KN.Character.Inventory.totalCoinsAndGems"}}: {{totalCoinsAndGems}}</div>
+                <div class="flexrow">{{localize "KN.Character.Inventory.itemSlots"}}: {{itemSlotsCoinsAndGems}}</div>
               </div>
-              <div class="flexrow">{{localize "KN.Character.Inventory.totalCoinsAndGems"}}: {{totalCoinsAndGems}}</div>
-              <div class="flexrow">{{localize "KN.Character.Inventory.itemSlots"}}: {{itemSlotsCoinsAndGems}}</div>
             </div>
             <div>
-              <div class="section-title">{{localize "KN.Character.Inventory.supplies"}}</div>
+              <div class="section-title">{{localize "KN.Character.Inventory.supplies.title"}}</div>
+              <div class="flexcol gap-min">
+                <div class="flexrow gap-min">
+                  <div>{{localize "KN.Character.Inventory.supplies.crafting"}}</div>
+                  <input type="number"
+                         data-dtype="Number"
+                         name="system.supplies.crafting"
+                         step="1"
+                         min="0"
+                         class="flex0 supplies-input"
+                         value="{{document.system.supplies.crafting}}">
+                </div>
+                <div class="flexrow gap-min">
+                  <div>{{localize "KN.Character.Inventory.supplies.cookings"}}</div>
+                  <input type="number"
+                         data-dtype="Number"
+                         name="system.supplies.cookings"
+                         step="1"
+                         min="0"
+                         class="flex0 supplies-input"
+                         value="{{document.system.supplies.cookings}}">
+                </div>
+                <div class="flexrow gap-min">
+                  <div>{{localize "KN.Character.Inventory.supplies.rations"}}</div>
+                  <input type="number"
+                         data-dtype="Number"
+                         name="system.supplies.rations"
+                         step="1"
+                         min="0"
+                         class="flex0 supplies-input"
+                         value="{{document.system.supplies.rations}}">
+                </div>
+              </div>
             </div>
           </div>
         </div>

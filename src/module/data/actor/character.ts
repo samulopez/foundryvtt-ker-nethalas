@@ -135,6 +135,11 @@ const defineCharacterModel = () => ({
   pouch2List: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
   pouch3List: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
   coins: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
+  supplies: new SchemaField({
+    crafting: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
+    cookings: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
+    rations: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
+  }),
   ...sortingField(),
 });
 
@@ -220,7 +225,8 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   currentGearCapacity(): number {
     return (
       this.gearItems(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) +
-      this.itemSlotsCoinsAndGems()
+      this.itemSlotsCoinsAndGems() +
+      this.slotsSupplies()
     );
   }
 
@@ -250,47 +256,41 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
       .reduce((sum, item) => sum + (item.system.quantity ?? 1), 0);
   }
 
+  slotsSupplies(): number {
+    const totalSupplies =
+      (this.parent.system.supplies.crafting ?? 0) +
+      (this.parent.system.supplies.cookings ?? 0) +
+      (this.parent.system.supplies.rations ?? 0);
+    return Math.ceil(totalSupplies / 10);
+  }
+
   itemSlotsCoinsAndGems(): number {
     const totalCoinsAndGems = (this.parent.system.coins ?? 0) + this.numberGems();
     return Math.ceil(totalCoinsAndGems / 100);
   }
 
   canAddToGearList(newSlots: number): boolean {
-    return (
-      this.gearItems(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) +
-        newSlots +
-        this.itemSlotsCoinsAndGems() <=
-      10
-    );
+    return this.currentGearCapacity() + newSlots <= 10;
   }
 
   canAddToBackpackList(newSlots: number): boolean {
-    return (
-      this.backpackItems(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <=
-      20
-    );
+    return this.currentBackpackCapacity() + newSlots <= 20;
   }
 
   canAddToPouch1(newSlots: number): boolean {
-    return (
-      this.pouch1Items(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 5
-    );
+    return this.currentPouch1Capacity() + newSlots <= 5;
   }
 
   canAddToPouch2(newSlots: number): boolean {
-    return (
-      this.pouch2Items(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 5
-    );
+    return this.currentPouch2Capacity() + newSlots <= 5;
   }
 
   canAddToPouch3(newSlots: number): boolean {
-    return (
-      this.pouch3Items(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 5
-    );
+    return this.currentPouch3Capacity() + newSlots <= 5;
   }
 
   canAddToBeltList(): boolean {
-    return this.beltItems(this.parent.items.contents).length < 4;
+    return this.currentBeltCapacity() < 4;
   }
 
   canEquipWeapon(item: KerNethalasItem): { result: boolean; message: string } {
