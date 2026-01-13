@@ -1,4 +1,4 @@
-import { SKILLS, WEIGHT } from '../../constants';
+import { DAMAGE_TYPES, SKILLS, WEIGHT } from '../../constants';
 
 import { defineItemModel } from './item';
 
@@ -23,6 +23,11 @@ const defineWeaponModel = () => ({
     simple: new BooleanField({ required: true, initial: false }),
     twoHanded: new BooleanField({ required: true, initial: false }),
     versatile: new BooleanField({ required: true, initial: false }),
+  }),
+  damageType: new StringField({
+    required: true,
+    choices: [DAMAGE_TYPES.bludgeoning, DAMAGE_TYPES.piercing, DAMAGE_TYPES.slashing],
+    initial: DAMAGE_TYPES.bludgeoning,
   }),
 });
 

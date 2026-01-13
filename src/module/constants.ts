@@ -159,6 +159,13 @@ export enum SORTING {
   manually = 'manually',
 }
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
+export enum DAMAGE_TYPES {
+  bludgeoning = 'bludgeoning',
+  piercing = 'piercing',
+  slashing = 'slashing',
+}
+
 export const SKILL_DISPLAY: Record<'left' | 'right', string[]> = {
   left: [
     SKILLS.acrobatics,

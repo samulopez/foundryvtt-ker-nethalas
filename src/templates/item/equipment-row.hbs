@@ -74,6 +74,9 @@
             <div class="item-detail item-price">{{localize "KN.Item.Sheet.label.cost"}}: {{item.system.cost}}</div>
             {{#if (eq item.type "weapon") }}
                 <div class="item-detail item-speed">{{localize "KN.Item.Sheet.label.speed"}}: {{item.system.speed}}</div>
+                <div class="item-detail item-damage">
+                    {{localize "KN.Item.Sheet.label.damage"}}: {{localize (concat "KN.Item.Sheet.damages." item.system.damageType)}}
+                </div>
                 <div class="flexrow gap-min">
                     {{localize "KN.Item.Sheet.label.traits"}}:
                     <div class="weapon-traits">
