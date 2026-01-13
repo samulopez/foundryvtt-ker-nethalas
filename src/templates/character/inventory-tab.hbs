@@ -155,16 +155,6 @@
           </div>
         </div>
         <div>
-          <div class="section-title">{{localize "KN.Character.Inventory.gems"}}</div>
-          <div class="items-section gems-list">
-            <ol class="item-list unlist">
-              {{#each gemList as |item key| }}
-                {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=false showQuantity=true}}
-              {{/each}}
-            </ol>
-          </div>
-        </div>
-        <div>
           <div class="section-title">{{localize "KN.Character.Inventory.backpack"}} {{currentBackpackCapacity}} / 20</div>
           <div class="items-section backpack-list">
             <ol class="item-list unlist">

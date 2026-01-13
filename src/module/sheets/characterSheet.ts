@@ -25,7 +25,6 @@ interface Context {
   gearList: Item.Implementation[];
   backpackList: Item.Implementation[];
   nonEncumberingList: Item.Implementation[];
-  gemList: Item.Implementation[];
   pouch1List: Item.Implementation[];
   pouch2List: Item.Implementation[];
   pouch3List: Item.Implementation[];
@@ -76,7 +75,7 @@ export default class CharacterSheet<
 
   static TABS = {
     primary: {
-      initial: 'inventory',
+      initial: 'skills',
       labelPrefix: 'KN.Character.Tabs',
       tabs: [
         { id: 'skills', tooltip: 'KN.Character.Tabs.tooltip.skills' },
@@ -208,7 +207,6 @@ export default class CharacterSheet<
     context.currentGearCapacity = this.document.system.currentGearCapacity();
     context.currentBackpackCapacity = this.document.system.currentBackpackCapacity();
     context.nonEncumberingList = this.document.system.nonEncumberingItems(sortedItems);
-    context.gemList = this.document.system.gemItems(sortedItems);
     context.currentPouch1Capacity = this.document.system.currentPouch1Capacity();
     context.currentPouch2Capacity = this.document.system.currentPouch2Capacity();
     context.currentPouch3Capacity = this.document.system.currentPouch3Capacity();
@@ -304,24 +302,15 @@ export default class CharacterSheet<
     const equipmentDropped = this._dropInEquipment(event);
     const listDropped = this._dropInList(event);
     const dropInNonEncumbering = !!target.closest('.non-encumbering-items-list');
-    const dropInGem = !!target.closest('.gems-list');
 
     const droppingOnHands = dropInMainHand || dropInOffHand;
 
     const sameActorItem = item?.parent?.id === this.document.id;
 
     if (sameActorItem) {
-      if (item.system.weight === WEIGHT.nonEncumbering) {
+      if (item.system.weight === WEIGHT.nonEncumbering || item.system.weight === WEIGHT.gem) {
         if (!targetItem || !dropInNonEncumbering) {
-          ui.notifications?.warn(getLocalization().localize('KN.Error.nonEncumberingMoveSameActor'));
-        }
-        await this._onSortItem(event, item);
-        return null;
-      }
-
-      if (item.system.weight === WEIGHT.gem) {
-        if (!targetItem || !dropInGem) {
-          ui.notifications?.warn(getLocalization().localize('KN.Error.gemMoveSameActor'));
+          ui.notifications?.warn(getLocalization().localize('KN.Error.itemMoveSameActor'));
         }
         await this._onSortItem(event, item);
         return null;
@@ -384,16 +373,7 @@ export default class CharacterSheet<
       return null;
     }
 
-    if (item.system.weight === WEIGHT.nonEncumbering) {
-      const newItem = await super._onDropItem(event, item);
-      if (!newItem) {
-        return null;
-      }
-      await this._onSortItem(event, newItem);
-      return newItem;
-    }
-
-    if (item.system.weight === WEIGHT.gem) {
+    if (item.system.weight === WEIGHT.nonEncumbering || item.system.weight === WEIGHT.gem) {
       const newItem = await super._onDropItem(event, item);
       if (!newItem) {
         return null;
