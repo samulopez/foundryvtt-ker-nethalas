@@ -75,6 +75,28 @@
             </option>
           </select>
         </h5>
+        <h5 class="flexrow">
+          <div class="flex0">
+            <label class="left-label" for="kn.item.damage">{{localize 'KN.Item.Sheet.damage' }}</label>
+          </div>
+          <select name="system.damageType" id="kn.item.damage">
+            <option value="bludgeoning"
+                    {{#if (eq document.system.damageType "bludgeoning") }}
+                    selected
+                    {{/if }}>{{localize 'KN.Item.Sheet.damages.bludgeoning' }}
+            </option>
+            <option value="piercing"
+                    {{#if (eq document.system.damageType "piercing") }}
+                    selected
+                    {{/if }}>{{localize 'KN.Item.Sheet.damages.piercing' }}
+            </option>
+            <option value="slashing"
+                    {{#if (eq document.system.damageType "slashing") }}
+                    selected
+                    {{/if }}>{{localize 'KN.Item.Sheet.damages.slashing' }}
+            </option>
+          </select>
+        </h5>
       </div>
     </div>
   </div>

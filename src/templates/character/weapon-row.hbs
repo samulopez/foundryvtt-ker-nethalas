@@ -48,6 +48,9 @@
                         </label>
                     {{/if}}
                     <div class="weapon-speed">{{localize "KN.Item.Sheet.label.speed"}}: {{weapon.system.speed}}</div>
+                    <div class="weapon-damage">
+                        {{localize "KN.Item.Sheet.label.damage"}}: {{localize (concat "KN.Item.Sheet.damages." weapon.system.damageType)}}
+                    </div>
                     <div class="flexrow gap-min">
                         {{localize "KN.Item.Sheet.label.traits"}}:
                         <div class="weapon-traits">
