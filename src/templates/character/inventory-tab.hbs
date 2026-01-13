@@ -99,25 +99,43 @@
         </div>
         <div>
           <div class="flexrow gap-small">
-            <div class="section-title">{{localize "KN.Character.Inventory.wealth"}}</div>
-            <div class="section-title">{{localize "KN.Character.Inventory.supplies"}}</div>
+            <div>
+              <div class="section-title">{{localize "KN.Character.Inventory.wealth"}}</div>
+              <div class="flexrow gap-min">
+                <input type="number"
+                       data-dtype="Number"
+                       name="system.coins"
+                       step="1"
+                       min="0"
+                       class="flex0 wealth-input"
+                       value="{{document.system.coins}}">
+                {{localize "KN.Character.Inventory.wealthCoins"}}
+              </div>
+              <div class="flexrow">{{localize "KN.Character.Inventory.totalCoinsAndGems"}}: {{totalCoinsAndGems}}</div>
+              <div class="flexrow">{{localize "KN.Character.Inventory.itemSlots"}}: {{itemSlotsCoinsAndGems}}</div>
+            </div>
+            <div>
+              <div class="section-title">{{localize "KN.Character.Inventory.supplies"}}</div>
+            </div>
           </div>
         </div>
       </div>
       <div class="flexcol gap align-normal">
         <div>
-          {{#if (eq document.system.sorting "alphabetically") }}
-            <button type="button"
-                    class="inline-control toggle-sort icon fas fa-arrow-down-a-z"
-                    data-tooltip="KN.Sorting.alphabetically"
-                    data-action="toggleSorting"></button>
-          {{else}}
-            <button type="button"
-                    class="inline-control toggle-sort icon fas fa-arrow-down-short-wide"
-                    data-tooltip="KN.Sorting.manually"
-                    data-action="toggleSorting"></button>
-          {{/if}}
-          <div class="section-title">{{localize "KN.Character.Inventory.beltQuickSlots"}} {{currentBeltCapacity}} / 4</div>
+          <div class="flexrow gap-small">
+            <div class="section-title">{{localize "KN.Character.Inventory.beltQuickSlots"}} {{currentBeltCapacity}} / 4</div>
+            {{#if (eq document.system.sorting "alphabetically") }}
+              <button type="button"
+                      class="flex0 inline-control toggle-sort icon fas fa-arrow-down-a-z"
+                      data-tooltip="KN.Sorting.alphabetically"
+                      data-action="toggleSorting"></button>
+            {{else}}
+              <button type="button"
+                      class="flex0 inline-control toggle-sort icon fas fa-arrow-down-short-wide"
+                      data-tooltip="KN.Sorting.manually"
+                      data-action="toggleSorting"></button>
+            {{/if}}
+          </div>
           <div class="items-section belt-list">
             <ol class="item-list unlist">
               {{#each beltList as |item key| }}
@@ -131,6 +149,16 @@
           <div class="items-section non-encumbering-items-list">
             <ol class="item-list unlist">
               {{#each nonEncumberingList as |item key| }}
+                {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=false showQuantity=true}}
+              {{/each}}
+            </ol>
+          </div>
+        </div>
+        <div>
+          <div class="section-title">{{localize "KN.Character.Inventory.gems"}}</div>
+          <div class="items-section gems-list">
+            <ol class="item-list unlist">
+              {{#each gemList as |item key| }}
                 {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=false showQuantity=true}}
               {{/each}}
             </ol>

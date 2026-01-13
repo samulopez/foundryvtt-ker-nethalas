@@ -134,6 +134,7 @@ const defineCharacterModel = () => ({
   pouch1List: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
   pouch2List: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
   pouch3List: new ArrayField(new DocumentUUIDField({ type: 'Item' })),
+  coins: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
   ...sortingField(),
 });
 
@@ -164,6 +165,10 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
 
   nonEncumberingItems(sortedItems: Item.Implementation[]): Item.Implementation[] {
     return sortedItems.filter((item) => item.system.weight === WEIGHT.nonEncumbering);
+  }
+
+  gemItems(sortedItems: Item.Implementation[]): Item.Implementation[] {
+    return sortedItems.filter((item) => item.system.weight === WEIGHT.gem);
   }
 
   pouch1Items(sortedItems: Item.Implementation[]): Item.Implementation[] {
@@ -215,7 +220,10 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   currentGearCapacity(): number {
-    return this.gearItems(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0);
+    return (
+      this.gearItems(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) +
+      this.itemSlotsCoinsAndGems()
+    );
   }
 
   currentBackpackCapacity(): number {
@@ -238,9 +246,21 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     return this.beltItems(this.parent.items.contents).length;
   }
 
+  numberGems(): number {
+    return this.gemItems(this.parent.items.contents).reduce((sum, item) => sum + (item.system.quantity ?? 1), 0);
+  }
+
+  itemSlotsCoinsAndGems(): number {
+    const totalCoinsAndGems = (this.parent.system.coins ?? 0) + this.numberGems();
+    return Math.ceil(totalCoinsAndGems / 100);
+  }
+
   canAddToGearList(newSlots: number): boolean {
     return (
-      this.gearItems(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) + newSlots <= 10
+      this.gearItems(this.parent.items.contents).reduce((sum, item) => sum + item.system.slots(), 0) +
+        newSlots +
+        this.itemSlotsCoinsAndGems() <=
+      10
     );
   }
 

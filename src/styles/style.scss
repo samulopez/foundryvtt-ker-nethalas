@@ -214,6 +214,7 @@
       .pouch1-list,
       .pouch2-list,
       .pouch3-list,
+      .gems-list,
       .non-encumbering-items-list,
       .belt-list {
         min-height: 60px;
@@ -225,6 +226,10 @@
         li {
           margin: 0;
         }
+      }
+
+      .wealth-input {
+        width: 3rem;
       }
 
       .items-section {

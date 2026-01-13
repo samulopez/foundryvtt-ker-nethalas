@@ -25,6 +25,7 @@ interface Context {
   gearList: Item.Implementation[];
   backpackList: Item.Implementation[];
   nonEncumberingList: Item.Implementation[];
+  gemList: Item.Implementation[];
   pouch1List: Item.Implementation[];
   pouch2List: Item.Implementation[];
   pouch3List: Item.Implementation[];
@@ -33,6 +34,8 @@ interface Context {
     mainHand: Item.Implementation | null;
     offHand: Item.Implementation | null;
   };
+  totalCoinsAndGems: number;
+  itemSlotsCoinsAndGems: number;
 }
 
 export default class CharacterSheet<
@@ -201,16 +204,21 @@ export default class CharacterSheet<
     context.pouch2List = this.document.system.pouch2Items(sortedItems);
     context.pouch3List = this.document.system.pouch3Items(sortedItems);
     context.beltList = this.document.system.beltItems(sortedItems);
-    // TODO V2: count coins, gems and special supplies
+
     context.currentGearCapacity = this.document.system.currentGearCapacity();
     context.currentBackpackCapacity = this.document.system.currentBackpackCapacity();
     context.nonEncumberingList = this.document.system.nonEncumberingItems(sortedItems);
+    context.gemList = this.document.system.gemItems(sortedItems);
     context.currentPouch1Capacity = this.document.system.currentPouch1Capacity();
     context.currentPouch2Capacity = this.document.system.currentPouch2Capacity();
     context.currentPouch3Capacity = this.document.system.currentPouch3Capacity();
     context.currentBeltCapacity = this.document.system.currentBeltCapacity();
 
     context.equipment = this.document.system.equipmentItems();
+
+    // TODO: add special supplies
+    context.totalCoinsAndGems = (this.document.system.coins ?? 0) + this.document.system.numberGems();
+    context.itemSlotsCoinsAndGems = this.document.system.itemSlotsCoinsAndGems();
 
     return context;
   }
@@ -296,6 +304,7 @@ export default class CharacterSheet<
     const equipmentDropped = this._dropInEquipment(event);
     const listDropped = this._dropInList(event);
     const dropInNonEncumbering = !!target.closest('.non-encumbering-items-list');
+    const dropInGem = !!target.closest('.gems-list');
 
     const droppingOnHands = dropInMainHand || dropInOffHand;
 
@@ -305,6 +314,14 @@ export default class CharacterSheet<
       if (item.system.weight === WEIGHT.nonEncumbering) {
         if (!targetItem || !dropInNonEncumbering) {
           ui.notifications?.warn(getLocalization().localize('KN.Error.nonEncumberingMoveSameActor'));
+        }
+        await this._onSortItem(event, item);
+        return null;
+      }
+
+      if (item.system.weight === WEIGHT.gem) {
+        if (!targetItem || !dropInGem) {
+          ui.notifications?.warn(getLocalization().localize('KN.Error.gemMoveSameActor'));
         }
         await this._onSortItem(event, item);
         return null;
@@ -368,6 +385,15 @@ export default class CharacterSheet<
     }
 
     if (item.system.weight === WEIGHT.nonEncumbering) {
+      const newItem = await super._onDropItem(event, item);
+      if (!newItem) {
+        return null;
+      }
+      await this._onSortItem(event, newItem);
+      return newItem;
+    }
+
+    if (item.system.weight === WEIGHT.gem) {
       const newItem = await super._onDropItem(event, item);
       if (!newItem) {
         return null;
@@ -599,7 +625,7 @@ export default class CharacterSheet<
     event.preventDefault();
     const { key } = target.dataset;
     const item = this.document.getEmbeddedDocument('Item', key, {});
-    if (!item || item.system.quantity === 10) {
+    if (!item || (item.system.quantity === 10 && item.system.weight !== WEIGHT.gem)) {
       return;
     }
     const newQuantity = (item.system.quantity ?? 0) + 1;

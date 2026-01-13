@@ -68,7 +68,7 @@
                 {{#if showQuantity }}
                     <div class="item-detail item-quantity">
                         {{localize "KN.Item.Sheet.label.quantity"}}:
-                        {{#if (or (eq item.system.weight "light") (eq item.system.weight "nonEncumbering")) }}
+                        {{#if (or (eq item.system.weight "gem") (or (eq item.system.weight "light") (eq item.system.weight "nonEncumbering"))) }}
                             <a class="adjustment-button always-interactive"
                                data-action="decreaseQuantityItem"
                                data-tooltip="KN.Item.Sheet.decreaseTooltip"
