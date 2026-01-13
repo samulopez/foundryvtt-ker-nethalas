@@ -164,11 +164,9 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   nonEncumberingItems(sortedItems: Item.Implementation[]): Item.Implementation[] {
-    return sortedItems.filter((item) => item.system.weight === WEIGHT.nonEncumbering);
-  }
-
-  gemItems(sortedItems: Item.Implementation[]): Item.Implementation[] {
-    return sortedItems.filter((item) => item.system.weight === WEIGHT.gem);
+    return sortedItems.filter(
+      (item) => item.system.weight === WEIGHT.nonEncumbering || item.system.weight === WEIGHT.gem,
+    );
   }
 
   pouch1Items(sortedItems: Item.Implementation[]): Item.Implementation[] {
@@ -247,7 +245,9 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   numberGems(): number {
-    return this.gemItems(this.parent.items.contents).reduce((sum, item) => sum + (item.system.quantity ?? 1), 0);
+    return this.parent.items.contents
+      .filter((item) => item.system.weight === WEIGHT.gem)
+      .reduce((sum, item) => sum + (item.system.quantity ?? 1), 0);
   }
 
   itemSlotsCoinsAndGems(): number {
