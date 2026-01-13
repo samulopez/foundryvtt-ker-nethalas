@@ -131,6 +131,7 @@ export const HIT_LOCATION_TABLES = {
 };
 
 export enum WEIGHT {
+  gem = 'gem',
   heavy = 'heavy',
   light = 'light',
   nonEncumbering = 'nonEncumbering',

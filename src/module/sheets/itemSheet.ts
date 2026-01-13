@@ -1,4 +1,4 @@
-import { TEMPLATES } from '../constants';
+import { TEMPLATES, WEIGHT } from '../constants';
 
 import type KerNethalasItem from '../item/item';
 
@@ -9,6 +9,7 @@ const { HandlebarsApplicationMixin } = foundry.applications.api;
 interface Context {
   enrichedDescription: string;
   enrichedNotes: string;
+  showEquippable: boolean;
 }
 
 export default class KNItemSheet<
@@ -73,6 +74,16 @@ export default class KNItemSheet<
         relativeTo: this.document,
       },
     );
+
+    switch (this.document.system.weight) {
+      case WEIGHT.heavy:
+      case WEIGHT.light:
+      case WEIGHT.normal:
+        context.showEquippable = true;
+        break;
+      default:
+        context.showEquippable = false;
+    }
 
     return context;
   }

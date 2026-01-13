@@ -8,7 +8,7 @@ export const defineItemModel = () => ({
   cost: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
   weight: new StringField({
     required: true,
-    choices: [WEIGHT.nonEncumbering, WEIGHT.light, WEIGHT.normal, WEIGHT.heavy],
+    choices: [WEIGHT.gem, WEIGHT.nonEncumbering, WEIGHT.light, WEIGHT.normal, WEIGHT.heavy],
     initial: WEIGHT.normal,
   }),
   description: new StringField({ initial: '' }),
@@ -18,6 +18,8 @@ export const defineItemModel = () => ({
 });
 
 export type ItemModelSchema = ReturnType<typeof defineItemModel>;
+
+type ItemDataModelType = foundry.abstract.TypeDataModel<ItemModelSchema, KerNethalasItem<'item'>>;
 
 export default class ItemDataModel extends foundry.abstract.TypeDataModel<ItemModelSchema, KerNethalasItem<'item'>> {
   static defineSchema(): ItemModelSchema {
@@ -38,4 +40,19 @@ export default class ItemDataModel extends foundry.abstract.TypeDataModel<ItemMo
         return 0;
     }
   }
+
+  _preUpdate: ItemDataModelType['_preUpdate'] = async (changed, options, user) => {
+    if (changed.system?.weight !== undefined) {
+      const { weight } = changed.system;
+      switch (weight) {
+        case WEIGHT.nonEncumbering:
+        case WEIGHT.gem:
+          // eslint-disable-next-line no-param-reassign
+          changed.system.equippable = false;
+          break;
+        default:
+      }
+    }
+    return super._preUpdate(changed, options, user);
+  };
 }

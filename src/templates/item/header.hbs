@@ -60,17 +60,24 @@
                                 selected
                                 {{/if }}>{{localize 'KN.Item.Sheet.weights.nonEncumbering' }}
                         </option>
+                        <option value="gem"
+                                {{#if (eq document.system.weight "gem") }}
+                                selected
+                                {{/if }}>{{localize 'KN.Item.Sheet.weights.gem' }}
+                        </option>
                     </select>
                 </h5>
-                <h5 class="flexrow">
-                    <div class="flex0">
-                        <label class="left-label" for="kn.item.equippable">{{localize "KN.Item.Sheet.equippable"}}</label>
-                    </div>
-                    <input type="checkbox"
-                           name="system.equippable"
-                           id="kn.item.equippable"
-                           {{checked document.system.equippable}} />
-                </h5>
+                {{#if showEquippable }}
+                    <h5 class="flexrow">
+                        <div class="flex0">
+                            <label class="left-label" for="kn.item.equippable">{{localize "KN.Item.Sheet.equippable"}}</label>
+                        </div>
+                        <input type="checkbox"
+                               name="system.equippable"
+                               id="kn.item.equippable"
+                               {{checked document.system.equippable}} />
+                    </h5>
+                {{/if}}
             </div>
         </div>
     </div>
