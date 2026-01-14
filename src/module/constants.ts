@@ -130,6 +130,33 @@ export const HIT_LOCATION_TABLES = {
   ],
 };
 
+export const ARMOR_SECTIONS = {
+  [HIT_LOCATIONS.arachnid]: {
+    left: ['leftRearLeg', 'leftMidLeg', 'leftForeLeg', 'leftFrontLeg', 'abdomen'],
+    right: ['rightRearLeg', 'rightMidLeg', 'rightForeLeg', 'rightFrontLeg', 'cephalothorax'],
+  },
+  [HIT_LOCATIONS.humanoid]: {
+    left: ['leftLeg', 'leftArm', 'abdomen', 'chest'],
+    right: ['rightLeg', 'rightArm', 'head'],
+  },
+  [HIT_LOCATIONS.insectoid]: {
+    left: ['leftRearLeg', 'leftMidLeg', 'leftFrontLeg', 'abdomen', 'thorax'],
+    right: ['rightRearLeg', 'rightMidLeg', 'rightFrontLeg', 'head'],
+  },
+  [HIT_LOCATIONS.quadruped]: {
+    left: ['leftHindLeg', 'leftFrontLeg', 'hindquarters', 'forequarters'],
+    right: ['rightHindLeg', 'rightFrontLeg', 'head'],
+  },
+  [HIT_LOCATIONS.serpentoid]: {
+    left: ['body'],
+    right: ['head'],
+  },
+  [HIT_LOCATIONS.winged]: {
+    left: ['leftLeg', 'leftWing', 'leftArm', 'abdomen', 'chest'],
+    right: ['rightLeg', 'rightWing', 'rightArm', 'head'],
+  },
+};
+
 export enum WEIGHT {
   gem = 'gem',
   heavy = 'heavy',

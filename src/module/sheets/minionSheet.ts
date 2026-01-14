@@ -1,5 +1,5 @@
 import { getLocalization } from '../helpers';
-import { HIT_LOCATIONS, HIT_LOCATION_TABLES, TEMPLATES } from '../constants';
+import { ARMOR_SECTIONS, HIT_LOCATIONS, HIT_LOCATION_TABLES, TEMPLATES } from '../constants';
 
 import type KerNethalasActor from '../actor/actor';
 
@@ -19,6 +19,7 @@ interface Context {
     description: string;
     enrichedDescription: string;
   }[];
+  armorSections: { left: { label: string; value: number }[]; right: { label: string; value: number }[] };
 }
 
 export default class MinionSheet<
@@ -114,6 +115,16 @@ export default class MinionSheet<
             label: getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hl.location}`),
           })),
         ];
+        context.armorSections = {
+          left: ARMOR_SECTIONS[HIT_LOCATIONS.arachnid].left.map((section) => ({
+            label: section,
+            value: context.document.system.armor[section as keyof typeof context.document.system.armor] ?? 0,
+          })),
+          right: ARMOR_SECTIONS[HIT_LOCATIONS.arachnid].right.map((section) => ({
+            label: section,
+            value: context.document.system.armor[section as keyof typeof context.document.system.armor] ?? 0,
+          })),
+        };
         break;
       case HIT_LOCATIONS.humanoid:
         context.weakSpotOptions = [
@@ -123,6 +134,16 @@ export default class MinionSheet<
             label: getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hl.location}`),
           })),
         ];
+        context.armorSections = {
+          left: ARMOR_SECTIONS[HIT_LOCATIONS.humanoid].left.map((section) => ({
+            label: section,
+            value: context.document.system.armor[section as keyof typeof context.document.system.armor] ?? 0,
+          })),
+          right: ARMOR_SECTIONS[HIT_LOCATIONS.humanoid].right.map((section) => ({
+            label: section,
+            value: context.document.system.armor[section as keyof typeof context.document.system.armor] ?? 0,
+          })),
+        };
         break;
       case HIT_LOCATIONS.insectoid:
         context.weakSpotOptions = [
@@ -132,6 +153,16 @@ export default class MinionSheet<
             label: getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hl.location}`),
           })),
         ];
+        context.armorSections = {
+          left: ARMOR_SECTIONS[HIT_LOCATIONS.insectoid].left.map((section) => ({
+            label: section,
+            value: context.document.system.armor[section as keyof typeof context.document.system.armor] ?? 0,
+          })),
+          right: ARMOR_SECTIONS[HIT_LOCATIONS.insectoid].right.map((section) => ({
+            label: section,
+            value: context.document.system.armor[section as keyof typeof context.document.system.armor] ?? 0,
+          })),
+        };
         break;
       case HIT_LOCATIONS.quadruped:
         context.weakSpotOptions = [
@@ -141,6 +172,16 @@ export default class MinionSheet<
             label: getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hl.location}`),
           })),
         ];
+        context.armorSections = {
+          left: ARMOR_SECTIONS[HIT_LOCATIONS.quadruped].left.map((section) => ({
+            label: section,
+            value: context.document.system.armor[section as keyof typeof context.document.system.armor] ?? 0,
+          })),
+          right: ARMOR_SECTIONS[HIT_LOCATIONS.quadruped].right.map((section) => ({
+            label: section,
+            value: context.document.system.armor[section as keyof typeof context.document.system.armor] ?? 0,
+          })),
+        };
         break;
       case HIT_LOCATIONS.serpentoid:
         context.weakSpotOptions = [
@@ -150,6 +191,16 @@ export default class MinionSheet<
             label: getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hl.location}`),
           })),
         ];
+        context.armorSections = {
+          left: ARMOR_SECTIONS[HIT_LOCATIONS.serpentoid].left.map((section) => ({
+            label: section,
+            value: context.document.system.armor[section as keyof typeof context.document.system.armor] ?? 0,
+          })),
+          right: ARMOR_SECTIONS[HIT_LOCATIONS.serpentoid].right.map((section) => ({
+            label: section,
+            value: context.document.system.armor[section as keyof typeof context.document.system.armor] ?? 0,
+          })),
+        };
         break;
       case HIT_LOCATIONS.winged:
         context.weakSpotOptions = [
@@ -159,9 +210,20 @@ export default class MinionSheet<
             label: getLocalization().localize(`KN.Monster.Sheet.weakSpot.option.${hl.location}`),
           })),
         ];
+        context.armorSections = {
+          left: ARMOR_SECTIONS[HIT_LOCATIONS.winged].left.map((section) => ({
+            label: section,
+            value: context.document.system.armor[section as keyof typeof context.document.system.armor] ?? 0,
+          })),
+          right: ARMOR_SECTIONS[HIT_LOCATIONS.winged].right.map((section) => ({
+            label: section,
+            value: context.document.system.armor[section as keyof typeof context.document.system.armor] ?? 0,
+          })),
+        };
         break;
       default:
         context.weakSpotOptions = [];
+        context.armorSections = { left: [], right: [] };
         return context;
     }
 

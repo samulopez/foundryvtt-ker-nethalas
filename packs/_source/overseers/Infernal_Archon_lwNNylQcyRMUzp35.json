@@ -1,0 +1,232 @@
+{
+  "folder": null,
+  "name": "Infernal Archon",
+  "type": "monster",
+  "img": "icons/creatures/unholy/demon-horned-winged-laughing.webp",
+  "_id": "lwNNylQcyRMUzp35",
+  "system": {
+    "attributes": {
+      "body": 50,
+      "mind": 50,
+      "combatSkill": 50,
+      "endurance": 40,
+      "health": {
+        "min": 0,
+        "value": 20,
+        "max": 20
+      },
+      "magicResistance": 50
+    },
+    "type": {
+      "animal": false,
+      "astral": false,
+      "construct": false,
+      "demon": true,
+      "elemental": false,
+      "humanoid": false,
+      "plant": false,
+      "undead": false
+    },
+    "hitLocation": "humanoid",
+    "weakSpot": "head",
+    "traits": {
+      "alert": false,
+      "frightening": false,
+      "horrifying": false,
+      "pack": false,
+      "penetrating": {
+        "value": 0,
+        "active": false
+      },
+      "ruthlessness": {
+        "value": 1,
+        "active": true
+      },
+      "savage": false,
+      "swift": false,
+      "venomous": false,
+      "custom": ""
+    },
+    "armor": {
+      "abdomen": 1,
+      "body": 1,
+      "chest": 1,
+      "forequarters": 1,
+      "head": 1,
+      "rightRearLeg": 1,
+      "leftRearLeg": 1,
+      "rightMidLeg": 1,
+      "leftMidLeg": 1,
+      "rightForeLeg": 1,
+      "leftForeLeg": 1,
+      "rightFrontLeg": 1,
+      "leftFrontLeg": 1,
+      "cephalothorax": 1,
+      "rightLeg": 1,
+      "leftLeg": 1,
+      "leftArm": 1,
+      "rightArm": 1,
+      "thorax": 1,
+      "rightHindLeg": 1,
+      "leftHindLeg": 1,
+      "hindquarters": 1,
+      "rightWing": 1,
+      "leftWing": 1
+    },
+    "levelAdaptation": "<div><p>After level 5: +5 Health, +D6 damage, +10 Combat Skill</p></div><div><p>After level 10: +5 Health, +D8 damage, +10 Combat Skill</p></div>",
+    "actions": [
+      {
+        "startDie": 1,
+        "endDie": 1,
+        "name": "Inferno Eruption (Magical)",
+        "description": "<div><p>The Infernal Archon calls upon its mastery of fire, causing flames to erupt. Creatures must make a Dodge check, taking 2D6 Fire damage on a failed check, or half as much damage on a successful one.</p></div>"
+      },
+      {
+        "startDie": 2,
+        "endDie": 2,
+        "name": "Shadow Veil",
+        "description": "<div><p>The Infernal Archon shrouds itself in shifting shadows, rendering it heavily obscured and granting it Advantage on any defensive checks until the end of its next turn.</p></div>"
+      },
+      {
+        "startDie": 3,
+        "endDie": 3,
+        "name": "Demonic Conjuration (Magical)",
+        "description": "<div><p>The Infernal Archon summons D4 Lesser Demons to aid in battle. They act immediately after it in Initiative order. Only a maximum of 4 Lesser Demons can be present at any given time.</p></div>"
+      },
+      {
+        "startDie": 4,
+        "endDie": 4,
+        "name": "Infernal Barrage (Magical)",
+        "description": "<div><p>The Infernal Archon conjures molten projectiles and hurls them at a target, who must make a successful Dodge check or take D4+2 Fire damage.</p></div>"
+      },
+      {
+        "startDie": 5,
+        "endDie": 5,
+        "name": "Shadow Rift (Magical)",
+        "description": "<div><p>The Infernal Archon opens a rift to a realm of shadow and fire, spreading dark flames across the area. All characters must make a Dodge check or receive 3D4 Fire damage.</p></div>"
+      },
+      {
+        "startDie": 6,
+        "endDie": 6,
+        "name": "Vortex of Annihilation (Magical)",
+        "description": "<div><p>The Infernal Archon combines fire and shadow to create a swirling vortex of destruction. A sphere of chaotic energy appears, forcing all characters to make a Spellward check or suffer 2D4 Fire damage.</p></div>"
+      }
+    ],
+    "description": "<div><p>The Infernal Archon’s very presence ignites the air, unleashing waves of scorching heat that sear the senses and smother hope. It often summons forth demonic cohorts to aid him in battle, and hurls infernal projectiles that immolate everything in their path. Challenging the Infernal Archon is almost equal to confronting an inferno given life where shadows seek to engulf all in a tempest of destruction.</p></div>",
+    "notes": "",
+    "sorting": "manually"
+  },
+  "prototypeToken": {
+    "name": "Infernal Archon",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/creatures/unholy/demon-horned-winged-laughing.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.health"
+    },
+    "bar2": {
+      "attribute": "attributes.aether"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768417958616,
+    "modifiedTime": 1768492037084,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!actors!lwNNylQcyRMUzp35"
+}

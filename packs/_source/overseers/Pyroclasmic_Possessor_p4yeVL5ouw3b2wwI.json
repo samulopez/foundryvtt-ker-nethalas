@@ -1,0 +1,232 @@
+{
+  "folder": null,
+  "name": "Pyroclasmic Possessor",
+  "type": "monster",
+  "img": "icons/creatures/unholy/demon-horned-winged-laughing.webp",
+  "_id": "p4yeVL5ouw3b2wwI",
+  "system": {
+    "attributes": {
+      "body": 40,
+      "mind": 40,
+      "combatSkill": 30,
+      "endurance": 40,
+      "health": {
+        "min": 0,
+        "value": 20,
+        "max": 20
+      },
+      "magicResistance": 60
+    },
+    "type": {
+      "animal": false,
+      "astral": false,
+      "construct": false,
+      "demon": true,
+      "elemental": false,
+      "humanoid": false,
+      "plant": false,
+      "undead": false
+    },
+    "hitLocation": "humanoid",
+    "weakSpot": "head",
+    "traits": {
+      "alert": false,
+      "frightening": false,
+      "horrifying": false,
+      "pack": false,
+      "penetrating": {
+        "value": 0,
+        "active": false
+      },
+      "ruthlessness": {
+        "value": 2,
+        "active": true
+      },
+      "savage": false,
+      "swift": false,
+      "venomous": false,
+      "custom": ""
+    },
+    "armor": {
+      "abdomen": 1,
+      "body": 1,
+      "chest": 1,
+      "forequarters": 1,
+      "head": 1,
+      "rightRearLeg": 1,
+      "leftRearLeg": 1,
+      "rightMidLeg": 1,
+      "leftMidLeg": 1,
+      "rightForeLeg": 1,
+      "leftForeLeg": 1,
+      "rightFrontLeg": 1,
+      "leftFrontLeg": 1,
+      "cephalothorax": 1,
+      "rightLeg": 1,
+      "leftLeg": 1,
+      "leftArm": 1,
+      "rightArm": 1,
+      "thorax": 1,
+      "rightHindLeg": 1,
+      "leftHindLeg": 1,
+      "hindquarters": 1,
+      "rightWing": 1,
+      "leftWing": 1
+    },
+    "levelAdaptation": "<div><p>After level 5: +5 Health, +D6 damage, +10 Combat Skill</p></div><div><p>After level 10: +5 Health, +D8 damage, +10 Combat Skill</p></div>",
+    "actions": [
+      {
+        "startDie": 1,
+        "endDie": 1,
+        "name": "Infernal Possession (Magical)",
+        "description": "<div><p>The Pyroclasmic Possessor targets a creature, who must succeed on a Resolve check or be possessed for 2 rounds. While possessed, the creature's actions are controlled by the Pyroclasmic Possessor, who will force the creature to attack its allies, or itself if there aren't any. The creature can repeat the Resolve check at the end of each of its turns, ending the possession on a success.</p></div>"
+      },
+      {
+        "startDie": 2,
+        "endDie": 2,
+        "name": "Eruption of Flame (Magical)",
+        "description": "<div><p>The Pyroclasmic Possessor conjures a burst of flame that erupts. Creatures in the area must make a Dodge check, taking D6 Fire damage on a failed check, or half as much damage on a successful one.</p></div>"
+      },
+      {
+        "startDie": 3,
+        "endDie": 3,
+        "name": "Molten Projectiles (Magical)",
+        "description": "<div><p>The Pyroclasmic Possessor hurls molten projectiles at up to three targets. Each target must make a Dodge check or suffer 2D6 Fire damage.</p></div>"
+      },
+      {
+        "startDie": 4,
+        "endDie": 4,
+        "name": "Possessed Blaze",
+        "description": "<div><p>The Pyroclasmic Possessor envelops itself in a swirling aura of fire for 2 rounds. Creatures that are engaged in combat with it gain the Burning condition.</p></div>"
+      },
+      {
+        "startDie": 5,
+        "endDie": 5,
+        "name": "Burning Urge",
+        "description": "<div><p>The Pyroclasmic Possessor ushes a fiery command that reverberates across the necropolis. Make a Tension Die check.</p></div>"
+      },
+      {
+        "startDie": 6,
+        "endDie": 6,
+        "name": "Inferno's Grasp",
+        "description": "<div><p>The Pyroclasmic Possessor reaches out with its fiery spectral form to grasp a target. The target must pass an Athletics check or take 2D4 Fire damage and be Restrained by the Pyroclasmic Possessor until the end of its next turn.</p></div>"
+      }
+    ],
+    "description": "<div><p>This entity of fiery possession and smoldering dominance manifests as a malevolent spirit woven from the very flames of the abyss. Its spectral form is wreathed in incendiary energies that engulf the surroundings, leaving scorched footprints in its wake. Its most frightening ability is its power to invade the minds of its victims, compelling them to enact its destructive will, while conjuring molten projectiles that erupt from the very earth. The Pyroclasmic Possessor will force those who face it to wrestle the scalding fires that threaten to consume all in a pyroclasmic inferno.</p></div>",
+    "notes": "",
+    "sorting": "manually"
+  },
+  "prototypeToken": {
+    "name": "Pyroclasmic Possessor",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/creatures/unholy/demon-horned-winged-laughing.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.health"
+    },
+    "bar2": {
+      "attribute": "attributes.aether"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768417958616,
+    "modifiedTime": 1768492037084,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!actors!p4yeVL5ouw3b2wwI"
+}

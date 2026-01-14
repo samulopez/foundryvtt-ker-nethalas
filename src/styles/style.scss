@@ -335,7 +335,8 @@
         width: 150px;
       }
       .editor-host {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
+        max-height: 150px;
       }
     }
     .details {
@@ -532,6 +533,10 @@
 
   .border-bottom {
     border-bottom: 1px solid $color-border;
+  }
+
+  .overflowy {
+    overflow-y: auto;
   }
 
   .rollable {
