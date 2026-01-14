@@ -232,53 +232,30 @@
                     <div class="section-title">{{localize "KN.Monster.Sheet.armor.title"}}</div>
                     <div class="flexrow gap-small align-normal">
                         <div class="flexcol gap-min">
-                            <label class="checkbox-label">
-                                <input type="number"
-                                       name="system.armor.abdomen"
-                                       min="0"
-                                       step="1"
-                                       data-dtype="Number"
-                                       value="{{document.system.armor.abdomen}}" />
-                                {{localize 'KN.Monster.Sheet.armor.abdomen' }}
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="number"
-                                       name="system.armor.body"
-                                       min="0"
-                                       step="1"
-                                       data-dtype="Number"
-                                       value="{{document.system.armor.body}}" />
-                                {{localize 'KN.Monster.Sheet.armor.body' }}
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="number"
-                                       name="system.armor.chest"
-                                       min="0"
-                                       step="1"
-                                       data-dtype="Number"
-                                       value="{{document.system.armor.chest}}" />
-                                {{localize 'KN.Monster.Sheet.armor.chest' }}
-                            </label>
+                            {{#each armorSections.left as |section index| }}
+                                <label class="checkbox-label">
+                                    <input type="number"
+                                           name="system.armor.{{section.label}}"
+                                           min="0"
+                                           step="1"
+                                           data-dtype="Number"
+                                           value="{{section.value}}" />
+                                    {{localize (concat 'KN.Monster.Sheet.weakSpot.option.' section.label) }}
+                                </label>
+                            {{/each}}
                         </div>
                         <div class="flexcol gap-min">
-                            <label class="checkbox-label">
-                                <input type="number"
-                                       name="system.armor.forequarters"
-                                       min="0"
-                                       step="1"
-                                       data-dtype="Number"
-                                       value="{{document.system.armor.forequarters}}" />
-                                {{localize 'KN.Monster.Sheet.armor.forequarters' }}
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="number"
-                                       name="system.armor.head"
-                                       min="0"
-                                       step="1"
-                                       data-dtype="Number"
-                                       value="{{document.system.armor.head}}" />
-                                {{localize 'KN.Monster.Sheet.armor.head' }}
-                            </label>
+                            {{#each armorSections.right as |section index| }}
+                                <label class="checkbox-label">
+                                    <input type="number"
+                                           name="system.armor.{{section.label}}"
+                                           min="0"
+                                           step="1"
+                                           data-dtype="Number"
+                                           value="{{section.value}}" />
+                                    {{localize (concat 'KN.Monster.Sheet.weakSpot.option.' section.label) }}
+                                </label>
+                            {{/each}}
                         </div>
                     </div>
                 </div>
@@ -286,78 +263,90 @@
         </div>
         <div>
             <div class="section-title">{{localize "KN.Monster.Sheet.traits.title"}}</div>
-            <div class="flexrow gap-small align-normal">
-                <div class="flexcol gap-min">
-                    <label class="checkbox-label">
-                        <input type="checkbox"
-                               name="system.traits.alert"
-                               {{checked document.system.traits.alert}} />
-                        {{localize 'KN.Monster.Sheet.traits.alert' }}
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox"
-                               name="system.traits.frightening"
-                               {{checked document.system.traits.frightening}} />
-                        {{localize 'KN.Monster.Sheet.traits.frightening' }}
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox"
-                               name="system.traits.horrifying"
-                               {{checked document.system.traits.horrifying}} />
-                        {{localize 'KN.Monster.Sheet.traits.horrifying' }}
-                    </label>
+            <div class="flexcol gap-min">
+                <div class="flexrow gap-small align-normal">
+                    <div class="flexcol gap-min">
+                        <label class="checkbox-label">
+                            <input type="checkbox"
+                                   name="system.traits.alert"
+                                   {{checked document.system.traits.alert}} />
+                            {{localize 'KN.Monster.Sheet.traits.alert' }}
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox"
+                                   name="system.traits.frightening"
+                                   {{checked document.system.traits.frightening}} />
+                            {{localize 'KN.Monster.Sheet.traits.frightening' }}
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox"
+                                   name="system.traits.horrifying"
+                                   {{checked document.system.traits.horrifying}} />
+                            {{localize 'KN.Monster.Sheet.traits.horrifying' }}
+                        </label>
+                    </div>
+                    <div class="flexcol gap-min">
+                        <label class="checkbox-label">
+                            <input type="checkbox"
+                                   name="system.traits.pack"
+                                   {{checked document.system.traits.pack}} />
+                            {{localize 'KN.Monster.Sheet.traits.pack' }}
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox"
+                                   name="system.traits.penetrating.active"
+                                   {{checked document.system.traits.penetrating.active}} />
+                            <input type="number"
+                                   name="system.traits.penetrating.value"
+                                   min="0"
+                                   step="1"
+                                   data-dtype="Number"
+                                   value="{{document.system.traits.penetrating.value}}" />
+                            {{localize 'KN.Monster.Sheet.traits.penetrating' }}
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox"
+                                   name="system.traits.ruthlessness.active"
+                                   {{checked document.system.traits.ruthlessness.active}} />
+                            <input type="number"
+                                   name="system.traits.ruthlessness.value"
+                                   min="0"
+                                   step="1"
+                                   data-dtype="Number"
+                                   value="{{document.system.traits.ruthlessness.value}}" />
+                            {{localize 'KN.Monster.Sheet.traits.ruthlessness' }}
+                        </label>
+                    </div>
+                    <div class="flexcol gap-min">
+                        <label class="checkbox-label">
+                            <input type="checkbox"
+                                   name="system.traits.savage"
+                                   {{checked document.system.traits.savage}} />
+                            {{localize 'KN.Monster.Sheet.traits.savage' }}
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox"
+                                   name="system.traits.swift"
+                                   {{checked document.system.traits.swift}} />
+                            {{localize 'KN.Monster.Sheet.traits.swift' }}
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox"
+                                   name="system.traits.venomous"
+                                   {{checked document.system.traits.venomous}} />
+                            {{localize 'KN.Monster.Sheet.traits.venomous' }}
+                        </label>
+                    </div>
                 </div>
-                <div class="flexcol gap-min">
-                    <label class="checkbox-label">
-                        <input type="checkbox"
-                               name="system.traits.pack"
-                               {{checked document.system.traits.pack}} />
-                        {{localize 'KN.Monster.Sheet.traits.pack' }}
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox"
-                               name="system.traits.penetrating.active"
-                               {{checked document.system.traits.penetrating.active}} />
-                        <input type="number"
-                               name="system.traits.penetrating.value"
-                               min="0"
-                               step="1"
-                               data-dtype="Number"
-                               value="{{document.system.traits.penetrating.value}}" />
-                        {{localize 'KN.Monster.Sheet.traits.penetrating' }}
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox"
-                               name="system.traits.ruthlessness.active"
-                               {{checked document.system.traits.ruthlessness.active}} />
-                        <input type="number"
-                               name="system.traits.ruthlessness.value"
-                               min="0"
-                               step="1"
-                               data-dtype="Number"
-                               value="{{document.system.traits.ruthlessness.value}}" />
-                        {{localize 'KN.Monster.Sheet.traits.ruthlessness' }}
-                    </label>
-                </div>
-                <div class="flexcol gap-min">
-                    <label class="checkbox-label">
-                        <input type="checkbox"
-                               name="system.traits.savage"
-                               {{checked document.system.traits.savage}} />
-                        {{localize 'KN.Monster.Sheet.traits.savage' }}
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox"
-                               name="system.traits.swift"
-                               {{checked document.system.traits.swift}} />
-                        {{localize 'KN.Monster.Sheet.traits.swift' }}
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox"
-                               name="system.traits.venomous"
-                               {{checked document.system.traits.venomous}} />
-                        {{localize 'KN.Monster.Sheet.traits.venomous' }}
-                    </label>
+                <div class="flexrow gap-min">
+                    <div class="flexrow gap-min">
+                        <label class="checkbox-label flex0" for="system.traits.custom">{{localize 'KN.Monster.Sheet.traits.custom' }}</label>
+                        <input type="text"
+                               name="system.traits.custom"
+                               id="system.traits.custom"
+                               value="{{document.system.traits.custom}}" />
+                    </div>
+                    <div class="flex1"></div>
                 </div>
             </div>
         </div>

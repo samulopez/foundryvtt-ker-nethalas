@@ -25,15 +25,15 @@
                     <div class="flex0">
                         <label class="left-label" for="kn.monster.description">{{localize 'KN.Monster.Sheet.description' }}</label>
                     </div>
-                    <div class="editor-host">
-                        {{#if editable }}
+                    {{#if editable }}
+                        <div class="editor-host">
                             <prose-mirror name="system.description" id="kn.monster.description" button="true" editable="{{editable}}" toggled="false" value="{{document.system.description}}">
                             {{{enrichedDescription}}}
                             </prose-mirror>
-                        {{else}}
-                            {{{enrichedDescription}}}
-                        {{/if}}
-                    </div>
+                        </div>
+                    {{else}}
+                        <div class="editor-host overflowy">{{{enrichedDescription}}}</div>
+                    {{/if}}
                 </h5>
             </div>
         </div>

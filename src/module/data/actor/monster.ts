@@ -54,13 +54,33 @@ export const defineMonsterModel = () => ({
     savage: new BooleanField({ initial: false }),
     swift: new BooleanField({ initial: false }),
     venomous: new BooleanField({ initial: false }),
+    custom: new StringField({ initial: '' }),
   }),
   armor: new SchemaField({
+    rightRearLeg: new NumberField({ integer: true, min: 0, initial: 0 }),
+    leftRearLeg: new NumberField({ integer: true, min: 0, initial: 0 }),
+    rightMidLeg: new NumberField({ integer: true, min: 0, initial: 0 }),
+    leftMidLeg: new NumberField({ integer: true, min: 0, initial: 0 }),
+    rightForeLeg: new NumberField({ integer: true, min: 0, initial: 0 }),
+    leftForeLeg: new NumberField({ integer: true, min: 0, initial: 0 }),
     abdomen: new NumberField({ integer: true, min: 0, initial: 0 }),
-    body: new NumberField({ integer: true, min: 0, initial: 0 }),
+    rightFrontLeg: new NumberField({ integer: true, min: 0, initial: 0 }),
+    leftFrontLeg: new NumberField({ integer: true, min: 0, initial: 0 }),
+    cephalothorax: new NumberField({ integer: true, min: 0, initial: 0 }),
+    rightLeg: new NumberField({ integer: true, min: 0, initial: 0 }),
+    leftLeg: new NumberField({ integer: true, min: 0, initial: 0 }),
     chest: new NumberField({ integer: true, min: 0, initial: 0 }),
-    forequarters: new NumberField({ integer: true, min: 0, initial: 0 }),
+    leftArm: new NumberField({ integer: true, min: 0, initial: 0 }),
+    rightArm: new NumberField({ integer: true, min: 0, initial: 0 }),
     head: new NumberField({ integer: true, min: 0, initial: 0 }),
+    thorax: new NumberField({ integer: true, min: 0, initial: 0 }),
+    rightHindLeg: new NumberField({ integer: true, min: 0, initial: 0 }),
+    leftHindLeg: new NumberField({ integer: true, min: 0, initial: 0 }),
+    hindquarters: new NumberField({ integer: true, min: 0, initial: 0 }),
+    forequarters: new NumberField({ integer: true, min: 0, initial: 0 }),
+    body: new NumberField({ integer: true, min: 0, initial: 0 }),
+    rightWing: new NumberField({ integer: true, min: 0, initial: 0 }),
+    leftWing: new NumberField({ integer: true, min: 0, initial: 0 }),
   }),
   levelAdaptation: new StringField({ initial: '' }),
   actions: new ArrayField(
@@ -78,6 +98,8 @@ export const defineMonsterModel = () => ({
 
 type MonsterModelSchema = ReturnType<typeof defineMonsterModel>;
 
+type MonsterModelType = foundry.abstract.TypeDataModel<MonsterModelSchema, KerNethalasActor<'monster'>>;
+
 export default class MonsterDataModel extends foundry.abstract.TypeDataModel<
   MonsterModelSchema,
   KerNethalasActor<'monster'>
@@ -85,6 +107,39 @@ export default class MonsterDataModel extends foundry.abstract.TypeDataModel<
   static defineSchema(): MonsterModelSchema {
     return defineMonsterModel();
   }
+
+  _preUpdate: MonsterModelType['_preUpdate'] = async (changed, options, user) => {
+    if (changed.system?.hitLocation !== undefined && this.parent.system.hitLocation !== changed.system.hitLocation) {
+      // eslint-disable-next-line no-param-reassign
+      changed.system.armor = {
+        rightRearLeg: 0,
+        leftRearLeg: 0,
+        rightMidLeg: 0,
+        leftMidLeg: 0,
+        rightForeLeg: 0,
+        leftForeLeg: 0,
+        abdomen: 0,
+        rightFrontLeg: 0,
+        leftFrontLeg: 0,
+        cephalothorax: 0,
+        rightLeg: 0,
+        leftLeg: 0,
+        chest: 0,
+        leftArm: 0,
+        rightArm: 0,
+        head: 0,
+        thorax: 0,
+        rightHindLeg: 0,
+        leftHindLeg: 0,
+        hindquarters: 0,
+        forequarters: 0,
+        body: 0,
+        rightWing: 0,
+        leftWing: 0,
+      };
+    }
+    return super._preUpdate(changed, options, user);
+  };
 
   async addAction() {
     const actions = this.parent.system.actions.slice();

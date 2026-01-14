@@ -22,10 +22,22 @@
       "name": "Ker Nethalas",
       "sorting": "a",
       "color": "#854e29",
-      "packs": ["weapons"]
+      "packs": ["overseers", "weapons"]
     }
   ],
   "packs": [
+    {
+      "name": "overseers",
+      "label": "Overseers",
+      "system": "ker-nethalas",
+      "path": "packs/overseers",
+      "type": "Actor",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
     {
       "name": "weapons",
       "label": "Weapons",

@@ -1,0 +1,232 @@
+{
+  "folder": null,
+  "name": "Zephyrous Shadow",
+  "type": "monster",
+  "img": "icons/creatures/unholy/demon-horned-winged-laughing.webp",
+  "_id": "vXd3YXDK0OdR0QXi",
+  "system": {
+    "attributes": {
+      "body": 40,
+      "mind": 70,
+      "combatSkill": 50,
+      "endurance": 50,
+      "health": {
+        "min": 0,
+        "value": 20,
+        "max": 20
+      },
+      "magicResistance": 50
+    },
+    "type": {
+      "animal": false,
+      "astral": false,
+      "construct": false,
+      "demon": true,
+      "elemental": true,
+      "humanoid": false,
+      "plant": false,
+      "undead": false
+    },
+    "hitLocation": "humanoid",
+    "weakSpot": "head",
+    "traits": {
+      "alert": false,
+      "frightening": false,
+      "horrifying": false,
+      "pack": false,
+      "penetrating": {
+        "value": 2,
+        "active": true
+      },
+      "ruthlessness": {
+        "value": 1,
+        "active": true
+      },
+      "savage": true,
+      "swift": true,
+      "venomous": false,
+      "custom": "Elemental Affinity: Lightning"
+    },
+    "armor": {
+      "abdomen": 0,
+      "body": 0,
+      "chest": 0,
+      "forequarters": 0,
+      "head": 0,
+      "rightRearLeg": 0,
+      "leftRearLeg": 0,
+      "rightMidLeg": 0,
+      "leftMidLeg": 0,
+      "rightForeLeg": 0,
+      "leftForeLeg": 0,
+      "rightFrontLeg": 0,
+      "leftFrontLeg": 0,
+      "cephalothorax": 0,
+      "rightLeg": 0,
+      "leftLeg": 0,
+      "leftArm": 0,
+      "rightArm": 0,
+      "thorax": 0,
+      "rightHindLeg": 0,
+      "leftHindLeg": 0,
+      "hindquarters": 0,
+      "rightWing": 0,
+      "leftWing": 0
+    },
+    "levelAdaptation": "<div><p>After level 5: +D10 damage</p></div><div><p>After level 10: +10 Health, +D6 damage, +10 Combat Skill</p></div>",
+    "actions": [
+      {
+        "startDie": 1,
+        "endDie": 1,
+        "name": "Thunderbolt Barrage (Magical)",
+        "description": "<div><p>The Zephyrous Shadow calls upon the power of lightning to unleash a barrage of electrifying bolts. Each creature in the room must make a Dodge check, taking 2D6 Lightning damage on a failed check, or half as much on a successful one.</p></div>"
+      },
+      {
+        "startDie": 2,
+        "endDie": 2,
+        "name": "Shadow Cloak",
+        "description": "<div><p>The Zephyrous Shadow melds into the shadows, becoming nearly invisible until the start of its next turn. Attacks made against it have Disadvantage, and it becomes Resistant to all damage except Arcane damage.</p></div>"
+      },
+      {
+        "startDie": 3,
+        "endDie": 3,
+        "name": "Stormshroud",
+        "description": "<div><p>The Zephyrous Shadow shrouds itself with lightning. For the next 2 rounds, all creatures that attack it suffer 2 Lightning damage. This Action does not stack, but rolling it again resets it duration.</p></div>"
+      },
+      {
+        "startDie": 4,
+        "endDie": 4,
+        "name": "Disruptive Curse (Magical)",
+        "description": "<div><p>The Zephyrous Shadow casts a disruptive curse upon a target in the room. For the next 2 rounds, the target is Cursed, and must pass a Resolve check each time it attacks, or do so with Disadvantage.</p></div>"
+      },
+      {
+        "startDie": 5,
+        "endDie": 5,
+        "name": "Tempestuous Assault (Physical)",
+        "description": "<div><p>The Zephyrous Shadow charges with electrified momentum, making a melee attack against a target that deals D6+2 Force damage on a hit.</p></div>"
+      },
+      {
+        "startDie": 6,
+        "endDie": 6,
+        "name": "Galeforce Surge (Magical)",
+        "description": "<div><p>The Zephyrous Shadow channels the winds and lightning into a devastating surge. Each creature in the room must make a Dodge check, taking 3D4 Force damage on a failed check, or half as much on a successful one.</p></div>"
+      }
+    ],
+    "description": "<div><p>The Zephyrous Shadow is an enigmatic force woven from the very threads of lightning and shadow. This Overseer sends bolts of electric fury crackling through the air, casting curses that shroud its victims in disorienting darkness, and showing its dominion over the atmospheric energies that allow it to cast lightning-infused projectiles. Confronting the Zephyrous Shadow demands an absolute mastery of arms and the ability to unravel its elusive, thunderous tactics.</p></div>",
+    "notes": "",
+    "sorting": "manually"
+  },
+  "prototypeToken": {
+    "name": "Zephyrous Shadow",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/creatures/unholy/demon-horned-winged-laughing.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.health"
+    },
+    "bar2": {
+      "attribute": "attributes.aether"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768417958616,
+    "modifiedTime": 1768492037084,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!actors!vXd3YXDK0OdR0QXi"
+}

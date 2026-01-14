@@ -22,6 +22,7 @@ jobs:
       - name: Build packs
         run: |
           npx --no-install fvtt package workon "ker-nethalas" --type "System"
+          npx --no-install fvtt package pack "overseers" --in "packs/_source/overseers" --out "packs"
           npx --no-install fvtt package pack "weapons" --in "packs/_source/weapons" --out "packs"
 
       - name: Build dist directory
