@@ -58,9 +58,11 @@ export default class MinionSheet<
     },
     details: {
       template: TEMPLATES.minion.detailsTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
     notes: {
       template: TEMPLATES.minion.notesTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
   };
 

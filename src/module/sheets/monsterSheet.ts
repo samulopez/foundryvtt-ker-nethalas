@@ -59,9 +59,11 @@ export default class MonsterSheet<
     },
     details: {
       template: TEMPLATES.monster.detailsTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
     notes: {
       template: TEMPLATES.monster.notesTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
   };
 

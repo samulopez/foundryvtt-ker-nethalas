@@ -42,9 +42,11 @@ export default class KNArmorSheet<
     },
     details: {
       template: TEMPLATES.armor.detailsTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
     notes: {
       template: TEMPLATES.armor.notesTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
   };
 

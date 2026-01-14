@@ -43,9 +43,11 @@ export default class KNItemSheet<
     },
     details: {
       template: TEMPLATES.item.detailsTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
     notes: {
       template: TEMPLATES.item.notesTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
   };
 
