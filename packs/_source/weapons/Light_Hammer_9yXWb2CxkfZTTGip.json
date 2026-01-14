@@ -1,0 +1,46 @@
+{
+  "folder": null,
+  "name": "Light Hammer",
+  "type": "weapon",
+  "img": "icons/weapons/hammers/shorthammer-simple-iron-black.webp",
+  "_id": "9yXWb2CxkfZTTGip",
+  "system": {
+    "cost": 5,
+    "weight": "normal",
+    "description": "",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "speed": 5,
+    "skill": "bludgeoningWeapons",
+    "broken": false,
+    "traits": {
+      "defensive": true,
+      "quick": false,
+      "parrying": false,
+      "powerful": false,
+      "simple": false,
+      "twoHanded": false,
+      "versatile": false
+    },
+    "damageType": "bludgeoning"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768414559075,
+    "modifiedTime": 1768415633380,
+    "lastModifiedBy": "mLJl4kwVJvmqe7Ru"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!9yXWb2CxkfZTTGip"
+}

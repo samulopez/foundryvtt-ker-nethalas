@@ -1,0 +1,46 @@
+{
+  "folder": null,
+  "name": "Hatchet",
+  "type": "weapon",
+  "img": "icons/weapons/axes/axe-broad-engraved.webp",
+  "_id": "TQ8MbqYGE6FgRtxB",
+  "system": {
+    "cost": 5,
+    "weight": "normal",
+    "description": "",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "speed": 5,
+    "skill": "bladedWeapons",
+    "broken": false,
+    "traits": {
+      "defensive": false,
+      "quick": false,
+      "parrying": false,
+      "powerful": false,
+      "simple": true,
+      "twoHanded": false,
+      "versatile": false
+    },
+    "damageType": "slashing"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768414559075,
+    "modifiedTime": 1768415633380,
+    "lastModifiedBy": "mLJl4kwVJvmqe7Ru"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!TQ8MbqYGE6FgRtxB"
+}

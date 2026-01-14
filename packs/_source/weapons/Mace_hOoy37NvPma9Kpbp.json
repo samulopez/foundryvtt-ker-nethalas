@@ -1,0 +1,46 @@
+{
+  "folder": null,
+  "name": "Mace",
+  "type": "weapon",
+  "img": "icons/weapons/maces/mace-flanged-steel-grey.webp",
+  "_id": "hOoy37NvPma9Kpbp",
+  "system": {
+    "cost": 15,
+    "weight": "normal",
+    "description": "",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "speed": 5,
+    "skill": "bludgeoningWeapons",
+    "broken": false,
+    "traits": {
+      "defensive": false,
+      "quick": false,
+      "parrying": false,
+      "powerful": false,
+      "simple": true,
+      "twoHanded": false,
+      "versatile": false
+    },
+    "damageType": "bludgeoning"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768414559075,
+    "modifiedTime": 1768415633380,
+    "lastModifiedBy": "mLJl4kwVJvmqe7Ru"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!hOoy37NvPma9Kpbp"
+}

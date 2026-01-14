@@ -53,6 +53,8 @@ export default defineConfig({
       targets: [
         { src: 'src/lang', dest: `./dist/${MODULE_ID}` },
         { src: 'src/templates', dest: `./dist/${MODULE_ID}` },
+        { src: 'assets', dest: `./dist/${MODULE_ID}` },
+        { src: 'packs', dest: `./dist/${MODULE_ID}` },
         { src: 'src/system.json', dest: `./dist/${MODULE_ID}` },
       ],
       hook: 'writeBundle',
