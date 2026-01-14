@@ -95,15 +95,19 @@ export default class CharacterSheet<
     },
     skills: {
       template: TEMPLATES.character.skillsTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
     perks: {
       template: TEMPLATES.character.perksTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
     inventory: {
       template: TEMPLATES.character.inventoryTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
     mechanics: {
       template: TEMPLATES.character.mechanicsTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
   };
 

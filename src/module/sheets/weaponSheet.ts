@@ -42,9 +42,11 @@ export default class KNWeaponSheet<
     },
     details: {
       template: TEMPLATES.weapon.detailsTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
     notes: {
       template: TEMPLATES.weapon.notesTab,
+      scrollable: [''], // needed to keep scroll position when re-rendering
     },
   };
 
