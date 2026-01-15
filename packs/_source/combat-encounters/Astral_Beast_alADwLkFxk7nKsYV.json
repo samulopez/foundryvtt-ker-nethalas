@@ -1,0 +1,215 @@
+{
+  "name": "Astral Beast",
+  "type": "monster",
+  "img": "icons/svg/terror.svg",
+  "system": {
+    "attributes": {
+      "body": 50,
+      "mind": 50,
+      "combatSkill": 40,
+      "endurance": 40,
+      "health": {
+        "min": 0,
+        "value": 12,
+        "max": 12
+      },
+      "magicResistance": 70
+    },
+    "type": {
+      "animal": true,
+      "astral": true,
+      "construct": false,
+      "demon": false,
+      "elemental": false,
+      "humanoid": false,
+      "plant": false,
+      "undead": false
+    },
+    "hitLocation": "quadruped",
+    "weakSpot": "head",
+    "traits": {
+      "alert": false,
+      "frightening": false,
+      "horrifying": false,
+      "pack": false,
+      "penetrating": {
+        "value": 0,
+        "active": false
+      },
+      "ruthlessness": {
+        "value": 0,
+        "active": false
+      },
+      "savage": false,
+      "swift": false,
+      "venomous": false,
+      "custom": ""
+    },
+    "armor": {
+      "rightRearLeg": 0,
+      "leftRearLeg": 0,
+      "rightMidLeg": 0,
+      "leftMidLeg": 0,
+      "rightForeLeg": 0,
+      "leftForeLeg": 0,
+      "abdomen": 0,
+      "rightFrontLeg": 0,
+      "leftFrontLeg": 0,
+      "cephalothorax": 0,
+      "rightLeg": 0,
+      "leftLeg": 0,
+      "chest": 0,
+      "leftArm": 0,
+      "rightArm": 0,
+      "head": 0,
+      "thorax": 0,
+      "rightHindLeg": 0,
+      "leftHindLeg": 0,
+      "hindquarters": 0,
+      "forequarters": 2,
+      "body": 0,
+      "rightWing": 0,
+      "leftWing": 0
+    },
+    "levelAdaptation": "<div><p>After level 5: +8 Health, +D8 damage, +10 Combat Skill</p></div><div><p>After level 10: +5 Health, +D10 damage, +10 Magic Resistance</p></div>",
+    "actions": [
+      {
+        "startDie": 1,
+        "endDie": 2,
+        "name": "Celestial Surge (Magical)",
+        "description": "<div><p>The Astral Beast summons a surge of celestial energy and releases it in a directed blast, dealing D6 Arcane damage on a hit.</p></div>"
+      },
+      {
+        "startDie": 3,
+        "endDie": 4,
+        "name": "Nebula Shield",
+        "description": "<div><p>The Astral Beast envelops itself in a shimmering nebula, creating a protective barrier. Until the start of its next turn, the Astral Beast becomes Resistant to all damage.</p></div>"
+      },
+      {
+        "startDie": 5,
+        "endDie": 6,
+        "name": "Astral Tempest (Magical)",
+        "description": "<div><p>The Astral Beast channels its cosmic power and unleashes a storm of astral energy upon its surroundings. All creatures that failed the Spellward check take D8 Arcane damage, or half damage if they succeeded.</p></div>"
+      }
+    ],
+    "description": "<div><p>Astral Beasts are colossal creatures that shimmer with iridescent hues, stardust and swirling nebulae visible across its skin. Its very presence distorts reality, warping the astral fabric and causing small tears into it. When provoked, the Astral Beast wields unfathomable celestial powers, summoning cosmic storms and unleashing torrents of astral energy upon those who dare to challenge it.</p></div>",
+    "notes": "",
+    "sorting": "manually"
+  },
+  "prototypeToken": {
+    "name": "a",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/terror.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.health"
+    },
+    "bar2": {
+      "attribute": "attributes.aether"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768493330814,
+    "modifiedTime": 1768493330814,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_id": "alADwLkFxk7nKsYV",
+  "ownership": {
+    "default": 0,
+    "xOca9XRwLgJMNAGV": 3
+  },
+  "sort": 0,
+  "_key": "!actors!alADwLkFxk7nKsYV"
+}

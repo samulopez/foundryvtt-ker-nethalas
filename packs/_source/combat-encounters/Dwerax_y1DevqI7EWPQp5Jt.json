@@ -1,0 +1,215 @@
+{
+  "name": "Dwerax",
+  "type": "monster",
+  "img": "icons/svg/terror.svg",
+  "system": {
+    "attributes": {
+      "body": 60,
+      "mind": 60,
+      "combatSkill": 60,
+      "endurance": 60,
+      "health": {
+        "min": 0,
+        "value": 12,
+        "max": 12
+      },
+      "magicResistance": 30
+    },
+    "type": {
+      "animal": false,
+      "astral": false,
+      "construct": false,
+      "demon": true,
+      "elemental": false,
+      "humanoid": false,
+      "plant": false,
+      "undead": false
+    },
+    "hitLocation": "humanoid",
+    "weakSpot": "head",
+    "traits": {
+      "alert": true,
+      "frightening": true,
+      "horrifying": false,
+      "pack": false,
+      "penetrating": {
+        "value": 0,
+        "active": false
+      },
+      "ruthlessness": {
+        "value": 0,
+        "active": false
+      },
+      "savage": false,
+      "swift": false,
+      "venomous": false,
+      "custom": ""
+    },
+    "armor": {
+      "rightRearLeg": 0,
+      "leftRearLeg": 0,
+      "rightMidLeg": 0,
+      "leftMidLeg": 0,
+      "rightForeLeg": 0,
+      "leftForeLeg": 0,
+      "abdomen": 0,
+      "rightFrontLeg": 0,
+      "leftFrontLeg": 0,
+      "cephalothorax": 0,
+      "rightLeg": 0,
+      "leftLeg": 0,
+      "chest": 2,
+      "leftArm": 0,
+      "rightArm": 0,
+      "head": 0,
+      "thorax": 0,
+      "rightHindLeg": 0,
+      "leftHindLeg": 0,
+      "hindquarters": 0,
+      "forequarters": 0,
+      "body": 0,
+      "rightWing": 0,
+      "leftWing": 0
+    },
+    "levelAdaptation": "<div><p>After level 5: +D6 damage, +10 Combat Skill</p></div><div><p>After level 10: +10 Health, +D8 damage, +10 Magic Resistance</p></div>",
+    "actions": [
+      {
+        "startDie": 1,
+        "endDie": 2,
+        "name": "Claw Grasp (Physical)",
+        "description": "<div><p>The Dwerax lunges at a target, attempting to ensnare them in its wickedly clawed hands. It makes a melee attack, dealing D6 Slashing damage on a hit. If the attack hits, the target is Restrained by the Dwerax. The target takes 1 Slashing damage at the start of each of their turns while grappled. The Dwerax doesn't act against a character while they are affected by this Action; it will either change target or simply wait for the character to die or free themselves.</p></div>"
+      },
+      {
+        "startDie": 3,
+        "endDie": 4,
+        "name": "Abyssal Bite (Physical)",
+        "description": "<div><p>The Dwerax lunges at a target with its gaping maw, attempting to tear through their defenses. It makes a melee attack, dealing D6 Piercing damage on a hit that ignores all Armor.</p></div>"
+      },
+      {
+        "startDie": 5,
+        "endDie": 6,
+        "name": "Tremor Strike",
+        "description": "<div><p>The Dwerax strikes the ground with its massive clawed hands, creating a shockwave that radiates outward. All creatures within the room must succeed on an Acrobatics check or be knocked Prone and take D4 Bludgeoning damage.</p></div>"
+      }
+    ],
+    "description": "<div><p>Dwerax are terrifying amalgamations of grotesque features, possessesing unnaturally long arms that extend down to their misshapen knees that end in wickedly clawed hands. Its pale, pallid skin seems to absorb what little light dares to venture into its subterranean domain, giving the Dwerax a hauntingly spectral appearance. Its face is devoid of eyes, replaced by an enormous, gaping maw filled with a nightmarish array of razor-sharp teeth, forever bared in a fearsome and insatiable hunger. This mouth serves as both sensory organ and deadly weapon, honed to detect the slightest vibrations and rend apart its victims with horrifying efficiency.</p></div>",
+    "notes": "",
+    "sorting": "manually"
+  },
+  "prototypeToken": {
+    "name": "a",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/terror.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.health"
+    },
+    "bar2": {
+      "attribute": "attributes.aether"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768493330814,
+    "modifiedTime": 1768493330814,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_id": "y1DevqI7EWPQp5Jt",
+  "ownership": {
+    "default": 0,
+    "xOca9XRwLgJMNAGV": 3
+  },
+  "sort": 0,
+  "_key": "!actors!y1DevqI7EWPQp5Jt"
+}

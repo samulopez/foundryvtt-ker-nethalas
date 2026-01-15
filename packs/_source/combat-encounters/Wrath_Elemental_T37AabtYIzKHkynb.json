@@ -1,0 +1,215 @@
+{
+  "name": "Wrath Elemental",
+  "type": "monster",
+  "img": "icons/svg/terror.svg",
+  "system": {
+    "attributes": {
+      "body": 40,
+      "mind": 30,
+      "combatSkill": 50,
+      "endurance": 50,
+      "health": {
+        "min": 0,
+        "value": 15,
+        "max": 15
+      },
+      "magicResistance": 50
+    },
+    "type": {
+      "animal": false,
+      "astral": false,
+      "construct": false,
+      "demon": true,
+      "elemental": true,
+      "humanoid": false,
+      "plant": false,
+      "undead": false
+    },
+    "hitLocation": "humanoid",
+    "weakSpot": "head",
+    "traits": {
+      "alert": false,
+      "frightening": false,
+      "horrifying": false,
+      "pack": false,
+      "penetrating": {
+        "value": 0,
+        "active": false
+      },
+      "ruthlessness": {
+        "value": 0,
+        "active": false
+      },
+      "savage": false,
+      "swift": true,
+      "venomous": false,
+      "custom": "Elemental Affinity: Infernal"
+    },
+    "armor": {
+      "rightRearLeg": 0,
+      "leftRearLeg": 0,
+      "rightMidLeg": 0,
+      "leftMidLeg": 0,
+      "rightForeLeg": 0,
+      "leftForeLeg": 0,
+      "abdomen": 0,
+      "rightFrontLeg": 0,
+      "leftFrontLeg": 0,
+      "cephalothorax": 0,
+      "rightLeg": 0,
+      "leftLeg": 0,
+      "chest": 2,
+      "leftArm": 0,
+      "rightArm": 0,
+      "head": 0,
+      "thorax": 0,
+      "rightHindLeg": 0,
+      "leftHindLeg": 0,
+      "hindquarters": 0,
+      "forequarters": 0,
+      "body": 0,
+      "rightWing": 0,
+      "leftWing": 0
+    },
+    "levelAdaptation": "<div><p>After level 5: +5 Health, +D6 damage, +10 Magic Resistance</p></div><div><p>After level 10: +D6 damage, +10 Combat Skill</p></div>",
+    "actions": [
+      {
+        "startDie": 1,
+        "endDie": 2,
+        "name": "Elemental Fury (Magical)",
+        "description": "<div><p>The Wrath Elemental channels its inner turmoil of elements, choosing one of them to unleash upon its foes. Roll D6: It can either create a cone of fire (1-2), a line of lightning (3-4), or a river of crashing water (5-6). Each creature in the room takes D6 damage of the chosen elemental type: Fire for fire, Lightning for lightning, and Force for Water.</p></div>"
+      },
+      {
+        "startDie": 3,
+        "endDie": 4,
+        "name": "Infernal Resilience",
+        "description": "<div><p>The Wrath Elemental taps into its demonic nature, gaining Temporary Health equal to half its current Health. The Wrath Elemental cannot have more than twice its Health this way.</p></div>"
+      },
+      {
+        "startDie": 5,
+        "endDie": 6,
+        "name": "Chaotic Eruption (Magical)",
+        "description": "<div><p>The Wrath Elemental releases a burst of unstable energy, causing a chaotic disturbance in the area around it. Each creature within the room is Blinded for 1 round and knocked Prone.</p></div>"
+      }
+    ],
+    "description": "<div><p>Wrath Elementals are a terrifying fusion of elemental fury and infernal malevolence, a result of different planes of existence clashing together. Their forms are an ever-shifting tempest of swirling winds, raging fire, surging water, and crackling lightning, each element locked in eternal conflict within its monstrous frame. These fearsome creatures wield both the destructive might of the elements and the corrupting influence of demonic power. When provoked, a Wrath Elemental unleashes a devastating onslaught of elemental wrath, summoning storms of fire, torrents of water, and bolts of lightning to annihilate its adversaries. Their demonic nature grants them an innate resilience against harm, allowing them to withstand attacks that would fell other lesser beings.</p></div>",
+    "notes": "",
+    "sorting": "manually"
+  },
+  "prototypeToken": {
+    "name": "a",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/terror.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.health"
+    },
+    "bar2": {
+      "attribute": "attributes.aether"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768493330814,
+    "modifiedTime": 1768493330814,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_id": "T37AabtYIzKHkynb",
+  "ownership": {
+    "default": 0,
+    "xOca9XRwLgJMNAGV": 3
+  },
+  "sort": 0,
+  "_key": "!actors!T37AabtYIzKHkynb"
+}
