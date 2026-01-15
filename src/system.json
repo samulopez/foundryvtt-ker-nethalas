@@ -22,10 +22,34 @@
       "name": "Ker Nethalas",
       "sorting": "a",
       "color": "#854e29",
-      "packs": ["overseers", "weapons"]
+      "packs": ["combat-encounters", "minions", "overseers", "weapons"]
     }
   ],
   "packs": [
+    {
+      "name": "combat-encounters",
+      "label": "Combat Encounters",
+      "system": "ker-nethalas",
+      "path": "packs/combat-encounters",
+      "type": "Actor",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "minions",
+      "label": "Minions",
+      "system": "ker-nethalas",
+      "path": "packs/minions",
+      "type": "Actor",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
     {
       "name": "overseers",
       "label": "Overseers",
