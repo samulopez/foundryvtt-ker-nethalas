@@ -1,0 +1,269 @@
+{
+  "folder": null,
+  "name": "Player Defensive Move",
+  "_id": "UfsfsLeqBgewzTqV",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "kHf3uNjbpXa3NOLn",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Your next attack receives an additional +10 to the combat check.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!UfsfsLeqBgewzTqV.kHf3uNjbpXa3NOLn"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "PCeAxJX06OYtSjXv",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Reduce your opponent's Armor by -1 in the Hit Location you struck until the end of combat.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!UfsfsLeqBgewzTqV.PCeAxJX06OYtSjXv"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "mpWEtGZUbuIBwWLS",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Your opponent receives the Bleeding (1) condition.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!UfsfsLeqBgewzTqV.mpWEtGZUbuIBwWLS"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "SyGZgWPCNBkZXmsF",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You are Immune to all conditions until your next turn, including the ones you are currently suffering from.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!UfsfsLeqBgewzTqV.SyGZgWPCNBkZXmsF"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "QFcmbAzCKDrUuP0J",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Your opponent immediately suffers 1 Piercing damage that ignores Armor.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!UfsfsLeqBgewzTqV.QFcmbAzCKDrUuP0J"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "QSlVOktvsIS7ydO4",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Add +D6 to your Damage Pool for your next attack.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!UfsfsLeqBgewzTqV.QSlVOktvsIS7ydO4"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "HmJK6Yo37EeLJxTJ",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You gain Advantage on your next attack.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!UfsfsLeqBgewzTqV.HmJK6Yo37EeLJxTJ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "t6q0GSq6Ua1tkfzq",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You press your advantage, reducing your opponent's next defensive check by -20.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!UfsfsLeqBgewzTqV.t6q0GSq6Ua1tkfzq"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "6TSyaagm0afWu687",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You get a moment of respite after fending off your opponent's attack. Recover 2 Toughness.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!UfsfsLeqBgewzTqV.6TSyaagm0afWu687"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "k7JrHq9o0SKE4v0V",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Your next attack doesn't suffer the usual Disadvantage to your attack Skill when targeting a specific body part.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!UfsfsLeqBgewzTqV.k7JrHq9o0SKE4v0V"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768577719597,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!UfsfsLeqBgewzTqV"
+}

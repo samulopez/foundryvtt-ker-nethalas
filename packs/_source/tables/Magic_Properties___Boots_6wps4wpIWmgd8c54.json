@@ -1,0 +1,437 @@
+{
+  "folder": null,
+  "name": "Magic Properties - Boots",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        2
+      ],
+      "_id": "xKA2FRfld6hYyMaj",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Increase your Endurance by an amount based on this item's rarity: +5 Uncommon, +10 Rare, +15 Epic.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.xKA2FRfld6hYyMaj"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        4
+      ],
+      "_id": "G2viJxgCaMPw0GFP",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Increase your Resolve by an amount based on this item's rarity: +5 Uncommon, +10 Rare, +15 Epic.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.G2viJxgCaMPw0GFP"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        6
+      ],
+      "_id": "SFv2qZrQvYwyIg6E",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Increase your Spellward by an amount based on this item's rarity: +5 Uncommon, +10 Rare, +15 Epic.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.SFv2qZrQvYwyIg6E"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "4fRrY68EhgmidIph",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You're Immune to Stunned.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.4fRrY68EhgmidIph"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "V72PE7cexJLDJQZ8",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You're Immune to Restrained.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.V72PE7cexJLDJQZ8"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "Nk0ciCxGSV4VLyOm",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Increase a Skill of your choosing by 20.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.Nk0ciCxGSV4VLyOm"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "LqT2N9wPHrZhrKdZ",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Roll on the Damage Type table. This item grants you damage reduction based on its rarity: +1 Uncommon, +2 Rare, +3 Epic.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.LqT2N9wPHrZhrKdZ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "_id": "KHbSNEJG3YmBVSUT",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Reroll any failed Thievery checks while attempting to open a lock.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.KHbSNEJG3YmBVSUT"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "_id": "iJrsqxGfAv4QLtCS",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Reroll any failed Thievery checks while attempting to dismantle a trap.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.iJrsqxGfAv4QLtCS"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "_id": "zg5eNw6QFOZNhhax",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You have Advantage on Acrobatics checks.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.zg5eNw6QFOZNhhax"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "_id": "z9CQS2kjJnCQs4an",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You have Advantage on Stealth checks.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.z9CQS2kjJnCQs4an"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "_id": "rNCg9M2TiWwDNRrH",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Ignore the effects of a Fumble once per Camp Rest.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.rNCg9M2TiWwDNRrH"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "_id": "gCHs2NNmqCtFaAoJ",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>After rolling on the Scavenging table (page 116), you can choose to adjust the die roll by up to D4.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.gCHs2NNmqCtFaAoJ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "_id": "EIY7K8h8BAWgCeFx",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Increase the amount of Armor provided by greaves you wear by +1.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.EIY7K8h8BAWgCeFx"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "_id": "JVky5d1WfnwKDb5f",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Once per room you can reroll a failed Dodge check.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.JVky5d1WfnwKDb5f"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "_id": "GGU0JDaBsumzIL4w",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Once per Encounter, you can make a special kick attack that deals 2D6+2 Bludgeoning damage. This is a Free Action that requires an Unarmed Combat &amp; Fist Weapons check.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.GGU0JDaBsumzIL4w"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "G1B9mMDFZT8Rxn99",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You gain a free Reaction per round.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6wps4wpIWmgd8c54.G1B9mMDFZT8Rxn99"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768650622635,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d20",
+  "_id": "6wps4wpIWmgd8c54",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!6wps4wpIWmgd8c54"
+}

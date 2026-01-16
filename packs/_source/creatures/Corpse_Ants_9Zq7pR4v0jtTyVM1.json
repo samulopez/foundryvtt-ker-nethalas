@@ -1,0 +1,215 @@
+{
+  "name": "Corpse Ants",
+  "type": "monster",
+  "img": "icons/svg/terror.svg",
+  "system": {
+    "attributes": {
+      "body": 40,
+      "mind": 40,
+      "combatSkill": 30,
+      "endurance": 60,
+      "health": {
+        "min": 0,
+        "value": 8,
+        "max": 8
+      },
+      "magicResistance": 30
+    },
+    "type": {
+      "animal": true,
+      "astral": false,
+      "construct": false,
+      "demon": false,
+      "elemental": false,
+      "humanoid": false,
+      "plant": false,
+      "undead": false
+    },
+    "hitLocation": "insectoid",
+    "weakSpot": "head",
+    "traits": {
+      "alert": false,
+      "frightening": false,
+      "horrifying": false,
+      "pack": true,
+      "penetrating": {
+        "value": 1,
+        "active": true
+      },
+      "ruthlessness": {
+        "value": 0,
+        "active": false
+      },
+      "savage": false,
+      "swift": false,
+      "venomous": false,
+      "custom": ""
+    },
+    "armor": {
+      "rightRearLeg": 1,
+      "leftRearLeg": 1,
+      "rightMidLeg": 1,
+      "leftMidLeg": 1,
+      "rightForeLeg": 1,
+      "leftForeLeg": 1,
+      "abdomen": 1,
+      "rightFrontLeg": 1,
+      "leftFrontLeg": 1,
+      "cephalothorax": 1,
+      "rightLeg": 1,
+      "leftLeg": 1,
+      "chest": 1,
+      "leftArm": 1,
+      "rightArm": 1,
+      "head": 1,
+      "thorax": 1,
+      "rightHindLeg": 1,
+      "leftHindLeg": 1,
+      "hindquarters": 1,
+      "forequarters": 1,
+      "body": 1,
+      "rightWing": 1,
+      "leftWing": 1
+    },
+    "levelAdaptation": "<div><p>After level 5: +4 Health, +D4 damage, +10 Combat Skill</p></div><div><p>After level 10: +D6 damage, +10 Combat Skill</p></div>",
+    "actions": [
+      {
+        "startDie": 1,
+        "endDie": 2,
+        "name": "Chitinous Bite (Physical)",
+        "description": "<div><p>The Corpse Ant lunges at a target, its chitinous jaws snapping shut with incredible force, dealing D6 Piercing damage on a hit.</p></div>"
+      },
+      {
+        "startDie": 3,
+        "endDie": 4,
+        "name": "Acidic Spray",
+        "description": "<div><p>The Corpse Ant releases a spray of corrosive acid, affecting all characters in the room. Characters must make a Dodge check or receive D6 Acid damage. Additionally, a creature that fails the check must immediately make an Armor Integrity check, as the acid eats away at their armor.</p></div>"
+      },
+      {
+        "startDie": 5,
+        "endDie": 6,
+        "name": "Putrid Eruption",
+        "description": "<div><p>The Corpse Ant suddenly bulges in a grotesque way, exploding in a burst of foul-smelling gas and necrotic energy. All creatures within the room must succeed on an Endurance check or take D8 Necrotic damage. On a successful check, they take half damage. The Corpse Ant doesn't survive this Action.</p></div>"
+      }
+    ],
+    "description": "<div><p>These monstrous creatures are several times the size of a regular ant, their chitinous exoskeleton a deep black. Corpse Ants move with unnatural swiftness and coordination, in a ceaseless search for fresh corpses to consume. Their large, serrated jaws are capable of tearing through steel armor, a fact that more than one poor lost soul has experienced first hand.</p></div>",
+    "notes": "",
+    "sorting": "manually"
+  },
+  "prototypeToken": {
+    "name": "a",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/terror.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.health"
+    },
+    "bar2": {
+      "attribute": "attributes.aether"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "KENxJWt8SgmdaAl8",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768667746708,
+    "modifiedTime": 1768667746708,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_id": "9Zq7pR4v0jtTyVM1",
+  "ownership": {
+    "default": 0,
+    "xOca9XRwLgJMNAGV": 3
+  },
+  "sort": 0,
+  "_key": "!actors!9Zq7pR4v0jtTyVM1"
+}

@@ -1,0 +1,269 @@
+{
+  "folder": null,
+  "name": "Overseer Influence",
+  "_id": "GYSZ1yHJJScjBKOo",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "wC8vamLIgywXlrPO",
+      "name": "Tough",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Immune to Critical Strikes.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!GYSZ1yHJJScjBKOo.wC8vamLIgywXlrPO"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "0eVlymUNN47mzIcd",
+      "name": "Vital",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>+D6 Health per each 5⅃.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!GYSZ1yHJJScjBKOo.0eVlymUNN47mzIcd"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "vBOIEwzODoMzjDKI",
+      "name": "Frenzied",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>+1 damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!GYSZ1yHJJScjBKOo.vBOIEwzODoMzjDKI"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "T4CDGUm0uGufZ1oq",
+      "name": "Skilled",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>+10 Combat Skill.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!GYSZ1yHJJScjBKOo.T4CDGUm0uGufZ1oq"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "wySp8gEcin8y8GKo",
+      "name": "Magebane",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>+10 Magic Resistance.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!GYSZ1yHJJScjBKOo.wySp8gEcin8y8GKo"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "jHLqEbUiqdpRPirp",
+      "name": "Resistant",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Resistant to 1 random type of damage. Roll on the Damage Type table on page 225.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!GYSZ1yHJJScjBKOo.jHLqEbUiqdpRPirp"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "QzUPcRUkcvbX3yVF",
+      "name": "Corrupting",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Each time the creature deals 5+ damage on a single attack, the target must make a Resolve check or lose 1 Sanity.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!GYSZ1yHJJScjBKOo.QzUPcRUkcvbX3yVF"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "Y9t0YeKRh397eQII",
+      "name": "Unstable",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Deals 1 Arcane damage when killed.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!GYSZ1yHJJScjBKOo.Y9t0YeKRh397eQII"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "UcRuP1T4OcS7P9cT",
+      "name": "Alert",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>+20 Mind.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!GYSZ1yHJJScjBKOo.UcRuP1T4OcS7P9cT"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "prri8bAksggHALI9",
+      "name": "Piercing",
+      "img": null,
+      "description": "<div><p>Gains the Penetrating (1) Trait. This can stack with other instances of the same Trait.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!GYSZ1yHJJScjBKOo.prri8bAksggHALI9"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!GYSZ1yHJJScjBKOo"
+}

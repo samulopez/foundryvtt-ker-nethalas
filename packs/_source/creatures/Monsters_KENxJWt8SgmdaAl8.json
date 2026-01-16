@@ -1,0 +1,23 @@
+{
+  "type": "Actor",
+  "folder": null,
+  "name": "Monsters",
+  "color": null,
+  "sorting": "a",
+  "_id": "KENxJWt8SgmdaAl8",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768667692453,
+    "modifiedTime": 1768667692453,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_key": "!folders!KENxJWt8SgmdaAl8"
+}

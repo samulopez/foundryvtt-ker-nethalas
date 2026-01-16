@@ -1,0 +1,41 @@
+{
+  "folder": "hrezYkYmYgsGA3SJ",
+  "name": "Inferno Plate",
+  "type": "armor",
+  "img": "icons/equipment/chest/breastplate-layered-gold.webp",
+  "_id": "5PmPujWzRvosBxNw",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Plate (Torso)</p><p>This piece of armor bursts into flames when you engage in combat, dealing 1 Fire damage per round to all opponents</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "broken": false,
+    "maxIntegrity": 12,
+    "currentIntegrity": 10,
+    "protection": 3,
+    "armorType": "torso",
+    "decreasePerception": 0,
+    "decreaseManeuverability": 20,
+    "parryBonus": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738649768,
+    "modifiedTime": 1768835921498,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!5PmPujWzRvosBxNw"
+}

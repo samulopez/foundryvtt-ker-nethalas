@@ -1,0 +1,173 @@
+{
+  "folder": null,
+  "name": "Gems & Jewelry",
+  "_id": "pOrGknEFAQJQ2IWh",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        2
+      ],
+      "_id": "BJj6rTZcoYTCOEx1",
+      "name": "Ornamental - D100₵",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!pOrGknEFAQJQ2IWh.BJj6rTZcoYTCOEx1"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        6
+      ],
+      "_id": "F2bk2oeXyiv1bM9J",
+      "name": "Semi-precious - 2D100₵",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!pOrGknEFAQJQ2IWh.F2bk2oeXyiv1bM9J"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        11
+      ],
+      "_id": "HaMPAfkMN4R6X2Kz",
+      "name": "Precious - 3D100₵",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!pOrGknEFAQJQ2IWh.HaMPAfkMN4R6X2Kz"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        12,
+        15
+      ],
+      "_id": "hzfueOMYFra3JNbj",
+      "name": "Lavish - 4D100₵",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!pOrGknEFAQJQ2IWh.hzfueOMYFra3JNbj"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        16,
+        18
+      ],
+      "_id": "2tJh6GafgXElfzPp",
+      "name": "Sumptuous - 5D100₵",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!pOrGknEFAQJQ2IWh.2tJh6GafgXElfzPp"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        19,
+        20
+      ],
+      "_id": "gXDxMYqEh2wuwIv7",
+      "name": "Extravagant - 6D100₵",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!pOrGknEFAQJQ2IWh.gXDxMYqEh2wuwIv7"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d20",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!pOrGknEFAQJQ2IWh"
+}

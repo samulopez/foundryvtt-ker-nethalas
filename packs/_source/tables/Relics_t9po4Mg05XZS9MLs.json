@@ -1,0 +1,529 @@
+{
+  "folder": null,
+  "name": "Relics",
+  "_id": "t9po4Mg05XZS9MLs",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "5R0bqY0yQxiw3MI3",
+      "name": "Aegis of the Eternal Sentinel",
+      "img": "icons/svg/shield.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.L2W1zsswJ9CXANsv",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.5R0bqY0yQxiw3MI3"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "DBiKD016sEgftZ98",
+      "name": "Band of Knowledge",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.tWSJWuUOIaiVA9Eg",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.DBiKD016sEgftZ98"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "Se8KOGsFeq6AkrqH",
+      "name": "Diadem of Aetheric Power",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.qdR9Cah268nxoVeD",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.Se8KOGsFeq6AkrqH"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "5HzAsKOKVPfbfbNe",
+      "name": "Draught of Vitality",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.WVvB48e5tZGkvFfd",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.5HzAsKOKVPfbfbNe"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "qJGlyBIet5fCok8a",
+      "name": "Echo of Resurgence",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.osGR4oos96ZbRd9n",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.qJGlyBIet5fCok8a"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "bhZmY2fyVtJ0xXZw",
+      "name": "Elixir of Arcane Ascendance",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.nbtLAEE5BcYVeLnb",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.bhZmY2fyVtJ0xXZw"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "HTxEzZzVoMblpESl",
+      "name": "Ethereal Requiem Blade",
+      "img": "icons/svg/sword.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.R9zbaZn8MOxtxFU9",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.HTxEzZzVoMblpESl"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "CqDwgHmpxBbo9FKj",
+      "name": "Gloomheart Seed",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.LdE03LgkQYsPqVJC",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.CqDwgHmpxBbo9FKj"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "ItFwraN0Y8ejtIuv",
+      "name": "Gloves of the Blazing Phoenix",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.DlBojHgK739kyVFO",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.ItFwraN0Y8ejtIuv"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "UqUDeEHLs6vTXQkZ",
+      "name": "Inferno Plate",
+      "img": "icons/svg/shield.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.5PmPujWzRvosBxNw",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.UqUDeEHLs6vTXQkZ"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "_id": "mDYlCEazt5q9d3Qn",
+      "name": "Mace of Eclipse",
+      "img": "icons/svg/sword.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.u3LBOeBMaqUuEmU0",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.mDYlCEazt5q9d3Qn"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "_id": "hjI3yHEWuiXBeBIH",
+      "name": "Mindward Elixir",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.ff9eFATh0uELcuPM",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.hjI3yHEWuiXBeBIH"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "_id": "xUDnAOUlWZfxBMg4",
+      "name": "Potion of Forgotten Fate",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.LS219XhRDTN05TAO",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.xUDnAOUlWZfxBMg4"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "_id": "Z6ZAvWUUYudYzv46",
+      "name": "Ring of Arcane Tempest",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.vsjYvwuSm6RhIDW2",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.Z6ZAvWUUYudYzv46"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "_id": "wqwxlLNAzxFWBzFI",
+      "name": "Ring of Ethereal Grasp",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.CMJFasTX81lJqUUU",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.wqwxlLNAzxFWBzFI"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "_id": "7nHkBgA8PNqg85lY",
+      "name": "Ring of Subjugated Servitude",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.WN2Gkh4hrMfdHunM",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.7nHkBgA8PNqg85lY"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "_id": "FTciwk08n5dfxe7D",
+      "name": "Third Eye of Emaricus",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.uUrRBTvvPZ56sd6i",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.FTciwk08n5dfxe7D"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "_id": "4WoPIsXUOZScsOUy",
+      "name": "Vitalbane Cinch",
+      "img": "icons/svg/item-bag.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.LjeOSHhhDXfihR4g",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.4WoPIsXUOZScsOUy"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "_id": "kCdOIbOgUF4v94j2",
+      "name": "Voidclasp Gauntlets",
+      "img": "icons/svg/sword.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.26ZSm9FHI15uOTEu",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.kCdOIbOgUF4v94j2"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "R9KXgQeFjvapjSA4",
+      "name": "Wyrmfang",
+      "img": "icons/svg/sword.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.fmQOQfsr5pjigwZY",
+      "_key": "!tables.results!t9po4Mg05XZS9MLs.R9KXgQeFjvapjSA4"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768767270859,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!t9po4Mg05XZS9MLs"
+}

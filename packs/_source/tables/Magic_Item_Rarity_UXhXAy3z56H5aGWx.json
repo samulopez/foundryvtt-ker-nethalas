@@ -1,0 +1,101 @@
+{
+  "folder": null,
+  "name": "Magic Item Rarity",
+  "_id": "UXhXAy3z56H5aGWx",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        5
+      ],
+      "_id": "ArE8Pkib834aEUJh",
+      "name": "Uncommon: 1 Magic Property",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!UXhXAy3z56H5aGWx.ArE8Pkib834aEUJh"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        8
+      ],
+      "_id": "fAoAc4MHHWnmJSYX",
+      "name": "Rare: 2 Magic Properties",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!UXhXAy3z56H5aGWx.fAoAc4MHHWnmJSYX"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        10
+      ],
+      "_id": "mKMOrNriddiYRABW",
+      "name": "Epic: 3 Magic Properties",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!UXhXAy3z56H5aGWx.mKMOrNriddiYRABW"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d10",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!UXhXAy3z56H5aGWx"
+}

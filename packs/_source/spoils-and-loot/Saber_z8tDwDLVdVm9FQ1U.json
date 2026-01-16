@@ -1,0 +1,46 @@
+{
+  "folder": "tzkw5kCmth2ggoPO",
+  "name": "Saber",
+  "type": "weapon",
+  "img": "icons/weapons/swords/greatsword-crossguard-blue.webp",
+  "_id": "z8tDwDLVdVm9FQ1U",
+  "system": {
+    "cost": 20,
+    "weight": "normal",
+    "description": "",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "speed": 5,
+    "skill": "bladedWeapons",
+    "broken": false,
+    "traits": {
+      "defensive": false,
+      "quick": false,
+      "parrying": true,
+      "powerful": false,
+      "simple": false,
+      "twoHanded": false,
+      "versatile": false
+    },
+    "damageType": "slashing"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768733899740,
+    "modifiedTime": 1768735895383,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!z8tDwDLVdVm9FQ1U"
+}

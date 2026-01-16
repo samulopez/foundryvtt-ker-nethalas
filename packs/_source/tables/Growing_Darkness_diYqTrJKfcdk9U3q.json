@@ -1,0 +1,869 @@
+{
+  "folder": null,
+  "name": "Growing Darkness",
+  "_id": "diYqTrJKfcdk9U3q",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        2
+      ],
+      "_id": "NgneltC2j4Mp9aEw",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A choir of howls fills the air. All Animal opponents receive +10 Combat Skill.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.NgneltC2j4Mp9aEw"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        4
+      ],
+      "_id": "GnKvwRn16Di1TT8d",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The shadows grow longer around you. Make a Resolve check. If you fail, you lose 1 Sanity per each active Growing Darkness event.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.GnKvwRn16Di1TT8d"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        6
+      ],
+      "_id": "pgzQEavcFQaYffHo",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The gravity of your wounds resonates within your very being. If you aren't fully healed, you receive D6 Psychic damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.pgzQEavcFQaYffHo"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        8
+      ],
+      "_id": "rk9IyqQT9gTrru2g",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You're slowly losing your grip over your own mind. If your Sanity is not at its maximum, you automatically lose 1 Sanity.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.rk9IyqQT9gTrru2g"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        10
+      ],
+      "_id": "sDh7hetIH5czxNRY",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You feel your spirit drained. Reduce your max Aether by D4.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.sDh7hetIH5czxNRY"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        12
+      ],
+      "_id": "qCdJgu5HmGbuFHAd",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The very air you breathe is conspiring against your survival. Reduce your max Toughness by D6.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.qCdJgu5HmGbuFHAd"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        13,
+        14
+      ],
+      "_id": "iiVBZZ0VZxdMrMvS",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You hear a distant rumbling and feel a chilling gust of wind. All Elemental opponents receive +10 Combat Skill.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.iiVBZZ0VZxdMrMvS"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        15,
+        16
+      ],
+      "_id": "Ny6LqxNfB1VSN7aZ",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Did you hear that? They're coming for you. Whenever you Take a Breather you not only reduce the Tension Die by one stage, you must also immediately make a Tension Die check.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.Ny6LqxNfB1VSN7aZ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        17,
+        18
+      ],
+      "_id": "94KUUKgg020WTK3R",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Your hands are shaking too much. Reduce your Camp Check by -1.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.94KUUKgg020WTK3R"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        19,
+        20
+      ],
+      "_id": "JDheP3X6KdG8fwb1",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Regardless of how hard you try to concentrate, you just can't. You can no longer Attune at Camp.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.JDheP3X6KdG8fwb1"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        21,
+        22
+      ],
+      "_id": "ctu2xBREG1n03FsI",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Your spirit feels weaker. Reduce your Spellward by 5.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.ctu2xBREG1n03FsI"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        23,
+        24
+      ],
+      "_id": "DmqxS27gCGwVQCyo",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>There's a shift in the astral currents. All Astral opponents receive +10 Combat Skill.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.DmqxS27gCGwVQCyo"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        25,
+        26
+      ],
+      "_id": "9EGN6dJpWFyzh4JN",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You turned too suddenly and smashed your hip against a corner. Make a Belt check.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.9EGN6dJpWFyzh4JN"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        27,
+        28
+      ],
+      "_id": "rwOlCXoFXw5NZHWQ",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>This place… it knows, and it watches you. Make a Resolve check. If you fail, you lose D4 Sanity.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.rwOlCXoFXw5NZHWQ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        29,
+        30
+      ],
+      "_id": "fS1MSaQa1e0j7nlu",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You need a break. You can barely keep your eyes open. The next time you are attacked, your opponent surprises you.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.fS1MSaQa1e0j7nlu"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        31,
+        32
+      ],
+      "_id": "CsL2u7Nl3KhO4VoM",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>An oppressive, dark will sets its sights upon your party. Roll D6 for each Companion or Minion you have. A result of 1 means they are destroyed. If you have no Companions or Minions you suffer D8 Psychic damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.CsL2u7Nl3KhO4VoM"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        33,
+        34
+      ],
+      "_id": "2YwWwRM3H8qsj3JY",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A crescendo of cries and screams suddenly fills the halls. Dismiss all other effects in play caused by Growing Darkness. For each effect dismissed this way you lose 1 Sanity and 1 Health.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.2YwWwRM3H8qsj3JY"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        35,
+        36
+      ],
+      "_id": "y2hOPzAZmW8TJaeR",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Vines and roots seem to suddenly grow all around you. All Plant opponents receive +10 Combat Skill.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.y2hOPzAZmW8TJaeR"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        37,
+        50
+      ],
+      "_id": "84l0U60k6zfpqD3c",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You are ambushed! Roll on the Combat Encounter table. Your opponents surprise you.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.84l0U60k6zfpqD3c"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        51,
+        52
+      ],
+      "_id": "Gm6cNT0Vt8vkSzy5",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>All Demon opponents receive +10 Combat Skill.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.Gm6cNT0Vt8vkSzy5"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        53,
+        54
+      ],
+      "_id": "8EFH4BCrMq5KugAj",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A suffocating mist surrounds you. Make an Endurance check to avoid receiving 3D4 Poison damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.8EFH4BCrMq5KugAj"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        55,
+        56
+      ],
+      "_id": "rLVP4ZdkB6ttcppX",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A weakness seems to seep into your very bones. Whenever you receive damage from any source, you receive +1 damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.rLVP4ZdkB6ttcppX"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        57,
+        58
+      ],
+      "_id": "eQn79J9AZTRzlh2c",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Confusion suddenly fills your mind, and you have trouble remembering your actions these last few days. Reduce a Skill of your choosing by 10.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.eQn79J9AZTRzlh2c"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        59,
+        60
+      ],
+      "_id": "rM595cPIHbY0HTnY",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The ever-present chill of the grave becomes even more tangible. All Undead opponents receive +10 Combat Skill.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.rM595cPIHbY0HTnY"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        61,
+        62
+      ],
+      "_id": "jgLhJlIn4wSrIOTU",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Your mental wounds are starting to leave physical marks. Anytime you lose Sanity, make an Endurance check. If you fail, you suffer D6 Psychic damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.jgLhJlIn4wSrIOTU"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        63,
+        64
+      ],
+      "_id": "dRyfJYL88BaWCB4p",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A swarm of Hellbats surrounds you. Make a successful check with your weapon Skill of choice; if you pass it you receive 10 XP, but if you fail you suffer D10 Slashing damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.dRyfJYL88BaWCB4p"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        65,
+        66
+      ],
+      "_id": "KfqRPLI1PJEh88yQ",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You hear the faint sound of orders being shouted in the distance. All Humanoid opponents receive +10 Combat Skill.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.KfqRPLI1PJEh88yQ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        67,
+        68
+      ],
+      "_id": "zDx8V6TOHkPlwNXF",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You blink a few times, snapping out of it; how long have you been staring at nothing? Reduce your lightsource by D4.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.zDx8V6TOHkPlwNXF"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        69,
+        70
+      ],
+      "_id": "ZOm3Uug7aPiGPasT",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The darkness seems to grow thicker and denser. Reduce your lightsource by 2 instead of 1 each time you enter a room.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.ZOm3Uug7aPiGPasT"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        71,
+        72
+      ],
+      "_id": "H7GAqDg8ny4FwHsg",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You are swarmed by the spirits of the angry dead. Make a Resolve check, if you pass it you earn 20 XP. If you fail you lose D4 Sanity.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.H7GAqDg8ny4FwHsg"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        73,
+        74
+      ],
+      "_id": "PCVnzYtZeNgBElkp",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Your mind becomes dull and you have problems recalling things. All non-combat Skill checks increase their Difficulty and are considered Demanding (-10).</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.PCVnzYtZeNgBElkp"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        75,
+        76
+      ],
+      "_id": "PD9cWEmp5dEXThm1",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Your mind is suddenly assaulted from within. You suffer D6 Psychic damage per each Madness you have.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.PD9cWEmp5dEXThm1"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        77,
+        78
+      ],
+      "_id": "SJ1IhF00mHG6krXd",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The ground trembles, and it feels like each step you take is heavier. All Construct opponents receive +10 Combat Skill.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.SJ1IhF00mHG6krXd"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        79,
+        80
+      ],
+      "_id": "MccUTNnVVYTmREqL",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The ground shakes and debris falls from above. Make a successful Dodge check or receive 3D6 Bludgeoning damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.MccUTNnVVYTmREqL"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        81,
+        100
+      ],
+      "_id": "1hS3Jb97foWigIkY",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>An inhuman voice screams, whispers and yells; somehow, you know that's an Overseer. Roll on the Overseer Influence table. All opponents from this Domain benefit from the result, but they also grant an extra +10 XP when defeated.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!diYqTrJKfcdk9U3q.1hS3Jb97foWigIkY"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d100",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!diYqTrJKfcdk9U3q"
+}

@@ -1,0 +1,529 @@
+{
+  "folder": null,
+  "name": "Combat Encounters - Table B",
+  "_id": "xyBM0C9pStZA8WkZ",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "j5AJggX4KUJPTUS6",
+      "name": "Living Moss",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.jZbyyXxmg8Uwr1Ly",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.j5AJggX4KUJPTUS6"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "HXCXLxvJvZ3EfSIk",
+      "name": "Necropede",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.9B92YlmDOuW513Vs",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.HXCXLxvJvZ3EfSIk"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "VZOpa41p3B4DMt0O",
+      "name": "Netherfiend",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.ejnzePrJnaNxC2xL",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.VZOpa41p3B4DMt0O"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "0K98MP5v6iZrfuo5",
+      "name": "Plaguebringer",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.QnGjBUx5cYLw9sIt",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.0K98MP5v6iZrfuo5"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "HmW3e3ElH73yBjpY",
+      "name": "Pyreborn",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.HjZnUfB75eBXQ4h5",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.HmW3e3ElH73yBjpY"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "56A0Dfw6dRsATFeO",
+      "name": "Ratkin Marauders",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.M0QPUzyOTCREVM7C",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.56A0Dfw6dRsATFeO"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "3m90McC45o1AfOu2",
+      "name": "Razorjaw",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.JgyEj6iP6CY3qma6",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.3m90McC45o1AfOu2"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "msj242bDZa7j57oV",
+      "name": "Reanimated Homunculus",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.Kxnm4BPHkyBbvrHW",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.msj242bDZa7j57oV"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "GRKzO68WTFz2HwT9",
+      "name": "Rotwalkers",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.uVZrRjZtzU8dykUT",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.GRKzO68WTFz2HwT9"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "Fo4K4L5zGR4JJEnE",
+      "name": "Stone Warden",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.lbIDn1iLBVCJr2rg",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.Fo4K4L5zGR4JJEnE"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "_id": "7lZxef4ycz6OO75b",
+      "name": "Swarmer",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.rDpOPk6tNcX5xaoR",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.7lZxef4ycz6OO75b"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "_id": "4Duz5R5lKjjV6uBo",
+      "name": "Tomb Crawler",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.wqhH2tsCJaW3UHJQ",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.4Duz5R5lKjjV6uBo"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "_id": "o86UEUZa6UipHkjm",
+      "name": "Umbra Fiend",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.gWx9RzWEiTTQwPmo",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.o86UEUZa6UipHkjm"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "_id": "4WXzBjRSHq4kaqhx",
+      "name": "Unfettered Familiar",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.CO2F2gfbbV91zlMG",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.4WXzBjRSHq4kaqhx"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "_id": "aSTFkZ1Uw4XFMSGh",
+      "name": "Vaelorian Magus",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.4nchCQnEmgIZu1dn",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.aSTFkZ1Uw4XFMSGh"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "_id": "iCMWT8FkMAfTlBj6",
+      "name": "Vinekin",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.JO17zzWn7DDeVX75",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.iCMWT8FkMAfTlBj6"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "_id": "X26lcTMSils7MEb3",
+      "name": "Voidweaver",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.mhXLuezOJviA3spw",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.X26lcTMSils7MEb3"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "_id": "VscROiin8L6XyR6f",
+      "name": "Vorleg",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.JoWzfb4b3SXniII0",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.VscROiin8L6XyR6f"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "_id": "7TJeCSTRZ1sdm84v",
+      "name": "Wraithskull",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.xSKcGOepiX0hUkZQ",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.7TJeCSTRZ1sdm84v"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "xXJwS5k5FhfmutpN",
+      "name": "Wrath Elemental",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.T37AabtYIzKHkynb",
+      "_key": "!tables.results!xyBM0C9pStZA8WkZ.xXJwS5k5FhfmutpN"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d20",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!xyBM0C9pStZA8WkZ"
+}

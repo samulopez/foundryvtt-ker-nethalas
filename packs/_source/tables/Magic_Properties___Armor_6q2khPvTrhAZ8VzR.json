@@ -1,0 +1,437 @@
+{
+  "folder": null,
+  "name": "Magic Properties - Armor",
+  "_id": "6q2khPvTrhAZ8VzR",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        2
+      ],
+      "_id": "xKA2FRfld6hYyMaj",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Increase your Endurance by an amount based on this item's rarity: +5 Uncommon, +10 Rare, +15 Epic.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.xKA2FRfld6hYyMaj"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        4
+      ],
+      "_id": "G2viJxgCaMPw0GFP",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Increase your Resolve by an amount based on this item's rarity: +5 Uncommon, +10 Rare, +15 Epic.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.G2viJxgCaMPw0GFP"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        6
+      ],
+      "_id": "SFv2qZrQvYwyIg6E",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Increase your Spellward by an amount based on this item's rarity: +5 Uncommon, +10 Rare, +15 Epic.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.SFv2qZrQvYwyIg6E"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "4fRrY68EhgmidIph",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Reduce your max Aether by 5, but increase your max Toughness by 10.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.4fRrY68EhgmidIph"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "V72PE7cexJLDJQZ8",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Reduce your max Toughness by 5, but increase your max Aether by 10.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.V72PE7cexJLDJQZ8"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "Nk0ciCxGSV4VLyOm",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Roll on the Damage Type table. You are Resistant to that damage type.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.Nk0ciCxGSV4VLyOm"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "LqT2N9wPHrZhrKdZ",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Increase your Dodge by 20.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.LqT2N9wPHrZhrKdZ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "_id": "KHbSNEJG3YmBVSUT",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Opponents have their Combat Skill reduced by 10 when attacking you.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.KHbSNEJG3YmBVSUT"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "_id": "iJrsqxGfAv4QLtCS",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Enemies that damage you suffer 1 Piercing damage that cannot be avoided in any way.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.iJrsqxGfAv4QLtCS"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "_id": "zg5eNw6QFOZNhhax",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>This Armor works as a lightsource.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.zg5eNw6QFOZNhhax"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "_id": "z9CQS2kjJnCQs4an",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Increase your carrying capacity by 10.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.z9CQS2kjJnCQs4an"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "_id": "rNCg9M2TiWwDNRrH",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Reroll any check once per Camp Rest.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.rNCg9M2TiWwDNRrH"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "_id": "gCHs2NNmqCtFaAoJ",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Heal one target once per Camp Rest. The amount of Wounds healed depends on this item's rarity: D10+2 Uncommon, D10+3 Rare, D10+4 Epic. This is a Standard Action.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.gCHs2NNmqCtFaAoJ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "_id": "EIY7K8h8BAWgCeFx",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>After defeating a Combat Encounter, roll D6: a result of 1-3 means that you immediately recover D4 Toughness.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.EIY7K8h8BAWgCeFx"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "_id": "JVky5d1WfnwKDb5f",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You're Immune to Stunned.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.JVky5d1WfnwKDb5f"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "_id": "GGU0JDaBsumzIL4w",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Once per Camp Rest you can make vines sprout out of the Armor, leaving a target Restrained.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.GGU0JDaBsumzIL4w"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "G1B9mMDFZT8Rxn99",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Once per Domain you can become your own shadow for D6+1 rounds. You can only be damaged by Arcane damage while in your shadow form.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!6q2khPvTrhAZ8VzR.G1B9mMDFZT8Rxn99"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768650622635,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d20",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!6q2khPvTrhAZ8VzR"
+}

@@ -1,0 +1,233 @@
+{
+  "folder": "WOCnufy3HkvRzIMW",
+  "name": "Gorehoof",
+  "type": "monster",
+  "img": "icons/creatures/unholy/demon-horned-winged-laughing.webp",
+  "_id": "QPpZJYBVVL2I7d7F",
+  "system": {
+    "attributes": {
+      "body": 80,
+      "mind": 30,
+      "combatSkill": 65,
+      "endurance": 70,
+      "health": {
+        "min": 0,
+        "value": 30,
+        "max": 30
+      },
+      "magicResistance": 50
+    },
+    "type": {
+      "animal": false,
+      "astral": false,
+      "construct": false,
+      "demon": false,
+      "elemental": false,
+      "humanoid": true,
+      "plant": false,
+      "undead": false
+    },
+    "hitLocation": "humanoid",
+    "weakSpot": "head",
+    "traits": {
+      "alert": false,
+      "frightening": true,
+      "horrifying": false,
+      "pack": false,
+      "penetrating": {
+        "value": 2,
+        "active": true
+      },
+      "ruthlessness": {
+        "value": 1,
+        "active": true
+      },
+      "savage": false,
+      "swift": false,
+      "venomous": false,
+      "custom": ""
+    },
+    "armor": {
+      "abdomen": 1,
+      "body": 1,
+      "chest": 1,
+      "forequarters": 1,
+      "head": 1,
+      "rightRearLeg": 1,
+      "leftRearLeg": 1,
+      "rightMidLeg": 1,
+      "leftMidLeg": 1,
+      "rightForeLeg": 1,
+      "leftForeLeg": 1,
+      "rightFrontLeg": 1,
+      "leftFrontLeg": 1,
+      "cephalothorax": 1,
+      "rightLeg": 1,
+      "leftLeg": 1,
+      "leftArm": 1,
+      "rightArm": 1,
+      "thorax": 1,
+      "rightHindLeg": 1,
+      "leftHindLeg": 1,
+      "hindquarters": 1,
+      "rightWing": 1,
+      "leftWing": 1
+    },
+    "levelAdaptation": "<div><p>After level 5: +D10 damage, +1 Armor (all Hit Locations)</p></div><div><p>After level 10: +10 Health, +D6 damage, +10 Combat Skill</p></div>",
+    "actions": [
+      {
+        "startDie": 1,
+        "endDie": 1,
+        "name": "Cleaver Cleave",
+        "description": "<div><p>Gorehoof swings his massive cleaver in a wide arc, targeting all creatures within the room. Each target must make a Dodge check or take D4 Slashing damage.</p></div>"
+      },
+      {
+        "startDie": 2,
+        "endDie": 2,
+        "name": "Savage Charge (Physical)",
+        "description": "<div><p>Gorehoof charges forward in a straight line, trampling over any obstacles. He then makes a melee attack against a single target at the end of the charge, dealing 3D6 Bludgeoning damage.</p></div>"
+      },
+      {
+        "startDie": 3,
+        "endDie": 3,
+        "name": "Bloodlust Frenzy",
+        "description": "<div><p>Gorehoof enters a frenzied state, gaining Advantage on melee attack rolls. He deals an additional D6 damage with his attacks, but he also becomes Vulnerable to all damage until the start of his next turn.</p></div>"
+      },
+      {
+        "startDie": 4,
+        "endDie": 4,
+        "name": "Rallying Roar",
+        "description": "<div><p>Gorehoof lets out a thunderous roar, increasing his rage and ignoring his wounds. He regains 2D4 Health.</p></div>"
+      },
+      {
+        "startDie": 5,
+        "endDie": 5,
+        "name": "Endurance Surge",
+        "description": "<div><p>Gorehoof's unwavering endurance allows him to shrug off pain and injuries. He becomes Resistant to Bludgeoning, Piercing, and Slashing damage for 2 rounds.</p></div>"
+      },
+      {
+        "startDie": 6,
+        "endDie": 6,
+        "name": "Dominating Presence",
+        "description": "<div><p>Gorehoof exudes an aura of dominance. All characters within the room must succeed on a Resolve check or be Frightened (20).</p></div>"
+      }
+    ],
+    "description": "<div><p>Gorehoof is the leader of clan Karth, bestial goatmen that pillage and kill with absolute savagery. Standing three meters tall and always wielding a cleaver almost as large as him, Gorehoof revels in violence and death. His black fur, often covered in fresh blood, and large horns make him instantly recognizable, even when he’s leading the clan into battle. With an almost infinite capability to endure punishment, Gorehoof revels in combat and never retreats, pursuing his victims relentlessly.</p></div>",
+    "notes": "",
+    "sorting": "manually"
+  },
+  "prototypeToken": {
+    "name": "Gorehoof",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/creatures/unholy/demon-horned-winged-laughing.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.health"
+    },
+    "bar2": {
+      "attribute": "attributes.aether"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768667708881,
+    "modifiedTime": 1768667708881,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0,
+    "xOca9XRwLgJMNAGV": 3
+  },
+  "sort": 0,
+  "_key": "!actors!QPpZJYBVVL2I7d7F"
+}

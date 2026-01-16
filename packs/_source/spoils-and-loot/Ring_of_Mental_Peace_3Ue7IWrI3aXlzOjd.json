@@ -1,0 +1,33 @@
+{
+  "folder": "2kKULhWW8ryYsh2b",
+  "name": "Ring of Mental Peace",
+  "type": "item",
+  "_id": "3Ue7IWrI3aXlzOjd",
+  "img": "icons/equipment/finger/ring-inlay-red.webp",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Ring</p><p>Touching a target causes them to recover D6 Sanity. Can only be used once per Camp Rest. Can only be used on another character</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738655952,
+    "modifiedTime": 1768823933960,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!3Ue7IWrI3aXlzOjd"
+}

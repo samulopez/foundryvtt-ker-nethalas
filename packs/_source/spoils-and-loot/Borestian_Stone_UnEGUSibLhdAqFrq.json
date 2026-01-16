@@ -1,0 +1,33 @@
+{
+  "folder": "2kKULhWW8ryYsh2b",
+  "name": "Borestian Stone",
+  "type": "item",
+  "_id": "UnEGUSibLhdAqFrq",
+  "img": "icons/equipment/neck/amulet-carved-stone-spiral.webp",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Amulet</p><p>A character in possession of a Borestian Stone can immediately identify Potions without requiring a Medicine check</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738655952,
+    "modifiedTime": 1768823933960,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!UnEGUSibLhdAqFrq"
+}

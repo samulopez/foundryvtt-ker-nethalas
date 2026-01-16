@@ -1,0 +1,34 @@
+{
+  "folder": "2kKULhWW8ryYsh2b",
+  "name": "Vial of Potency - Aether",
+  "type": "item",
+  "_id": "VSz873yAzudXVpNM",
+  "img": "icons/consumables/potions/potion-tube-corked-blue.webp",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Consumable</p><p>Increase your Aether by D4 permanently</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768823933975,
+    "modifiedTime": 1768823933975,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0,
+    "xOca9XRwLgJMNAGV": 3
+  },
+  "sort": 0,
+  "_key": "!items!VSz873yAzudXVpNM"
+}

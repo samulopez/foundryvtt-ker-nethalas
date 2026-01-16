@@ -1,0 +1,223 @@
+{
+  "folder": null,
+  "name": "Scavenging",
+  "_id": "hanKJQUFuT0RLuSh",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "zPTAigmQ82YlEUer",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You uncover some grisly remains. Make a successful Resolve check or lose 1 Sanity</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hanKJQUFuT0RLuSh.zPTAigmQ82YlEUer"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "ymIW4UamyttQQXP9",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You find nothing of interest</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hanKJQUFuT0RLuSh.ymIW4UamyttQQXP9"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "7HpJO33XRWPGMwgn",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You discover D20₵</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hanKJQUFuT0RLuSh.7HpJO33XRWPGMwgn"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        11
+      ],
+      "_id": "AoN7kCUkvxVuxzBs",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You find D4 Crafting Supplies</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hanKJQUFuT0RLuSh.AoN7kCUkvxVuxzBs"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "_id": "vA8C9mr1kdY6qo3N",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You discover 2D20₵</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hanKJQUFuT0RLuSh.vA8C9mr1kdY6qo3N"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        13,
+        18
+      ],
+      "_id": "NMN8nRxpuu7XEuXF",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You find D4 Cooking Ingredients</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hanKJQUFuT0RLuSh.NMN8nRxpuu7XEuXF"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "_id": "a0vnFUF9UBnpjbFY",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You discover D100₵</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!hanKJQUFuT0RLuSh.a0vnFUF9UBnpjbFY"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "cS4qDYiZm9QJkphh",
+      "name": "Spoils",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Roll on the Spoils table</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.A5rp5TyxRlusP4oL",
+      "_key": "!tables.results!hanKJQUFuT0RLuSh.cS4qDYiZm9QJkphh"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d20",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!hanKJQUFuT0RLuSh"
+}

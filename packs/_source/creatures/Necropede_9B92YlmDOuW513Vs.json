@@ -1,0 +1,215 @@
+{
+  "name": "Necropede",
+  "type": "monster",
+  "img": "icons/svg/terror.svg",
+  "system": {
+    "attributes": {
+      "body": 25,
+      "mind": 40,
+      "combatSkill": 50,
+      "endurance": 30,
+      "health": {
+        "min": 0,
+        "value": 16,
+        "max": 16
+      },
+      "magicResistance": 40
+    },
+    "type": {
+      "animal": true,
+      "astral": false,
+      "construct": false,
+      "demon": false,
+      "elemental": false,
+      "humanoid": false,
+      "plant": false,
+      "undead": true
+    },
+    "hitLocation": "serpentoid",
+    "weakSpot": "head",
+    "traits": {
+      "alert": false,
+      "frightening": false,
+      "horrifying": false,
+      "pack": false,
+      "penetrating": {
+        "value": 0,
+        "active": false
+      },
+      "ruthlessness": {
+        "value": 0,
+        "active": false
+      },
+      "savage": false,
+      "swift": false,
+      "venomous": true,
+      "custom": ""
+    },
+    "armor": {
+      "rightRearLeg": 0,
+      "leftRearLeg": 0,
+      "rightMidLeg": 0,
+      "leftMidLeg": 0,
+      "rightForeLeg": 0,
+      "leftForeLeg": 0,
+      "abdomen": 0,
+      "rightFrontLeg": 0,
+      "leftFrontLeg": 0,
+      "cephalothorax": 0,
+      "rightLeg": 0,
+      "leftLeg": 0,
+      "chest": 0,
+      "leftArm": 0,
+      "rightArm": 0,
+      "head": 2,
+      "thorax": 0,
+      "rightHindLeg": 0,
+      "leftHindLeg": 0,
+      "hindquarters": 0,
+      "forequarters": 0,
+      "body": 0,
+      "rightWing": 0,
+      "leftWing": 0
+    },
+    "levelAdaptation": "<div><p>After level 5: +4 Health, +D6 damage, +10 Combat Skill</p></div><div><p>After level 10: +2 damage, +10 Combat Skill</p></div>",
+    "actions": [
+      {
+        "startDie": 1,
+        "endDie": 2,
+        "name": "Bone Slam (Physical)",
+        "description": "<div><p>The Necropede slams its skeletal body onto a target, dealing D6 Bludgeoning damage.</p></div>"
+      },
+      {
+        "startDie": 3,
+        "endDie": 4,
+        "name": "Soul Drain (Magical)",
+        "description": "<div><p>The Necropede emits a burst of its dark aura, attempting to drain the life force of a target. The target must succeed on an Endurance check or take 2D4 Necrotic damage and the Necropede gains Temporary Health equal to half the damage dealt.</p></div>"
+      },
+      {
+        "startDie": 5,
+        "endDie": 6,
+        "name": "Spinal Whip",
+        "description": "<div><p>The Necropede lashes out with its inhuman tail spine, targeting all creatures in the room. Each target must make a Dodge check. Those who fail the check take D6 Piercing damage and are knocked Prone. On a success, they take half damage and are not knocked Prone.</p></div>"
+      }
+    ],
+    "description": "<div><p>This grotesque fusion of insect and cadaver is a chilling sight to behold. Its razor-sharp pincers and venomous stinger are imbued with necromantic energy, ensuring that those unfortunate enough to cross its path become lifeless vessels animated to carry out its malevolent will. The Necropede's presence is heralded by a stifling aura of dread, causing even the bravest hearts to tremble. Rarely spotted, whispers of its unholy existence abound in scholarly circles, as it is said to be the creation of a deranged sorcerer who sought to conquer death itself, now unleashed upon the world as a relentless harbinger of doom.</p></div>",
+    "notes": "",
+    "sorting": "manually"
+  },
+  "prototypeToken": {
+    "name": "a",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/terror.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.health"
+    },
+    "bar2": {
+      "attribute": "attributes.aether"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "KENxJWt8SgmdaAl8",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768667746708,
+    "modifiedTime": 1768667746708,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_id": "9B92YlmDOuW513Vs",
+  "ownership": {
+    "default": 0,
+    "xOca9XRwLgJMNAGV": 3
+  },
+  "sort": 0,
+  "_key": "!actors!9B92YlmDOuW513Vs"
+}

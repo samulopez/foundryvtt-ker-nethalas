@@ -1,0 +1,42 @@
+{
+  "folder": "4gZIfI7Y1747VJwz",
+  "name": "Torso - Soft Leather",
+  "type": "armor",
+  "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+  "system": {
+    "cost": 60,
+    "weight": "normal",
+    "description": "",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "broken": false,
+    "maxIntegrity": 8,
+    "currentIntegrity": 6,
+    "protection": 1,
+    "armorType": "torso",
+    "decreasePerception": 0,
+    "decreaseManeuverability": 5,
+    "parryBonus": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768733920786,
+    "modifiedTime": 1768733920786,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_id": "HhUZNhRBaaggWNDf",
+  "ownership": {
+    "default": 0,
+    "xOca9XRwLgJMNAGV": 3
+  },
+  "sort": 0,
+  "_key": "!items!HhUZNhRBaaggWNDf"
+}

@@ -1,0 +1,34 @@
+{
+  "folder": "2kKULhWW8ryYsh2b",
+  "name": "Vial of Potency - Endurance",
+  "type": "item",
+  "img": "icons/consumables/potions/potion-tube-corked-orange.webp",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Consumable</p><p>Increase your Endurance by 5 permanently</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768823933975,
+    "modifiedTime": 1768823933975,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_id": "3QCNVV8XVcYu0x6d",
+  "ownership": {
+    "default": 0,
+    "xOca9XRwLgJMNAGV": 3
+  },
+  "sort": 0,
+  "_key": "!items!3QCNVV8XVcYu0x6d"
+}

@@ -1,0 +1,33 @@
+{
+  "folder": "ziksPxcH63Wt53US",
+  "name": "Belt Lamp",
+  "type": "item",
+  "_id": "RsbJfzotoKeLvGAS",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "cost": 1500,
+    "weight": "normal",
+    "description": "<p>Can be attached to a Belt, taking one of the slots. Requires Lamp Oil.</p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768733912085,
+    "modifiedTime": 1768821592382,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!RsbJfzotoKeLvGAS"
+}

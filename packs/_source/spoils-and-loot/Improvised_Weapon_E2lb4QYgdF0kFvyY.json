@@ -1,0 +1,46 @@
+{
+  "folder": "tzkw5kCmth2ggoPO",
+  "name": "Improvised Weapon",
+  "type": "weapon",
+  "img": "icons/weapons/hammers/shorthammer-claw.webp",
+  "_id": "E2lb4QYgdF0kFvyY",
+  "system": {
+    "cost": 1,
+    "weight": "heavy",
+    "description": "",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "speed": 5,
+    "skill": "shaftedWeapons",
+    "broken": false,
+    "traits": {
+      "defensive": false,
+      "quick": false,
+      "parrying": false,
+      "powerful": false,
+      "simple": false,
+      "twoHanded": true,
+      "versatile": false
+    },
+    "damageType": "bludgeoning"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768733899740,
+    "modifiedTime": 1768735895383,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!E2lb4QYgdF0kFvyY"
+}

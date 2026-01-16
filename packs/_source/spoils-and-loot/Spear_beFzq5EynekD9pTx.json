@@ -1,0 +1,46 @@
+{
+  "folder": "tzkw5kCmth2ggoPO",
+  "name": "Spear",
+  "type": "weapon",
+  "img": "icons/weapons/polearms/spear-hooked-simple.webp",
+  "_id": "beFzq5EynekD9pTx",
+  "system": {
+    "cost": 10,
+    "weight": "normal",
+    "description": "",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "speed": 0,
+    "skill": "shaftedWeapons",
+    "broken": false,
+    "traits": {
+      "defensive": true,
+      "quick": false,
+      "parrying": false,
+      "powerful": false,
+      "simple": false,
+      "twoHanded": false,
+      "versatile": true
+    },
+    "damageType": "piercing"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768733899740,
+    "modifiedTime": 1768735895383,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!beFzq5EynekD9pTx"
+}

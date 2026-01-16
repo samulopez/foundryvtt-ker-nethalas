@@ -1,0 +1,104 @@
+{
+  "folder": null,
+  "name": "Spoils",
+  "_id": "A5rp5TyxRlusP4oL",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        1,
+        3
+      ],
+      "_id": "WEoy5LPVf846qko7",
+      "name": "Mundane Items",
+      "img": "icons/svg/d20-grey.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "RollTable.VcBbdQEAGN7FAV59",
+      "_key": "!tables.results!A5rp5TyxRlusP4oL.WEoy5LPVf846qko7"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        4,
+        5
+      ],
+      "_id": "ezZhRzykEwjB5wmR",
+      "name": "Valuable Items",
+      "img": "icons/svg/d20-grey.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "RollTable.2aBJRzDWifBfmgFN",
+      "_key": "!tables.results!A5rp5TyxRlusP4oL.ezZhRzykEwjB5wmR"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "DNt5ASISHvEIm5UH",
+      "name": "Precious Items",
+      "img": "icons/svg/d20-grey.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "RollTable.Tkweu9ESVQa51CwL",
+      "_key": "!tables.results!A5rp5TyxRlusP4oL.DNt5ASISHvEIm5UH"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": false,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d6",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!A5rp5TyxRlusP4oL"
+}

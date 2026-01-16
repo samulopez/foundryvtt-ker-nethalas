@@ -1,0 +1,33 @@
+{
+  "folder": "hrezYkYmYgsGA3SJ",
+  "name": "Ring of Arcane Tempest",
+  "type": "item",
+  "_id": "vsjYvwuSm6RhIDW2",
+  "img": "icons/equipment/finger/ring-band-studded-silver.webp",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Ring</p><p>Allows the character to blast a wave of aetheric energies that deal 2D10 Arcane damage to all opponents in the room. This effect can be activated once per Camp Rest</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738649768,
+    "modifiedTime": 1768835921498,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!vsjYvwuSm6RhIDW2"
+}

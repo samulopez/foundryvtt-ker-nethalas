@@ -1,0 +1,41 @@
+{
+  "folder": "hrezYkYmYgsGA3SJ",
+  "name": "Aegis of the Eternal Sentinel",
+  "type": "armor",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "_id": "L2W1zsswJ9CXANsv",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Increases your Parry by +20</p><p>Once per room you can ignore all damage from a single source</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "broken": false,
+    "maxIntegrity": 8,
+    "currentIntegrity": 6,
+    "protection": 0,
+    "armorType": "shield",
+    "decreasePerception": 0,
+    "decreaseManeuverability": 0,
+    "parryBonus": 20
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738649768,
+    "modifiedTime": 1768835921498,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!L2W1zsswJ9CXANsv"
+}

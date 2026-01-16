@@ -1,0 +1,101 @@
+{
+  "folder": null,
+  "name": "Vambraces, Greaves & Helmets",
+  "_id": "53uOT8UuhwhibrF7",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        33
+      ],
+      "_id": "BFHgHxKAGKDYpBN3",
+      "name": "Light",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!53uOT8UuhwhibrF7.BFHgHxKAGKDYpBN3"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        34,
+        66
+      ],
+      "_id": "Qv2qTnBm1qsz9XEH",
+      "name": "Medium",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!53uOT8UuhwhibrF7.Qv2qTnBm1qsz9XEH"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        67,
+        100
+      ],
+      "_id": "N46442Q4AfqDIp85",
+      "name": "Heavy",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!53uOT8UuhwhibrF7.N46442Q4AfqDIp85"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d100",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!53uOT8UuhwhibrF7"
+}

@@ -1,0 +1,33 @@
+{
+  "folder": "hrezYkYmYgsGA3SJ",
+  "name": "Band of Knowledge",
+  "type": "item",
+  "_id": "tWSJWuUOIaiVA9Eg",
+  "img": "icons/equipment/finger/ring-band-engraved-scrolls-bronze.webp",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Ring</p><p>After a Camp Rest, choose a Skill: it gains +50 until your next Camp Rest.</p><p>These points may not be reallocated until your next Camp Rest</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738649768,
+    "modifiedTime": 1768835921498,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!tWSJWuUOIaiVA9Eg"
+}

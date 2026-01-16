@@ -1,0 +1,129 @@
+{
+  "folder": null,
+  "name": "Shields",
+  "_id": "IqKYP78PEduUyKzN",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        1,
+        25
+      ],
+      "_id": "u9h8Vp0oyWZoWwdI",
+      "name": "Shield - Target",
+      "img": "icons/equipment/shield/heater-steel-worn.webp",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.FBRXeNrny1meC6wm",
+      "_key": "!tables.results!IqKYP78PEduUyKzN.u9h8Vp0oyWZoWwdI"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        26,
+        50
+      ],
+      "_id": "SbzsLb5nlE9hYsLr",
+      "name": "Shield - Normal",
+      "img": "icons/equipment/shield/heater-steel-worn.webp",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.kOTLa1D7IzUoaXip",
+      "_key": "!tables.results!IqKYP78PEduUyKzN.SbzsLb5nlE9hYsLr"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        51,
+        75
+      ],
+      "_id": "Shq8ecgglJEfzzQI",
+      "name": "Shield - Full",
+      "img": "icons/equipment/shield/heater-steel-worn.webp",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.QQp3hHDY8u9waRxP",
+      "_key": "!tables.results!IqKYP78PEduUyKzN.Shq8ecgglJEfzzQI"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        76,
+        100
+      ],
+      "_id": "P4X2SjOEFpo2jJy5",
+      "name": "Shield - Wall",
+      "img": "icons/equipment/shield/heater-steel-worn.webp",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.qIUlkAECfy6lvJcX",
+      "_key": "!tables.results!IqKYP78PEduUyKzN.P4X2SjOEFpo2jJy5"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d100",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!IqKYP78PEduUyKzN"
+}

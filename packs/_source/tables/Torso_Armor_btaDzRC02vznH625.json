@@ -1,0 +1,278 @@
+{
+  "folder": null,
+  "name": "Torso Armor",
+  "_id": "btaDzRC02vznH625",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        1,
+        10
+      ],
+      "_id": "wZSkmIk8k6cgDgIa",
+      "name": "Torso - Heavy Cloth",
+      "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.V8yhwvkcnsULXZtH",
+      "_key": "!tables.results!btaDzRC02vznH625.wZSkmIk8k6cgDgIa"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        11,
+        20
+      ],
+      "_id": "85X6yYg5SioI2m2T",
+      "name": "Torso - Soft Leather",
+      "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.HhUZNhRBaaggWNDf",
+      "_key": "!tables.results!btaDzRC02vznH625.85X6yYg5SioI2m2T"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        21,
+        30
+      ],
+      "_id": "cMfNjLUy9JZ7xOBq",
+      "name": "Torso - Hide Scale",
+      "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.feWBzKIeXuviArXX",
+      "_key": "!tables.results!btaDzRC02vznH625.cMfNjLUy9JZ7xOBq"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        31,
+        40
+      ],
+      "_id": "pefC0UPmRB2rp480",
+      "name": "Torso - Laminar",
+      "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.bhiWLbfqgO7ZxBuw",
+      "_key": "!tables.results!btaDzRC02vznH625.pefC0UPmRB2rp480"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        41,
+        50
+      ],
+      "_id": "jTIWZMnjNEAYJf38",
+      "name": "Torso - Rigid Leather",
+      "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.oeByWTu9gAa5xUl8",
+      "_key": "!tables.results!btaDzRC02vznH625.jTIWZMnjNEAYJf38"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        51,
+        60
+      ],
+      "_id": "Vk5Rd51KYMl2p7i8",
+      "name": "Torso - Metal Scale",
+      "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.16P2AECfStshsITW",
+      "_key": "!tables.results!btaDzRC02vznH625.Vk5Rd51KYMl2p7i8"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        61,
+        70
+      ],
+      "_id": "SbrKnJwjDZLbWgbW",
+      "name": "Torso - Mail",
+      "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.HddQeMrK1ijWWaRL",
+      "_key": "!tables.results!btaDzRC02vznH625.SbrKnJwjDZLbWgbW"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        71,
+        80
+      ],
+      "_id": "qvF1LZvmwc8dpqJN",
+      "name": "Torso - Brigandine",
+      "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.mWJcQO4v0gnSrXgN",
+      "_key": "!tables.results!btaDzRC02vznH625.qvF1LZvmwc8dpqJN"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        81,
+        90
+      ],
+      "_id": "YOP4MJKTQIEnOjUG",
+      "name": "Torso - Plate",
+      "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.ugfB05D89OmGkemi",
+      "_key": "!tables.results!btaDzRC02vznH625.YOP4MJKTQIEnOjUG"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        91,
+        100
+      ],
+      "_id": "388SuXVnGoyPSbJX",
+      "name": "Magic Armor (re-roll if not applicable)",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!btaDzRC02vznH625.388SuXVnGoyPSbJX"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!btaDzRC02vznH625"
+}
