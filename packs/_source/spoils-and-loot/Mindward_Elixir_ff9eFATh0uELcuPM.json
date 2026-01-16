@@ -1,0 +1,33 @@
+{
+  "folder": "hrezYkYmYgsGA3SJ",
+  "name": "Mindward Elixir",
+  "type": "item",
+  "_id": "ff9eFATh0uELcuPM",
+  "img": "icons/consumables/potions/bottle-corked-empty.webp",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Consumable</p><p>Permanently increases your Sanity by D4</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738649768,
+    "modifiedTime": 1768835921498,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!ff9eFATh0uELcuPM"
+}

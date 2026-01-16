@@ -1,0 +1,33 @@
+{
+  "folder": "hrezYkYmYgsGA3SJ",
+  "name": "Potion of Forgotten Fate",
+  "type": "item",
+  "_id": "LS219XhRDTN05TAO",
+  "img": "icons/consumables/potions/bottle-ornate-bat-teal.webp",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Consumable</p><p>Upon drinking this Potion, you automatically lose access to one of your two starting Masteries. You are free to pick a new one, assigning the same number of Ability Points that were assigned to the forgotten Mastery.</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738649768,
+    "modifiedTime": 1768835921498,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!LS219XhRDTN05TAO"
+}

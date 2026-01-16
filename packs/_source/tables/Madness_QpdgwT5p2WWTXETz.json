@@ -1,0 +1,269 @@
+{
+  "folder": null,
+  "name": "Madness",
+  "_id": "QpdgwT5p2WWTXETz",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "GD7l8npdE6QoB5Lo",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Your mind breaks, and you're lost to the madness. Your character is, for all effects and purposes, dead.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!QpdgwT5p2WWTXETz.GD7l8npdE6QoB5Lo"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "e8P2fQdz6ALcmmcl",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Your mind is in shambles, and any amount of pressure will break it. All your future rolls on this table suffer -1. Cumulative.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!QpdgwT5p2WWTXETz.e8P2fQdz6ALcmmcl"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "tcFas1e70VhN7opi",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You start developing physical reactions as a consequence of the state of your mind. Reduce your max Toughness by -1. Cumulative.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!QpdgwT5p2WWTXETz.tcFas1e70VhN7opi"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "S71TCto8B6cpp119",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You know the darkness is coming for you… Each time you suffer any loss of Sanity, you lose an additional -1. Cumulative.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!QpdgwT5p2WWTXETz.S71TCto8B6cpp119"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "wHOWOkQeyeuZ3u0y",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You're scared of spending too much time in one place, and rush through the rooms as fast as you can. Scavenging becomes a Demanding (-10) task. Cumulative.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!QpdgwT5p2WWTXETz.wHOWOkQeyeuZ3u0y"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "TG9yCYda3kvpAuZW",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You feel like your mind is starting to give in to the darkness, offering less resistance. All Resolve checks are now a Demanding (-10) task. Cumulative.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!QpdgwT5p2WWTXETz.TG9yCYda3kvpAuZW"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "0vq5Vp6qfGjKc0WJ",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You're having trouble retaining all your memories and experiences. Each time you earn any amount of XP, you earn 10 less. Cumulative.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!QpdgwT5p2WWTXETz.0vq5Vp6qfGjKc0WJ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "Jf5spxd3WTP4Dp9r",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You've blocked out a traumatic experience, and with it, some of what you learned from it. Reduce a Skill of your choosing by 10. Cumulative.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!QpdgwT5p2WWTXETz.Jf5spxd3WTP4Dp9r"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "xT2ZbF76dZLgNwoB",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You slap yourself with all your strength, quickly regaining your wits and snapping out of it. You receive 2D6 Bludgeoning damage that ignores Armor, but are otherwise fine.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!QpdgwT5p2WWTXETz.xT2ZbF76dZLgNwoB"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "R2VyOADgX2AjZFo1",
+      "name": "",
+      "img": null,
+      "description": "<div><p>The traumatic experiences you've gone through have taught you a lot about yourself. +100 XP.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!QpdgwT5p2WWTXETz.R2VyOADgX2AjZFo1"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!QpdgwT5p2WWTXETz"
+}

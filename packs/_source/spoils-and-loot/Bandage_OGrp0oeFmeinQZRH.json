@@ -1,0 +1,33 @@
+{
+  "folder": "ziksPxcH63Wt53US",
+  "name": "Bandage",
+  "type": "item",
+  "_id": "OGrp0oeFmeinQZRH",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "cost": 10,
+    "weight": "light",
+    "description": "<p>Heals D4 Toughness once per room. Consumable.</p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768733912085,
+    "modifiedTime": 1768821592382,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!OGrp0oeFmeinQZRH"
+}

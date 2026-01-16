@@ -1,0 +1,154 @@
+{
+  "folder": null,
+  "name": "Random Armor",
+  "_id": "0riN8IgjL8bGQRTO",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        1,
+        2
+      ],
+      "_id": "Zp0Ww7e8oS3V7G0H",
+      "name": "Torso Armor",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.btaDzRC02vznH625",
+      "_key": "!tables.results!0riN8IgjL8bGQRTO.Zp0Ww7e8oS3V7G0H"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        3,
+        4
+      ],
+      "_id": "vg8x5iEnt9AlS0ih",
+      "name": "Vambraces, Greaves & Helmets",
+      "img": "icons/svg/d20-grey.svg",
+      "description": "<p>Vambraces</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.53uOT8UuhwhibrF7",
+      "_key": "!tables.results!0riN8IgjL8bGQRTO.vg8x5iEnt9AlS0ih"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        5,
+        6
+      ],
+      "_id": "DoFMOvNpT19YKS5S",
+      "name": "Vambraces, Greaves & Helmets",
+      "img": "icons/svg/d20-grey.svg",
+      "description": "<p>Greaves</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.53uOT8UuhwhibrF7",
+      "_key": "!tables.results!0riN8IgjL8bGQRTO.DoFMOvNpT19YKS5S"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        7,
+        8
+      ],
+      "_id": "YKiKnsKOKUxpUIWI",
+      "name": "Vambraces, Greaves & Helmets",
+      "img": "icons/svg/d20-grey.svg",
+      "description": "<p>Helmet</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.53uOT8UuhwhibrF7",
+      "_key": "!tables.results!0riN8IgjL8bGQRTO.YKiKnsKOKUxpUIWI"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        9,
+        10
+      ],
+      "_id": "96LUnckRUqrVuMxd",
+      "name": "Shields",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.IqKYP78PEduUyKzN",
+      "_key": "!tables.results!0riN8IgjL8bGQRTO.96LUnckRUqrVuMxd"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d10",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!0riN8IgjL8bGQRTO"
+}

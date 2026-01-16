@@ -1,0 +1,511 @@
+{
+  "folder": null,
+  "name": "Which Crime Were You Accused Of?",
+  "_id": "hBB8fHWQd6y4whFg",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "hOjjW4vA2yS26asz",
+      "name": "Highway Robbery",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Armed individuals ambush travelers on highways, robbing them of their belongings and sometimes resorting to violence.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.hOjjW4vA2yS26asz"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "0c5pUbYdmeM9NEZ0",
+      "name": "Witchcraft",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Accusations of practicing witchcraft are common in Veldonia, and those accused often face trials and punishment, such as imprisonment or execution.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.0c5pUbYdmeM9NEZ0"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "Oncf6yAMqO9eOFkd",
+      "name": "Poaching",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>People illegally hunt game on private land, often to supplement their diet or sell the animals for profit, disregarding the landowner's rights.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.Oncf6yAMqO9eOFkd"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "ES0sY677ayDjkNYR",
+      "name": "Smuggling",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Illicit trade involving the import or export of goods without paying customs duties, usually through hidden routes to avoid detection.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.ES0sY677ayDjkNYR"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "MbZdNGwlnJPq0l84",
+      "name": "Piracy",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Seafaring individuals that attack ships, plundering their cargo and often resorting to violence against the crew. Pirates are a significant concern for Veldonia due to the importance of its maritime trade.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.MbZdNGwlnJPq0l84"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "aE37FA8eJss3uXFl",
+      "name": "Murder",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The intentional killing of another person, which could be motivated by various factors such as revenge, personal disputes, or criminal activities.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.aE37FA8eJss3uXFl"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "sn4OiI7wLVCz8TFo",
+      "name": "Sedition",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Engaging in activities that undermine or seek to overthrow the established authority, such as inciting rebellion or spreading dissent.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.sn4OiI7wLVCz8TFo"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "p4NgYUwR2LZxvXJG",
+      "name": "Treason",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Engaging in activities that betray or threaten the monarchy, such as plotting against the king.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.p4NgYUwR2LZxvXJG"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "XnAgtavqdlGLQjzY",
+      "name": "Counterfeiting",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Producing fake currency or counterfeit goods, which undermine the economy and defraud individuals.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.XnAgtavqdlGLQjzY"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "FqQTyxpWL6trDLQV",
+      "name": "Housebreaking",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Breaking into homes to steal valuable items or money, often resulting in damage to property and sometimes violence against occupants.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.FqQTyxpWL6trDLQV"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "_id": "NMvD1MZc02SFapw9",
+      "name": "Vagrancy",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Being homeless and unemployed, wandering from place to place without a clear means of support.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.NMvD1MZc02SFapw9"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "_id": "CDony5EF2O44tXos",
+      "name": "Dueling",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Engaging in private combat with deadly weapons to resolve personal disputes.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.CDony5EF2O44tXos"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "_id": "KFsjqODgoWVfCCgV",
+      "name": "Rioting",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Participating in violent public disturbances or protests, often with groups of people causing damage to property or attacking others.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.KFsjqODgoWVfCCgV"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "_id": "AFWlQxiZHHaFtdZv",
+      "name": "Blasphemy",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Uttering or promoting sacrilegious or disrespectful statements or actions against any of the sanctioned churches.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.AFWlQxiZHHaFtdZv"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "_id": "HMTsJxlNHJLSnoQt",
+      "name": "Grave Robbery",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The profanation of sepulchers to rob the dead of their valuables is seen with utmost disgust by Veldonian society, especially by the followers of Sothos, God of Death.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.HMTsJxlNHJLSnoQt"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "_id": "P3EzUtM6lzkm7H5o",
+      "name": "Fraud",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Pretending to be something you are not to gain sympathy, regard or money. This might include pretending to be a veteran of the Eskalian wars, selling phony cures or masquerading as a priest, noble, or similar person of station.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.P3EzUtM6lzkm7H5o"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "_id": "bxd5WRRn6bnVk6Jx",
+      "name": "Trespassing",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Entering or remaining on someone else's property without permission, often resulting in disputes or damage.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.bxd5WRRn6bnVk6Jx"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "_id": "Nb0lSgV6rwwoPSRZ",
+      "name": "Clandestine Marriage",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Secretly marrying without the consent or approval of family members or authorities.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.Nb0lSgV6rwwoPSRZ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "_id": "NXvBEnj3xXI5Bd5H",
+      "name": "Child Theft",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Kidnapping or abducting children for various reasons, including ransom, forced labor, or adoption without consent.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.NXvBEnj3xXI5Bd5H"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "aG1Lmi2uSdj5hfpi",
+      "name": "Sodomy",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Committing any “unnatural” sexual act, including those among members of the same sex, but not limited to it.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hBB8fHWQd6y4whFg.aG1Lmi2uSdj5hfpi"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768577719597,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d20",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!hBB8fHWQd6y4whFg"
+}

@@ -1,0 +1,33 @@
+{
+  "folder": "hrezYkYmYgsGA3SJ",
+  "name": "Diadem of Aetheric Power",
+  "type": "item",
+  "_id": "qdR9Cah268nxoVeD",
+  "img": "icons/commodities/treasure/crown-gold-laurel-wreath.webp",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Head Piece</p><p>+10 max Aether</p><p>All Abilities that deal damage deal an additional +D4 damage</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738649768,
+    "modifiedTime": 1768835921498,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!qdR9Cah268nxoVeD"
+}

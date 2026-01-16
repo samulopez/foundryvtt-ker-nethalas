@@ -1,0 +1,34 @@
+{
+  "folder": "ziksPxcH63Wt53US",
+  "name": "Attunement Crystal",
+  "type": "item",
+  "_id": "dJdcGdji0oYxRqTV",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "cost": 50,
+    "weight": "light",
+    "description": "",
+    "notes": "",
+    "quantity": 1,
+    "equippable": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768821592404,
+    "modifiedTime": 1768821592404,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0,
+    "xOca9XRwLgJMNAGV": 3
+  },
+  "sort": 0,
+  "_key": "!items!dJdcGdji0oYxRqTV"
+}

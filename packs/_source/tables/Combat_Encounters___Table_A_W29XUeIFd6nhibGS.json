@@ -1,0 +1,529 @@
+{
+  "folder": null,
+  "name": "Combat Encounters - Table A",
+  "_id": "W29XUeIFd6nhibGS",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "sJIWe5Kp5NyfF0fN",
+      "name": "Abyssal Vexator",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.wWelrcXzQdcUSYiQ",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.sJIWe5Kp5NyfF0fN"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "dMpngR7PNQK9M6rM",
+      "name": "Amalgam",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.CugUvnDjniNPwTHn",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.dMpngR7PNQK9M6rM"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "V6zt61yJuduYAwp3",
+      "name": "Armor Construct",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.71CEBRS5lu2fTGVX",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.V6zt61yJuduYAwp3"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "UuJAcxEloGT4TKNv",
+      "name": "Astral Beast",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.alADwLkFxk7nKsYV",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.UuJAcxEloGT4TKNv"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "gXGmDDkNlqCncyWX",
+      "name": "Bladewings",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.QOtZvlepO24rDvEA",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.gXGmDDkNlqCncyWX"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "vtSAlVHHKLVldWPh",
+      "name": "Bloodstalker",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.9Jg4zANxnDKFMfYT",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.vtSAlVHHKLVldWPh"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "Yxb2YsM4gzrB1AQn",
+      "name": "Bone Golem",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.5dv5R8p8DKMVdPfp",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.Yxb2YsM4gzrB1AQn"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "wGz5iHmIzlsYzzsH",
+      "name": "Bone Spiders",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.FDA1v50q5naT2lXa",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.wGz5iHmIzlsYzzsH"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "SI7rgHcdwwJIfFvp",
+      "name": "Cavebound Leech",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.YeIjGprgE8IVPf3P",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.SI7rgHcdwwJIfFvp"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "HY56V4eG29OuyDoX",
+      "name": "Corpse Ants",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.9Zq7pR4v0jtTyVM1",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.HY56V4eG29OuyDoX"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "_id": "P2oF79g6AZbpjl4x",
+      "name": "Death Sage",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.OlZ6MIEvSPPkUbM5",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.P2oF79g6AZbpjl4x"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "_id": "jcTR7iWNuUYQkaxK",
+      "name": "Desiccated Cryptguards",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.uISpN5UPvsl80Dlx",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.jcTR7iWNuUYQkaxK"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "_id": "59l3OqhTJqijHmx0",
+      "name": "Dwerax",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.y1DevqI7EWPQp5Jt",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.59l3OqhTJqijHmx0"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "_id": "wHYokoJXfaIeKyTu",
+      "name": "Fangvine",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.ICRuImKm4QB2CYKL",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.wHYokoJXfaIeKyTu"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "_id": "yt0iHPVXGwW32MTu",
+      "name": "Flayed Knight",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.kQt5mhdUKHxcMoXS",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.yt0iHPVXGwW32MTu"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "_id": "WF8jmPVh8j6C71YF",
+      "name": "Fleshmelt Slime",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.X0NRqIolUJGG3iVi",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.WF8jmPVh8j6C71YF"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "_id": "Ya9E8VhceXwNrEm6",
+      "name": "Giant Spider",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.CHBhEp7bt2hJI6IA",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.Ya9E8VhceXwNrEm6"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "_id": "jy9TbtENXT59Uwkj",
+      "name": "Hive Larvae",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.TokNckVEzhyc8M7e",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.jy9TbtENXT59Uwkj"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "_id": "4SNuHpj65cm2t9n8",
+      "name": "Hive Warrior",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.u0Cx8Zjs5Azz6wSJ",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.4SNuHpj65cm2t9n8"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "EX9fvyNKT21u7EPq",
+      "name": "Hollow Shambler",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.creatures.Actor.cCbjveK07q8wE8pG",
+      "_key": "!tables.results!W29XUeIFd6nhibGS.EX9fvyNKT21u7EPq"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d20",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!W29XUeIFd6nhibGS"
+}

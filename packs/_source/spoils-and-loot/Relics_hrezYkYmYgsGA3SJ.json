@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Relics",
+  "color": null,
+  "sorting": "a",
+  "_id": "hrezYkYmYgsGA3SJ",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738635482,
+    "modifiedTime": 1768738635482,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_key": "!folders!hrezYkYmYgsGA3SJ"
+}

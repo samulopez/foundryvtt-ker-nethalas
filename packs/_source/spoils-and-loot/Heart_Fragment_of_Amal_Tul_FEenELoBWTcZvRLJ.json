@@ -1,0 +1,33 @@
+{
+  "folder": "2kKULhWW8ryYsh2b",
+  "name": "Heart Fragment of Amal-Tul",
+  "type": "item",
+  "_id": "FEenELoBWTcZvRLJ",
+  "img": "icons/consumables/meat/heart-organ-realistic-red.webp",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Consumable</p><p>A character that eats the Heart instantly gains 200 XP, but loses D6 Sanity</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738655952,
+    "modifiedTime": 1768823933960,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!FEenELoBWTcZvRLJ"
+}

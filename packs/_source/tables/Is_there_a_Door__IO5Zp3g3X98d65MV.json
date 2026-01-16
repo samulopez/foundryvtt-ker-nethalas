@@ -1,0 +1,77 @@
+{
+  "folder": null,
+  "name": "Is there a Door?",
+  "_id": "IO5Zp3g3X98d65MV",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        5
+      ],
+      "_id": "Zjmo0Ve6tfNbKRMI",
+      "name": "Yes",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!IO5Zp3g3X98d65MV.Zjmo0Ve6tfNbKRMI"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        10
+      ],
+      "_id": "CvSnBJZGL716Bj9X",
+      "name": "No",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!IO5Zp3g3X98d65MV.CvSnBJZGL716Bj9X"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d10",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!IO5Zp3g3X98d65MV"
+}

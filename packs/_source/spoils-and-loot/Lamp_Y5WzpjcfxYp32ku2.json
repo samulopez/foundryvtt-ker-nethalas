@@ -1,0 +1,33 @@
+{
+  "folder": "ziksPxcH63Wt53US",
+  "name": "Lamp",
+  "type": "item",
+  "_id": "Y5WzpjcfxYp32ku2",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "cost": 200,
+    "weight": "normal",
+    "description": "<p>Serves as a lightsource. Requires Lamp Oil.</p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768733912085,
+    "modifiedTime": 1768821592382,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!Y5WzpjcfxYp32ku2"
+}

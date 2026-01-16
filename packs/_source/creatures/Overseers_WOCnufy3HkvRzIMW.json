@@ -1,0 +1,23 @@
+{
+  "type": "Actor",
+  "folder": null,
+  "name": "Overseers",
+  "color": null,
+  "sorting": "a",
+  "_id": "WOCnufy3HkvRzIMW",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768667683139,
+    "modifiedTime": 1768667683139,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_key": "!folders!WOCnufy3HkvRzIMW"
+}

@@ -1,0 +1,46 @@
+{
+  "folder": "hrezYkYmYgsGA3SJ",
+  "name": "Wyrmfang",
+  "type": "weapon",
+  "img": "icons/weapons/polearms/spear-flared-blue.webp",
+  "_id": "fmQOQfsr5pjigwZY",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Spear</p><p>+D6 Lightning damage</p><p>Reduce the opponent’s Attack Skill by 5 each time you deal damage to them</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "speed": 0,
+    "skill": "shaftedWeapons",
+    "broken": false,
+    "traits": {
+      "defensive": true,
+      "quick": false,
+      "parrying": false,
+      "powerful": false,
+      "simple": false,
+      "twoHanded": false,
+      "versatile": true
+    },
+    "damageType": "piercing"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738649768,
+    "modifiedTime": 1768835921498,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!fmQOQfsr5pjigwZY"
+}

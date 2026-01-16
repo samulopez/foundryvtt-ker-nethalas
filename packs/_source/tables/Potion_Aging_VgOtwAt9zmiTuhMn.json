@@ -1,0 +1,197 @@
+{
+  "folder": null,
+  "name": "Potion Aging",
+  "_id": "VgOtwAt9zmiTuhMn",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        2
+      ],
+      "_id": "8N9A6icx1uVc5JQP",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The Potion has turned into a poison. Make a successful Endurance check or become Poisoned (1).</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!VgOtwAt9zmiTuhMn.8N9A6icx1uVc5JQP"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        4
+      ],
+      "_id": "Ro5RJCtowwnFhRrg",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The Potion has become extremely unstable, and it explodes the second you open it. You suffer 2D4 Force damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!VgOtwAt9zmiTuhMn.Ro5RJCtowwnFhRrg"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        6
+      ],
+      "_id": "VfCaXuDFWXWtZup4",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The Potion has lost all its potency. No effect after drinking it.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!VgOtwAt9zmiTuhMn.VfCaXuDFWXWtZup4"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        10
+      ],
+      "_id": "MiO4qAF21FIcDJr7",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The Potion has lost some potency. Its effects only last 50% of what they're supposed to, and have their efficacy halved.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!VgOtwAt9zmiTuhMn.MiO4qAF21FIcDJr7"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        17
+      ],
+      "_id": "KELMXK3VFqG22c2B",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The Potion works as intended.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!VgOtwAt9zmiTuhMn.KELMXK3VFqG22c2B"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        18,
+        19
+      ],
+      "_id": "RHpTSBVhy5ECFnIi",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The Potion has been refined by time. Its effects last 50% longer and have their efficacy doubled.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!VgOtwAt9zmiTuhMn.RHpTSBVhy5ECFnIi"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "2q56HGLbytkvl9Cw",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The Potion has been completely enhanced, making its effects permanent.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!VgOtwAt9zmiTuhMn.2q56HGLbytkvl9Cw"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d20",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!VgOtwAt9zmiTuhMn"
+}

@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Weapons",
+  "color": null,
+  "sorting": "a",
+  "_id": "tzkw5kCmth2ggoPO",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768733872964,
+    "modifiedTime": 1768733872964,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_key": "!folders!tzkw5kCmth2ggoPO"
+}

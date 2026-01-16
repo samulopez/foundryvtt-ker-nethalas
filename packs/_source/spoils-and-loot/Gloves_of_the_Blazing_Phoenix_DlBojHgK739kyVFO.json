@@ -1,0 +1,33 @@
+{
+  "folder": "hrezYkYmYgsGA3SJ",
+  "name": "Gloves of the Blazing Phoenix",
+  "type": "item",
+  "_id": "DlBojHgK739kyVFO",
+  "img": "icons/equipment/hand/glove-cuffed-studded-red.webp",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Gloves</p><p>You’re Resistant to Fire damage</p><p>Once per Camp Rest you can use the Flamecaster’s Tier 4 Summon Fire Elemental Ability. The elemental disappears when you exit the room</p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738649768,
+    "modifiedTime": 1768835921498,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!DlBojHgK739kyVFO"
+}

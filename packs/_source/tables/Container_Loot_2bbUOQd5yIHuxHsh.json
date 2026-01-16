@@ -1,0 +1,476 @@
+{
+  "folder": null,
+  "name": "Container Loot",
+  "_id": "2bbUOQd5yIHuxHsh",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        2
+      ],
+      "_id": "SaW0m8IVGinfE6iN",
+      "name": "Rotten foodstuff and clothing",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.SaW0m8IVGinfE6iN"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "vYX4lbiNfWjPWVL0",
+      "name": "D4 Crafting Supplies",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.vYX4lbiNfWjPWVL0"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "K8Ptu7xxyboD0Lew",
+      "name": "Candle",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>D4 Candles</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.Gpxrt3NxSbm9okXM",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.K8Ptu7xxyboD0Lew"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "7GKVmkGiK1BRlHSX",
+      "name": "Lore Books",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.YZGCjjRuWXhcAhGz",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.7GKVmkGiK1BRlHSX"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        6,
+        7
+      ],
+      "_id": "p6eVKGvBDxEPWoon",
+      "name": "Gems & Jewelry",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.pOrGknEFAQJQ2IWh",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.p6eVKGvBDxEPWoon"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "h0sTKoJsT1LQecgx",
+      "name": "Pouch",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.h0sTKoJsT1LQecgx"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "Sff3G4q6BXAyniNC",
+      "name": "Flare",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>D4 Flares</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.Evv8UtCPllSPHHcG",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.Sff3G4q6BXAyniNC"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "FqoxoAT7gX59owVZ",
+      "name": "D10 Ritual Components",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.FqoxoAT7gX59owVZ"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "_id": "bOel3ywQ1zV2ctw7",
+      "name": "Blank Diary",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.J5Bb3BFZroupI7Pp",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.bOel3ywQ1zV2ctw7"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "_id": "vUllFK37k9JeegRk",
+      "name": "Borestian Stone",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.UnEGUSibLhdAqFrq",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.vUllFK37k9JeegRk"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "_id": "60sLzWyfOc5o7OEc",
+      "name": "Heart Fragment of Amal-Tul",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.FEenELoBWTcZvRLJ",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.60sLzWyfOc5o7OEc"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "_id": "LOa7hcU3W0jS5bVo",
+      "name": "Mace of Obliteration",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.1nOkTTIhc4WIEfsr",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.LOa7hcU3W0jS5bVo"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "_id": "M3yoRXd2M4AtCyNy",
+      "name": "Ring of Mental Peace",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.3Ue7IWrI3aXlzOjd",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.M3yoRXd2M4AtCyNy"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "_id": "obue3JZk5J15HYM5",
+      "name": "Vital of Potency - Aether",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.VSz873yAzudXVpNM",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.obue3JZk5J15HYM5"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "_id": "Myl8TRKMILzDhJn3",
+      "name": "Vital of Potency - Endurance",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.3QCNVV8XVcYu0x6d",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.Myl8TRKMILzDhJn3"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "_id": "PWkcBglS5MA79pe6",
+      "name": "Vital of Potency - Health",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.RlCRgZTozcpnOJ1D",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.PWkcBglS5MA79pe6"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "_id": "uscdZGaU2w5fccGO",
+      "name": "Vital of Potency - Spellward",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.h8MmTK1IYBjXpll6",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.uscdZGaU2w5fccGO"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "0ft1ykZ60sLHNPbr",
+      "name": "Vital of Potency - Sanity",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.fiWI0pNVpOBf0hS0",
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.0ft1ykZ60sLHNPbr"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d20",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!2bbUOQd5yIHuxHsh"
+}

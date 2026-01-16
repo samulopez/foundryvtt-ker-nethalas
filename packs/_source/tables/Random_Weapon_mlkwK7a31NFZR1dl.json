@@ -1,0 +1,828 @@
+{
+  "folder": null,
+  "name": "Random Weapon",
+  "_id": "mlkwK7a31NFZR1dl",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        1,
+        4
+      ],
+      "_id": "6bm5IMIiCj3aebdd",
+      "name": "Bardiche",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.rSft6uBABrC8FuF4",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.6bm5IMIiCj3aebdd"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        5,
+        8
+      ],
+      "_id": "RlVXMjpMBFp8rLgy",
+      "name": "Bastard Sword",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.hp6QVO9ZwKwQSsR8",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.RlVXMjpMBFp8rLgy"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        9,
+        12
+      ],
+      "_id": "cJuD8fO3oJmfMQpP",
+      "name": "Billhook",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.nNTf3H43BWPNAwdY",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.cJuD8fO3oJmfMQpP"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        13,
+        16
+      ],
+      "_id": "qYvdwGu47lWPHg8W",
+      "name": "Cestus",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.GWSoqYvk8MhPqp3C",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.qYvdwGu47lWPHg8W"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        17,
+        19
+      ],
+      "_id": "3rvzLa0t1GNSD0nI",
+      "name": "Claw",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.vEDUMhDd7ngBqMWe",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.3rvzLa0t1GNSD0nI"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        20,
+        22
+      ],
+      "_id": "4LIx0tXAFDu1JcjW",
+      "name": "Club",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.GBb031A8hbXxCwSH",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.4LIx0tXAFDu1JcjW"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        23,
+        25
+      ],
+      "_id": "d1MuplI6K6XR4HUs",
+      "name": "Dagger",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.PH4YUJEGricz8cdO",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.d1MuplI6K6XR4HUs"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        26,
+        28
+      ],
+      "_id": "fb8CzcFimZmeaSRB",
+      "name": "Flail",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.quNnXz1dqCXov41X",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.fb8CzcFimZmeaSRB"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        29,
+        31
+      ],
+      "_id": "MQ7hPfwk9RpDyn1X",
+      "name": "Glaive",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.5MEYJCmsTfHMTKey",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.MQ7hPfwk9RpDyn1X"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        32,
+        34
+      ],
+      "_id": "bNnM2Hw7qKt7FF3b",
+      "name": "Great Axe",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.miouJdobLj3iBwQy",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.bNnM2Hw7qKt7FF3b"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        35,
+        37
+      ],
+      "_id": "PfIzg672ZpEn2TAy",
+      "name": "Greatclub",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.dsodJ3kY7PtA8nPh",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.PfIzg672ZpEn2TAy"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        38,
+        40
+      ],
+      "_id": "kBXfOUY1LIF5fvwK",
+      "name": "Great Sword",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.GLUz9RZDOnnEY86h",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.kBXfOUY1LIF5fvwK"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        41,
+        43
+      ],
+      "_id": "3pbRiRaCO4gTi59u",
+      "name": "Halberd",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.YUQ9IRKx2KNYJ9bp",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.3pbRiRaCO4gTi59u"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        44,
+        46
+      ],
+      "_id": "mrZ1UgmToHIDOkOd",
+      "name": "Hatchet",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.TQ8MbqYGE6FgRtxB",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.mrZ1UgmToHIDOkOd"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        47,
+        49
+      ],
+      "_id": "vebScHdmFc4WQ5RH",
+      "name": "Improvised Weapon",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.E2lb4QYgdF0kFvyY",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.vebScHdmFc4WQ5RH"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        50,
+        52
+      ],
+      "_id": "30vJM7ljmU97rwaW",
+      "name": "Knuckles",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.nSQHNkOZc28YaofT",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.30vJM7ljmU97rwaW"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        53,
+        55
+      ],
+      "_id": "ga2qa4UqxiUCZ3NS",
+      "name": "Light Hammer",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.9yXWb2CxkfZTTGip",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.ga2qa4UqxiUCZ3NS"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        56,
+        58
+      ],
+      "_id": "TtX99GpdiGLAqtJX",
+      "name": "Longsword",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.Kr6M5RBkWzBhF03n",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.TtX99GpdiGLAqtJX"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        59,
+        61
+      ],
+      "_id": "TUHhhWLRqqJn78vV",
+      "name": "Maul",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.7bXIoVjkAlBG4LZJ",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.TUHhhWLRqqJn78vV"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        62,
+        64
+      ],
+      "_id": "liREmLMBy6cKOoM8",
+      "name": "Mace",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.hOoy37NvPma9Kpbp",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.liREmLMBy6cKOoM8"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        65,
+        67
+      ],
+      "_id": "sMc3u3CJiJrteYlK",
+      "name": "Morningstar",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.2xIfChSFdscIBbKr",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.sMc3u3CJiJrteYlK"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        68,
+        70
+      ],
+      "_id": "koCTybpvLqviwnTh",
+      "name": "Pike",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.Tio2fDkYFCRtXcFk",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.koCTybpvLqviwnTh"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        71,
+        73
+      ],
+      "_id": "y3iMWQazNcBPgsOO",
+      "name": "Quarterstaff",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.bHhshmXx4jbUpNPZ",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.y3iMWQazNcBPgsOO"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        74,
+        76
+      ],
+      "_id": "gXHoHvKmT4zrwxkr",
+      "name": "Rapier",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.EvxiIcyKNaQ8K70O",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.gXHoHvKmT4zrwxkr"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        77,
+        79
+      ],
+      "_id": "PBJL69VuFj0YD4Vn",
+      "name": "Saber",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.z8tDwDLVdVm9FQ1U",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.PBJL69VuFj0YD4Vn"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        80,
+        82
+      ],
+      "_id": "jZEgjFPeKfu5P0SE",
+      "name": "Shiv",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.8r1HoERCPsKiKzcR",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.jZEgjFPeKfu5P0SE"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        83,
+        85
+      ],
+      "_id": "1bOKk4lI2FDMxgB5",
+      "name": "Shortsword",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.h8MLZtSZ2cY6cSkA",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.1bOKk4lI2FDMxgB5"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        86,
+        88
+      ],
+      "_id": "5x6UausxcOpn0R1X",
+      "name": "Spear",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.beFzq5EynekD9pTx",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.5x6UausxcOpn0R1X"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        89,
+        91
+      ],
+      "_id": "aE8T9MAvpncvHqvj",
+      "name": "Sword Gauntlet",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.rBMci5KwhMRvbQGs",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.aE8T9MAvpncvHqvj"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        92,
+        94
+      ],
+      "_id": "J4mCFBQqEbrqZdW1",
+      "name": "Warhammer",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.h6PSUMlJOMdWfRyX",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.J4mCFBQqEbrqZdW1"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        95,
+        97
+      ],
+      "_id": "MjUDfDgD8WDgZnsS",
+      "name": "War Pick",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.iJZMX4dwRYF9qPOE",
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.MjUDfDgD8WDgZnsS"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        98,
+        100
+      ],
+      "_id": "UgPXpvZIgsAI2pW9",
+      "name": "Magic weapon (re-roll if not applicable)",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!mlkwK7a31NFZR1dl.UgPXpvZIgsAI2pW9"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d100",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!mlkwK7a31NFZR1dl"
+}

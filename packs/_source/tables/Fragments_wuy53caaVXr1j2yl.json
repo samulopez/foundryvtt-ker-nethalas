@@ -1,0 +1,509 @@
+{
+  "folder": null,
+  "name": "Fragments",
+  "_id": "wuy53caaVXr1j2yl",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "OamtFIKK3cJnohwy",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A twisted dagger with a thorn-covered blade. When used to deal the fatal strike against an enemy (i.e. reducing them to 0 Health), the creature rises as a Skeleton (page 202) under your control.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.OamtFIKK3cJnohwy"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "cr0byrmsOT1rOOlE",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A tattered cloak that, when worn, shrouds the wearer in darkness. Grants invisibility for 5 rooms, or until you make an attack. You can ignore all Combat Encounters until then.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.cr0byrmsOT1rOOlE"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "je1oVZQJgZI0nFEl",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A jagged mirror fragment that, when shattered, creates illusory duplicates of the user to distract enemies. +30 to Dodge for the next 4 rounds.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.je1oVZQJgZI0nFEl"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "18IcFfxxOnHgDW9q",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A rusted chain that when wrapped around you grants your mind strength and resolve. +10 Temporary Sanity.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.18IcFfxxOnHgDW9q"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "DxU4zmj1ffSrZr40",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A black heart-shaped amulet. When crushed (Free Action), it allows you to absorb damage meant for an ally, but the amulet crumbles to dust, leaving you unable to feel empathy for a week.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.DxU4zmj1ffSrZr40"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "Ludew0VnCI2293Aj",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A cracked monocle that, when worn, allows the user to inflict psychic pain on a target by locking eyes. As a Standard Action, make a Resolve check: if successful your target suffers 3D10 Psychic damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.Ludew0VnCI2293Aj"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "BOlKH2r32f0hTLgV",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A vial filled with sickly green liquid. When thrown, it bursts into corrosive flames that deal 3D6 Acid damage to all targets.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.BOlKH2r32f0hTLgV"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "M8Rr11RfkL4bWGb2",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A small, enchanted skull that grants the user the ability to see what's ahead. Roll the contents of the next 3 rooms.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.M8Rr11RfkL4bWGb2"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "qgt3emj4XBYyazAN",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Tattered bandages that, when wrapped around a wound, accelerate healing but carry a curse that causes the wounds to fester if not removed in time. Heal 2 Toughness/room. If kept for more than D6 rooms, you lose 1 Health/room.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.qgt3emj4XBYyazAN"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "2tY2LRF92GdCJnzC",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A blood-red potion that grants the user immense strength for a short time. Increase your next Athletics check by +50.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.2tY2LRF92GdCJnzC"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "_id": "YzPF0q8bXjc4LG8b",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A pendant adorned with a single raven's feather. When worn, it grants you +1 Standard Action during the next 4 rounds.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.YzPF0q8bXjc4LG8b"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "_id": "KhpRSqgvf2Y9VJ39",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A spiked gauntlet that, when worn, enhances your melee attacks with searing pain. For as long as you remain in this room your Unarmed Combat &amp; Fist Weapons Skill is increased by 50 and you deal 2D6 Fire damage. Once you exit the room you receive 2D6 Fire damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.KhpRSqgvf2Y9VJ39"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "_id": "SFZww5JnwRHLy4Ey",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A vial of thick, black liquid that, when consumed, grants you immunity to Sanity loss for the next 4 rooms, but leaves you emotionally detached afterward.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.SFZww5JnwRHLy4Ey"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "_id": "pCDYDByhvkEBajt2",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A delicate locket that, when opened, releases a swarm of spectral spiders that ensnare a target. A target of your choice becomes Restrained.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.pCDYDByhvkEBajt2"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "_id": "pDdk5tKUJCxv66KK",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A small, obsidian whistle that, when blown, summons a vengeful spirit to seek out and attack a designated target, immediately dealing 3D10 Psychic damage to it.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.pDdk5tKUJCxv66KK"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "_id": "yqPCZj19ncbAtTeJ",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A flask containing a swirling miasma. When opened, it releases a cloud of disease that afflicts enemies, dealing 3D4 Poison damage to all enemies.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.yqPCZj19ncbAtTeJ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "_id": "2YbPaKm9xCM8E48d",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A broken harp that, when played, creates haunting melodies that charm enemies. A single target will no longer be hostile towards you.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.2YbPaKm9xCM8E48d"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "_id": "qsRZt4Li7cxbywjH",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A tattered spellbook that allows you to use any Mastery Ability once. Roll on the Random Mastery table (page 222) to find out which Mastery it has access to, and pick one Ability.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.qsRZt4Li7cxbywjH"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "_id": "tOY52HYQR1nNv370",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A Ring with a gorgeous amethyst that grants you 2D10 Temporary Toughness.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.tOY52HYQR1nNv370"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "TFHtS80Boz3U7mRd",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A sinister hourglass that, when turned over, temporarily slows time for everyone except you. All enemies become Dazed (3).</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!wuy53caaVXr1j2yl.TFHtS80Boz3U7mRd"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!wuy53caaVXr1j2yl"
+}

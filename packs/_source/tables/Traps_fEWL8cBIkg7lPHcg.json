@@ -1,0 +1,269 @@
+{
+  "folder": null,
+  "name": "Traps",
+  "_id": "fEWL8cBIkg7lPHcg",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "3BjiAmbUBzNGskKj",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Skill: Dodge</p></div><div><p>Arrows shoot from a hidden spot, dealing 2D6 Piercing damage to the character who triggered it.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fEWL8cBIkg7lPHcg.3BjiAmbUBzNGskKj"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "KPof4wz84zjpG3R2",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Skill: Dodge</p></div><div><p>The character steps on a hidden bear trap. They suffer 2D6 Piercing damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fEWL8cBIkg7lPHcg.KPof4wz84zjpG3R2"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "MgCVz5OhMvMvWkvO",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Skill: Dodge</p></div><div><p>A net trap suddenly traps the character, who becomes Restrained. Each attempt at liberating themselves increases their Exhaustion by 1, unless helped by another character. After D6 attempts, the net breaks by itself, but the hard landing causes 2D8 Bludgeoning damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fEWL8cBIkg7lPHcg.MgCVz5OhMvMvWkvO"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "AclEY9fULg8qm9vT",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Skill: Dodge</p></div><div><p>A salvo of small, poisoned darts strike the character, who becomes Poisoned (1) unless they pass an Endurance check. The darts also deal 2D4 Piercing damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fEWL8cBIkg7lPHcg.AclEY9fULg8qm9vT"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "VwyKuI1ykh7aleCi",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Skill: Acrobatics</p></div><div><p>The character falls into a hole, disguised by a trap door. The hole is full of spikes, dealing 3D4 Piercing damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fEWL8cBIkg7lPHcg.VwyKuI1ykh7aleCi"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "S41dK5O9K51Ldsrv",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Skill: Dodge</p></div><div><p>A swinging blade strikes the character, dealing D12 Slashing damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fEWL8cBIkg7lPHcg.S41dK5O9K51Ldsrv"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "ipYah31wTjsGTSAF",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Skill: Athletics</p></div><div><p>Noxious gas is released, filling the chamber. All creatures must pass an Endurance check or immediately receive 2D4 Poison Damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fEWL8cBIkg7lPHcg.ipYah31wTjsGTSAF"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "AdGFgOabAkaWNaRW",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Skill: Acrobatics</p></div><div><p>A ball of fire fills the room, dealing 2D6 Fire damage to all creatures in the room.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fEWL8cBIkg7lPHcg.AdGFgOabAkaWNaRW"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "hGLzEUmZx4ih4BBM",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Skill: Dodge</p></div><div><p>An alarm of some sort (mechanical, magical, other) attracts the attention of one of the place’s inhabitants. Roll on the Combat Encounter table.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fEWL8cBIkg7lPHcg.hGLzEUmZx4ih4BBM"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "VEPYoKIWO7Unalak",
+      "name": "",
+      "img": null,
+      "description": "<div><p>Skill: Athletics</p></div><div><p>A rush of water fills the room, threatening to drag all creatures in it, and slam them against the walls, dealing 3D4 Bludgeoning damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fEWL8cBIkg7lPHcg.VEPYoKIWO7Unalak"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!fEWL8cBIkg7lPHcg"
+}

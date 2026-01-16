@@ -22,10 +22,9 @@ jobs:
       - name: Build packs
         run: |
           npx --no-install fvtt package workon "ker-nethalas" --type "System"
-          npx --no-install fvtt package pack "combat-encounters" --in "packs/_source/combat-encounters" --out "packs"
-          npx --no-install fvtt package pack "minions" --in "packs/_source/minions" --out "packs"
-          npx --no-install fvtt package pack "overseers" --in "packs/_source/overseers" --out "packs"
-          npx --no-install fvtt package pack "weapons" --in "packs/_source/weapons" --out "packs"
+          npx --no-install fvtt package pack "creatures" --in "packs/_source/creatures" --out "packs"          
+          npx --no-install fvtt package pack "spoils-and-loot" --in "packs/_source/spoils-and-loot" --out "packs"
+          npx --no-install fvtt package pack "tables" --in "packs/_source/tables" --out "packs"
 
       - name: Build dist directory
         run: npm run build

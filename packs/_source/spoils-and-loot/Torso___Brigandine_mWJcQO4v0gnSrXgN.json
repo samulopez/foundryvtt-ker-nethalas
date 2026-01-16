@@ -1,0 +1,42 @@
+{
+  "folder": "4gZIfI7Y1747VJwz",
+  "name": "Torso - Brigandine",
+  "type": "armor",
+  "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+  "system": {
+    "cost": 175,
+    "weight": "normal",
+    "description": "",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "broken": false,
+    "maxIntegrity": 10,
+    "currentIntegrity": 8,
+    "protection": 3,
+    "armorType": "torso",
+    "decreasePerception": 0,
+    "decreaseManeuverability": 20,
+    "parryBonus": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768733920786,
+    "modifiedTime": 1768733920786,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_id": "mWJcQO4v0gnSrXgN",
+  "ownership": {
+    "default": 0,
+    "xOca9XRwLgJMNAGV": 3
+  },
+  "sort": 0,
+  "_key": "!items!mWJcQO4v0gnSrXgN"
+}

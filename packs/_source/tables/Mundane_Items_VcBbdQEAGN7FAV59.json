@@ -1,0 +1,499 @@
+{
+  "folder": null,
+  "name": "Mundane Items",
+  "_id": "VcBbdQEAGN7FAV59",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        5
+      ],
+      "_id": "N70uqecTFCEZiaV3",
+      "name": "D4 Crafting Supplies",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.N70uqecTFCEZiaV3"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        10
+      ],
+      "_id": "1oubHx9y9XE2soE7",
+      "name": "D4 Cooking Ingredients",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.1oubHx9y9XE2soE7"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        15
+      ],
+      "_id": "F24tkjF8Mg8Mc8fc",
+      "name": "Backpack",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.F24tkjF8Mg8Mc8fc"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        16,
+        20
+      ],
+      "_id": "jCTZjFW2To6lP6pR",
+      "name": "Bandage",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>1x Bandage</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.OGrp0oeFmeinQZRH",
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.jCTZjFW2To6lP6pR"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        21,
+        25
+      ],
+      "_id": "SbCdUQ6ZEsPMyVDU",
+      "name": "Bedroll",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.ZGpbLA6sulFUVaEC",
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.SbCdUQ6ZEsPMyVDU"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        26,
+        30
+      ],
+      "_id": "fijSqoDLUcrJQVWi",
+      "name": "Belt",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.fijSqoDLUcrJQVWi"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        31,
+        35
+      ],
+      "_id": "cHnqousvKMKCfk3J",
+      "name": "Belt Lamp",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.RsbJfzotoKeLvGAS",
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.cHnqousvKMKCfk3J"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        36,
+        40
+      ],
+      "_id": "qhIB9rb3MB4utEXU",
+      "name": "Candle",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>1x Candle</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.Gpxrt3NxSbm9okXM",
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.qhIB9rb3MB4utEXU"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        41,
+        45
+      ],
+      "_id": "4d8Q0OQxDDgf84CO",
+      "name": "Lore Books",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.YZGCjjRuWXhcAhGz",
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.4d8Q0OQxDDgf84CO"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        46,
+        50
+      ],
+      "_id": "yLQ0X9ce6CmItME7",
+      "name": "Crowbar",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.h4eXC1xR7Lk0HH8u",
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.yLQ0X9ce6CmItME7"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        51,
+        55
+      ],
+      "_id": "u5H8VftavFjXoLyE",
+      "name": "Flare",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.Evv8UtCPllSPHHcG",
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.u5H8VftavFjXoLyE"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        56,
+        60
+      ],
+      "_id": "dq2C6dCv1D74HgxA",
+      "name": "Gems & Jewelry",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.pOrGknEFAQJQ2IWh",
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.dq2C6dCv1D74HgxA"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        61,
+        65
+      ],
+      "_id": "9xD9IYcThD2244WM",
+      "name": "Lamp",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.Y5WzpjcfxYp32ku2",
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.9xD9IYcThD2244WM"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        66,
+        70
+      ],
+      "_id": "WJnqTHsewHkODSux",
+      "name": "Lamp Oil",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>1x Lamp Oil</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.tf8lgQRXw5lKoEWT",
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.WJnqTHsewHkODSux"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        71,
+        75
+      ],
+      "_id": "ZSclQDbTMVpAK855",
+      "name": "Lockpick",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>1x Lockpick</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.VV5dcDYMr0r7qVrS",
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.ZSclQDbTMVpAK855"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        76,
+        80
+      ],
+      "_id": "n1I5u8fkQ97lSmK0",
+      "name": "Pouch",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.n1I5u8fkQ97lSmK0"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        81,
+        85
+      ],
+      "_id": "STbrGFSMrn6MXLFe",
+      "name": "Random Armor",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.0riN8IgjL8bGQRTO",
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.STbrGFSMrn6MXLFe"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        86,
+        90
+      ],
+      "_id": "wlYbRhKl0rgoLecd",
+      "name": "Random Weapon",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.mlkwK7a31NFZR1dl",
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.wlYbRhKl0rgoLecd"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        91,
+        100
+      ],
+      "_id": "58AJwiDCNI9SimV2",
+      "name": "D4 Ritual Components",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.58AJwiDCNI9SimV2"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d100",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!VcBbdQEAGN7FAV59"
+}

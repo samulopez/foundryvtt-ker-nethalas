@@ -1,0 +1,128 @@
+{
+  "folder": null,
+  "name": "Valuable Items",
+  "_id": "2aBJRzDWifBfmgFN",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        5
+      ],
+      "_id": "WJQLJql2bNLM7xC2",
+      "name": "Random Potion",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!2aBJRzDWifBfmgFN.WJQLJql2bNLM7xC2"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        6,
+        12
+      ],
+      "_id": "FnHrNyICw2Aj3sq0",
+      "name": "Attunement Crystal",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.dJdcGdji0oYxRqTV",
+      "_key": "!tables.results!2aBJRzDWifBfmgFN.FnHrNyICw2Aj3sq0"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        13,
+        16
+      ],
+      "_id": "MkGi59bPj27W35mR",
+      "name": "Fragments",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.wuy53caaVXr1j2yl",
+      "_key": "!tables.results!2aBJRzDWifBfmgFN.MkGi59bPj27W35mR"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        17,
+        20
+      ],
+      "_id": "bYc4M7hosXpAbrUC",
+      "name": "Magic Item",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.xLlrLW6msomuKLny",
+      "_key": "!tables.results!2aBJRzDWifBfmgFN.bYc4M7hosXpAbrUC"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d20",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!2aBJRzDWifBfmgFN"
+}

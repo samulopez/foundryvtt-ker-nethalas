@@ -1,0 +1,46 @@
+{
+  "folder": "hrezYkYmYgsGA3SJ",
+  "name": "Mace of Eclipse",
+  "type": "weapon",
+  "img": "icons/weapons/maces/mace-spiked-steel-grey.webp",
+  "_id": "u3LBOeBMaqUuEmU0",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>+2 Force damage</p><p>Any creature struck by this mace must pass an Endurance check or be Dazed (1)</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "speed": 5,
+    "skill": "bludgeoningWeapons",
+    "broken": false,
+    "traits": {
+      "defensive": false,
+      "quick": false,
+      "parrying": false,
+      "powerful": false,
+      "simple": true,
+      "twoHanded": false,
+      "versatile": false
+    },
+    "damageType": "bludgeoning"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768767097550,
+    "modifiedTime": 1768835921498,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!u3LBOeBMaqUuEmU0"
+}

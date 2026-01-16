@@ -1,0 +1,269 @@
+{
+  "folder": null,
+  "name": "NPC & Monster Defensive Move",
+  "_id": "fyjuCbGicXc50N7H",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "b2BgEEmAtJ64lrJL",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The creature's next attack receives an additional +10 to its Combat Skill. If it's a magic action, the PC's Spellward is reduced by -10 until the creature's next turn.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fyjuCbGicXc50N7H.b2BgEEmAtJ64lrJL"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "TUFyIfzHjumVVs4k",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Reduce the PC's Armor by -1 in the struck Hit Location until the end of combat.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fyjuCbGicXc50N7H.TUFyIfzHjumVVs4k"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "rAEH3pAqTQLRbw3S",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The PC receives the Bleeding (1) condition.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fyjuCbGicXc50N7H.rAEH3pAqTQLRbw3S"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "l0QrbfW1e5oJEtXv",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The creature clears all negative conditions that it is currently suffering from, if any.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fyjuCbGicXc50N7H.l0QrbfW1e5oJEtXv"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "y8BmUiBWHVk7hfz8",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The PC receives 1 Piercing damage that ignores Armor.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fyjuCbGicXc50N7H.y8BmUiBWHVk7hfz8"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "z93jqw4cM75cTWUH",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The creature's next damaging Action receives +D6 damage to its Damage Pool. If it's not a damaging Action, then the PC's Spellward is reduced by -10 until the creature's next turn.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fyjuCbGicXc50N7H.z93jqw4cM75cTWUH"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "W6tftKBZt70DFPlE",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The creature gains Advantage on its next attack. If the attack is a Magical one, then the PC rolls its Spellward with Disadvantage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fyjuCbGicXc50N7H.W6tftKBZt70DFPlE"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "OfR8LHbS1ezMeKkh",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The PC's next Dodge, Parry, or Spellward check is reduced by -20.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fyjuCbGicXc50N7H.OfR8LHbS1ezMeKkh"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "VDiFp3nJpDy257yt",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The creature recovers D4 Health.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fyjuCbGicXc50N7H.VDiFp3nJpDy257yt"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "AX2I8h9of8jzu0gw",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>The creature gets a new turn immediately.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!fyjuCbGicXc50N7H.AX2I8h9of8jzu0gw"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768577719597,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!fyjuCbGicXc50N7H"
+}

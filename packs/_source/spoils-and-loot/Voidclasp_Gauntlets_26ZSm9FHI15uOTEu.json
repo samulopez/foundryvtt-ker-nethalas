@@ -1,0 +1,46 @@
+{
+  "folder": "hrezYkYmYgsGA3SJ",
+  "name": "Voidclasp Gauntlets",
+  "type": "weapon",
+  "img": "icons/equipment/hand/gauntlet-armored-leather-grey.webp",
+  "_id": "26ZSm9FHI15uOTEu",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Fist weapon</p><p>Target receives a minimum of 1 damage every time you successfully strike them, regardless of Armor or resistances </p><p>Once per Combat Encounter you may spend a Reaction to turn your opponent’s attack against them, leaving you unharmed</p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "speed": 0,
+    "skill": "unarmedCombat",
+    "broken": false,
+    "traits": {
+      "defensive": false,
+      "quick": true,
+      "parrying": false,
+      "powerful": false,
+      "simple": true,
+      "twoHanded": false,
+      "versatile": false
+    },
+    "damageType": "bludgeoning"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738649768,
+    "modifiedTime": 1768835921498,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!26ZSm9FHI15uOTEu"
+}

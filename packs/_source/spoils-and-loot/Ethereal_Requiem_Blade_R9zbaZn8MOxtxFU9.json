@@ -1,0 +1,46 @@
+{
+  "folder": "hrezYkYmYgsGA3SJ",
+  "name": "Ethereal Requiem Blade",
+  "type": "weapon",
+  "img": "icons/weapons/swords/scimitar-worn-blue.webp",
+  "_id": "R9zbaZn8MOxtxFU9",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Scimitar</p><p>Attacks with this weapon ignore Armor</p><p>You can never drop this weapon unwillingly</p><p>Recover 1 Sanity after a successful Combat Encounter</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "speed": 5,
+    "skill": "bladedWeapons",
+    "broken": false,
+    "traits": {
+      "defensive": false,
+      "quick": false,
+      "parrying": true,
+      "powerful": false,
+      "simple": false,
+      "twoHanded": false,
+      "versatile": false
+    },
+    "damageType": "slashing"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738649768,
+    "modifiedTime": 1768835921498,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!R9zbaZn8MOxtxFU9"
+}

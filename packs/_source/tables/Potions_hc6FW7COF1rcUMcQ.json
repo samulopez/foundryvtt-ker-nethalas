@@ -1,0 +1,437 @@
+{
+  "folder": null,
+  "name": "Potions",
+  "_id": "hc6FW7COF1rcUMcQ",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "WsrHHNFfkvBeGT9Q",
+      "name": "Aether",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You immediately recover 5 Aether.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.WsrHHNFfkvBeGT9Q"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "KGNqSL3l53QBHbTr",
+      "name": "Antidote",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Immediately removes the Poisoned condition.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.KGNqSL3l53QBHbTr"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "Of3zJiw57kHd2PAH",
+      "name": "Coagulate",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Immediately removes the Bleeding condition.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.Of3zJiw57kHd2PAH"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "euPF81srO8k7XItM",
+      "name": "Courage",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Immediately removes the Frightened condition.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.euPF81srO8k7XItM"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "cT0aWKf4xwgBEo8Q",
+      "name": "Flaming",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>When applied to a weapon, increase your Damage Pool by +D4 Fire damage during 5 rounds.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.cT0aWKf4xwgBEo8Q"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "mgzVtJpvOgY63wST",
+      "name": "Frenzy",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>For the next D6 rounds you deal +2D6 damage, but you're unable to defend in any way.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.mgzVtJpvOgY63wST"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        8
+      ],
+      "_id": "5x6oTV2DKJVBKiON",
+      "name": "Heal",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You immediately heal D6+2 Wounds.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.5x6oTV2DKJVBKiON"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "3OUbYCN5Wqk46NLx",
+      "name": "Regeneration",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Heal D10+5 Wounds, at a rate of 1 Wound/round.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.3OUbYCN5Wqk46NLx"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "HYk8zXuRe2BXqyZ2",
+      "name": "Poison",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>When applied to a weapon, the next successful attack applies the Poisoned (1) condition.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.HYk8zXuRe2BXqyZ2"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "_id": "q7zqpOt1VJEtbbBa",
+      "name": "Purge",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Immediately removes the Cursed and Sickened conditions.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.q7zqpOt1VJEtbbBa"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        12,
+        13
+      ],
+      "_id": "DqGLnuuCjCagEcxE",
+      "name": "Rest",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Reduce your Exhaustion by D4.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.DqGLnuuCjCagEcxE"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "_id": "elVgVzVB0aTOSrCJ",
+      "name": "Satiation",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Counts as a Ration.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.elVgVzVB0aTOSrCJ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "_id": "zpqyrySHTcVNDDk1",
+      "name": "Mindfulness",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Heal 1 Sanity.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.zpqyrySHTcVNDDk1"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        16,
+        17
+      ],
+      "_id": "8UXHIarH7nY9OP7F",
+      "name": "Speed",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Grants 1 free Standard Action.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.8UXHIarH7nY9OP7F"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "_id": "fgPmGH4wUSZEAKSi",
+      "name": "Stoneskin",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>For the next D10 rooms you have +1 Armor, but your Dodge and Acrobatics Skills are reduced by 10.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.fgPmGH4wUSZEAKSi"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "_id": "jrupNSNq8w91mZUS",
+      "name": "Strength",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Increase your Endurance and Athletics by +10 for the next D10 rooms.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.jrupNSNq8w91mZUS"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "qs9JOFPNW0PYWHh1",
+      "name": "Vitality",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Grants D10 Temporary Toughness. Taking more than one of these while still under the effects of a previous one causes D10 Acid damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!hc6FW7COF1rcUMcQ.qs9JOFPNW0PYWHh1"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!hc6FW7COF1rcUMcQ"
+}

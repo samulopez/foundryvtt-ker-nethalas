@@ -1,0 +1,42 @@
+{
+  "folder": "4gZIfI7Y1747VJwz",
+  "name": "Shield - Target",
+  "type": "armor",
+  "img": "icons/equipment/shield/heater-steel-worn.webp",
+  "_id": "FBRXeNrny1meC6wm",
+  "system": {
+    "cost": 20,
+    "weight": "normal",
+    "description": "",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "broken": false,
+    "maxIntegrity": 6,
+    "currentIntegrity": 4,
+    "protection": 0,
+    "armorType": "shield",
+    "decreasePerception": 0,
+    "decreaseManeuverability": 0,
+    "parryBonus": 5
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768733920786,
+    "modifiedTime": 1768733920786,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0,
+    "xOca9XRwLgJMNAGV": 3
+  },
+  "sort": 0,
+  "_key": "!items!FBRXeNrny1meC6wm"
+}

@@ -1,0 +1,42 @@
+{
+  "folder": "4gZIfI7Y1747VJwz",
+  "name": "Vambraces - Medium",
+  "type": "armor",
+  "img": "icons/equipment/wrist/bracer-armored-steel-worn.webp",
+  "system": {
+    "cost": 40,
+    "weight": "normal",
+    "description": "",
+    "notes": "",
+    "quantity": 1,
+    "equippable": true,
+    "broken": false,
+    "maxIntegrity": 8,
+    "currentIntegrity": 6,
+    "protection": 2,
+    "armorType": "arms",
+    "decreasePerception": 0,
+    "decreaseManeuverability": 0,
+    "parryBonus": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768733920786,
+    "modifiedTime": 1768733920786,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_id": "Sic1he6YPZM1vzOW",
+  "ownership": {
+    "default": 0,
+    "xOca9XRwLgJMNAGV": 3
+  },
+  "sort": 0,
+  "_key": "!items!Sic1he6YPZM1vzOW"
+}

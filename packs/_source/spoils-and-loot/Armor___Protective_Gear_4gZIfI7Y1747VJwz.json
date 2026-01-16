@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Armor & Protective Gear",
+  "color": null,
+  "sorting": "a",
+  "_id": "4gZIfI7Y1747VJwz",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768733889674,
+    "modifiedTime": 1768733889674,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "_key": "!folders!4gZIfI7Y1747VJwz"
+}

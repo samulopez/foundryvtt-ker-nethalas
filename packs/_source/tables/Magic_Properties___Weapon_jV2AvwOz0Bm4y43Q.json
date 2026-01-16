@@ -1,0 +1,509 @@
+{
+  "folder": null,
+  "name": "Magic Properties - Weapon",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "FHZSTwRE5OP2GwFC",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Roll on the Damage Type table. You add +D4 damage of that Type to your Damage Pool when attacking with this weapon.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.FHZSTwRE5OP2GwFC"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "YZQYtIfn0mZsLiqX",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>+10 to Initiative checks.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.YZQYtIfn0mZsLiqX"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "oWZi6EHXBzMIG97C",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Add +D6 damage to your Damage Pool when you deal a Critical Strike.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.oWZi6EHXBzMIG97C"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "MwIHwz4lmsE0JBIb",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>+1 damage of the same type the weapon deals.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.MwIHwz4lmsE0JBIb"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "EZ3IQp5zxVbdx4CI",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>When dropped, the weapon instantly returns to your hand.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.EZ3IQp5zxVbdx4CI"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "axDtopmL5vACYSII",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Target gains Bleeding (1) each time you deal damage to them.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.axDtopmL5vACYSII"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "OzWiGrpfiCrGXDld",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Target gains Poisoned (1) each time you deal damage to them.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.OzWiGrpfiCrGXDld"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "ggAHcyEZOPrdPNqx",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Roll on the Random Enemy Type table. This weapon deals bonus damage against that type of enemy, depending on this weapon’s rarity: +1 Uncommon, +2 Rare, +3 Epic.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.ggAHcyEZOPrdPNqx"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "4x60uiU2qsXm4IVK",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Once per room you can add a number of dice to your Damage Pool when attacking with your weapon, depending on the weapon’s rarity: +D6 Uncommon, +2D6 Rare, +3D6 Epic.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.4x60uiU2qsXm4IVK"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "p5JIJrdSnf28tuPg",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>When you hit with this weapon and reduce the target to 0 Health, you gain D6 Temporary Toughness.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.p5JIJrdSnf28tuPg"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "_id": "XLLG9JkMlIbT0rvY",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Once per room, you can unleash a burst of destructive Arcane energy from the weapon. Every enemy creature must pass a Magic Resistance check or take damage depending on the weapon’s rarity: D4 Uncommon, 2D4 Rare, 3D4 Epic. This is a Standard Action.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.XLLG9JkMlIbT0rvY"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "_id": "IHeD0RhnWPKusTPL",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>When you hit with this weapon and reduce the target to 0 Health, you gain D6 Temporary Aether.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.IHeD0RhnWPKusTPL"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "_id": "wGvM0iHdPH6rFmmz",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>During the next D4 rounds, all non-Critical Strike damage dealt with this weapon is doubled. All incoming damage is doubled as well. Activating this Property is a Free Action.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.wGvM0iHdPH6rFmmz"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "_id": "lNjSCdYKWb8lGASP",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>You add +D6 to your Damage Pool for your first attack in a room while wielding this weapon.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.lNjSCdYKWb8lGASP"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "_id": "QAud9zgUDV63uQ1v",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>When you deal a Critical Strike with this weapon, you recover D10 Wounds.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.QAud9zgUDV63uQ1v"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "_id": "bogQmqP4VmRafFmB",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>When wielding this weapon, you deal a Critical Strike when rolling 66, regardless of your Skill score.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.bogQmqP4VmRafFmB"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "_id": "9vaXxATwBhehTh8Y",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Deals +1 damage on your next attack if you received damage during this same turn.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.9vaXxATwBhehTh8Y"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "_id": "0IpDi16mzs19rCgZ",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>You can choose to add D8 damage to your Damage Pool each time you deal damage with this weapon. If you do so, you receive the same amount of damage.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.0IpDi16mzs19rCgZ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "_id": "i0FDWIY2uUPTwd2E",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>When you deal damage with this weapon, gain +10 Dodge until your next turn.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.i0FDWIY2uUPTwd2E"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "RpOox9LN2ifyHuhM",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This weapon has +10 Speed.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!jV2AvwOz0Bm4y43Q.RpOox9LN2ifyHuhM"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768650622635,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "",
+  "_id": "jV2AvwOz0Bm4y43Q",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!jV2AvwOz0Bm4y43Q"
+}

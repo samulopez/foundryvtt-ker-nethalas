@@ -1,0 +1,101 @@
+{
+  "folder": null,
+  "name": "Resources",
+  "_id": "B9qqNZ0p1u2RwOsc",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        2
+      ],
+      "_id": "19xhk5NlCdjcGsk1",
+      "name": "You find nothing of value",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B9qqNZ0p1u2RwOsc.19xhk5NlCdjcGsk1"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        6
+      ],
+      "_id": "QBR3gDbqt9d9yD0z",
+      "name": "You find 1x Cooking Ingredients",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B9qqNZ0p1u2RwOsc.QBR3gDbqt9d9yD0z"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        10
+      ],
+      "_id": "81zYOc3kpxtcn3R3",
+      "name": "You find 1x Crafting Supplies",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B9qqNZ0p1u2RwOsc.81zYOc3kpxtcn3R3"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d10",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!B9qqNZ0p1u2RwOsc"
+}

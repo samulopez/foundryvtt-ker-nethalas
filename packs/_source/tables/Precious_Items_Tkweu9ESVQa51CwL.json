@@ -1,0 +1,79 @@
+{
+  "folder": null,
+  "name": "Precious Items",
+  "_id": "Tkweu9ESVQa51CwL",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        1,
+        15
+      ],
+      "_id": "NP55lKrrNDX3DgiR",
+      "name": "Magic Item",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.xLlrLW6msomuKLny",
+      "_key": "!tables.results!Tkweu9ESVQa51CwL.NP55lKrrNDX3DgiR"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        16,
+        20
+      ],
+      "_id": "nl8IKBP63ysqOSC4",
+      "name": "Relics",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.t9po4Mg05XZS9MLs",
+      "_key": "!tables.results!Tkweu9ESVQa51CwL.nl8IKBP63ysqOSC4"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768643275089,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "1d20",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!Tkweu9ESVQa51CwL"
+}

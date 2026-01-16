@@ -1,0 +1,33 @@
+{
+  "folder": "hrezYkYmYgsGA3SJ",
+  "name": "Echo of Resurgence",
+  "type": "item",
+  "_id": "osGR4oos96ZbRd9n",
+  "img": "icons/commodities/gems/gem-raw-rough-purple.webp",
+  "system": {
+    "cost": 0,
+    "weight": "normal",
+    "description": "<p>Item Type: Trinket</p><p>If one blow were to kill you, ignore all damage and heal D10 Health instead. The Echo of Resurgence shatters afterwards</p><p></p>",
+    "notes": "",
+    "quantity": 1,
+    "equippable": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768738649768,
+    "modifiedTime": 1768835921498,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!osGR4oos96ZbRd9n"
+}

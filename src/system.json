@@ -22,15 +22,15 @@
       "name": "Ker Nethalas",
       "sorting": "a",
       "color": "#854e29",
-      "packs": ["combat-encounters", "minions", "overseers", "weapons"]
+      "packs": ["creatures", "spoils-and-loot", "tables"]
     }
   ],
   "packs": [
     {
-      "name": "combat-encounters",
-      "label": "Combat Encounters",
+      "name": "creatures",
+      "label": "Creatures",
       "system": "ker-nethalas",
-      "path": "packs/combat-encounters",
+      "path": "packs/creatures",
       "type": "Actor",
       "flags": {},
       "ownership": {
@@ -39,35 +39,23 @@
       }
     },
     {
-      "name": "minions",
-      "label": "Minions",
+      "name": "spoils-and-loot",
+      "label": "Spoils & Loot",
       "system": "ker-nethalas",
-      "path": "packs/minions",
-      "type": "Actor",
-      "flags": {},
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "overseers",
-      "label": "Overseers",
-      "system": "ker-nethalas",
-      "path": "packs/overseers",
-      "type": "Actor",
-      "flags": {},
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "weapons",
-      "label": "Weapons",
-      "system": "ker-nethalas",
-      "path": "packs/weapons",
+      "path": "packs/spoils-and-loot",
       "type": "Item",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "tables",
+      "label": "Rollable Tables",
+      "system": "ker-nethalas",
+      "path": "packs/tables",
+      "type": "RollTable",
       "flags": {},
       "ownership": {
         "PLAYER": "OBSERVER",

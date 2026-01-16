@@ -485,6 +485,11 @@
         flex: 2;
         height: 100%;
       }
+      .editor-host {
+        .editor {
+          height: 100%;
+        }
+      }
     }
   }
 
@@ -494,14 +499,6 @@
     background: $color-panel;
     .active {
       min-height: 200px;
-    }
-  }
-
-  .armor {
-    .header-fields {
-      .left-label {
-        width: 150px;
-      }
     }
   }
 
@@ -551,6 +548,7 @@
     align-items: normal;
   }
 
+  // TODO: delete
   .vertical-divider {
     width: 2px;
     height: 100%;

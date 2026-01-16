@@ -1,0 +1,269 @@
+{
+  "folder": null,
+  "name": "Player Fumbles",
+  "_id": "avXXUhcNV0gnPbM0",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "SErVYpZShQm5p1la",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You drop your weapon and must spend your next turn recovering it (or drawing a new one). If you are not wielding a weapon, your next attack suffers -20 instead.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!avXXUhcNV0gnPbM0.SErVYpZShQm5p1la"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "SJrFxjIcjST6y05o",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You hurl your weapon with such strength that it gets stuck very deep in a wall or ground. As a Standard Action, you must perform a successful Athletics check to retrieve it. If you are not wielding a weapon, your next attack suffers -20 instead.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!avXXUhcNV0gnPbM0.SJrFxjIcjST6y05o"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "Q5ihlAnjH6BfcdJn",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You hurl your weapon with such strength that it smashes against a stone, breaking non-magical weapons in half, but still repairable at Camp. Take your next turn to recover magical weapons. If not armed, your next attack is at -20.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!avXXUhcNV0gnPbM0.Q5ihlAnjH6BfcdJn"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "72edwrITnuWppc6Q",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>A random item from your Belt breaks: make a Belt check. If you don't have a Belt, you receive 1 Piercing damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!avXXUhcNV0gnPbM0.72edwrITnuWppc6Q"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "3Iqgk6UwSnTUF3ag",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You are suddenly feeling drained and lose D8 Aether. If you don't have any Aether, you receive 1 Piercing damage.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!avXXUhcNV0gnPbM0.3Iqgk6UwSnTUF3ag"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "1Y3zemD8YqUDaQ8s",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You trip and fall, wasting this action. You are Prone and must use a Standard Action to get back up next round.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!avXXUhcNV0gnPbM0.1Y3zemD8YqUDaQ8s"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "LDKnBq7LIPPhtGrI",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>In the process of executing your attack you trip and slam your head. You are Prone and Dazed (2).</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!avXXUhcNV0gnPbM0.LDKnBq7LIPPhtGrI"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "ithsfJ7UjWHUigX2",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>Your attack hits a random ally instead of the intended target. If there are no allies, you strike yourself.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!avXXUhcNV0gnPbM0.ithsfJ7UjWHUigX2"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "NWQDGmCEDPpnyqCz",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<div><p>You manage to strike yourself with a normal attack.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!avXXUhcNV0gnPbM0.NWQDGmCEDPpnyqCz"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "AYKtwaQGoWbk0TxJ",
+      "name": "",
+      "img": null,
+      "description": "<div><p>You somehow manage to hurt yourself badly with your own weapon. You receive a Critical Strike.</p></div>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!avXXUhcNV0gnPbM0.AYKtwaQGoWbk0TxJ"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.1",
+    "createdTime": 1768577719597,
+    "modifiedTime": 1768821627873,
+    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+  },
+  "formula": "",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!avXXUhcNV0gnPbM0"
+}
