@@ -469,4 +469,12 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
       },
     });
   }
+
+  async deleteLightSource() {
+    await this.parent.update({
+      system: {
+        lightSource: 0,
+      },
+    });
+  }
 }

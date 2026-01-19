@@ -23,6 +23,7 @@
   "KN.Character.Attributes.exhaustionResistance": "Resistance",
   "KN.Character.lightsource": "LIGHTSOURCE",
   "KN.Character.lightsourceRoom": "room",
+  "KN.Character.deleteLightSource": "Delete light source",
   "KN.Character.Weapons.title": "WEAPONS",
   "KN.Character.Masteries.title": "MASTERIES",
   "KN.Character.Masteries.Mastery": "Mastery",
