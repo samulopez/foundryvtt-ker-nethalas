@@ -7,6 +7,8 @@ import type {
   MinionDataModel,
   WeaponDataModel,
 } from './module/data';
+import type KerNethalasCombatant from './module/combat/combatant';
+import type KerNethalasCombat from './module/combat/combat';
 import type KerNethalasActor from './module/actor/actor';
 
 declare module 'fvtt-types/configuration' {
@@ -26,6 +28,8 @@ declare module 'fvtt-types/configuration' {
   interface DocumentClassConfig {
     Actor: typeof KerNethalasActor<Actor.SubType>;
     Item: typeof KerNethalasItem<Item.SubType>;
+    Combat: typeof KerNethalasCombat;
+    Combatant: typeof KerNethalasCombatant;
   }
 
   interface ConfiguredItem<SubType extends Item.SubType> {
@@ -38,6 +42,7 @@ declare module 'fvtt-types/configuration' {
 
   interface SettingConfig {
     'ker-nethalas.markSkillForImprovement': boolean;
+    'ker-nethalas.duplicateMonstersOnStart': boolean;
   }
 }
 

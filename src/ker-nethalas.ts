@@ -16,6 +16,8 @@ import {
   WeaponDataModel,
 } from './module/data';
 import { ID, TEMPLATES } from './module/constants';
+import KerNethalasCombatant from './module/combat/combatant';
+import KerNethalasCombat from './module/combat/combat';
 import KerNethalasActor from './module/actor/actor';
 
 Hooks.once('init', async () => {
@@ -33,6 +35,8 @@ Hooks.once('init', async () => {
     weapon: WeaponDataModel,
     armor: ArmorDataModel,
   };
+  CONFIG.Combat.documentClass = KerNethalasCombat;
+  CONFIG.Combatant.documentClass = KerNethalasCombatant;
   CONFIG.Actor.trackableAttributes = {
     character: {
       bar: ['attributes.health', 'attributes.toughness', 'attributes.aether', 'attributes.sanity'],
@@ -91,3 +95,5 @@ Hooks.once('init', async () => {
   // Preload Handlebars templates
   await foundry.applications.handlebars.loadTemplates(Object.values(foundry.utils.flattenObject(TEMPLATES)));
 });
+
+Hooks.on('createCombatant', KerNethalasCombat.createCombatant);

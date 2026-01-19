@@ -219,7 +219,6 @@ export default class CharacterSheet<
 
     context.equipment = this.document.system.equipmentItems();
 
-    // TODO: add special supplies
     context.totalCoinsAndGems = (this.document.system.coins ?? 0) + this.document.system.numberGems();
     context.itemSlotsCoinsAndGems = this.document.system.itemSlotsCoinsAndGems();
 

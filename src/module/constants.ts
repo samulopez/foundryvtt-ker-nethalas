@@ -208,4 +208,5 @@ export const SKILL_DISPLAY: Record<'left' | 'right', string[]> = {
 
 export enum KNSettings {
   markSkillForImprovement = 'markSkillForImprovement',
+  duplicateMonstersOnStart = 'duplicateMonstersOnStart',
 }
