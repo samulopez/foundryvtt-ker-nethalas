@@ -236,14 +236,21 @@
                         <div>{{localize "KN.Character.lightsource"}}: {{document.system.lightSource}}</div>
                         -1 / {{localize "KN.Character.lightsourceRoom"}}
                     </div>
-                    <input class="flex0"
-                           type="range"
-                           min="0"
-                           max="20"
-                           name="system.lightSource"
-                           id="system.lightSource"
-                           data-tooltip="{{document.system.lightSource}}"
-                           value="{{document.system.lightSource}}">
+                    <div class="flex0 lightsource">
+                        <div class="delete-lightsource">
+                            <i data-action="deleteLightSource"
+                               data-tooltip="KN.Character.deleteLightSource"
+                               class="fas fa-trash rollable flex0"></i>
+                        </div>
+                        <input class="flex0"
+                               type="range"
+                               min="0"
+                               max="20"
+                               name="system.lightSource"
+                               id="system.lightSource"
+                               data-tooltip="{{document.system.lightSource}}"
+                               value="{{document.system.lightSource}}">
+                    </div>
                 </div>
             </div>
         </div>

@@ -65,6 +65,7 @@ export default class CharacterSheet<
       swapWeapons: this.#swapWeapons,
       rollHitLocation: this.#rollHitLocation,
       toggleSorting: this.#toggleSorting,
+      deleteLightSource: this.#deleteLightSource,
     },
     dragDrop: [
       {
@@ -712,5 +713,11 @@ export default class CharacterSheet<
     event.preventDefault();
 
     await this.document.system.toggleSorting();
+  }
+
+  static async #deleteLightSource(this, event, _target) {
+    event.preventDefault();
+
+    await this.document.system.deleteLightSource();
   }
 }

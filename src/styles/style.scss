@@ -8,7 +8,6 @@
   $color-accent: #e57c2c;
   $color-accent-2: #7ad0ff;
   $color-text: #e8ecf5;
-  $color-muted: #a7b4c9;
   $color-shadow: rgba(0, 0, 0, 0.35);
 
   // Gap spacing variables
@@ -35,10 +34,6 @@
     p,
     span {
       color: $color-text;
-    }
-
-    label {
-      color: $color-muted;
     }
 
     input:not([type='checkbox'], [type='radio']),
@@ -81,14 +76,12 @@
       }
       h5 {
         margin: 0.5rem 0 0.25rem;
-        color: $color-muted;
       }
       .left-label {
         display: block;
         width: 120px;
         padding-right: 1rem;
         text-align: right;
-        color: $color-muted;
       }
       .level-input {
         width: 3rem;
@@ -129,6 +122,18 @@
         label {
           min-width: 50px;
         }
+      }
+
+      .lightsource {
+        position: relative;
+      }
+
+      .delete-lightsource {
+        position: absolute;
+        z-index: 2;
+        width: 16px;
+        height: 16px;
+        background-color: $color-bg;
       }
 
       input[type='range'] {
@@ -420,10 +425,6 @@
       color: $color-text;
     }
 
-    label {
-      color: $color-muted;
-    }
-
     input:not([type='checkbox'], [type='radio']),
     select,
     textarea {
@@ -460,7 +461,6 @@
 
     h5 {
       margin: 0.5rem 0 0.25rem;
-      color: $color-muted;
     }
 
     .header-fields {
@@ -474,7 +474,6 @@
         width: 120px;
         padding-right: 1rem;
         text-align: right;
-        color: $color-muted;
       }
     }
     .details,
@@ -546,14 +545,6 @@
 
   .align-normal {
     align-items: normal;
-  }
-
-  // TODO: delete
-  .vertical-divider {
-    width: 2px;
-    height: 100%;
-    background-color: $color-border-strong;
-    margin: 0 0.25rem;
   }
 
   .success-text {
