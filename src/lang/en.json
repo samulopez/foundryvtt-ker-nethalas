@@ -270,6 +270,8 @@
   "KN.ModifySkillRollDialogue.modifierTooltip": "Give a positive or negative modifier here to add/subtract from the target for the check.",
   "KN.Settings.markSkillForImprovement.name": "Auto-mark Skill for Improvement",
   "KN.Settings.markSkillForImprovement.hint": "When enabled, every time you roll doubles when making a Skill check, that Skill will be automatically marked for improvement.",
+  "KN.Settings.duplicateMonstersOnStart.name": "Duplicate Monsters on Start",
+  "KN.Settings.duplicateMonstersOnStart.hint": "When enabled, monsters with the trait ruthlessness greater than 0 will be duplicated at the start of combat.",
   "KN.Error.itemMoveSameActor": "Cannot move non-encumbering or gem item outside their list.",
   "KN.Error.backpackListCapacity": "Not enough capacity in Backpack.",
   "KN.Error.gearListCapacity": "Not enough capacity in Gear.",

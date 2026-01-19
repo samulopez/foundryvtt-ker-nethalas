@@ -10,4 +10,12 @@ export const registerSettings = () => {
     default: true,
     type: Boolean,
   });
+  getGame().settings.register(ID, KNSettings.duplicateMonstersOnStart, {
+    name: getLocalization().localize('KN.Settings.duplicateMonstersOnStart.name'),
+    hint: getLocalization().localize('KN.Settings.duplicateMonstersOnStart.hint'),
+    scope: 'client',
+    config: true,
+    default: true,
+    type: Boolean,
+  });
 };
