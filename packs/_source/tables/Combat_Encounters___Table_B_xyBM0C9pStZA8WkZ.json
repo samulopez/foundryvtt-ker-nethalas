@@ -140,7 +140,7 @@
       "_id": "56A0Dfw6dRsATFeO",
       "name": "Ratkin Marauders",
       "img": "icons/svg/d20-black.svg",
-      "description": "",
+      "description": "<p>Number 3</p>",
       "drawn": false,
       "flags": {},
       "_stats": {
@@ -215,7 +215,7 @@
       "_id": "GRKzO68WTFz2HwT9",
       "name": "Rotwalkers",
       "img": "icons/svg/d20-black.svg",
-      "description": "",
+      "description": "<p>Number 3</p>",
       "drawn": false,
       "flags": {},
       "_stats": {
@@ -517,7 +517,7 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768643275089,
-    "modifiedTime": 1768821627873,
+    "modifiedTime": 1768903757288,
     "lastModifiedBy": "xOca9XRwLgJMNAGV"
   },
   "formula": "1d20",

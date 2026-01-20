@@ -1,27 +1,28 @@
 {
-  "folder": "rCyiyeuavyBKxybt",
-  "name": "Fire Elemental",
-  "type": "minion",
-  "img": "icons/svg/mole.svg",
+  "folder": "KENxJWt8SgmdaAl8",
+  "name": "Lesser Demon",
+  "type": "monster",
+  "img": "icons/svg/terror.svg",
+  "_id": "eoYIxmSQiOyBPnoW",
   "system": {
     "attributes": {
-      "body": 40,
+      "body": 20,
       "mind": 40,
       "combatSkill": 40,
-      "endurance": 60,
+      "endurance": 40,
       "health": {
         "min": 0,
-        "value": 12,
-        "max": 12
+        "value": 2,
+        "max": 2
       },
-      "magicResistance": 60
+      "magicResistance": 30
     },
     "type": {
       "animal": false,
       "astral": false,
       "construct": false,
-      "demon": false,
-      "elemental": true,
+      "demon": true,
+      "elemental": false,
       "humanoid": false,
       "plant": false,
       "undead": false
@@ -44,7 +45,7 @@
       "savage": false,
       "swift": false,
       "venomous": false,
-      "custom": ""
+      "custom": "Restored by Fire damage"
     },
     "armor": {
       "rightRearLeg": 0,
@@ -76,29 +77,23 @@
     "actions": [
       {
         "startDie": 1,
-        "endDie": 4,
-        "name": "Ember Blast (Physical)",
-        "description": "<div><p>The Fire Elemental fires a blast of flames at a target, dealing D4 Fire damage on a hit. Additionally, the target must succeed on a Body check to avoid receiving the Burning condition.</p></div>"
-      },
-      {
-        "startDie": 5,
         "endDie": 6,
-        "name": "Firestorm (Magical)",
-        "description": "<div><p>The Fire Elemental summons a firestorm that encompasses the whole room. All creatures in the area take D4 Fire damage.</p></div>"
+        "name": "Demonic Slash (Physical)",
+        "description": "<p>The Lesser Demon lashes with its claws at a target, dealing D4 Slashing damage.</p>"
       }
     ],
-    "description": "<div><p>The most common of elementals originating from the Plane of Fire, Fire Elementals are nonetheless powerful creatures, moreso when directed by a cunning magician.</p></div>",
+    "description": "",
     "notes": "",
     "sorting": "manually"
   },
   "prototypeToken": {
-    "name": "Fire Elemental",
+    "name": "Lesser Demon",
     "displayName": 0,
     "actorLink": false,
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "icons/svg/mole.svg",
+      "src": "icons/svg/terror.svg",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,
@@ -195,15 +190,14 @@
     "coreVersion": "13.351",
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
-    "createdTime": 1768667755276,
-    "modifiedTime": 1768667755276,
+    "createdTime": 1768904228563,
+    "modifiedTime": 1768904228563,
     "lastModifiedBy": "xOca9XRwLgJMNAGV"
   },
-  "_id": "c1Topxwum78S48Ao",
   "ownership": {
     "default": 0,
     "xOca9XRwLgJMNAGV": 3
   },
   "sort": 0,
-  "_key": "!actors!c1Topxwum78S48Ao"
+  "_key": "!actors!eoYIxmSQiOyBPnoW"
 }

@@ -208,13 +208,12 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768667746708,
-    "modifiedTime": 1768667746708,
+    "modifiedTime": 1768904228459,
     "lastModifiedBy": "xOca9XRwLgJMNAGV"
   },
   "_id": "dRFuq0BDMJ8soFBZ",
   "ownership": {
-    "default": 0,
-    "xOca9XRwLgJMNAGV": 3
+    "default": 0
   },
   "sort": 0,
   "_key": "!actors!dRFuq0BDMJ8soFBZ"
