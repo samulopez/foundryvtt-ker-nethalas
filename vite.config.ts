@@ -32,7 +32,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: `../dist/${MODULE_ID}`,
+    outDir: `../dist/`,
     emptyOutDir: true,
     sourcemap: true,
     lib: {
@@ -51,11 +51,11 @@ export default defineConfig({
   plugins: [
     copy({
       targets: [
-        { src: 'src/lang', dest: `./dist/${MODULE_ID}` },
-        { src: 'src/templates', dest: `./dist/${MODULE_ID}` },
-        { src: 'assets', dest: `./dist/${MODULE_ID}` },
-        { src: 'packs', dest: `./dist/${MODULE_ID}` },
-        { src: 'src/system.json', dest: `./dist/${MODULE_ID}` },
+        { src: 'src/lang', dest: `./dist/` },
+        { src: 'src/templates', dest: `./dist/` },
+        { src: 'assets', dest: `./dist/` },
+        { src: 'packs', dest: `./dist/` },
+        { src: 'src/system.json', dest: `./dist/` },
       ],
       hook: 'writeBundle',
     }),
