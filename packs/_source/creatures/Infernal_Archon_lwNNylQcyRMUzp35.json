@@ -91,7 +91,7 @@
         "startDie": 3,
         "endDie": 3,
         "name": "Demonic Conjuration (Magical)",
-        "description": "<div><p>The Infernal Archon summons D4 Lesser Demons to aid in battle. They act immediately after it in Initiative order. Only a maximum of 4 Lesser Demons can be present at any given time.</p></div>"
+        "description": "<div><p>The Infernal Archon summons D4 @UUID[Compendium.ker-nethalas.creatures.Actor.eoYIxmSQiOyBPnoW]{Lesser Demon} to aid in battle. They act immediately after it in Initiative order. Only a maximum of 4 Lesser Demons can be present at any given time.</p></div>"
       },
       {
         "startDie": 4,
@@ -221,12 +221,11 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768667708881,
-    "modifiedTime": 1768667708881,
+    "modifiedTime": 1768904328482,
     "lastModifiedBy": "xOca9XRwLgJMNAGV"
   },
   "ownership": {
-    "default": 0,
-    "xOca9XRwLgJMNAGV": 3
+    "default": 0
   },
   "sort": 0,
   "_key": "!actors!lwNNylQcyRMUzp35"

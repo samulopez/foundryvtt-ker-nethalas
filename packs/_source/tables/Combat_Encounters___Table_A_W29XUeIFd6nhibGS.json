@@ -115,7 +115,7 @@
       "_id": "gXGmDDkNlqCncyWX",
       "name": "Bladewings",
       "img": "icons/svg/d20-black.svg",
-      "description": "",
+      "description": "<p>Number D4+1</p>",
       "drawn": false,
       "flags": {},
       "_stats": {
@@ -190,7 +190,7 @@
       "_id": "wGz5iHmIzlsYzzsH",
       "name": "Bone Spiders",
       "img": "icons/svg/d20-black.svg",
-      "description": "",
+      "description": "<p>Number 3</p>",
       "drawn": false,
       "flags": {},
       "_stats": {
@@ -240,7 +240,7 @@
       "_id": "HY56V4eG29OuyDoX",
       "name": "Corpse Ants",
       "img": "icons/svg/d20-black.svg",
-      "description": "",
+      "description": "<p>Number 3</p>",
       "drawn": false,
       "flags": {},
       "_stats": {
@@ -290,7 +290,7 @@
       "_id": "jcTR7iWNuUYQkaxK",
       "name": "Desiccated Cryptguards",
       "img": "icons/svg/d20-black.svg",
-      "description": "",
+      "description": "<p>Number 2</p>",
       "drawn": false,
       "flags": {},
       "_stats": {
@@ -440,7 +440,7 @@
       "_id": "jy9TbtENXT59Uwkj",
       "name": "Hive Larvae",
       "img": "icons/svg/d20-black.svg",
-      "description": "",
+      "description": "<p>Number 4</p>",
       "drawn": false,
       "flags": {},
       "_stats": {
@@ -465,7 +465,7 @@
       "_id": "4SNuHpj65cm2t9n8",
       "name": "Hive Warrior",
       "img": "icons/svg/d20-black.svg",
-      "description": "",
+      "description": "<p>Number 2</p>",
       "drawn": false,
       "flags": {},
       "_stats": {
@@ -517,7 +517,7 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768643275089,
-    "modifiedTime": 1768821627873,
+    "modifiedTime": 1768903757288,
     "lastModifiedBy": "xOca9XRwLgJMNAGV"
   },
   "formula": "1d20",
