@@ -85,11 +85,11 @@ jobs:
           tag: ${{ github.ref_name }}
 
       # Publish this new version to the Foundry VTT Module Listing
-      # - name: Publish to Foundry VTT Repo
-      #   id: publish_foundry_repo
-      #   run: npx @ghost-fvtt/foundry-publish
-      #   env:
-      #     FVTT_DRY_RUN: ${{ steps.set-pr-deploy-info.outputs.prerelease }}
-      #     FVTT_MANIFEST_PATH: src/system.json
-      #     FVTT_TOKEN: ${{ secrets.FVTT_TOKEN }}
-      #     FVTT_MANIFEST_URL: https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/system.json
+      - name: Publish to Foundry VTT Repo
+        id: publish_foundry_repo
+        run: npx @ghost-fvtt/foundry-publish
+        env:
+          FVTT_DRY_RUN: ${{ steps.set-pr-deploy-info.outputs.prerelease }}
+          FVTT_MANIFEST_PATH: src/system.json
+          FVTT_TOKEN: ${{ secrets.FVTT_TOKEN }}
+          FVTT_MANIFEST_URL: https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/system.json
