@@ -5,7 +5,7 @@
   "_id": "LdE03LgkQYsPqVJC",
   "img": "icons/commodities/materials/plant-sprout-seed-brown-green.webp",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Consumable</p><p>+1 Ability Point</p><p></p>",
     "notes": "",

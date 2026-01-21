@@ -5,7 +5,7 @@
   "img": "icons/equipment/shield/heater-steel-gold.webp",
   "_id": "L2W1zsswJ9CXANsv",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Increases your Parry by +20</p><p>Once per room you can ignore all damage from a single source</p><p></p>",
     "notes": "",

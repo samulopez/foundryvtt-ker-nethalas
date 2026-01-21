@@ -5,7 +5,7 @@
   "img": "icons/weapons/maces/mace-spiked-steel-grey.webp",
   "_id": "u3LBOeBMaqUuEmU0",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>+2 Force damage</p><p>Any creature struck by this mace must pass an Endurance check or be Dazed (1)</p><p></p>",
     "notes": "",

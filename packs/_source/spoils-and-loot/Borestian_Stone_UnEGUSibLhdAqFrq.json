@@ -5,7 +5,7 @@
   "_id": "UnEGUSibLhdAqFrq",
   "img": "icons/equipment/neck/amulet-carved-stone-spiral.webp",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Amulet</p><p>A character in possession of a Borestian Stone can immediately identify Potions without requiring a Medicine check</p><p></p>",
     "notes": "",

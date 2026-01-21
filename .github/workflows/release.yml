@@ -3,7 +3,7 @@ name: release
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
   build:
@@ -30,7 +30,7 @@ jobs:
         id: sub_manifest_link_version
         uses: microsoft/variable-substitution@v1
         with:
-          files: 'src/system.json'
+          files: "src/system.json"
         env:
           version: ${{ steps.version.outputs.TAG }}
           download: https://github.com/${{github.repository}}/releases/download/${{github.ref_name}}/system.zip
@@ -81,13 +81,13 @@ jobs:
           draft: false
           prerelease: ${{ steps.set-pr-deploy-info.outputs.prerelease }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: './dist/system.json,./dist/system.zip'
+          artifacts: "./dist/system.json,./dist/system.zip"
           tag: ${{ github.ref_name }}
 
       # Publish this new version to the Foundry VTT Module Listing
       - name: Publish to Foundry VTT Repo
         id: publish_foundry_repo
-        run: npx @ghost-fvtt/foundry-publish
+        run: npx @ghost-fvtt/foundry-publish@4.0.0
         env:
           FVTT_DRY_RUN: ${{ steps.set-pr-deploy-info.outputs.prerelease }}
           FVTT_MANIFEST_PATH: src/system.json

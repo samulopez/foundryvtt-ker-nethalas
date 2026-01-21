@@ -5,7 +5,7 @@
   "_id": "CMJFasTX81lJqUUU",
   "img": "icons/equipment/finger/ring-band-skull-purple.webp",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Ring</p><p>Grants the character 5 Aether that can only be spent on summoning Minions.</p><p></p>",
     "notes": "",

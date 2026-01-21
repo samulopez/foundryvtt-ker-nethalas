@@ -5,7 +5,7 @@
   "img": "icons/equipment/hand/gauntlet-armored-leather-grey.webp",
   "_id": "26ZSm9FHI15uOTEu",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Fist weapon</p><p>Target receives a minimum of 1 damage every time you successfully strike them, regardless of Armor or resistances </p><p>Once per Combat Encounter you may spend a Reaction to turn your opponent’s attack against them, leaving you unharmed</p>",
     "notes": "",

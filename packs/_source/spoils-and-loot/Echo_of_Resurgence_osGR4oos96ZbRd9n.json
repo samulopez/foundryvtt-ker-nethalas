@@ -5,7 +5,7 @@
   "_id": "osGR4oos96ZbRd9n",
   "img": "icons/commodities/gems/gem-raw-rough-purple.webp",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Trinket</p><p>If one blow were to kill you, ignore all damage and heal D10 Health instead. The Echo of Resurgence shatters afterwards</p><p></p>",
     "notes": "",

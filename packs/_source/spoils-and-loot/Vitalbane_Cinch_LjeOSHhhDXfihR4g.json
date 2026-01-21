@@ -5,7 +5,7 @@
   "_id": "LjeOSHhhDXfihR4g",
   "img": "icons/equipment/waist/belt-armored-steel-purple.webp",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Belt</p><p>Increase your Health by 5</p><p>You gain access to the Hexmancer’s Tier 4 Ability Drain Lifeforce</p><p></p>",
     "notes": "",
