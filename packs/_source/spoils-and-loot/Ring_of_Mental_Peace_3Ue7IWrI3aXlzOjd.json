@@ -5,7 +5,7 @@
   "_id": "3Ue7IWrI3aXlzOjd",
   "img": "icons/equipment/finger/ring-inlay-red.webp",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Ring</p><p>Touching a target causes them to recover D6 Sanity. Can only be used once per Camp Rest. Can only be used on another character</p><p></p>",
     "notes": "",

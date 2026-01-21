@@ -5,7 +5,7 @@
   "_id": "tWSJWuUOIaiVA9Eg",
   "img": "icons/equipment/finger/ring-band-engraved-scrolls-bronze.webp",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Ring</p><p>After a Camp Rest, choose a Skill: it gains +50 until your next Camp Rest.</p><p>These points may not be reallocated until your next Camp Rest</p><p></p>",
     "notes": "",

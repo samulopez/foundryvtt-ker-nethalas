@@ -5,7 +5,7 @@
   "_id": "DlBojHgK739kyVFO",
   "img": "icons/equipment/hand/glove-cuffed-studded-red.webp",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Gloves</p><p>You’re Resistant to Fire damage</p><p>Once per Camp Rest you can use the Flamecaster’s Tier 4 Summon Fire Elemental Ability. The elemental disappears when you exit the room</p>",
     "notes": "",

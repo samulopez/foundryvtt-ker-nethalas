@@ -4,7 +4,7 @@
   "type": "item",
   "img": "icons/consumables/potions/vial-cork-red.webp",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Consumable</p><p>Increase your Health by D4 permanently</p><p></p>",
     "notes": "",

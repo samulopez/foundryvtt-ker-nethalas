@@ -5,7 +5,7 @@
   "_id": "vsjYvwuSm6RhIDW2",
   "img": "icons/equipment/finger/ring-band-studded-silver.webp",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Ring</p><p>Allows the character to blast a wave of aetheric energies that deal 2D10 Arcane damage to all opponents in the room. This effect can be activated once per Camp Rest</p><p></p>",
     "notes": "",

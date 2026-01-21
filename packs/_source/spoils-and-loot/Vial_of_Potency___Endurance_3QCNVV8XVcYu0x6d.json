@@ -4,7 +4,7 @@
   "type": "item",
   "img": "icons/consumables/potions/potion-tube-corked-orange.webp",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Consumable</p><p>Increase your Endurance by 5 permanently</p><p></p>",
     "notes": "",

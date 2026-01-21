@@ -5,7 +5,7 @@
   "img": "icons/weapons/maces/mace-spiked-banded-wood.webp",
   "_id": "1nOkTTIhc4WIEfsr",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Requires Athletics (60), Bludgeoning Weapons (60)</p><p>Always deals 4 Slashing damage, ignoring all Armor</p><p></p>",
     "notes": "",

@@ -5,7 +5,7 @@
   "_id": "FEenELoBWTcZvRLJ",
   "img": "icons/consumables/meat/heart-organ-realistic-red.webp",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Consumable</p><p>A character that eats the Heart instantly gains 200 XP, but loses D6 Sanity</p><p></p>",
     "notes": "",

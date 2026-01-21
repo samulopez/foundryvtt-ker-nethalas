@@ -5,7 +5,7 @@
   "_id": "qdR9Cah268nxoVeD",
   "img": "icons/commodities/treasure/crown-gold-laurel-wreath.webp",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Head Piece</p><p>+10 max Aether</p><p>All Abilities that deal damage deal an additional +D4 damage</p><p></p>",
     "notes": "",

@@ -5,7 +5,7 @@
   "img": "icons/equipment/chest/breastplate-layered-gold.webp",
   "_id": "5PmPujWzRvosBxNw",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Plate (Torso)</p><p>This piece of armor bursts into flames when you engage in combat, dealing 1 Fire damage per round to all opponents</p><p></p>",
     "notes": "",

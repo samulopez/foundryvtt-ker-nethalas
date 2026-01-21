@@ -5,7 +5,7 @@
   "img": "icons/weapons/swords/scimitar-worn-blue.webp",
   "_id": "R9zbaZn8MOxtxFU9",
   "system": {
-    "cost": 0,
+    "cost": 1000,
     "weight": "normal",
     "description": "<p>Item Type: Scimitar</p><p>Attacks with this weapon ignore Armor</p><p>You can never drop this weapon unwillingly</p><p>Recover 1 Sanity after a successful Combat Encounter</p><p></p>",
     "notes": "",
