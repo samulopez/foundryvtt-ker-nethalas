@@ -23,14 +23,16 @@
 
   &.theme-dark {
     --color-panel: var(--color-cool-4);
+    .actor,
+    .item {
+      background:
+        radial-gradient(circle at 20% 20%, rgba($color-accent, 0.06), transparent 35%),
+        radial-gradient(circle at 80% 10%, rgba($color-accent-2, 0.08), transparent 35%), $color-bg;
+    }
   }
 
   // Styles for the Ker Nethalas system
   .actor {
-    background:
-      radial-gradient(circle at 20% 20%, rgba($color-accent, 0.06), transparent 35%),
-      radial-gradient(circle at 80% 10%, rgba($color-accent-2, 0.08), transparent 35%), $color-bg;
-
     input:not([type='checkbox'], [type='radio']),
     select,
     textarea {
@@ -388,10 +390,6 @@
   }
 
   .item {
-    background:
-      radial-gradient(circle at 20% 20%, rgba($color-accent, 0.06), transparent 35%),
-      radial-gradient(circle at 80% 10%, rgba($color-accent-2, 0.08), transparent 35%), $color-bg;
-
     input:not([type='checkbox'], [type='radio']),
     select,
     textarea {
