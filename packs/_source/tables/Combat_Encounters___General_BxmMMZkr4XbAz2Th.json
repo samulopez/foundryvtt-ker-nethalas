@@ -6,6 +6,56 @@
   "description": "",
   "results": [
     {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        3
+      ],
+      "_id": "QD3iniF77cXvW6vq",
+      "name": "Combat Encounters - Table A",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!BxmMMZkr4XbAz2Th.QD3iniF77cXvW6vq"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        6
+      ],
+      "_id": "xbAyRzRbzebAO3eQ",
+      "name": "Combat Encounters - Table B",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!BxmMMZkr4XbAz2Th.xbAyRzRbzebAO3eQ"
+    },
+    {
       "type": "document",
       "weight": 1,
       "range": [
@@ -67,8 +117,8 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768643275089,
-    "modifiedTime": 1768903757288,
-    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+    "modifiedTime": 1769182501345,
+    "lastModifiedBy": "Q0Szu4q2kPffUgpv"
   },
   "formula": "1d6",
   "ownership": {

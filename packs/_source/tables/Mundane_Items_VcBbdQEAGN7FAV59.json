@@ -8,10 +8,95 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        1,
-        5
-      ],
+      "range": [41, 45],
+      "_id": "KxfZGV58WZpLRGXu",
+      "name": "Lore Books",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.KxfZGV58WZpLRGXu"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [56, 60],
+      "_id": "4Qj9byukM1QEN915",
+      "name": "Gems & Jewelry",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.4Qj9byukM1QEN915"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [81, 85],
+      "_id": "pQ5d6kQfFqCLpwAj",
+      "name": "Random Armor",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.pQ5d6kQfFqCLpwAj"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [86, 90],
+      "_id": "UUKOQlRs9AMVQQzD",
+      "name": "Random Weapon",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!VcBbdQEAGN7FAV59.UUKOQlRs9AMVQQzD"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [1, 5],
       "_id": "N70uqecTFCEZiaV3",
       "name": "D4 Crafting Supplies",
       "img": "icons/svg/d20-black.svg",
@@ -33,10 +118,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        6,
-        10
-      ],
+      "range": [6, 10],
       "_id": "1oubHx9y9XE2soE7",
       "name": "D4 Cooking Ingredients",
       "img": "icons/svg/d20-black.svg",
@@ -57,10 +139,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        11,
-        15
-      ],
+      "range": [11, 15],
       "_id": "F24tkjF8Mg8Mc8fc",
       "name": "Backpack",
       "img": "icons/svg/d20-black.svg",
@@ -81,10 +160,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        16,
-        20
-      ],
+      "range": [16, 20],
       "_id": "jCTZjFW2To6lP6pR",
       "name": "Bandage",
       "img": "icons/svg/d20-black.svg",
@@ -106,10 +182,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        21,
-        25
-      ],
+      "range": [21, 25],
       "_id": "SbCdUQ6ZEsPMyVDU",
       "name": "Bedroll",
       "img": "icons/svg/d20-black.svg",
@@ -131,10 +204,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        26,
-        30
-      ],
+      "range": [26, 30],
       "_id": "fijSqoDLUcrJQVWi",
       "name": "Belt",
       "img": "icons/svg/d20-black.svg",
@@ -155,10 +225,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        31,
-        35
-      ],
+      "range": [31, 35],
       "_id": "cHnqousvKMKCfk3J",
       "name": "Belt Lamp",
       "img": "icons/svg/d20-black.svg",
@@ -180,10 +247,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        36,
-        40
-      ],
+      "range": [36, 40],
       "_id": "qhIB9rb3MB4utEXU",
       "name": "Candle",
       "img": "icons/svg/d20-black.svg",
@@ -205,10 +269,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        41,
-        45
-      ],
+      "range": [41, 45],
       "_id": "4d8Q0OQxDDgf84CO",
       "name": "Lore Books",
       "img": "icons/svg/d20-black.svg",
@@ -230,10 +291,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        46,
-        50
-      ],
+      "range": [46, 50],
       "_id": "yLQ0X9ce6CmItME7",
       "name": "Crowbar",
       "img": "icons/svg/d20-black.svg",
@@ -255,10 +313,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        51,
-        55
-      ],
+      "range": [51, 55],
       "_id": "u5H8VftavFjXoLyE",
       "name": "Flare",
       "img": "icons/svg/d20-black.svg",
@@ -280,10 +335,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        56,
-        60
-      ],
+      "range": [56, 60],
       "_id": "dq2C6dCv1D74HgxA",
       "name": "Gems & Jewelry",
       "img": "icons/svg/d20-black.svg",
@@ -305,10 +357,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        61,
-        65
-      ],
+      "range": [61, 65],
       "_id": "9xD9IYcThD2244WM",
       "name": "Lamp",
       "img": "icons/svg/d20-black.svg",
@@ -330,10 +379,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        66,
-        70
-      ],
+      "range": [66, 70],
       "_id": "WJnqTHsewHkODSux",
       "name": "Lamp Oil",
       "img": "icons/svg/d20-black.svg",
@@ -355,10 +401,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        71,
-        75
-      ],
+      "range": [71, 75],
       "_id": "ZSclQDbTMVpAK855",
       "name": "Lockpick",
       "img": "icons/svg/d20-black.svg",
@@ -380,10 +423,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        76,
-        80
-      ],
+      "range": [76, 80],
       "_id": "n1I5u8fkQ97lSmK0",
       "name": "Pouch",
       "img": "icons/svg/d20-black.svg",
@@ -404,10 +444,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        81,
-        85
-      ],
+      "range": [81, 85],
       "_id": "STbrGFSMrn6MXLFe",
       "name": "Random Armor",
       "img": "icons/svg/d20-black.svg",
@@ -429,10 +466,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        86,
-        90
-      ],
+      "range": [86, 90],
       "_id": "wlYbRhKl0rgoLecd",
       "name": "Random Weapon",
       "img": "icons/svg/d20-black.svg",
@@ -454,10 +488,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        91,
-        100
-      ],
+      "range": [91, 100],
       "_id": "58AJwiDCNI9SimV2",
       "name": "D4 Ritual Components",
       "img": "icons/svg/d20-black.svg",
@@ -487,8 +518,8 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768643275089,
-    "modifiedTime": 1768903757288,
-    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+    "modifiedTime": 1769182501345,
+    "lastModifiedBy": "Q0Szu4q2kPffUgpv"
   },
   "formula": "1d100",
   "ownership": {

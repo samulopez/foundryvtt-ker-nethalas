@@ -1,0 +1,121 @@
+{
+  "folder": null,
+  "name": "Room & Corridor",
+  "_id": "TDqaltuh1HYMqvKQ",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [1, 25],
+      "_id": "mjSbIYaxliZNRhZn",
+      "name": "Corridor Description",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!TDqaltuh1HYMqvKQ.mjSbIYaxliZNRhZn"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [26, 100],
+      "_id": "SdWHaObk2t1tIEab",
+      "name": "Room Description",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!TDqaltuh1HYMqvKQ.SdWHaObk2t1tIEab"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [1, 25],
+      "_id": "6K6aAdijc6FQzLX8",
+      "name": "Corridor Description",
+      "img": "icons/svg/d20-grey.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "createdTime": 1769167420501,
+        "modifiedTime": 1769167436258,
+        "lastModifiedBy": "Q0Szu4q2kPffUgpv"
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.aLfGRHzgV6EoGAcg",
+      "_key": "!tables.results!TDqaltuh1HYMqvKQ.6K6aAdijc6FQzLX8"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [26, 100],
+      "_id": "A8IfF0PTBaLv9TZM",
+      "name": "Room Description",
+      "img": "icons/svg/d20-grey.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "createdTime": 1769167420931,
+        "modifiedTime": 1769167447091,
+        "lastModifiedBy": "Q0Szu4q2kPffUgpv"
+      },
+      "documentUuid": "Compendium.ker-nethalas.tables.RollTable.B19wCq4vtyjzRr3i",
+      "_key": "!tables.results!TDqaltuh1HYMqvKQ.A8IfF0PTBaLv9TZM"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.4",
+    "createdTime": 1769160939973,
+    "modifiedTime": 1769182501345,
+    "lastModifiedBy": "Q0Szu4q2kPffUgpv"
+  },
+  "formula": "1d100",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!TDqaltuh1HYMqvKQ"
+}

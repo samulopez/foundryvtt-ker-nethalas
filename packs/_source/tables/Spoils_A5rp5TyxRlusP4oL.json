@@ -6,12 +6,75 @@
   "description": "",
   "results": [
     {
+      "type": "text",
+      "weight": 1,
+      "range": [1, 3],
+      "_id": "KXI9NAV6PVDkNQDv",
+      "name": "Mundane Items",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!A5rp5TyxRlusP4oL.KXI9NAV6PVDkNQDv"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [4, 5],
+      "_id": "sTKqFmw5l1R7zoFN",
+      "name": "Valuable Items",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!A5rp5TyxRlusP4oL.sTKqFmw5l1R7zoFN"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [6, 6],
+      "_id": "Lwcg52LHpSdeACiu",
+      "name": "Precious Items",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!A5rp5TyxRlusP4oL.Lwcg52LHpSdeACiu"
+    },
+    {
       "type": "document",
       "weight": 1,
-      "range": [
-        1,
-        3
-      ],
+      "range": [1, 3],
       "_id": "WEoy5LPVf846qko7",
       "name": "Mundane Items",
       "img": "icons/svg/d20-grey.svg",
@@ -33,10 +96,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        4,
-        5
-      ],
+      "range": [4, 5],
       "_id": "ezZhRzykEwjB5wmR",
       "name": "Valuable Items",
       "img": "icons/svg/d20-grey.svg",
@@ -58,10 +118,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        6,
-        6
-      ],
+      "range": [6, 6],
       "_id": "DNt5ASISHvEIm5UH",
       "name": "Precious Items",
       "img": "icons/svg/d20-grey.svg",
@@ -92,8 +149,8 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768643275089,
-    "modifiedTime": 1768903757288,
-    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+    "modifiedTime": 1769182501345,
+    "lastModifiedBy": "Q0Szu4q2kPffUgpv"
   },
   "formula": "1d6",
   "ownership": {

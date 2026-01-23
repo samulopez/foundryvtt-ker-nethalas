@@ -1,0 +1,509 @@
+{
+  "folder": null,
+  "name": "Corridor Description",
+  "_id": "aLfGRHzgV6EoGAcg",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "lnPzCG2lr7MPlR6z",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The air is heavy with ancient dust, and the walls are lined with cobwebs. The faint echoes of distant footsteps can be heard.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.lnPzCG2lr7MPlR6z"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "I50SIiO7EovyRyIW",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Flickering torches cast eerie shadows on the stone walls. The air is damp, and the occasional drip of water can be heard.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.I50SIiO7EovyRyIW"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "ZXv4wOYnWKvG9lR6",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The tunnel is barely wide enough for a single person to pass through. The walls are lined with ancient burial niches, some of which have been disturbed. You're not sure if from within or without...</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.ZXv4wOYnWKvG9lR6"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "jWV6NpTFoU4tJ11u",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Thick moss covers the damp stone walls, giving the corridor an eerie green glow. The sound of water dripping echoes throughout.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.jWV6NpTFoU4tJ11u"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "lbtjqJzvQQlYubnK",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The passage is partially blocked by a cave-in, with rubble and debris scattered across the floor. Dim light filters through cracks in the ceiling.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.lbtjqJzvQQlYubnK"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "d6zzO1bLewhgBkjA",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The walls are adorned with elaborate tomb reliefs and carved epitaphs. The air feels heavy with the presence of the long-departed.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.d6zzO1bLewhgBkjA"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "TVJ4S1TMxOEtBMKw",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The narrow stone hall twists and turns, disappearing into darkness. The hall seems to have a slight downwards inclination, and it feels worn and slippery.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.TVJ4S1TMxOEtBMKw"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "sNMaJcauavBqrlEM",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The air here is stale, and the sound of rats scurrying can be heard in the distance.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.sNMaJcauavBqrlEM"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "x5QTQcvatC5x7vHs",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>An eerie silence fills this corridor, broken only by the faint whispers of long-dead spirits. The air is heavy with an otherworldly stillness.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.x5QTQcvatC5x7vHs"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "Mz3rcZWG7pZhochP",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Strange luminescent fungi cover the walls, casting an ethereal glow. The tunnel twists and turns, creating an unsettling sense of disorientation.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.Mz3rcZWG7pZhochP"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "_id": "BFPSn8AkvOjeIhj1",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This wide corridor is lined with towering statues and ornate sarcophagi. Faded tapestries hang from the ceiling, telling stories of ancient rulers.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.BFPSn8AkvOjeIhj1"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "_id": "DRWf3WAnxeUaQEjY",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The tunnel is partially submerged in water, with small ripples disturbing its still surface. The faint odor of decay permeates the air.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.DRWf3WAnxeUaQEjY"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "_id": "32g04UuwSK2tJbme",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A hidden alcove branches off from the main passage, housing a forgotten altar or a small shrine. Dust-covered offerings lie undisturbed.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.32g04UuwSK2tJbme"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "_id": "1TbYS3IOKw4yOsuH",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Strange symbols are etched onto the walls of this hall, possibly indicating directions.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.1TbYS3IOKw4yOsuH"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "_id": "p6Y8QJbJmHi3EZNp",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The walls of this tunnel bear scorch marks, evidence of past fire or magical explosions. The air carries a faint smell of burnt wood and stone.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.p6Y8QJbJmHi3EZNp"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "_id": "7sfmQoce734IUJpY",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Time and decay have taken their toll on this corridor, with crumbling walls and ceilings. It feels unstable and prone to collapse.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.7sfmQoce734IUJpY"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "_id": "W9x0N2t0lZ6YnNIR",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Faint whispers and hushed voices fill the air, voices carried through time.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.W9x0N2t0lZ6YnNIR"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "_id": "146qC9hfZL4EuShb",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The stench of decay is overpowering in this tunnel, infested with ravenous vermin that lurk in the shadows.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.146qC9hfZL4EuShb"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "_id": "FRw1MTqojuoZTEa5",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Intricate carvings adorn the walls, depicting scenes of ancient rituals and funerary rites. The air is heavy with a sense of solemnity and reverence.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.FRw1MTqojuoZTEa5"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "Kf7Pt6YeXI8SKnhH",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The corridor seems to shimmer with an otherworldly glow. Transparent figures of long-dead souls can be seen drifting through the walls, oblivious to the living.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!aLfGRHzgV6EoGAcg.Kf7Pt6YeXI8SKnhH"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.4",
+    "createdTime": 1769160939973,
+    "modifiedTime": 1769182501345,
+    "lastModifiedBy": "Q0Szu4q2kPffUgpv"
+  },
+  "formula": "1d20",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!aLfGRHzgV6EoGAcg"
+}

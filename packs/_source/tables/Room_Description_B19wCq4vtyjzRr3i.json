@@ -1,0 +1,2429 @@
+{
+  "folder": null,
+  "name": "Room Description",
+  "_id": "B19wCq4vtyjzRr3i",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "m5d8jsmjnTucU7kH",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Rusty iron shackles hang from the walls, and the floor is littered with the remains of those who suffered unspeakable agony.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.m5d8jsmjnTucU7kH"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "M5rkSNB09ot1r4sG",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This regal hall is filled with shattered marble thrones, a reminder of the empire's fallen rulers and the broken legacy they left behind.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.M5rkSNB09ot1r4sG"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "gixDUXb5GHDHTMYH",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Eerie whispers fill the air in this dimly lit crypt, and the tormented spirits of the empire's cursed citizens still roam restlessly.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.gixDUXb5GHDHTMYH"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "ajNuzVRRLUazdkip",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The stone altar in the center of the room is covered in dried blood, leaving no doubt about what type of dark rituals once took place here.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.ajNuzVRRLUazdkip"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "B4G8L9AuD3lTuY2B",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A vast network of burial niches houses the remains of countless forgotten souls, their existence erased from history.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.B4G8L9AuD3lTuY2B"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "6X5zzyA8F5M8ULKh",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Chains of all sizes hang from the ceiling, the clinking sound echoing like a haunting melody in this hall of imprisonment.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.6X5zzyA8F5M8ULKh"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "RQMnlEMKOom2LwSL",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Sculptures of mournful figures adorn the walls, each seemingly caught in an eternal state of sorrow and despair.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.RQMnlEMKOom2LwSL"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "OJCkgXVVt4NS27Bv",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The room is perpetually shrouded in darkness, and even torches struggle to dispel the oppressive gloom.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.OJCkgXVVt4NS27Bv"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "RELWrLsc0LGChpP9",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Tombstones and coffins line the walls, bearing the names of lovers separated by death, forever longing for each other's embrace.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.RELWrLsc0LGChpP9"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "6JDtnlbqXOH7Pdb0",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Useless trinkets and baubles lie scattered about, remnants of the once-great Vaelorian Ascendancy now reduced to trash.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.6JDtnlbqXOH7Pdb0"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "_id": "vh0YESpeD0h3uxul",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This room seems to have been blasted by a source of water for millenia, since all the surfaces are smooth and slippery.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.vh0YESpeD0h3uxul"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "_id": "jXzag6OZ8h1F47La",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>An opulent throne sits empty in the center of this otherwise remarkless chamber, surrounded by dust and decay.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.jXzag6OZ8h1F47La"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "_id": "LxdNk1e137IdUOlS",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Echoes of anguished cries reverberate through this room, as if the walls themselves are weeping for the tragedies that unfolded within.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.LxdNk1e137IdUOlS"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "_id": "niRtBTTswzeAXPY9",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Foul, withered plants and skeletal trees twist and reach for sunlight that will never touch them again.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.niRtBTTswzeAXPY9"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "_id": "5Ku7JlNh5VkRz25O",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A pitch-black room that gives the illusion of extending infinitely downwards, leaving those who enter with an overwhelming sense of dread.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.5Ku7JlNh5VkRz25O"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "_id": "ZYnrLE3y9a5mW40V",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This crypt room holds the remains of those punished by the Vaelorian Ascendacy, their souls forever trapped in this place.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.ZYnrLE3y9a5mW40V"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "_id": "6c636CejtzckTaXx",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A massive, ominous statue looms over the room, depicting a malevolent deity once worshiped by the Ascendancy.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.6c636CejtzckTaXx"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "_id": "2YJDEXJ8fHVNPWD6",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Ghostly apparitions drift through these halls, their faint whispers offering cryptic warnings and messages.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.2YJDEXJ8fHVNPWD6"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "_id": "geYpwx4tk4cJ1KQp",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>An ancient stone altar dominates the room, surrounded by blood-stained grooves where countless offerings met their end.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.geYpwx4tk4cJ1KQp"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "_id": "obGiAQkPg7NTrHzs",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This room houses the remains of traitors and turncoats, eternally damned for their betrayal of the empire.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.obGiAQkPg7NTrHzs"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        21,
+        21
+      ],
+      "_id": "1447MbrQC0XGOI1y",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Dark, arcane symbols cover the walls, hinting at the dark rituals once conducted within these unhallowed grounds.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.1447MbrQC0XGOI1y"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        22,
+        22
+      ],
+      "_id": "XTmdJMtDFORork8O",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The bones of the empire's forgotten citizens are piled high in this macabre display of death's inevitability.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.XTmdJMtDFORork8O"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        23,
+        23
+      ],
+      "_id": "3Rz6KpClH9TspexS",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The eerie sound of water dripping reverberates in this otherwise unremarkable room.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.3Rz6KpClH9TspexS"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        24,
+        24
+      ],
+      "_id": "z8CQOnxHuufuDtDB",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Any sound uttered within this hall fades into nothingness, as if the room devours all noise.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.z8CQOnxHuufuDtDB"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        25,
+        25
+      ],
+      "_id": "lolfj3ZlvnKIPrJ9",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Broken vials, shattered beakers, and rotting experiments reveal an alchemist's ill-fated pursuit of forbidden knowledge.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.lolfj3ZlvnKIPrJ9"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        26,
+        26
+      ],
+      "_id": "GXkDgReDXV5J1mP7",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Ancient scrolls and tomes rest on dust-covered shelves. Touching any of them quickly turns them into piles of dust.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.GXkDgReDXV5J1mP7"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        27,
+        27
+      ],
+      "_id": "b9ALnkvHNcUhESck",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The stench of death hangs heavy in this room. Judging by some carvings, the Vaelorians disposed of their enemies in mass graves right here.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.b9ALnkvHNcUhESck"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        28,
+        28
+      ],
+      "_id": "E91glZsmK6qeR9OM",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A morbid altar stands before a statue of a martyr who endured unimaginable pain in the name of faith.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.E91glZsmK6qeR9OM"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        29,
+        29
+      ],
+      "_id": "KsGNApxjgy7IHwIR",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The remains of a once-grand spire lie in ruin, a monument to a forgotten hero of the Vaelorian Ascendancy.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.KsGNApxjgy7IHwIR"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        30,
+        30
+      ],
+      "_id": "hnflYErzUucAkuR3",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>As you enter this room, haunting visions and terrifying illusions assault you. They're gone before you even realize.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.hnflYErzUucAkuR3"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        31,
+        31
+      ],
+      "_id": "9tJwhGgJHG5JxgDY",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Dark rituals once performed here have left an indelible mark on the walls, perpetually tainted by the essence of necromancy.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.9tJwhGgJHG5JxgDY"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        32,
+        32
+      ],
+      "_id": "lKYevKJirX83cAPR",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The shadows of tormented souls replay their darkest moments in an eternal loop, forever haunted by their past actions.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.lKYevKJirX83cAPR"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        33,
+        33
+      ],
+      "_id": "HkgHJKz3zRMBbNwY",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Ancient weapons and armor line the walls, too old and brittle to be of any use to you.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.HkgHJKz3zRMBbNwY"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        34,
+        34
+      ],
+      "_id": "8g7QM1wXkspuEwOt",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The walls bear ghostly imprints of anguished faces, as if the room captures the final moments of those who met a tragic end.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.8g7QM1wXkspuEwOt"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        35,
+        35
+      ],
+      "_id": "Fbdu2iYAAfanT0lL",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Shadows here move independently from their sources, dancing across the walls like malevolent spirits.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.Fbdu2iYAAfanT0lL"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        36,
+        36
+      ],
+      "_id": "UYQCQtYkaA5FBrMN",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A still, black pool reflects the darkest aspects of your soul, showing the horrors hidden within.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.UYQCQtYkaA5FBrMN"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        37,
+        37
+      ],
+      "_id": "MTb1C5pQppvsxaxX",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Mirrors shattered into jagged pieces create a disorienting effect, distorting reality and reflecting haunting images.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.MTb1C5pQppvsxaxX"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        38,
+        38
+      ],
+      "_id": "lzsFaljHF2oT3hFK",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>An eerie aura permeates this room, where the Vaelorians once sought answers from a cryptic oracle.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.lzsFaljHF2oT3hFK"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        39,
+        39
+      ],
+      "_id": "3O6cHDd2wTcukfSw",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Statues of macabre figures surround a central platform. You are unsure about its purpose, but it was clearly ceremonial.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.3O6cHDd2wTcukfSw"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        40,
+        40
+      ],
+      "_id": "CkxKLV7O1IWZN64z",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A large crack in the room’s floor reveals a deep, dark abyss.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.CkxKLV7O1IWZN64z"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        41,
+        41
+      ],
+      "_id": "xFcdJLafOnHuFVpT",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This room holds within it an unholy shrine dedicated to forgotten gods.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.xFcdJLafOnHuFVpT"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        42,
+        42
+      ],
+      "_id": "QkrZ7WraVsq4PwhO",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>No sound can be heard in this room, not even the slightest whisper, creating an unsettling atmosphere of absolute quiet.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.QkrZ7WraVsq4PwhO"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        43,
+        43
+      ],
+      "_id": "2L6xbAUZpW5uI7Vr",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This seems to be the final resting place of an emperor who history has forgotten, his name erased from all records.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.2L6xbAUZpW5uI7Vr"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        44,
+        44
+      ],
+      "_id": "HS14hZPtCYIqbmCE",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Broken chandeliers hang from the ceiling, and the tattered banners on the walls now lay in ruin.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.HS14hZPtCYIqbmCE"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        45,
+        45
+      ],
+      "_id": "SBIHWJsh9lSUcgtX",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Heat emanates from this room, and you can see the glow of lava in a corner, the viscous material dripping from a crack on the wall.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.SBIHWJsh9lSUcgtX"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        46,
+        46
+      ],
+      "_id": "UrwyfRafIbBJEpbC",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>An eerie, dim light filters through an enchanted glass ceiling, casting an otherworldly twilight over the room that makes you miss the sky.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.UrwyfRafIbBJEpbC"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        47,
+        47
+      ],
+      "_id": "nt9bePIM9j3xew2o",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Mirrors made from dark, reflective obsidian distort your reflection, your lightsource casting haunting shadows.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.nt9bePIM9j3xew2o"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        48,
+        48
+      ],
+      "_id": "AfSfQ5UPqC5WYcsn",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Shrines to deities long abandoned by worshippers now stand in silence. You see a few forgotten prayer tablets discarded around.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.AfSfQ5UPqC5WYcsn"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        49,
+        49
+      ],
+      "_id": "L5PSnGhzklJrNP6N",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Ancient telescopes and stargazing instruments remain untouched, though the stars they once observed have long changed.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.L5PSnGhzklJrNP6N"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        50,
+        50
+      ],
+      "_id": "RDBkZc32BHJf4q80",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A once-powerful empress was buried here, her now empty sarcophagus beautifully adorned with gilded glyphs.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.RDBkZc32BHJf4q80"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        51,
+        51
+      ],
+      "_id": "CR7gxehUe09K8bMV",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The room is plagued by an unnatural, freezing chill that numbs the bones as soon as you enter.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.CR7gxehUe09K8bMV"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        52,
+        52
+      ],
+      "_id": "RZc1g12pvmbxdWLe",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Broken vials and failed experiments litter the room as reminders of desperate and deadly alchemical pursuits.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.RZc1g12pvmbxdWLe"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        53,
+        53
+      ],
+      "_id": "5Kv2gFXHSLEOqcuC",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>An overgrown courtyard now serves as a graveyard, with tombstones dotting the otherwise placid location.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.5Kv2gFXHSLEOqcuC"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        54,
+        54
+      ],
+      "_id": "oWYbxaUhvYjwRGi4",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Twisted and grotesque sculptures rest on pedestals, each representing the artist's descent into madness.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.oWYbxaUhvYjwRGi4"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        55,
+        55
+      ],
+      "_id": "L7dQ1jdWcVHiIWwi",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This is a large hallway that probably housed some sort of stables.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.L7dQ1jdWcVHiIWwi"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        56,
+        56
+      ],
+      "_id": "0AQq5lsffqQbgqe0",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Taxidermy displays of long-extinct creatures and monstrous beasts line the walls, their glass eyes seemingly alive.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.0AQq5lsffqQbgqe0"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        57,
+        57
+      ],
+      "_id": "aRqMWmUJ5PRnIu8D",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The faint sounds of mournful music fill the air, but you cannot pinpoint its source.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.aRqMWmUJ5PRnIu8D"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        58,
+        58
+      ],
+      "_id": "HezT1ndvZePBNTlO",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This chamber once housed the living quarters of a family of servants. Faint children’s drawings can be seen on the walls.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.HezT1ndvZePBNTlO"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        59,
+        59
+      ],
+      "_id": "kD2anEkPGCAuVxhR",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This room houses a shrine dedicated to a lunar deity. Its worshipers once performed heinous acts under the cursed moon's glow.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.kD2anEkPGCAuVxhR"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        60,
+        60
+      ],
+      "_id": "4HdfKDt2dCdyVrjf",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A large crypt, where the sound of mourning and weeping echoes endlessly.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.4HdfKDt2dCdyVrjf"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        61,
+        61
+      ],
+      "_id": "1LMTE0XQBO69PCYn",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A chamber once dedicated to studying the stars, now abandoned and covered in dust.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.1LMTE0XQBO69PCYn"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        62,
+        62
+      ],
+      "_id": "z7GSa18FJG1LV5LG",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This area appears to once have been some sort of food storage, judging by the piles of petrified vegetables and grain.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.z7GSa18FJG1LV5LG"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        63,
+        63
+      ],
+      "_id": "Ktbkeh09DGOiSV7W",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Plans for grand structures, some never built, now rest here with the remains of their creator.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.Ktbkeh09DGOiSV7W"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        64,
+        64
+      ],
+      "_id": "CHUg2NEJeJ1JkQhp",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Statues of once-lovely nymphs are now twisted and grotesque, surrounded by thorns and brambles.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.CHUg2NEJeJ1JkQhp"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        65,
+        65
+      ],
+      "_id": "ByrRnKcr3CyGdmq1",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This once-imposing chamber is now decayed and crumbling, but you can imagine its former glory with little effort.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.ByrRnKcr3CyGdmq1"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        66,
+        66
+      ],
+      "_id": "VqbWfKufS4iQ2jPM",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A series of arcane symbols that you’ve never encountered before cover the walls of this chamber.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.VqbWfKufS4iQ2jPM"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        67,
+        67
+      ],
+      "_id": "qlKENPQIvtP9ixie",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Phantom wails fill the air, as the spirits of the dead lament their tragic fates.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.qlKENPQIvtP9ixie"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        68,
+        68
+      ],
+      "_id": "ioWFNnIcPmlO3C4Q",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>An ancient, corrupted forge where weapons were crafted from the souls of the fallen.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.ioWFNnIcPmlO3C4Q"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        69,
+        69
+      ],
+      "_id": "sQxSG0GVR2sBuVTj",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The statues of weeping angels line this hall. You notice that all their faces are eternally frozen in grief.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.sQxSG0GVR2sBuVTj"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        70,
+        70
+      ],
+      "_id": "sccPsBsRcweaRASn",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The resting place of an heir to the empire, whose lineage has been lost to history.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.sccPsBsRcweaRASn"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        71,
+        71
+      ],
+      "_id": "LUE816S4i2pnKt2X",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The walls are adorned with eerie petrified faces that seem to whisper secrets to those who listen.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.LUE816S4i2pnKt2X"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        72,
+        72
+      ],
+      "_id": "P0KLHpQL3iYVdBOf",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This chamber is made entirely of black stone, and any light that enters is quickly swallowed by its darkness.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.P0KLHpQL3iYVdBOf"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        73,
+        73
+      ],
+      "_id": "oLnkRn1gzGcSd9Mk",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>An ornate stone chalice sits on an altar. It appears to have been fused to it by some extreme heat.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.oLnkRn1gzGcSd9Mk"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        74,
+        74
+      ],
+      "_id": "3UhPhk79leLa5zGY",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This room’s walls are covered with the tattered remains of ancient heraldic banners.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.3UhPhk79leLa5zGY"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        75,
+        75
+      ],
+      "_id": "4MdD8NavutwFfuXd",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>At the center of this room, a seemingly bottomless pit drops into the darkness. It's easy to imagine a sinister reason for it, but it was probably just used as a latrine.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.4MdD8NavutwFfuXd"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        76,
+        76
+      ],
+      "_id": "apDdAVchf6hKJK4A",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>An otherworldly mist fills the room, giving glimpses of fleeting, forgotten scenes from the past.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.apDdAVchf6hKJK4A"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        77,
+        77
+      ],
+      "_id": "t4O5xDAGj4N1GW7f",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A cursed oracle once dwelt here, their prophecies leading to doom and despair for those who sought answers.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.t4O5xDAGj4N1GW7f"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        78,
+        78
+      ],
+      "_id": "VXLrVRmYZTIxrtdA",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A dark and foreboding courtyard where twisted shadows play tricks on the mind.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.VXLrVRmYZTIxrtdA"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        79,
+        79
+      ],
+      "_id": "Qx9zeVct3Li1ITgu",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The room is filled with the remains of lovers forever entwined in death, their skeletal hands locked in an eternal embrace.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.Qx9zeVct3Li1ITgu"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        80,
+        80
+      ],
+      "_id": "FAeKvrEbfGkUNRsA",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>An otherworldly chamber where the boundaries between dimensions blur, allowing glimpses into distant realms.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.FAeKvrEbfGkUNRsA"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        81,
+        81
+      ],
+      "_id": "5Z2beGTX3DXfRUSK",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Horrifying paintings and sculptures depict scenes of unimaginable suffering and torment.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.5Z2beGTX3DXfRUSK"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        82,
+        82
+      ],
+      "_id": "IUBpxDgWwTEtHUUL",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This room has a well on a corner, but the water within it is clearly tainted with an eerie glow.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.IUBpxDgWwTEtHUUL"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        83,
+        83
+      ],
+      "_id": "TzgxEEy6miBRdVi8",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This chamber is completely covered in fungi and mold of all kinds, making every step feel as if you’re walking on a thick rug.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.TzgxEEy6miBRdVi8"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        84,
+        84
+      ],
+      "_id": "ftsLczrvVdfYTxYH",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Small, empty cells line the walls of this room.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.ftsLczrvVdfYTxYH"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        85,
+        85
+      ],
+      "_id": "NIaMPgPySulveg4P",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The walls are adorned with macabre paintings depicting brutal executions and violent sacrifices.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.NIaMPgPySulveg4P"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        86,
+        86
+      ],
+      "_id": "XFA3wqCP8EDhLNPb",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Sealed off for centuries, this room contains unspeakable horrors that were best left undisturbed.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.XFA3wqCP8EDhLNPb"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        87,
+        87
+      ],
+      "_id": "8Nfpn3lFC4cXpQ4G",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A fountain still trickling water is at the center of the room, a peaceful, almost out of place view.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.8Nfpn3lFC4cXpQ4G"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        88,
+        88
+      ],
+      "_id": "My76rOqbLqSTKa7w",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Disorienting illusions assault you momentarily as you step into this room, showing you images of your past.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.My76rOqbLqSTKa7w"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        89,
+        89
+      ],
+      "_id": "GZRC4gyz5zTxn9Bk",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This room was once a treasure vault filled with riches, but it has long since been ransacked.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.GZRC4gyz5zTxn9Bk"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        90,
+        90
+      ],
+      "_id": "eEp1AvJYqGHV1z2R",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A once-lavish parlor now lies in ruin, its grandeur replaced by decay and the stench of death.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.eEp1AvJYqGHV1z2R"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        91,
+        91
+      ],
+      "_id": "aW9x8eQl4xqfhyYN",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Rotten piles of furniture and rusted utensils are all you can see in this room.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.aW9x8eQl4xqfhyYN"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        92,
+        92
+      ],
+      "_id": "CMuyWPNNgUy22ikj",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>The walls are covered in soot and fire marks, clearly indicating that a great fire took place here.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.CMuyWPNNgUy22ikj"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        93,
+        93
+      ],
+      "_id": "uE0SWYIJzz8uxR6D",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>This room is completely empty, except for a thick layer of dust. A set of human footprints can be seen across the room.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.uE0SWYIJzz8uxR6D"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        94,
+        94
+      ],
+      "_id": "0KOImHNZE95xKf59",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>As you enter this hall you feel an overwhelming sense of hopelessness, as if all optimism is slowly being drained from your heart.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.0KOImHNZE95xKf59"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        95,
+        95
+      ],
+      "_id": "blKRrDu1cGh1Mc6A",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A chamber adorned with gold and jewels. A closer look reveals them to be just paint and glass.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.blKRrDu1cGh1Mc6A"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        96,
+        96
+      ],
+      "_id": "RXt5Ny61MlDbPIiM",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>A once-revered shrine now stands in darkness, forgotten by all but malevolent entities.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.RXt5Ny61MlDbPIiM"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        97,
+        97
+      ],
+      "_id": "XWjnqeI3CJNOzn7q",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Statues of ancient warriors stand guard. For some reason, their once-pristine surfaces are now marred by crimson stains.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.XWjnqeI3CJNOzn7q"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        98,
+        98
+      ],
+      "_id": "sWepBlVZ7MtB74Sb",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>Old iron ingots are piled in a corner of this room, each one of them marked with the seal of an ancient house.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.sWepBlVZ7MtB74Sb"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        99,
+        99
+      ],
+      "_id": "pL7rDh4zm5j41GZs",
+      "name": "",
+      "img": "icons/svg/d20-black.svg",
+      "description": "<p>An unnatural wind seems to be constantly coming out of this room, violently flapping your clothes and gear around you.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.pL7rDh4zm5j41GZs"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        100,
+        100
+      ],
+      "_id": "35yEkjRDd5DDrz8J",
+      "name": "",
+      "img": null,
+      "description": "<p>An unquenchable, ghostly flame flickers and dances, casting eerie shadows on the walls, forever burning but never consuming.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!tables.results!B19wCq4vtyjzRr3i.35yEkjRDd5DDrz8J"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.4",
+    "createdTime": 1769160939973,
+    "modifiedTime": 1769182501345,
+    "lastModifiedBy": "Q0Szu4q2kPffUgpv"
+  },
+  "formula": "1d100",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!tables!B19wCq4vtyjzRr3i"
+}
