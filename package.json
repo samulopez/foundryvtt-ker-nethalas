@@ -28,7 +28,7 @@
     "eslint-plugin-n": "^17.23.1",
     "eslint-plugin-prettier": "^5.5.5",
     "fvtt-types": "github:League-of-Foundry-Developers/foundry-vtt-types#main",
-    "oxlint": "1.39.0",
+    "oxlint": "1.41.0",
     "prettier": "^3.8.0",
     "rollup-plugin-copy": "3.5.0",
     "sass-embedded": "1.97.3",
