@@ -8,10 +8,51 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        1,
-        2
-      ],
+      "range": [5, 5],
+      "_id": "x7ho9aKwnJaRJuiz",
+      "name": "Lore Books",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.x7ho9aKwnJaRJuiz"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [6, 7],
+      "_id": "18eeunMKSLFpucV7",
+      "name": "Gems & Jewelry",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!2bbUOQd5yIHuxHsh.18eeunMKSLFpucV7"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [1, 2],
       "_id": "SaW0m8IVGinfE6iN",
       "name": "Rotten foodstuff and clothing",
       "img": "icons/svg/d20-black.svg",
@@ -32,10 +73,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        3,
-        3
-      ],
+      "range": [3, 3],
       "_id": "vYX4lbiNfWjPWVL0",
       "name": "D4 Crafting Supplies",
       "img": "icons/svg/d20-black.svg",
@@ -57,10 +95,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        4,
-        4
-      ],
+      "range": [4, 4],
       "_id": "K8Ptu7xxyboD0Lew",
       "name": "Candle",
       "img": "icons/svg/d20-black.svg",
@@ -82,10 +117,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        5,
-        5
-      ],
+      "range": [5, 5],
       "_id": "7GKVmkGiK1BRlHSX",
       "name": "Lore Books",
       "img": "icons/svg/d20-black.svg",
@@ -107,10 +139,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        6,
-        7
-      ],
+      "range": [6, 7],
       "_id": "p6eVKGvBDxEPWoon",
       "name": "Gems & Jewelry",
       "img": "icons/svg/d20-black.svg",
@@ -132,10 +161,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        8,
-        8
-      ],
+      "range": [8, 8],
       "_id": "h0sTKoJsT1LQecgx",
       "name": "Pouch",
       "img": "icons/svg/d20-black.svg",
@@ -156,10 +182,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        9,
-        9
-      ],
+      "range": [9, 9],
       "_id": "Sff3G4q6BXAyniNC",
       "name": "Flare",
       "img": "icons/svg/d20-black.svg",
@@ -181,10 +204,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        10,
-        10
-      ],
+      "range": [10, 10],
       "_id": "FqoxoAT7gX59owVZ",
       "name": "D10 Ritual Components",
       "img": "icons/svg/d20-black.svg",
@@ -205,10 +225,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        11,
-        11
-      ],
+      "range": [11, 11],
       "_id": "bOel3ywQ1zV2ctw7",
       "name": "Blank Diary",
       "img": "icons/svg/d20-black.svg",
@@ -230,10 +247,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        12,
-        12
-      ],
+      "range": [12, 12],
       "_id": "vUllFK37k9JeegRk",
       "name": "Borestian Stone",
       "img": "icons/svg/d20-black.svg",
@@ -255,10 +269,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        13,
-        13
-      ],
+      "range": [13, 13],
       "_id": "60sLzWyfOc5o7OEc",
       "name": "Heart Fragment of Amal-Tul",
       "img": "icons/svg/d20-black.svg",
@@ -280,10 +291,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        14,
-        14
-      ],
+      "range": [14, 14],
       "_id": "LOa7hcU3W0jS5bVo",
       "name": "Mace of Obliteration",
       "img": "icons/svg/d20-black.svg",
@@ -305,10 +313,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        15,
-        15
-      ],
+      "range": [15, 15],
       "_id": "M3yoRXd2M4AtCyNy",
       "name": "Ring of Mental Peace",
       "img": "icons/svg/d20-black.svg",
@@ -330,10 +335,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        16,
-        16
-      ],
+      "range": [16, 16],
       "_id": "obue3JZk5J15HYM5",
       "name": "Vital of Potency - Aether",
       "img": "icons/svg/d20-black.svg",
@@ -355,10 +357,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        17,
-        17
-      ],
+      "range": [17, 17],
       "_id": "Myl8TRKMILzDhJn3",
       "name": "Vital of Potency - Endurance",
       "img": "icons/svg/d20-black.svg",
@@ -380,10 +379,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        18,
-        18
-      ],
+      "range": [18, 18],
       "_id": "PWkcBglS5MA79pe6",
       "name": "Vital of Potency - Health",
       "img": "icons/svg/d20-black.svg",
@@ -405,10 +401,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        19,
-        19
-      ],
+      "range": [19, 19],
       "_id": "uscdZGaU2w5fccGO",
       "name": "Vital of Potency - Spellward",
       "img": "icons/svg/d20-black.svg",
@@ -430,10 +423,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        20,
-        20
-      ],
+      "range": [20, 20],
       "_id": "0ft1ykZ60sLHNPbr",
       "name": "Vital of Potency - Sanity",
       "img": "icons/svg/d20-black.svg",
@@ -464,8 +454,8 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768643275089,
-    "modifiedTime": 1768903757288,
-    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+    "modifiedTime": 1769182501345,
+    "lastModifiedBy": "Q0Szu4q2kPffUgpv"
   },
   "formula": "1d20",
   "ownership": {

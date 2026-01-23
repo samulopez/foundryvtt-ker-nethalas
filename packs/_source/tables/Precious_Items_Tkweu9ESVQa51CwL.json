@@ -6,12 +6,53 @@
   "description": "",
   "results": [
     {
+      "type": "text",
+      "weight": 1,
+      "range": [1, 15],
+      "_id": "Igf90NfZWMb5yD8w",
+      "name": "Magic Item",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!Tkweu9ESVQa51CwL.Igf90NfZWMb5yD8w"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [16, 20],
+      "_id": "oNnYH7tse8yigfGc",
+      "name": "Relics",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!Tkweu9ESVQa51CwL.oNnYH7tse8yigfGc"
+    },
+    {
       "type": "document",
       "weight": 1,
-      "range": [
-        1,
-        15
-      ],
+      "range": [1, 15],
       "_id": "NP55lKrrNDX3DgiR",
       "name": "Magic Item",
       "img": "icons/svg/d20-black.svg",
@@ -33,10 +74,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        16,
-        20
-      ],
+      "range": [16, 20],
       "_id": "nl8IKBP63ysqOSC4",
       "name": "Relics",
       "img": "icons/svg/d20-black.svg",
@@ -67,8 +105,8 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768643275089,
-    "modifiedTime": 1768903757288,
-    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+    "modifiedTime": 1769182501345,
+    "lastModifiedBy": "Q0Szu4q2kPffUgpv"
   },
   "formula": "1d20",
   "ownership": {

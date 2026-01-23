@@ -6,12 +6,119 @@
   "description": "",
   "results": [
     {
+      "type": "text",
+      "weight": 1,
+      "range": [1, 2],
+      "_id": "RLq8ruqevIFArcso",
+      "name": "Torso Armor",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!0riN8IgjL8bGQRTO.RLq8ruqevIFArcso"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [3, 4],
+      "_id": "upI0HvRzJouCDfbC",
+      "name": "Vambraces",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!0riN8IgjL8bGQRTO.upI0HvRzJouCDfbC"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [5, 6],
+      "_id": "6XpDw35iLJomPtbp",
+      "name": "Greaves",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!0riN8IgjL8bGQRTO.6XpDw35iLJomPtbp"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [7, 8],
+      "_id": "VNoTHzXkOPjjVBQ2",
+      "name": "Helmet",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!0riN8IgjL8bGQRTO.VNoTHzXkOPjjVBQ2"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [9, 10],
+      "_id": "Lowp11NTElhoblLb",
+      "name": "Shields",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!0riN8IgjL8bGQRTO.Lowp11NTElhoblLb"
+    },
+    {
       "type": "document",
       "weight": 1,
-      "range": [
-        1,
-        2
-      ],
+      "range": [1, 2],
       "_id": "Zp0Ww7e8oS3V7G0H",
       "name": "Torso Armor",
       "img": "icons/svg/d20-black.svg",
@@ -33,14 +140,11 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        3,
-        4
-      ],
+      "range": [3, 4],
       "_id": "vg8x5iEnt9AlS0ih",
       "name": "Vambraces, Greaves & Helmets",
       "img": "icons/svg/d20-grey.svg",
-      "description": "<p>Vambraces</p>",
+      "description": "",
       "drawn": false,
       "flags": {},
       "_stats": {
@@ -58,14 +162,11 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        5,
-        6
-      ],
+      "range": [5, 6],
       "_id": "DoFMOvNpT19YKS5S",
       "name": "Vambraces, Greaves & Helmets",
       "img": "icons/svg/d20-grey.svg",
-      "description": "<p>Greaves</p>",
+      "description": "",
       "drawn": false,
       "flags": {},
       "_stats": {
@@ -83,14 +184,11 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        7,
-        8
-      ],
+      "range": [7, 8],
       "_id": "YKiKnsKOKUxpUIWI",
       "name": "Vambraces, Greaves & Helmets",
       "img": "icons/svg/d20-grey.svg",
-      "description": "<p>Helmet</p>",
+      "description": "",
       "drawn": false,
       "flags": {},
       "_stats": {
@@ -108,10 +206,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        9,
-        10
-      ],
+      "range": [9, 10],
       "_id": "96LUnckRUqrVuMxd",
       "name": "Shields",
       "img": "icons/svg/d20-black.svg",
@@ -142,8 +237,8 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768643275089,
-    "modifiedTime": 1768903757288,
-    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+    "modifiedTime": 1769182501345,
+    "lastModifiedBy": "Q0Szu4q2kPffUgpv"
   },
   "formula": "1d10",
   "ownership": {

@@ -9,6 +9,56 @@
       "type": "text",
       "weight": 1,
       "range": [
+        13,
+        16
+      ],
+      "_id": "0XeRGHoV6hawVKrt",
+      "name": "Fragments",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!2aBJRzDWifBfmgFN.0XeRGHoV6hawVKrt"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        17,
+        20
+      ],
+      "_id": "jyxuESPhYozxQiaJ",
+      "name": "Magic Item",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!2aBJRzDWifBfmgFN.jyxuESPhYozxQiaJ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
         1,
         5
       ],
@@ -116,8 +166,8 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768643275089,
-    "modifiedTime": 1768903757288,
-    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+    "modifiedTime": 1769183126282,
+    "lastModifiedBy": "Q0Szu4q2kPffUgpv"
   },
   "formula": "1d20",
   "ownership": {

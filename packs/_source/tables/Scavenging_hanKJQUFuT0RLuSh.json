@@ -8,10 +8,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        1,
-        1
-      ],
+      "range": [1, 1],
       "_id": "zPTAigmQ82YlEUer",
       "name": "",
       "img": "icons/svg/d20-black.svg",
@@ -32,10 +29,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        2,
-        2
-      ],
+      "range": [2, 2],
       "_id": "ymIW4UamyttQQXP9",
       "name": "",
       "img": "icons/svg/d20-black.svg",
@@ -56,10 +50,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        3,
-        3
-      ],
+      "range": [3, 3],
       "_id": "7HpJO33XRWPGMwgn",
       "name": "",
       "img": "icons/svg/d20-black.svg",
@@ -80,10 +71,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        4,
-        11
-      ],
+      "range": [4, 11],
       "_id": "AoN7kCUkvxVuxzBs",
       "name": "",
       "img": "icons/svg/d20-black.svg",
@@ -104,10 +92,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        12,
-        12
-      ],
+      "range": [12, 12],
       "_id": "vA8C9mr1kdY6qo3N",
       "name": "",
       "img": "icons/svg/d20-black.svg",
@@ -128,10 +113,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        13,
-        18
-      ],
+      "range": [13, 18],
       "_id": "NMN8nRxpuu7XEuXF",
       "name": "",
       "img": "icons/svg/d20-black.svg",
@@ -152,10 +134,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        19,
-        19
-      ],
+      "range": [19, 19],
       "_id": "a0vnFUF9UBnpjbFY",
       "name": "",
       "img": "icons/svg/d20-black.svg",
@@ -175,16 +154,35 @@
       "_key": "!tables.results!hanKJQUFuT0RLuSh.a0vnFUF9UBnpjbFY"
     },
     {
+      "type": "text",
+      "weight": 1,
+      "range": [20, 20],
+      "_id": "igohKdOG58EH1g7h",
+      "name": "Roll on the Spoils table",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!hanKJQUFuT0RLuSh.igohKdOG58EH1g7h"
+    },
+    {
       "type": "document",
       "weight": 1,
-      "range": [
-        20,
-        20
-      ],
+      "range": [20, 20],
       "_id": "cS4qDYiZm9QJkphh",
       "name": "Spoils",
       "img": "icons/svg/d20-black.svg",
-      "description": "<div><p>Roll on the Spoils table</p></div>",
+      "description": "<div><p></p></div>",
       "drawn": false,
       "flags": {},
       "_stats": {
@@ -211,8 +209,8 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768643275089,
-    "modifiedTime": 1768903757288,
-    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+    "modifiedTime": 1769182501345,
+    "lastModifiedBy": "Q0Szu4q2kPffUgpv"
   },
   "formula": "1d20",
   "ownership": {

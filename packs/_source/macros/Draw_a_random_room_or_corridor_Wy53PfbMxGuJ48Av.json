@@ -1,0 +1,28 @@
+{
+  "name": "Draw a random room or corridor",
+  "type": "script",
+  "command": "if (!canvas?.scene || !canvas.grid) {\n  return;\n}\n\nconst table = await fromUuid('Compendium.ker-nethalas.tables.RollTable.TDqaltuh1HYMqvKQ');\nif (!table) {\n  return;\n}\nconst draw = await table.draw();\n\nif (!draw.roll.total) {\n  return;\n}\n\nconst tileData = {\n  texture: { src: `systems/ker-nethalas/assets/D100-Rooms/${draw.roll.total.toString().padStart(2, '0')}.webp` },\n  width: 900,\n  height: 900,\n  x: canvas.scene.dimensions.width / 2,\n  y: canvas.scene.dimensions.height / 2,\n};\n\nawait TileDocument.create(tileData, { parent: canvas.scene });",
+  "img": "icons/svg/dice-target.svg",
+  "_id": "Wy53PfbMxGuJ48Av",
+  "author": "Q0Szu4q2kPffUgpv",
+  "scope": "global",
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ker-nethalas",
+    "systemVersion": "0.0.3",
+    "createdTime": 1769173557076,
+    "modifiedTime": 1769173557076,
+    "lastModifiedBy": "Q0Szu4q2kPffUgpv"
+  },
+  "ownership": {
+    "default": 0,
+    "Q0Szu4q2kPffUgpv": 3
+  },
+  "sort": 0,
+  "_key": "!macros!Wy53PfbMxGuJ48Av"
+}

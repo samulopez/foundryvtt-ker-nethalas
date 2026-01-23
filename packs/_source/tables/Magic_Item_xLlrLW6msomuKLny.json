@@ -6,12 +6,53 @@
   "description": "",
   "results": [
     {
+      "type": "text",
+      "weight": 1,
+      "range": [1, 1],
+      "_id": "Kghy4Yng2x6gSdXU",
+      "name": "Random Weapon",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!xLlrLW6msomuKLny.Kghy4Yng2x6gSdXU"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [2, 2],
+      "_id": "hMj6hjrnJJP23YUV",
+      "name": "Random Armor",
+      "img": "icons/svg/d20-black.svg",
+      "description": "",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "ker-nethalas",
+        "systemVersion": "0.0.3",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "documentUuid": null,
+      "_key": "!tables.results!xLlrLW6msomuKLny.hMj6hjrnJJP23YUV"
+    },
+    {
       "type": "document",
       "weight": 1,
-      "range": [
-        1,
-        1
-      ],
+      "range": [1, 1],
       "_id": "oxozie70xf4UVaoj",
       "name": "Random Weapon",
       "img": "icons/svg/d20-grey.svg",
@@ -33,10 +74,7 @@
     {
       "type": "document",
       "weight": 1,
-      "range": [
-        2,
-        2
-      ],
+      "range": [2, 2],
       "_id": "ruImGmD5Fkta04Z9",
       "name": "Random Armor",
       "img": "icons/svg/d20-grey.svg",
@@ -58,10 +96,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        3,
-        3
-      ],
+      "range": [3, 3],
       "_id": "iBeto4uLU1ErBjVf",
       "name": "Belt",
       "img": "icons/svg/d20-black.svg",
@@ -82,10 +117,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        4,
-        4
-      ],
+      "range": [4, 4],
       "_id": "PZ1Vuqz9GJ5VFsk5",
       "name": "Boots",
       "img": "icons/svg/d20-black.svg",
@@ -106,10 +138,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        5,
-        5
-      ],
+      "range": [5, 5],
       "_id": "5FX72GjtWQNb4WgT",
       "name": "Gloves",
       "img": "icons/svg/d20-black.svg",
@@ -130,10 +159,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        6,
-        6
-      ],
+      "range": [6, 6],
       "_id": "ZfZGVN3yGepb5kYb",
       "name": "Amulet",
       "img": "icons/svg/d20-black.svg",
@@ -154,10 +180,7 @@
     {
       "type": "text",
       "weight": 1,
-      "range": [
-        7,
-        8
-      ],
+      "range": [7, 8],
       "_id": "TYpUVnSkI306acJ4",
       "name": "Ring",
       "img": "icons/svg/d20-black.svg",
@@ -187,8 +210,8 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768643275089,
-    "modifiedTime": 1768903757288,
-    "lastModifiedBy": "xOca9XRwLgJMNAGV"
+    "modifiedTime": 1769182501345,
+    "lastModifiedBy": "Q0Szu4q2kPffUgpv"
   },
   "formula": "1d8",
   "ownership": {

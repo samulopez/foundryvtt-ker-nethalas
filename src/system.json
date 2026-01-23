@@ -22,7 +22,7 @@
       "name": "Ker Nethalas",
       "sorting": "a",
       "color": "#854e29",
-      "packs": ["creatures", "spoils-and-loot", "tables"]
+      "packs": ["creatures", "macros", "spoils-and-loot", "tables"]
     }
   ],
   "packs": [
@@ -56,6 +56,18 @@
       "system": "ker-nethalas",
       "path": "packs/tables",
       "type": "RollTable",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "macros",
+      "label": "Macros",
+      "system": "ker-nethalas",
+      "path": "packs/macros",
+      "type": "Macro",
       "flags": {},
       "ownership": {
         "PLAYER": "OBSERVER",
