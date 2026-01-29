@@ -110,7 +110,7 @@
       "weight": 1,
       "range": [
         17,
-        19
+        20
       ],
       "_id": "3rvzLa0t1GNSD0nI",
       "name": "Claw",
@@ -134,8 +134,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        20,
-        22
+        21,
+        24
       ],
       "_id": "4LIx0tXAFDu1JcjW",
       "name": "Club",
@@ -159,8 +159,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        23,
-        25
+        25,
+        28
       ],
       "_id": "d1MuplI6K6XR4HUs",
       "name": "Dagger",
@@ -184,8 +184,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        26,
-        28
+        29,
+        31
       ],
       "_id": "fb8CzcFimZmeaSRB",
       "name": "Flail",
@@ -209,8 +209,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        29,
-        31
+        32,
+        34
       ],
       "_id": "MQ7hPfwk9RpDyn1X",
       "name": "Glaive",
@@ -234,8 +234,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        32,
-        34
+        35,
+        37
       ],
       "_id": "bNnM2Hw7qKt7FF3b",
       "name": "Great Axe",
@@ -259,8 +259,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        35,
-        37
+        38,
+        40
       ],
       "_id": "PfIzg672ZpEn2TAy",
       "name": "Greatclub",
@@ -284,8 +284,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        38,
-        40
+        41,
+        43
       ],
       "_id": "kBXfOUY1LIF5fvwK",
       "name": "Great Sword",
@@ -309,8 +309,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        41,
-        43
+        44,
+        46
       ],
       "_id": "3pbRiRaCO4gTi59u",
       "name": "Halberd",
@@ -334,8 +334,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        44,
-        46
+        47,
+        49
       ],
       "_id": "mrZ1UgmToHIDOkOd",
       "name": "Hatchet",
@@ -359,8 +359,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        47,
-        49
+        50,
+        52
       ],
       "_id": "vebScHdmFc4WQ5RH",
       "name": "Improvised Weapon",
@@ -384,8 +384,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        50,
-        52
+        53,
+        55
       ],
       "_id": "30vJM7ljmU97rwaW",
       "name": "Knuckles",
@@ -409,8 +409,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        53,
-        55
+        56,
+        58
       ],
       "_id": "ga2qa4UqxiUCZ3NS",
       "name": "Light Hammer",
@@ -434,8 +434,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        56,
-        58
+        59,
+        61
       ],
       "_id": "TtX99GpdiGLAqtJX",
       "name": "Longsword",
@@ -459,8 +459,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        59,
-        61
+        65,
+        67
       ],
       "_id": "TUHhhWLRqqJn78vV",
       "name": "Maul",
@@ -509,8 +509,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        65,
-        67
+        68,
+        70
       ],
       "_id": "sMc3u3CJiJrteYlK",
       "name": "Morningstar",
@@ -534,8 +534,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        68,
-        70
+        71,
+        73
       ],
       "_id": "koCTybpvLqviwnTh",
       "name": "Pike",
@@ -559,8 +559,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        71,
-        73
+        74,
+        76
       ],
       "_id": "y3iMWQazNcBPgsOO",
       "name": "Quarterstaff",
@@ -584,8 +584,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        74,
-        76
+        77,
+        79
       ],
       "_id": "gXHoHvKmT4zrwxkr",
       "name": "Rapier",
@@ -609,8 +609,8 @@
       "type": "document",
       "weight": 1,
       "range": [
-        77,
-        79
+        80,
+        82
       ],
       "_id": "PBJL69VuFj0YD4Vn",
       "name": "Saber",
@@ -629,31 +629,6 @@
       },
       "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.z8tDwDLVdVm9FQ1U",
       "_key": "!tables.results!mlkwK7a31NFZR1dl.PBJL69VuFj0YD4Vn"
-    },
-    {
-      "type": "document",
-      "weight": 1,
-      "range": [
-        80,
-        82
-      ],
-      "_id": "jZEgjFPeKfu5P0SE",
-      "name": "Shiv",
-      "img": "icons/svg/d20-black.svg",
-      "description": "",
-      "drawn": false,
-      "flags": {},
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null,
-        "coreVersion": "13.351",
-        "systemId": "ker-nethalas",
-        "systemVersion": "0.0.1",
-        "lastModifiedBy": null
-      },
-      "documentUuid": "Compendium.ker-nethalas.spoils-and-loot.Item.8r1HoERCPsKiKzcR",
-      "_key": "!tables.results!mlkwK7a31NFZR1dl.jZEgjFPeKfu5P0SE"
     },
     {
       "type": "document",
@@ -816,7 +791,7 @@
     "systemId": "ker-nethalas",
     "systemVersion": "0.0.1",
     "createdTime": 1768643275089,
-    "modifiedTime": 1769182501345,
+    "modifiedTime": 1769697969966,
     "lastModifiedBy": "Q0Szu4q2kPffUgpv"
   },
   "formula": "1d100",
