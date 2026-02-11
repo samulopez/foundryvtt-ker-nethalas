@@ -1,0 +1,22 @@
+<div class="dice-roll" data-action="expandRoll">
+  <div class="dice-result">
+    <div class="dice-formula {{customClass}}">{{resultString}}</div>
+    <div class="dice-tooltip">
+      <div class="wrapper">
+        <section class="tooltip-part">
+          <div class="dice">
+            <header class="part-header flexrow">
+              <span class="part-formula">
+                <ul>
+                  {{#each improvedSkills as |skill| }}
+                    <li>{{localize (concat "KN.Character.Skills." skill.skillKey)}}: {{skill.oldValue}} → {{skill.newValue}}</li>
+                  {{/each}}
+                </ul>
+              </span>
+            </header>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

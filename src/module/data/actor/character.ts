@@ -317,6 +317,12 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
     return { result: true, message: '' };
   }
 
+  skillsToImprove(): string[] {
+    return Object.entries(this.parent.system.skills)
+      .filter(([_, skill]) => skill.markForImprovement)
+      .map(([key, _]) => key);
+  }
+
   async addItemToList(list: string, item: Item.Implementation) {
     const result = await this.parent.update({
       system: {

@@ -66,6 +66,7 @@ export default class CharacterSheet<
       rollHitLocation: this.#rollHitLocation,
       toggleSorting: this.#toggleSorting,
       deleteLightSource: this.#deleteLightSource,
+      improveSkills: this.#improveSkills,
     },
     dragDrop: [
       {
@@ -718,5 +719,28 @@ export default class CharacterSheet<
     event.preventDefault();
 
     await this.document.system.deleteLightSource();
+  }
+
+  static async #improveSkills(this, event: PointerEvent) {
+    event.preventDefault();
+
+    const skillsToImprove = this.document.system.skillsToImprove();
+
+    if (skillsToImprove.length === 0) {
+      ui.notifications?.info(getLocalization().localize('KN.ApplySkillImprovements.noSkillsMarked'));
+      return;
+    }
+
+    const proceed = await foundry.applications.api.DialogV2.confirm({
+      title: getLocalization().localize('KN.ApplySkillImprovements.title'),
+      content: `${getLocalization().localize(
+        'KN.ApplySkillImprovements.explanation',
+      )}<ul>${skillsToImprove.map((skillKey) => `<li>${getLocalization().localize(`KN.Character.Skills.${skillKey}`)}</li>`).join('')}</ul>
+      `,
+    });
+
+    if (proceed) {
+      this.document.improveSkills();
+    }
   }
 }
