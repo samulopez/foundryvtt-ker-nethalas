@@ -4,6 +4,7 @@ export const TEMPLATES = {
   modifyRoll: `systems/${ID}/templates/roll/modify-roll.hbs`,
   usageDieRoll: `systems/${ID}/templates/roll/usage-die-roll.hbs`,
   actionsRoll: `systems/${ID}/templates/roll/actions-roll.hbs`,
+  improveSkillsRoll: `systems/${ID}/templates/roll/improve-skills-roll.hbs`,
   character: {
     header: `systems/${ID}/templates/character/header.hbs`,
     skillsTab: `systems/${ID}/templates/character/skills-tab.hbs`,

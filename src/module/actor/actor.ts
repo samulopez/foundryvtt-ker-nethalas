@@ -451,6 +451,69 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
     }
   }
 
+  async improveSkills() {
+    if (!this.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
+    const skillsToImprove = this.system.skillsToImprove();
+    const improvedSkills: { skillKey: string; oldValue: number; newValue: number }[] = [];
+    const skillUpdates = {};
+    await Promise.all(
+      skillsToImprove.map(async (skillKey) => {
+        const roll = new Roll('1d100');
+        await roll.evaluate();
+        const total = roll.total ?? 0;
+        const skill = this.system.skills[skillKey] as
+          | { value: number; markForImprovement: boolean; temporaryModifier: number }
+          | undefined;
+        skillUpdates[skillKey] = {
+          markForImprovement: false,
+        };
+        if (!skill || skill.value >= 80) {
+          return;
+        }
+        let newSkillValue = skill.value + 1;
+        if (total > skill.value) {
+          const rollImprovement = new Roll('1d4');
+          await rollImprovement.evaluate();
+          const totalImprovement = rollImprovement.total ?? 0;
+          newSkillValue = skill.value + totalImprovement > 80 ? 80 : skill.value + totalImprovement;
+        }
+
+        skillUpdates[skillKey].value = newSkillValue;
+        improvedSkills.push({
+          skillKey,
+          oldValue: skill.value,
+          newValue: newSkillValue,
+        });
+      }),
+    );
+
+    const html = await foundry.applications.handlebars.renderTemplate(TEMPLATES.improveSkillsRoll, {
+      resultString: getLocalization().localize('KN.ApplySkillImprovements.skillsImproved'),
+      customClass: '',
+      improvedSkills,
+      total: '',
+    });
+
+    const roll = new Roll('1d0');
+    const message = await roll.toMessage({
+      content: html,
+      flavor: `${this.name}: ${getLocalization().localize('KN.ApplySkillImprovements.titleModal')}`,
+    });
+
+    const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
+    if (diceSoNice && message) {
+      await getGame().dice3d?.waitFor3DAnimationByMessageID(message.id);
+    }
+
+    await this.update({
+      system: {
+        skills: skillUpdates,
+      },
+    });
+  }
+
   isCharacter(): this is KerNethalasActor<'character'> {
     return this.type === 'character';
   }
