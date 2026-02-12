@@ -8,8 +8,13 @@
             <header class="part-header flexrow">
               <span class="part-formula">
                 <ul>
-                  {{#each improvedSkills as |skill| }}
-                    <li>{{localize (concat "KN.Character.Skills." skill.skillKey)}}: {{skill.oldValue}} → {{skill.newValue}}</li>
+                  {{#each messages as |message| }}
+                    <li>
+                      {{message.name}}: {{message.oldValue}} → {{message.newValue}}
+                      {{#if message.description }}
+                        <div class="message-description {{message.descriptionCustomClass}}">{{message.description}}</div>
+                      {{/if}}
+                    </li>
                   {{/each}}
                 </ul>
               </span>

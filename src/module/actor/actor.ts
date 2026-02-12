@@ -456,7 +456,7 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
       throw new Error('Actor is not a character');
     }
     const skillsToImprove = this.system.skillsToImprove();
-    const improvedSkills: { skillKey: string; oldValue: number; newValue: number }[] = [];
+    const messages: { name: string; oldValue: number; newValue: number }[] = [];
     const skillUpdates = {};
     await Promise.all(
       skillsToImprove.map(async (skillKey) => {
@@ -477,22 +477,22 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
           const rollImprovement = new Roll('1d4');
           await rollImprovement.evaluate();
           const totalImprovement = rollImprovement.total ?? 0;
-          newSkillValue = skill.value + totalImprovement > 80 ? 80 : skill.value + totalImprovement;
+          newSkillValue = Math.min(skill.value + totalImprovement, 80);
         }
 
         skillUpdates[skillKey].value = newSkillValue;
-        improvedSkills.push({
-          skillKey,
+        messages.push({
+          name: getLocalization().localize(`KN.Character.Skills.${skillKey}`),
           oldValue: skill.value,
           newValue: newSkillValue,
         });
       }),
     );
 
-    const html = await foundry.applications.handlebars.renderTemplate(TEMPLATES.improveSkillsRoll, {
+    const html = await foundry.applications.handlebars.renderTemplate(TEMPLATES.messageListRoll, {
       resultString: getLocalization().localize('KN.ApplySkillImprovements.skillsImproved'),
       customClass: '',
-      improvedSkills,
+      messages,
       total: '',
     });
 
@@ -510,6 +510,101 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
     await this.update({
       system: {
         skills: skillUpdates,
+      },
+    });
+  }
+
+  async takeABreather() {
+    if (!this.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
+
+    const roll = new Roll('1d10');
+    await roll.evaluate();
+    const toughnessValue = (roll.total ?? 0) + 2 + (this.system.attributes.toughness.value ?? 0);
+    const toughnessNewValue = Math.min(toughnessValue, this.system.attributes.toughness.max ?? 0);
+    const healthNewValue = Math.min(
+      (this.system.attributes.health.value ?? 0) + 1,
+      this.system.attributes.health.max ?? 0,
+    );
+    const exhaustionNewValue = Math.max((this.system.attributes.exhaustion ?? 0) - 2, 0);
+    const lightSourceNewValue = Math.max((this.system.lightSource ?? 0) - 5, 0);
+    const dieSize = this.system.mechanics.tensionDie;
+    let tensionDieNew = (dieSize ?? 0) - 2;
+    let tensionDieDescription = '';
+    if (dieSize === 4) {
+      tensionDieDescription = getLocalization().localize('KN.Rolls.tensionDieCheck.growingDarkness');
+      tensionDieNew = 8;
+    }
+
+    const messages: {
+      name: string;
+      oldValue: number;
+      newValue: number;
+      description?: string;
+      descriptionCustomClass?: string;
+    }[] = [
+      {
+        name: getLocalization().localize('KN.TakingABreather.toughness'),
+        oldValue: this.system.attributes.toughness.value ?? 0,
+        newValue: toughnessNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.TakingABreather.health'),
+        oldValue: this.system.attributes.health.value ?? 0,
+        newValue: healthNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.TakingABreather.exhaustion'),
+        oldValue: this.system.attributes.exhaustion ?? 0,
+        newValue: exhaustionNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.TakingABreather.lightsource'),
+        oldValue: this.system.lightSource ?? 0,
+        newValue: lightSourceNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.TakingABreather.tensionDie'),
+        oldValue: this.system.mechanics.tensionDie ?? 0,
+        newValue: tensionDieNew,
+        description: tensionDieDescription,
+        descriptionCustomClass: 'failure-text',
+      },
+    ];
+
+    const html = await foundry.applications.handlebars.renderTemplate(TEMPLATES.messageListRoll, {
+      resultString: getLocalization().localize('KN.TakingABreather.message'),
+      customClass: '',
+      messages,
+      total: '',
+    });
+
+    const message = await roll.toMessage({
+      content: html,
+      flavor: `${this.name}: ${getLocalization().localize('KN.TakingABreather.title')}`,
+    });
+
+    const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
+    if (diceSoNice && message) {
+      await getGame().dice3d?.waitFor3DAnimationByMessageID(message.id);
+    }
+
+    await this.update({
+      system: {
+        attributes: {
+          toughness: {
+            value: toughnessNewValue,
+          },
+          health: {
+            value: healthNewValue,
+          },
+          exhaustion: exhaustionNewValue,
+        },
+        lightSource: lightSourceNewValue,
+        mechanics: {
+          tensionDie: tensionDieNew,
+        },
       },
     });
   }
