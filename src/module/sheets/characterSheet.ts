@@ -67,6 +67,7 @@ export default class CharacterSheet<
       toggleSorting: this.#toggleSorting,
       deleteLightSource: this.#deleteLightSource,
       improveSkills: this.#improveSkills,
+      takeABreather: this.#takeABreather,
     },
     dragDrop: [
       {
@@ -742,5 +743,11 @@ export default class CharacterSheet<
     if (proceed) {
       this.document.improveSkills();
     }
+  }
+
+  static async #takeABreather(this, event: PointerEvent) {
+    event.preventDefault();
+
+    this.document.takeABreather();
   }
 }
