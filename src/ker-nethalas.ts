@@ -7,6 +7,7 @@ import CharacterSheet from './module/sheets/characterSheet';
 import KNArmorSheet from './module/sheets/armorSheet';
 import { registerSettings } from './module/settings';
 import KerNethalasItem from './module/item/item';
+import { addEventListenerToChatMessage } from './module/helpers';
 import {
   ArmorDataModel,
   CharacterDataModel,
@@ -97,3 +98,7 @@ Hooks.once('init', async () => {
 });
 
 Hooks.on('createCombatant', KerNethalasCombat.createCombatant);
+
+Hooks.on('renderChatMessageHTML', async (app, element) => {
+  addEventListenerToChatMessage(element);
+});

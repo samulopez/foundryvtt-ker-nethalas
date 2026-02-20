@@ -1,0 +1,13 @@
+<div>
+  {{localize "KN.SetCamp.label.benefitsApplied"}}:
+  <ul>
+    {{#each messages as |message| }}
+      <li>
+        {{message.name}}: {{message.oldValue}} → {{message.newValue}}
+        {{#if message.description }}
+          <div class="message-description {{message.descriptionCustomClass}}">{{message.description}}</div>
+        {{/if}}
+      </li>
+    {{/each}}
+  </ul>
+</div>

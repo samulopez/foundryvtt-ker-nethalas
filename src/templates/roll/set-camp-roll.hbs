@@ -1,0 +1,189 @@
+<div class="dialog-content standard-form scrollable">
+  <div class="form-group">
+    <label for="cookingSupplies">{{localize 'KN.Character.Inventory.supplies.cookings'}}</label>
+    <input type="number"
+           name="cookingSupplies"
+           id="cookingSupplies"
+           value="{{cookingSupplies}}"
+           disabled />
+  </div>
+  <div class="form-group">
+    <label for="cooking">{{localize 'KN.SetCamp.label.cooking'}}</label>
+    <input type="number"
+           name="cooking"
+           id="cooking"
+           value="{{cooking}}"
+           data-dtype="Number"
+           min="0"
+           step="1"
+           {{disabled (or (eq cookingSupplies 0) (eq sleep true))}} />
+    {{localize "KN.Character.Inventory.supplies.cookings"}}
+  </div>
+  <div class="form-group">
+    <label for="rations">{{localize 'KN.SetCamp.label.rations'}}</label>
+    <input type="number"
+           name="rations"
+           id="rations"
+           value="{{rations}}"
+           disabled />
+  </div>
+  <div class="form-group">
+    <label for="useRation">{{localize 'KN.SetCamp.label.useRation'}}</label>
+    <input type="checkbox"
+           name="useRation"
+           id="useRation"
+           {{checked useRation}}
+           {{disabled (eq rations 0)}} />
+  </div>
+  <div class="form-group">
+    <label for="attune">{{localize 'KN.SetCamp.label.attune'}}</label>
+    <input type="number"
+           name="attune"
+           id="attune"
+           value="{{attune}}"
+           data-dtype="Number"
+           min="0"
+           step="1"
+           {{disabled (eq sleep true)}} />
+  </div>
+  <div class="form-group">
+    <label for="craftingSupplies">{{localize 'KN.Character.Inventory.supplies.crafting'}}</label>
+    <input type="number"
+           name="craftingSupplies"
+           id="craftingSupplies"
+           value="{{craftingSupplies}}"
+           disabled />
+  </div>
+  <div class="form-group">
+    <label for="barricade">{{localize 'KN.SetCamp.label.barricade'}}</label>
+    <input type="number"
+           name="barricade"
+           id="barricade"
+           value="{{barricade}}"
+           data-dtype="Number"
+           min="0"
+           step="1"
+           {{disabled (eq craftingSupplies 0)}} />
+    {{localize "KN.Character.Inventory.supplies.crafting"}}
+  </div>
+  <div class="form-group">
+    <label for="bandages">{{localize 'KN.SetCamp.label.bandages'}}</label>
+    <input type="number"
+           name="bandages"
+           id="bandages"
+           value="{{bandages}}"
+           data-dtype="Number"
+           min="0"
+           step="1"
+           {{disabled (or (eq craftingSupplies 0) (eq sleep true))}} />
+    {{localize "KN.Character.Inventory.supplies.crafting"}}
+  </div>
+  <div class="form-group">
+    <label for="lampOil">{{localize 'KN.SetCamp.label.lampOil'}}</label>
+    <input type="number"
+           name="lampOil"
+           id="lampOil"
+           value="{{lampOil}}"
+           data-dtype="Number"
+           min="0"
+           step="1"
+           {{disabled (or (lt craftingSupplies 2) (eq sleep true))}} />
+    {{localize "KN.Character.Inventory.supplies.crafting"}}
+  </div>
+  <div class="form-group">
+    <label for="lockpicks">{{localize 'KN.SetCamp.label.lockpicks'}}</label>
+    <input type="number"
+           name="lockpicks"
+           id="lockpicks"
+           value="{{lockpicks}}"
+           data-dtype="Number"
+           min="0"
+           step="1"
+           {{disabled (or (eq craftingSupplies 0) (eq sleep true))}} />
+    {{localize "KN.Character.Inventory.supplies.crafting"}}
+  </div>
+  <div class="form-group">
+    <label for="torches">{{localize 'KN.SetCamp.label.torches'}}</label>
+    <input type="number"
+           name="torches"
+           id="torches"
+           value="{{torches}}"
+           data-dtype="Number"
+           min="0"
+           step="1"
+           {{disabled (or (eq craftingSupplies 0) (eq sleep true))}} />
+    {{localize "KN.Character.Inventory.supplies.crafting"}}
+  </div>
+  <div class="form-group">
+    <label for="repair">{{localize 'KN.SetCamp.label.repair'}}</label>
+    <input type="number"
+           name="repair"
+           id="repair"
+           value="{{repair}}"
+           data-dtype="Number"
+           min="0"
+           step="1"
+           {{disabled (or (eq craftingSupplies 0) (eq sleep true))}} />
+    {{localize "KN.Character.Inventory.supplies.crafting"}}
+  </div>
+  <div class="form-group">
+    <label for="healCondition">{{localize 'KN.SetCamp.label.healCondition'}}</label>
+    <input type="number"
+           name="healCondition"
+           id="healCondition"
+           value="{{healCondition}}"
+           data-dtype="Number"
+           min="0"
+           step="1"
+           {{disabled (eq sleep true)}} />
+  </div>
+  <div class="form-group">
+    <label for="sleep">{{localize 'KN.SetCamp.label.sleep'}}</label>
+    <input type="checkbox" name="sleep" id="sleep" {{checked sleep}} />
+  </div>
+  <div class="form-group">
+    <label for="exhaustionIncreases">{{localize 'KN.SetCamp.label.exhaustionIncreases'}}</label>
+    <input type="number"
+           name="exhaustionIncreases"
+           id="exhaustionIncreases"
+           value="{{exhaustionIncreases}}"
+           disabled />
+  </div>
+  <div class="form-group">
+    <label for="campCheckRoll">{{localize 'KN.SetCamp.campCheckRoll'}}</label>
+    <input class="numeric-label-field"
+           disabled
+           id="campCheckRoll"
+           type="text"
+           value="1d20{{rollModifier}} > 12" />
+  </div>
+  <div>
+    <div class="section-title">{{localize 'KN.SetCamp.label.possibleBenefits'}}</div>
+    <div>
+      {{#if useRation }}
+        <ul>
+          <li>{{localize 'KN.SetCamp.label.regain'}} {{localize 'KN.SetCamp.label.allToughness'}}.</li>
+          <li>{{localize 'KN.SetCamp.label.regain'}} {{health2}} {{localize 'KN.SetCamp.label.health'}}.</li>
+          <li>{{localize 'KN.SetCamp.label.regain'}} 1d4 {{localize 'KN.SetCamp.label.sanity'}}.</li>
+          <li>{{localize 'KN.SetCamp.label.reduceExhaustion'}}{{exhaustionDecreases2}}.</li>
+        </ul>
+      {{else}}
+        <ul>
+          <li>{{localize 'KN.SetCamp.label.regain'}} {{localize 'KN.SetCamp.label.halfToughness'}}.</li>
+          <li>{{localize 'KN.SetCamp.label.regain'}} {{health2}} {{localize 'KN.SetCamp.label.health'}}.</li>
+          <li>{{localize 'KN.SetCamp.label.regain'}} 1d4/2 {{localize 'KN.SetCamp.label.sanity'}}.</li>
+          <li>{{localize 'KN.SetCamp.label.reduceExhaustion'}}{{exhaustionDecreases2}}.</li>
+        </ul>
+      {{/if}}
+    </div>
+  </div>
+  <footer class="form-footer" data-application-part="footer">
+    <button type="reset" data-action="cancel">
+      <span>{{localize 'KN.SetCamp.cancel'}}</span>
+    </button>
+    <button type="submit" data-action="roll">
+      <i class="fas fa-dice"></i>
+      <span>{{localize 'KN.SetCamp.action'}}</span>
+    </button>
+  </footer>
+</div>
