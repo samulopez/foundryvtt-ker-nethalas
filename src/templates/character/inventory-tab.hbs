@@ -161,100 +161,100 @@
               </button>
             </div>
             <div>
-              {{!-- <button type="button"
-         class="flex0 no-wrap-text unbutton config-button item-control item-action always-interactive"
-         data-action="improveSkills">
-              <i class="fas fa-campground"></i> Set camp
-            </button> --}}
+              <button type="button"
+                      class="flex0 no-wrap-text unbutton config-button item-control item-action always-interactive"
+                      data-action="setCamp">
+                <i class="fas fa-campground"></i> {{localize "KN.SetCamp.title"}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flexcol gap align-normal">
+        <div>
+          <div class="flexrow gap-small">
+            <div class="section-title">{{localize "KN.Character.Inventory.beltQuickSlots"}} {{currentBeltCapacity}} / 4</div>
+            {{#if (eq document.system.sorting "alphabetically") }}
+              <button type="button"
+                      class="flex0 inline-control toggle-sort icon fas fa-arrow-down-a-z"
+                      data-tooltip="KN.Sorting.alphabetically"
+                      data-action="toggleSorting"></button>
+            {{else}}
+              <button type="button"
+                      class="flex0 inline-control toggle-sort icon fas fa-arrow-down-short-wide"
+                      data-tooltip="KN.Sorting.manually"
+                      data-action="toggleSorting"></button>
+            {{/if}}
+          </div>
+          <div class="items-section belt-list">
+            <ol class="item-list unlist">
+              {{#each beltList as |item key| }}
+                {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=true showQuantity=false}}
+              {{/each}}
+            </ol>
+          </div>
+        </div>
+        <div>
+          <div class="section-title">{{localize "KN.Character.Inventory.nonEncumberingItems"}}</div>
+          <div class="items-section non-encumbering-items-list">
+            <ol class="item-list unlist">
+              {{#each nonEncumberingList as |item key| }}
+                {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=false showQuantity=true}}
+              {{/each}}
+            </ol>
+          </div>
+        </div>
+        <div>
+          <div class="section-title">{{localize "KN.Character.Inventory.backpack"}} {{currentBackpackCapacity}} / 20</div>
+          <div class="items-section backpack-list">
+            <ol class="item-list unlist">
+              {{#each backpackList as |item key| }}
+                {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=true showQuantity=true}}
+              {{/each}}
+            </ol>
           </div>
         </div>
       </div>
     </div>
-    <div class="flexcol gap align-normal">
-      <div>
-        <div class="flexrow gap-small">
-          <div class="section-title">{{localize "KN.Character.Inventory.beltQuickSlots"}} {{currentBeltCapacity}} / 4</div>
-          {{#if (eq document.system.sorting "alphabetically") }}
-            <button type="button"
-                    class="flex0 inline-control toggle-sort icon fas fa-arrow-down-a-z"
-                    data-tooltip="KN.Sorting.alphabetically"
-                    data-action="toggleSorting"></button>
-          {{else}}
-            <button type="button"
-                    class="flex0 inline-control toggle-sort icon fas fa-arrow-down-short-wide"
-                    data-tooltip="KN.Sorting.manually"
-                    data-action="toggleSorting"></button>
-          {{/if}}
-        </div>
-        <div class="items-section belt-list">
-          <ol class="item-list unlist">
-            {{#each beltList as |item key| }}
-              {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=true showQuantity=false}}
-            {{/each}}
-          </ol>
-        </div>
+    <div>
+      <div class="section-title">{{localize "KN.Character.Inventory.gear"}} {{currentGearCapacity}} / 10</div>
+      <div class="items-section gear-list">
+        <ol class="item-list unlist">
+          {{#each gearList as |item key| }}
+            {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=true showQuantity=true}}
+          {{/each}}
+        </ol>
       </div>
-      <div>
-        <div class="section-title">{{localize "KN.Character.Inventory.nonEncumberingItems"}}</div>
-        <div class="items-section non-encumbering-items-list">
-          <ol class="item-list unlist">
-            {{#each nonEncumberingList as |item key| }}
-              {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=false showQuantity=true}}
-            {{/each}}
-          </ol>
-        </div>
+    </div>
+    <div>
+      <div class="section-title">{{localize "KN.Character.Inventory.pouch"}} {{currentPouch1Capacity}} / 5</div>
+      <div class="items-section pouch1-list">
+        <ol class="item-list unlist">
+          {{#each pouch1List as |item key| }}
+            {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=true showQuantity=true}}
+          {{/each}}
+        </ol>
       </div>
-      <div>
-        <div class="section-title">{{localize "KN.Character.Inventory.backpack"}} {{currentBackpackCapacity}} / 20</div>
-        <div class="items-section backpack-list">
-          <ol class="item-list unlist">
-            {{#each backpackList as |item key| }}
-              {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=true showQuantity=true}}
-            {{/each}}
-          </ol>
-        </div>
+    </div>
+    <div>
+      <div class="section-title">{{localize "KN.Character.Inventory.pouch"}} {{currentPouch2Capacity}} / 5</div>
+      <div class="items-section pouch2-list">
+        <ol class="item-list unlist">
+          {{#each pouch2List as |item key| }}
+            {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=true showQuantity=true}}
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">{{localize "KN.Character.Inventory.pouch"}} {{currentPouch3Capacity}} / 5</div>
+      <div class="items-section pouch3-list">
+        <ol class="item-list unlist">
+          {{#each pouch3List as |item key| }}
+            {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=true showQuantity=true}}
+          {{/each}}
+        </ol>
       </div>
     </div>
   </div>
-  <div>
-    <div class="section-title">{{localize "KN.Character.Inventory.gear"}} {{currentGearCapacity}} / 10</div>
-    <div class="items-section gear-list">
-      <ol class="item-list unlist">
-        {{#each gearList as |item key| }}
-          {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=true showQuantity=true}}
-        {{/each}}
-      </ol>
-    </div>
-  </div>
-  <div>
-    <div class="section-title">{{localize "KN.Character.Inventory.pouch"}} {{currentPouch1Capacity}} / 5</div>
-    <div class="items-section pouch1-list">
-      <ol class="item-list unlist">
-        {{#each pouch1List as |item key| }}
-          {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=true showQuantity=true}}
-        {{/each}}
-      </ol>
-    </div>
-  </div>
-  <div>
-    <div class="section-title">{{localize "KN.Character.Inventory.pouch"}} {{currentPouch2Capacity}} / 5</div>
-    <div class="items-section pouch2-list">
-      <ol class="item-list unlist">
-        {{#each pouch2List as |item key| }}
-          {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=true showQuantity=true}}
-        {{/each}}
-      </ol>
-    </div>
-  </div>
-  <div>
-    <div class="section-title">{{localize "KN.Character.Inventory.pouch"}} {{currentPouch3Capacity}} / 5</div>
-    <div class="items-section pouch3-list">
-      <ol class="item-list unlist">
-        {{#each pouch3List as |item key| }}
-          {{> "systems/ker-nethalas/templates/item/item-row.hbs" item=item draggable=true showWeight=true showQuantity=true}}
-        {{/each}}
-      </ol>
-    </div>
-  </div>
-</div>
 </div>

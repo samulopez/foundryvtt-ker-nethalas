@@ -40,6 +40,19 @@ declare module 'fvtt-types/configuration' {
     document: KerNethalasActor<SubType>;
   }
 
+  interface FlagConfig {
+    ChatMessage: {
+      'ker-nethalas': {
+        setCampResult?: {
+          actorId: string;
+          exhaustionDecreases: number;
+          healthIncreases: number;
+          sanityIncreases: number;
+        };
+      };
+    };
+  }
+
   interface SettingConfig {
     'ker-nethalas.markSkillForImprovement': boolean;
     'ker-nethalas.duplicateMonstersOnStart': boolean;

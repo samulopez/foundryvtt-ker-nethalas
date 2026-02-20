@@ -1,0 +1,49 @@
+<div class="dice-roll" data-action="expandRoll">
+  <div class="dice-result">
+    <div class="dice-formula {{customClass}}">{{resultString}}</div>
+    <div class="dice-tooltip">
+      <div class="wrapper">
+        <section class="tooltip-part">
+          <div class="dice">
+            <header class="part-header flexrow">
+              <span class="part-formula">{{formula}}</span>
+              <span class="part-total">{{total}}</span>
+            </header>
+            <header class="part-header flexrow">
+              <span class="part-formula">
+                <ul>
+                  {{#each messages as |message| }}
+                    <li>
+                      {{message.name}}: {{message.oldValue}} → {{message.newValue}}
+                      {{#if message.description }}
+                        <div class="message-description {{message.descriptionCustomClass}}">{{message.description}}</div>
+                      {{/if}}
+                    </li>
+                  {{/each}}
+                </ul>
+              </span>
+            </header>
+          </div>
+        </section>
+      </div>
+    </div>
+    <h4 class="dice-total">{{total}}</h4>
+  </div>
+</div>
+{{#if encounter }}
+  <div class="encounter flexcol gap-small">
+    <div class="encounter-result">{{localize 'KN.SetCamp.label.encounter'}}</div>
+    <a class="content-link"
+       draggable="true"
+       data-uuid="Compendium.ker-nethalas.tables.RollTable.BxmMMZkr4XbAz2Th"
+       data-id="BxmMMZkr4XbAz2Th"
+       data-type="RollTable"
+       data-pack="ker-nethalas.tables"
+       data-tooltip="Rollable Table"><i class="fa-solid fa-table-list"></i>Combat Encounters - General</a>
+    <button type="button"
+            data-action="applyBenefits"
+            class="no-wrap-text unbutton config-button item-control item-action always-interactive">
+      {{localize 'KN.SetCamp.label.applyBenefits'}}
+    </button>
+  </div>
+{{/if}}

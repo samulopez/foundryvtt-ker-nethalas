@@ -5,6 +5,9 @@ export const TEMPLATES = {
   usageDieRoll: `systems/${ID}/templates/roll/usage-die-roll.hbs`,
   actionsRoll: `systems/${ID}/templates/roll/actions-roll.hbs`,
   messageListRoll: `systems/${ID}/templates/roll/message-list-roll.hbs`,
+  setCampRoll: `systems/${ID}/templates/roll/set-camp-roll.hbs`,
+  setCampResultRoll: `systems/${ID}/templates/roll/set-camp-result-roll.hbs`,
+  setCampApplyBenefitsRoll: `systems/${ID}/templates/roll/set-camp-apply-benefits-roll.hbs`,
   character: {
     header: `systems/${ID}/templates/character/header.hbs`,
     skillsTab: `systems/${ID}/templates/character/skills-tab.hbs`,

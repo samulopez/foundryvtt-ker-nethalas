@@ -1,6 +1,8 @@
 import { getLocalization } from '../helpers';
 import { TEMPLATES, SKILL_DISPLAY, WEIGHT } from '../constants';
 
+import SetCampSheet from './setCampSheet';
+
 import type KerNethalasItem from '../item/item';
 import type KerNethalasActor from '../actor/actor';
 
@@ -42,6 +44,8 @@ export default class CharacterSheet<
   Configuration extends ActorSheetV2.Configuration = ActorSheetV2.Configuration,
   RenderOptions extends ActorSheetV2.RenderOptions = ActorSheetV2.RenderOptions,
 > extends HandlebarsApplicationMixin(ActorSheetV2)<RenderContext, Configuration, RenderOptions> {
+  setCampSheet: SetCampSheet | null = null;
+
   static DEFAULT_OPTIONS = {
     window: { resizable: true },
     position: { width: 750, height: 770 },
@@ -68,6 +72,7 @@ export default class CharacterSheet<
       deleteLightSource: this.#deleteLightSource,
       improveSkills: this.#improveSkills,
       takeABreather: this.#takeABreather,
+      setCamp: this.#setCamp,
     },
     dragDrop: [
       {
@@ -748,6 +753,36 @@ export default class CharacterSheet<
   static async #takeABreather(this, event: PointerEvent) {
     event.preventDefault();
 
-    this.document.takeABreather();
+    await this.document.takeABreather();
+  }
+
+  static async #setCamp(this, event: PointerEvent) {
+    event.preventDefault();
+
+    const resultFunction = async (result) => {
+      this.setCampSheet.close();
+      await this.document.setCampResult(result);
+    };
+
+    if (this.setCampSheet?.rendered) {
+      this.setCampSheet.close();
+    }
+
+    this.setCampSheet = new SetCampSheet(
+      {},
+      {
+        resultFunction,
+        currentRations: this.document.system.supplies.rations,
+        currentCraftingSupplies: this.document.system.supplies.crafting,
+        currentCookingSupplies: this.document.system.supplies.cookings,
+      },
+    );
+
+    if (!this.setCampSheet.rendered) {
+      this.setCampSheet.render({ force: true });
+      return;
+    }
+
+    this.setCampSheet.render();
   }
 }

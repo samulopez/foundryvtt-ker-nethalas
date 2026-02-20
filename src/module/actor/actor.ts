@@ -609,6 +609,335 @@ export default class KerNethalasActor<out SubType extends Actor.SubType = Actor.
     });
   }
 
+  async setCampResultSuccess(
+    result: {
+      cookingSuppliesDecreases: number;
+      rationsDecreases: number;
+      craftingSuppliesDecreases: number;
+      exhaustionIncreases: number;
+      exhaustionDecreases1: number;
+      exhaustionDecreases2: number;
+      healthIncreases1: number;
+      healthIncreases2: number;
+    },
+    roll: Roll<{
+      modifier: number;
+    }>,
+    totalSanity: number,
+  ) {
+    if (!this.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
+
+    const toughnessNewValue = this.system.attributes.toughness.max ?? 0;
+
+    const healthNewValue = Math.min(
+      (this.system.attributes.health.value ?? 0) + result.healthIncreases1 + result.healthIncreases2,
+      this.system.attributes.health.max ?? 0,
+    );
+    const sanityNewValue = Math.min(
+      (this.system.attributes.sanity.value ?? 0) + totalSanity,
+      this.system.attributes.sanity.max ?? 0,
+    );
+    const exhaustionNewValue = Math.max(
+      (this.system.attributes.exhaustion ?? 0) +
+        result.exhaustionIncreases -
+        result.exhaustionDecreases1 -
+        result.exhaustionDecreases2,
+      0,
+    );
+    const cookingSuppliesNewValue = Math.max((this.system.supplies.cookings ?? 0) - result.cookingSuppliesDecreases, 0);
+    const craftingSuppliesNewValue = Math.max(
+      (this.system.supplies.crafting ?? 0) - result.craftingSuppliesDecreases,
+      0,
+    );
+    const rationsNewValue = Math.max((this.system.supplies.rations ?? 0) - result.rationsDecreases, 0);
+
+    const messages: {
+      name: string;
+      oldValue: number;
+      newValue: number;
+      description?: string;
+      descriptionCustomClass?: string;
+    }[] = [
+      {
+        name: getLocalization().localize('KN.TakingABreather.toughness'),
+        oldValue: this.system.attributes.toughness.value ?? 0,
+        newValue: toughnessNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.TakingABreather.health'),
+        oldValue: this.system.attributes.health.value ?? 0,
+        newValue: healthNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.SetCamp.label.sanity'),
+        oldValue: this.system.attributes.sanity.value ?? 0,
+        newValue: sanityNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.TakingABreather.exhaustion'),
+        oldValue: this.system.attributes.exhaustion ?? 0,
+        newValue: exhaustionNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.Character.Inventory.supplies.cookings'),
+        oldValue: this.system.supplies.cookings ?? 0,
+        newValue: cookingSuppliesNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.Character.Inventory.supplies.crafting'),
+        oldValue: this.system.supplies.crafting ?? 0,
+        newValue: craftingSuppliesNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.Character.Inventory.supplies.rations'),
+        oldValue: this.system.supplies.rations ?? 0,
+        newValue: rationsNewValue,
+      },
+    ];
+    const html = await foundry.applications.handlebars.renderTemplate(TEMPLATES.setCampResultRoll, {
+      resultString: getLocalization().localize('KN.Rolls.success'),
+      customClass: 'success-text',
+      messages,
+      formula: roll.formula,
+      total: roll.total,
+    });
+    const message = await roll.toMessage({
+      content: html,
+      flavor: `${this.name}: ${getLocalization().localize('KN.SetCamp.campCheckRoll')}`,
+    });
+
+    const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
+    if (diceSoNice && message) {
+      await getGame().dice3d?.waitFor3DAnimationByMessageID(message.id);
+    }
+
+    await this.update({
+      system: {
+        attributes: {
+          toughness: {
+            value: toughnessNewValue,
+          },
+          health: {
+            value: healthNewValue,
+          },
+          sanity: {
+            value: sanityNewValue,
+          },
+          exhaustion: exhaustionNewValue,
+        },
+        supplies: {
+          cookings: cookingSuppliesNewValue,
+          crafting: craftingSuppliesNewValue,
+          rations: rationsNewValue,
+        },
+      },
+    });
+  }
+
+  async setCampResult(result: {
+    cookingSuppliesDecreases: number;
+    rationsDecreases: number;
+    craftingSuppliesDecreases: number;
+    exhaustionIncreases: number;
+    exhaustionDecreases1: number;
+    exhaustionDecreases2: number;
+    healthIncreases1: number;
+    healthIncreases2: number;
+    modifier: number;
+    useRation: boolean;
+  }) {
+    if (!this.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
+
+    const roll = new Roll('1d20 + @modifier', {
+      modifier: result.modifier,
+    });
+    await roll.evaluate();
+    const total = roll.total ?? 0;
+    const isSuccess = total > 12;
+
+    const rollSanity = new Roll('1d4');
+    await rollSanity.evaluate();
+    const totalSanity = rollSanity.total ?? 0;
+
+    if (isSuccess) {
+      await this.setCampResultSuccess(result, roll, totalSanity);
+      return;
+    }
+
+    const healthNewValue = Math.min(
+      (this.system.attributes.health.value ?? 0) + result.healthIncreases1,
+      this.system.attributes.health.max ?? 0,
+    );
+    const exhaustionNewValue = Math.max(
+      (this.system.attributes.exhaustion ?? 0) + result.exhaustionIncreases - result.exhaustionDecreases1,
+      0,
+    );
+    const cookingSuppliesNewValue = Math.max((this.system.supplies.cookings ?? 0) - result.cookingSuppliesDecreases, 0);
+    const craftingSuppliesNewValue = Math.max(
+      (this.system.supplies.crafting ?? 0) - result.craftingSuppliesDecreases,
+      0,
+    );
+    const rationsNewValue = Math.max((this.system.supplies.rations ?? 0) - result.rationsDecreases, 0);
+    const messages: {
+      name: string;
+      oldValue: number;
+      newValue: number;
+      description?: string;
+      descriptionCustomClass?: string;
+    }[] = [
+      {
+        name: getLocalization().localize('KN.TakingABreather.exhaustion'),
+        oldValue: this.system.attributes.exhaustion ?? 0,
+        newValue: exhaustionNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.Character.Inventory.supplies.cookings'),
+        oldValue: this.system.supplies.cookings ?? 0,
+        newValue: cookingSuppliesNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.Character.Inventory.supplies.crafting'),
+        oldValue: this.system.supplies.crafting ?? 0,
+        newValue: craftingSuppliesNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.Character.Inventory.supplies.rations'),
+        oldValue: this.system.supplies.rations ?? 0,
+        newValue: rationsNewValue,
+      },
+    ];
+
+    if (result.healthIncreases1 > 0) {
+      messages.unshift({
+        name: getLocalization().localize('KN.TakingABreather.health'),
+        oldValue: this.system.attributes.health.value ?? 0,
+        newValue: healthNewValue,
+      });
+    }
+
+    const html = await foundry.applications.handlebars.renderTemplate(TEMPLATES.setCampResultRoll, {
+      resultString: getLocalization().localize('KN.Rolls.failure'),
+      customClass: 'failure-text',
+      messages,
+      formula: roll.formula,
+      total: roll.total,
+      encounter: true,
+    });
+    const message = await roll.toMessage({
+      content: html,
+      flavor: `${this.name}: ${getLocalization().localize('KN.SetCamp.campCheckRoll')}`,
+    });
+
+    const diceSoNice = getGame().modules.has('dice-so-nice') && getGame().modules.get('dice-so-nice')?.active;
+    if (diceSoNice && message) {
+      await getGame().dice3d?.waitFor3DAnimationByMessageID(message.id);
+    }
+
+    await message?.setFlag(ID, 'setCampResult', {
+      actorId: this.id ?? '',
+      exhaustionDecreases: result.useRation ? Math.floor(result.exhaustionDecreases2 / 2) : result.exhaustionDecreases2,
+      healthIncreases: result.useRation ? Math.floor(result.healthIncreases2 / 2) : result.healthIncreases2,
+      sanityIncreases: Math.floor(totalSanity / 2),
+    });
+
+    await this.update({
+      system: {
+        attributes: {
+          health: {
+            value: healthNewValue,
+          },
+          exhaustion: exhaustionNewValue,
+        },
+        supplies: {
+          cookings: cookingSuppliesNewValue,
+          crafting: craftingSuppliesNewValue,
+          rations: rationsNewValue,
+        },
+      },
+    });
+  }
+
+  async applyCampResult(result: {
+    actorId: string;
+    exhaustionDecreases: number;
+    healthIncreases: number;
+    sanityIncreases: number;
+  }): Promise<
+    {
+      name: string;
+      oldValue: number;
+      newValue: number;
+    }[]
+  > {
+    if (!this.isCharacter()) {
+      throw new Error('Actor is not a character');
+    }
+
+    if (result.actorId !== this.id) {
+      return [];
+    }
+
+    const toughnessNewValue =
+      (this.system.attributes.toughness.value ?? 0) +
+      Math.floor(((this.system.attributes.toughness.max ?? 0) - (this.system.attributes.toughness.value ?? 0)) / 2);
+
+    const healthNewValue = Math.min(
+      (this.system.attributes.health.value ?? 0) + result.healthIncreases,
+      this.system.attributes.health.max ?? 0,
+    );
+    const exhaustionNewValue = Math.max((this.system.attributes.exhaustion ?? 0) - result.exhaustionDecreases, 0);
+    const sanityNewValue = Math.min(
+      (this.system.attributes.sanity.value ?? 0) + result.sanityIncreases,
+      this.system.attributes.sanity.max ?? 0,
+    );
+
+    await this.update({
+      system: {
+        attributes: {
+          health: {
+            value: healthNewValue,
+          },
+          exhaustion: exhaustionNewValue,
+          sanity: {
+            value: sanityNewValue,
+          },
+        },
+      },
+    });
+
+    const messages: {
+      name: string;
+      oldValue: number;
+      newValue: number;
+    }[] = [
+      {
+        name: getLocalization().localize('KN.TakingABreather.toughness'),
+        oldValue: this.system.attributes.toughness.value ?? 0,
+        newValue: toughnessNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.TakingABreather.health'),
+        oldValue: this.system.attributes.health.value ?? 0,
+        newValue: healthNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.SetCamp.label.sanity'),
+        oldValue: this.system.attributes.sanity.value ?? 0,
+        newValue: sanityNewValue,
+      },
+      {
+        name: getLocalization().localize('KN.TakingABreather.exhaustion'),
+        oldValue: this.system.attributes.exhaustion ?? 0,
+        newValue: exhaustionNewValue,
+      },
+    ];
+    return messages;
+  }
+
   isCharacter(): this is KerNethalasActor<'character'> {
     return this.type === 'character';
   }

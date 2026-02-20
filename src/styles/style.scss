@@ -448,6 +448,15 @@
     }
   }
 
+  .set-camp-roll {
+    .dialog-content {
+      gap: $gap-small;
+      input:not([id='campCheckRoll']) {
+        max-width: 3rem;
+      }
+    }
+  }
+
   .editor-host {
     color: $color-text;
     border: 1px dashed var(--color-border-ker);
