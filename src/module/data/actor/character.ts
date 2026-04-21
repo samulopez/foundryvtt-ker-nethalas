@@ -161,11 +161,11 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   gearItems(sortedItems: Item.Implementation[]): Item.Implementation[] {
-    return sortedItems.filter((item) => this.parent.system.gearList.includes(item.uuid));
+    return sortedItems.filter((item) => item.uuid && this.parent.system.gearList.includes(item.uuid));
   }
 
   backpackItems(sortedItems: Item.Implementation[]): Item.Implementation[] {
-    return sortedItems.filter((item) => this.parent.system.backpackList.includes(item.uuid));
+    return sortedItems.filter((item) => item.uuid && this.parent.system.backpackList.includes(item.uuid));
   }
 
   nonEncumberingItems(sortedItems: Item.Implementation[]): Item.Implementation[] {
@@ -175,19 +175,19 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   pouch1Items(sortedItems: Item.Implementation[]): Item.Implementation[] {
-    return sortedItems.filter((item) => this.parent.system.pouch1List.includes(item.uuid));
+    return sortedItems.filter((item) => item.uuid && this.parent.system.pouch1List.includes(item.uuid));
   }
 
   pouch2Items(sortedItems: Item.Implementation[]): Item.Implementation[] {
-    return sortedItems.filter((item) => this.parent.system.pouch2List.includes(item.uuid));
+    return sortedItems.filter((item) => item.uuid && this.parent.system.pouch2List.includes(item.uuid));
   }
 
   pouch3Items(sortedItems: Item.Implementation[]): Item.Implementation[] {
-    return sortedItems.filter((item) => this.parent.system.pouch3List.includes(item.uuid));
+    return sortedItems.filter((item) => item.uuid && this.parent.system.pouch3List.includes(item.uuid));
   }
 
   beltItems(sortedItems: Item.Implementation[]): Item.Implementation[] {
-    return sortedItems.filter((item) => this.parent.system.beltList.includes(item.uuid));
+    return sortedItems.filter((item) => item.uuid && this.parent.system.beltList.includes(item.uuid));
   }
 
   equipmentItems(): {
@@ -333,6 +333,9 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   async moveItemToList(list: string, item: Item.Implementation) {
+    if (!item.uuid) {
+      return null;
+    }
     await this.removeItemFromLists(item.uuid);
 
     const result = await this.parent.update({
@@ -364,6 +367,9 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   isItemInList(list: string, item: Item.Implementation): boolean {
+    if (!item.uuid) {
+      return false;
+    }
     switch (list) {
       case 'backpackList':
         return this.parent.system.backpackList.includes(item.uuid);
@@ -412,6 +418,9 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   async addToMainHand(item: Item.Implementation) {
+    if (!item.uuid) {
+      return null;
+    }
     await this.removeItemFromLists(item.uuid);
 
     const result = await this.parent.update({
@@ -426,6 +435,9 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   async addToOffHand(item: Item.Implementation) {
+    if (!item.uuid) {
+      return null;
+    }
     await this.removeItemFromLists(item.uuid);
 
     const result = await this.parent.update({
@@ -454,6 +466,9 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel<
   }
 
   async addItemToEquipment(equipment: string, item: Item.Implementation) {
+    if (!item.uuid) {
+      return null;
+    }
     await this.removeItemFromLists(item.uuid);
 
     const result = await this.parent.update({
